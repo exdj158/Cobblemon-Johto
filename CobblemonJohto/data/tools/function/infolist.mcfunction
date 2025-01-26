@@ -1,5 +1,5 @@
 #Current Map Version
-tellraw @s {"text":"1) Map version: Cobblemon Johto Datapack 0.0.1"}
+tellraw @s {"text":"1) Map version: Cobblemon Johto Datapack 1.1.0"}
 
 #execute as @e[x=-880,y=64,z=-336,dy=3,type=minecraft:armor_stand] run give Jond minecraft:acacia_boat
 
@@ -14,8 +14,8 @@ tag @s add infoverify
 
 execute as @e[x=-880,y=64,z=-336,dy=3,type=armor_stand] as @e[x=-689,y=64,z=-336,dy=3,type=armor_stand] as @e[x=-689,y=95,z=-145,dy=3,type=armor_stand] at @e[x=-880,y=80,z=-145,dy=3,type=armor_stand] run tag @a[tag=infoverify] add skip
 
-execute as @s[tag=skip] run tellraw @s[tag=infoverify] ["",{"text":"1) "},{"text":"All spawn chunk corners confirmed loaded.","color":"green"},{"text":" ["},{"text":"Info","hoverEvent":{"action":"show_text","value":"These 4 corners must be loaded for the map to fully function. These are spawn chunks the world keeps loaded at all times, and runs most functions of the map."}},{"text":"]"}]
-execute as @s[tag=!skip] run tellraw @s[tag=infoverify] ["",{"text":"1) "},{"text":"One or more spawn chunks failed to load.","color":"red"},{"text":" ["},{"text":"Info","hoverEvent":{"action":"show_text","value":"These 4 corners must be loaded for the map to fully function. These are spawn chunks the world keeps loaded at all times, and runs most functions of the map. The command \"/setworldspawn -780 64 -245\" may help this issue"}},{"text":"]"}]
+execute as @s[tag=skip] run tellraw @s[tag=infoverify] ["",{"text":"2) "},{"text":"All spawn chunk corners confirmed loaded.","color":"green"},{"text":" ["},{"text":"Info","hoverEvent":{"action":"show_text","value":"These 4 corners must be loaded for the map to fully function. These are spawn chunks the world keeps loaded at all times, and runs most functions of the map."}},{"text":"]"}]
+execute as @s[tag=!skip] run tellraw @s[tag=infoverify] ["",{"text":"2) "},{"text":"One or more spawn chunks failed to load.","color":"red"},{"text":" ["},{"text":"Info","hoverEvent":{"action":"show_text","value":"These 4 corners must be loaded for the map to fully function. These are spawn chunks the world keeps loaded at all times, and runs most functions of the map. The command \"/setworldspawn -780 64 -245\" may help this issue"}},{"text":"]"}]
 execute as @s[tag=!skip] run setworldspawn -780 64 -245
 execute as @s[tag=!skip] run tag @s[tag=infoverify] add verify2
 
@@ -37,9 +37,9 @@ tag @s remove skip
 
 
 #Detects if a player is stuck or currently in a dialogue
-tellraw @s[scores={TalkTime=1..}] ["",{"text":"2a) "},{"text":"Score of TalkTime_min=1 found.","color":"yellow"},{"text":" ["},{"text":"Info","hoverEvent":{"action":"show_text","value":"TalkTime is a Minecraft scoreboard objective that handles the timing of most of the map's dialogue and events. If stuck on for long and nothing around you or in chat is happening, the map may try to correct for this automatically. You can also do this manually with the command \"/scoreboard players set YourPlayerNameHere TalkTime 0\""}},{"text":"]"}]
-tellraw @s[scores={DialogueTrigger=1..}] ["",{"text":"2b) "},{"text":"Score of DialogueTrigger_min=1 found.","color":"yellow"},{"text":" ["},{"text":"Info","hoverEvent":{"action":"show_text","value":"DialogueTrigger is a Minecraft scoreboard objective that which dialogue or event the player is currently interacting with."}},{"text":"]"}]
-tellraw @s[scores={TalkTime=0,DialogueTrigger=0}] ["",{"text":"4) "},{"text":"Player confirmed not in dialogue.","color":"green"},{"text":" ["},{"text":"Info","hoverEvent":{"action":"show_text","value":"Ensures the player is not currently in a map event or dialogue that may affect some functions such as portals or fly map functions."}},{"text":"]"}]
+tellraw @s[scores={TalkTime=1..}] ["",{"text":"3a) "},{"text":"Score of TalkTime_min=1 found.","color":"yellow"},{"text":" ["},{"text":"Info","hoverEvent":{"action":"show_text","value":"TalkTime is a Minecraft scoreboard objective that handles the timing of most of the map's dialogue and events. If stuck on for long and nothing around you or in chat is happening, the map may try to correct for this automatically. You can also do this manually with the command \"/scoreboard players set YourPlayerNameHere TalkTime 0\""}},{"text":"]"}]
+tellraw @s[scores={DialogueTrigger=1..}] ["",{"text":"3b) "},{"text":"Score of DialogueTrigger_min=1 found.","color":"yellow"},{"text":" ["},{"text":"Info","hoverEvent":{"action":"show_text","value":"DialogueTrigger is a Minecraft scoreboard objective that which dialogue or event the player is currently interacting with."}},{"text":"]"}]
+tellraw @s[scores={TalkTime=0,DialogueTrigger=0}] ["",{"text":"3) "},{"text":"Player confirmed not in dialogue.","color":"green"},{"text":" ["},{"text":"Info","hoverEvent":{"action":"show_text","value":"Ensures the player is not currently in a map event or dialogue that may affect some functions such as portals or fly map functions."}},{"text":"]"}]
 
 tag @s[scores={TalkTime=0,DialogueTrigger=0}] add skip
 tag @s[scores={DialogueTrigger=1..}] add skip
@@ -49,8 +49,8 @@ tag @s remove skip
 
 
 #Tests if command blocks are on in the server.properties settings
-#tellraw @a[tag=infoverify] ["",{"text":"5) "},{"text":"Command blocks confirmed enabled.","color":"green"}]
-#tellraw @a[tag=infoverify] ["",{"text":"5) "},{"text":"Command Blocks confirmed enabled.","color":"green"},{"text":" ["},{"text":"Info","hoverEvent":{"action":"show_text","value":"Command blocks are Minecraft blocks that can execute events in Minecraft. This map is made possible through tens of thousands of commands!"}},{"text":"]"}]
+#tellraw @a[tag=infoverify] ["",{"text":"4) "},{"text":"Command blocks confirmed enabled.","color":"green"}]
+#tellraw @a[tag=infoverify] ["",{"text":"4) "},{"text":"Command Blocks confirmed enabled.","color":"green"},{"text":" ["},{"text":"Info","hoverEvent":{"action":"show_text","value":"Command blocks are Minecraft blocks that can execute events in Minecraft. This map is made possible through tens of thousands of commands!"}},{"text":"]"}]
 setblock -771 64 -242 minecraft:redstone_block
 
 
