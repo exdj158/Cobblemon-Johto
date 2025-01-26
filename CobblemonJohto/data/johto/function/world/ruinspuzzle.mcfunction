@@ -10,13 +10,13 @@
 
 #Aerodactyl Chamber
 scoreboard players set @e[x=-867,y=69,z=-212,dy=3,type=armor_stand] PuzzleTrack 0
-execute as @e[x=186,y=53,z=-135,dz=2,nbt={Item:{id:"minecraft:filled_map",tag:{map:267}}}] run scoreboard players add @e[x=-867,y=69,z=-212,dy=3,type=armor_stand] PuzzleTrack 1
-execute as @e[x=185,y=53,z=-135,dz=2,nbt={Item:{id:"minecraft:filled_map",tag:{map:271}}}] run scoreboard players add @e[x=-867,y=69,z=-212,dy=3,type=armor_stand] PuzzleTrack 1
-execute as @e[x=186,y=52,z=-135,dz=2,nbt={Item:{id:"minecraft:filled_map",tag:{map:268}}}] run scoreboard players add @e[x=-867,y=69,z=-212,dy=3,type=armor_stand] PuzzleTrack 1
-execute as @e[x=185,y=52,z=-135,dz=2,nbt={Item:{id:"minecraft:filled_map",tag:{map:272}}}] run scoreboard players add @e[x=-867,y=69,z=-212,dy=3,type=armor_stand] PuzzleTrack 1
-execute as @e[x=185,y=51,z=-135,dz=2,nbt={Item:{id:"minecraft:filled_map",tag:{map:273}}}] run scoreboard players add @e[x=-867,y=69,z=-212,dy=3,type=armor_stand] PuzzleTrack 1
-execute as @e[x=185,y=50,z=-135,dz=2,nbt={Item:{id:"minecraft:filled_map",tag:{map:274}}}] run scoreboard players add @e[x=-867,y=69,z=-212,dy=3,type=armor_stand] PuzzleTrack 1
-execute as @e[x=183,y=50,z=-135,dz=2,nbt={Item:{id:"minecraft:filled_map",tag:{map:282}}}] run scoreboard players add @e[x=-867,y=69,z=-212,dy=3,type=armor_stand] PuzzleTrack 1
+execute as @e[x=186,y=53,z=-135,dz=2,nbt={Item:{components:{"minecraft:map_id":267}}}] run scoreboard players add @e[x=-867,y=69,z=-212,dy=3,type=armor_stand] PuzzleTrack 1
+execute as @e[x=185,y=53,z=-135,dz=2,nbt={Item:{components:{"minecraft:map_id":271}}}] run scoreboard players add @e[x=-867,y=69,z=-212,dy=3,type=armor_stand] PuzzleTrack 1
+execute as @e[x=186,y=52,z=-135,dz=2,nbt={Item:{components:{"minecraft:map_id":268}}}] run scoreboard players add @e[x=-867,y=69,z=-212,dy=3,type=armor_stand] PuzzleTrack 1
+execute as @e[x=185,y=52,z=-135,dz=2,nbt={Item:{components:{"minecraft:map_id":272}}}] run scoreboard players add @e[x=-867,y=69,z=-212,dy=3,type=armor_stand] PuzzleTrack 1
+execute as @e[x=185,y=51,z=-135,dz=2,nbt={Item:{components:{"minecraft:map_id":273}}}] run scoreboard players add @e[x=-867,y=69,z=-212,dy=3,type=armor_stand] PuzzleTrack 1
+execute as @e[x=185,y=50,z=-135,dz=2,nbt={Item:{components:{"minecraft:map_id":274}}}] run scoreboard players add @e[x=-867,y=69,z=-212,dy=3,type=armor_stand] PuzzleTrack 1
+execute as @e[x=183,y=50,z=-135,dz=2,nbt={Item:{components:{"minecraft:map_id":282}}}] run scoreboard players add @e[x=-867,y=69,z=-212,dy=3,type=armor_stand] PuzzleTrack 1
 
 #Gives the player a visual queue of progress
 execute as @e[x=-867,y=69,z=-212,dy=3,type=armor_stand,scores={PuzzleTrack=0..}] run bossbar add johto:aerodactylruins "Ruins Puzzle"
@@ -51,10 +51,10 @@ execute as @e[x=-867,y=69,z=-212,dy=3,type=armor_stand,scores={PuzzleTrack=7..},
 
 
 scoreboard players set @e[x=-867,y=69,z=-210,dy=3,type=armor_stand] PuzzleTrack 0
-execute as @e[x=190,y=54,z=-96,dz=2,nbt={Item:{id:"minecraft:filled_map",tag:{map:261}}}] run scoreboard players add @e[x=-867,y=69,z=-210,dy=3,type=armor_stand] PuzzleTrack 1
-execute as @e[x=192,y=54,z=-96,dz=2,nbt={Item:{id:"minecraft:filled_map",tag:{map:253}}}] run scoreboard players add @e[x=-867,y=69,z=-210,dy=3,type=armor_stand] PuzzleTrack 1
-execute as @e[x=191,y=55,z=-96,dz=2,nbt={Item:{id:"minecraft:filled_map",tag:{map:256}}}] run scoreboard players add @e[x=-867,y=69,z=-210,dy=3,type=armor_stand] PuzzleTrack 1
-execute as @e[x=191,y=56,z=-96,dz=2,nbt={Item:{id:"minecraft:filled_map",tag:{map:255}}}] run scoreboard players add @e[x=-867,y=69,z=-210,dy=3,type=armor_stand] PuzzleTrack 1
+execute as @e[x=190,y=54,z=-96,dz=2,nbt={Item:{components:{"minecraft:map_id":261}}}] run scoreboard players add @e[x=-867,y=69,z=-210,dy=3,type=armor_stand] PuzzleTrack 1
+execute as @e[x=192,y=54,z=-96,dz=2,nbt={Item:{components:{"minecraft:map_id":253}}}] run scoreboard players add @e[x=-867,y=69,z=-210,dy=3,type=armor_stand] PuzzleTrack 1
+execute as @e[x=191,y=55,z=-96,dz=2,nbt={Item:{components:{"minecraft:map_id":256}}}] run scoreboard players add @e[x=-867,y=69,z=-210,dy=3,type=armor_stand] PuzzleTrack 1
+execute as @e[x=191,y=56,z=-96,dz=2,nbt={Item:{components:{"minecraft:map_id":255}}}] run scoreboard players add @e[x=-867,y=69,z=-210,dy=3,type=armor_stand] PuzzleTrack 1
 
 
 #Gives the player a visual queue of progress
@@ -85,16 +85,16 @@ execute as @e[x=-867,y=69,z=-210,dy=3,type=armor_stand,scores={PuzzleTrack=4..},
 #x=203,y=50,z=-135,dx=11,dy=5,dz=16
 
 scoreboard players set @e[x=-867,y=69,z=-214,dy=3,type=armor_stand] PuzzleTrack 0
-execute as @e[x=210,y=53,z=-120,dz=2,nbt={Item:{id:"minecraft:filled_map",tag:{map:37}}}] run scoreboard players add @e[x=-867,y=69,z=-214,dy=3,type=armor_stand] PuzzleTrack 1
-execute as @e[x=209,y=53,z=-120,dz=2,nbt={Item:{id:"minecraft:filled_map",tag:{map:41}}}] run scoreboard players add @e[x=-867,y=69,z=-214,dy=3,type=armor_stand] PuzzleTrack 1
-execute as @e[x=210,y=52,z=-120,dz=2,nbt={Item:{id:"minecraft:filled_map",tag:{map:38}}}] run scoreboard players add @e[x=-867,y=69,z=-214,dy=3,type=armor_stand] PuzzleTrack 1
-execute as @e[x=207,y=52,z=-120,dz=2,nbt={Item:{id:"minecraft:filled_map",tag:{map:50}}}] run scoreboard players add @e[x=-867,y=69,z=-214,dy=3,type=armor_stand] PuzzleTrack 1
-execute as @e[x=210,y=51,z=-120,dz=2,nbt={Item:{id:"minecraft:filled_map",tag:{map:39}}}] run scoreboard players add @e[x=-867,y=69,z=-214,dy=3,type=armor_stand] PuzzleTrack 1
-execute as @e[x=209,y=51,z=-120,dz=2,nbt={Item:{id:"minecraft:filled_map",tag:{map:43}}}] run scoreboard players add @e[x=-867,y=69,z=-214,dy=3,type=armor_stand] PuzzleTrack 1
-execute as @e[x=208,y=51,z=-120,dz=2,nbt={Item:{id:"minecraft:filled_map",tag:{map:47}}}] run scoreboard players add @e[x=-867,y=69,z=-214,dy=3,type=armor_stand] PuzzleTrack 1
-execute as @e[x=210,y=50,z=-120,dz=2,nbt={Item:{id:"minecraft:filled_map",tag:{map:40}}}] run scoreboard players add @e[x=-867,y=69,z=-214,dy=3,type=armor_stand] PuzzleTrack 1
-execute as @e[x=209,y=50,z=-120,dz=2,nbt={Item:{id:"minecraft:filled_map",tag:{map:44}}}] run scoreboard players add @e[x=-867,y=69,z=-214,dy=3,type=armor_stand] PuzzleTrack 1
-execute as @e[x=208,y=50,z=-120,dz=2,nbt={Item:{id:"minecraft:filled_map",tag:{map:48}}}] run scoreboard players add @e[x=-867,y=69,z=-214,dy=3,type=armor_stand] PuzzleTrack 1
+execute as @e[x=210,y=53,z=-120,dz=2,nbt={Item:{components:{"minecraft:map_id":37}}}] run scoreboard players add @e[x=-867,y=69,z=-214,dy=3,type=armor_stand] PuzzleTrack 1
+execute as @e[x=209,y=53,z=-120,dz=2,nbt={Item:{components:{"minecraft:map_id":41}}}] run scoreboard players add @e[x=-867,y=69,z=-214,dy=3,type=armor_stand] PuzzleTrack 1
+execute as @e[x=210,y=52,z=-120,dz=2,nbt={Item:{components:{"minecraft:map_id":38}}}] run scoreboard players add @e[x=-867,y=69,z=-214,dy=3,type=armor_stand] PuzzleTrack 1
+execute as @e[x=207,y=52,z=-120,dz=2,nbt={Item:{components:{"minecraft:map_id":50}}}] run scoreboard players add @e[x=-867,y=69,z=-214,dy=3,type=armor_stand] PuzzleTrack 1
+execute as @e[x=210,y=51,z=-120,dz=2,nbt={Item:{components:{"minecraft:map_id":39}}}] run scoreboard players add @e[x=-867,y=69,z=-214,dy=3,type=armor_stand] PuzzleTrack 1
+execute as @e[x=209,y=51,z=-120,dz=2,nbt={Item:{components:{"minecraft:map_id":43}}}] run scoreboard players add @e[x=-867,y=69,z=-214,dy=3,type=armor_stand] PuzzleTrack 1
+execute as @e[x=208,y=51,z=-120,dz=2,nbt={Item:{components:{"minecraft:map_id":47}}}] run scoreboard players add @e[x=-867,y=69,z=-214,dy=3,type=armor_stand] PuzzleTrack 1
+execute as @e[x=210,y=50,z=-120,dz=2,nbt={Item:{components:{"minecraft:map_id":40}}}] run scoreboard players add @e[x=-867,y=69,z=-214,dy=3,type=armor_stand] PuzzleTrack 1
+execute as @e[x=209,y=50,z=-120,dz=2,nbt={Item:{components:{"minecraft:map_id":44}}}] run scoreboard players add @e[x=-867,y=69,z=-214,dy=3,type=armor_stand] PuzzleTrack 1
+execute as @e[x=208,y=50,z=-120,dz=2,nbt={Item:{components:{"minecraft:map_id":48}}}] run scoreboard players add @e[x=-867,y=69,z=-214,dy=3,type=armor_stand] PuzzleTrack 1
 
 
 #Gives the player a visual queue of progress

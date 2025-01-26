@@ -211,6 +211,11 @@ execute as @a[scores={DialogueTrigger=49}] run playsound shiny hostile @s ~ ~ ~ 
 tag @a[scores={DialogueTrigger=49}] add Dialogue49
 scoreboard players set @a[scores={DialogueTrigger=1..},tag=Dialogue49] DialogueTrigger 0
 
+#-------------------------------------------------------------------------------------------------------------------------
+#Misc World Events 
+
+#Runs Ruins of Alph puzzle if player is in the ruins
+execute if entity @e[x=-867,y=69,z=-214,dy=3,dz=4,tag=!UnownSpawning,limit=1] if entity @a[x=174,y=36,z=-163,dx=42,dy=22,dz=85] run function johto:world/ruinspuzzle
 
 
 #-------------------------------------------------------------------------------------------------------------------------
