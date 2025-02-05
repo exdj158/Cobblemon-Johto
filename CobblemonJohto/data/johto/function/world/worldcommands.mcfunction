@@ -1,10 +1,8 @@
 #Runs cobblemon replacement blocks
 function johto:world/cobblemonblocks
 
-#Aligns and prevents NPCs from despawning, dying or knockback
-execute as @e[type=cobblemon:npc,nbt={PersistenceRequired:0b}] run effect give @s minecraft:resistance infinite 127 true
-execute as @e[type=cobblemon:npc,nbt={PersistenceRequired:0b}] run attribute @s minecraft:generic.knockback_resistance base set 100
-execute as @e[type=cobblemon:npc,nbt={PersistenceRequired:0b}] run data merge entity @s {Rotation:[180f,0.0f],PersistenceRequired:1b,Attributes:[{Name:"generic.knockback_resistance",Amount:1.0}]}
+#Aligns and gets rid of nametag
+execute as @e[type=cobblemon:npc,nbt={PersistenceRequired:0b}] run data merge entity @s {Rotation:[180f,0.0f],PersistenceRequired:1b,HideNPCNameTag:1b}
 
 #Runs custom clickable loots
 execute as @a[tag=ItemLoot] run function johto:triggers/itemlootgive

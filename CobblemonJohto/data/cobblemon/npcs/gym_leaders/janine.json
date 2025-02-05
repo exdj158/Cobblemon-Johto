@@ -1,6 +1,6 @@
 {
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:youngster",
+    "resourceIdentifier": "cobblemon:janine",
     "presets": ["cobblemon:battle_npc"],
     "variation": {
         "dirt": [
@@ -12,14 +12,7 @@
     },
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:youngstermikey_interaction"
-    },
-    "name": "Joey",
-    "party": {
-        "type": "simple",
-        "pokemon": [
-            "Rattata level=4"
-        ]
+        "dialogue": "cobblemon:janine_interaction"
     },
     "config": [
         {
@@ -27,7 +20,7 @@
             "displayName": "Cooldown",
             "description": "How long in ticks the NPC will be un-challengable from that player's last challenge.",
             "type": "NUMBER",
-            "defaultValue": "1200"
+            "defaultValue": "5"
         },
         {
             "variableName": "can_rechallenge",
@@ -41,33 +34,32 @@
             "displayName": "npc.variable.on_player_wins.name",
             "description": "npc.variable.on_player_wins.desc",
             "type": "TEXT",
-            "defaultValue": "q.run_command('opendialogue bugcatcherdon_end @p');"
-          },
-          {
-            "variableName": "challenge_rejected_text",
-            "displayName": "Reject Text",
-            "description": "The text that appears when the player rejects the challenge.",
-            "type": "TEXT",
-            "defaultValue": "That's too bad. Maybe next time!"
-          },
-          {
-            "variableName": "challenge_cooldown_text",
-            "displayName": "Cooling Down Text",
-            "description": "The text that is displayed while the cooldown is in effect.",
-            "type": "TEXT",
-            "defaultValue": "I'm sorry, but I'm not ready for another battle yet. Please come back later."
+            "defaultValue": "q.run_script('cobblemon:leader_defeated');"
           }
+    ],
+    "names": [
+        "Janine"
     ],
     "battleConfiguration": {
         "canChallenge": true
     },
     "autoHealParty": false,
+    "skill": 5,
+    "party": {
+        "type": "simple",
+        "pokemon": [
+            "Crobat level=47 moves=confuseray,screech,wingattack,supersonic",
+            "Weezing level=44 moves=sludgebomb,toxic,explosion,doublehit",
+            "Ariados level=47 moves=swagger,nightshade,poisonjab,pinmissile",
+            "Ariados level=47 moves=psychic,poisonjab,scaryface,pinmissile",
+            "Venomoth level=50 moves=doubleteam,psychic,sludgebomb,signalbeam"
+        ]
+    },
     "isMovable": false,  
     "isLeashable": false,
     "allowProjectileHits": false,
     "isInvulnerable": true, 
     "canDespawn": false,
-    "skill": 5,
     "ai": [
         {
             "type": "apply_presets",

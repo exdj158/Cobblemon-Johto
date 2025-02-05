@@ -1,6 +1,6 @@
-{
+{  
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:youngster",
+    "resourceIdentifier": "cobblemon:bugcatcher",
     "presets": ["cobblemon:battle_npc"],
     "variation": {
         "dirt": [
@@ -12,13 +12,14 @@
     },
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:youngstermikey_interaction"
+        "dialogue": "cobblemon:bugcatcherdon_interaction"
     },
-    "name": "Joey",
-    "party": {
+        "name": "Don",
+        "party": {
         "type": "simple",
         "pokemon": [
-            "Rattata level=4"
+            "Caterpie level=3",
+            "Caterpie level=3"
         ]
     },
     "config": [
@@ -27,7 +28,7 @@
             "displayName": "Cooldown",
             "description": "How long in ticks the NPC will be un-challengable from that player's last challenge.",
             "type": "NUMBER",
-            "defaultValue": "1200"
+            "defaultValue": "0"
         },
         {
             "variableName": "can_rechallenge",

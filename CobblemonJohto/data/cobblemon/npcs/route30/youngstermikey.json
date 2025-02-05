@@ -14,10 +14,11 @@
         "type": "dialogue",
         "dialogue": "cobblemon:youngstermikey_interaction"
     },
-    "name": "Joey",
+    "name": "Mikey",
     "party": {
         "type": "simple",
         "pokemon": [
+            "Pidgey level=4",
             "Rattata level=4"
         ]
     },
@@ -41,7 +42,7 @@
             "displayName": "npc.variable.on_player_wins.name",
             "description": "npc.variable.on_player_wins.desc",
             "type": "TEXT",
-            "defaultValue": "q.run_command('opendialogue bugcatcherdon_end @p');"
+            "defaultValue": "q.run_command('opendialogue youngstermikey_end @p');"
           },
           {
             "variableName": "challenge_rejected_text",
