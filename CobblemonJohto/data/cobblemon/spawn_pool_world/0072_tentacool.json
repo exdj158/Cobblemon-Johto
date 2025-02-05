@@ -316,6 +316,33 @@
                 "canSeeSky": true,
                 "minX": -2479, "maxX": -1620, "minZ": -969, "maxZ": -832
             }
+        },
+
+        {
+            "id": "tentacool-18",
+            "pokemon": "tentacool",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "10-10",
+            "weight": 90.0,
+            "condition": {
+                "minX": -898, "maxX": -747, "minZ": -560, "maxZ": -483,
+                "bobber": "cobblemon:poke_ball"
+                  }
+            },
+        {
+            "id": "tentacool-19",
+            "pokemon": "tentacool",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "20-20",
+            "weight": 90.0,
+            "condition": {
+                "minX": -898, "maxX": -747, "minZ": -560, "maxZ": -483,
+                "bobber": "cobblemon:great_ball"
+            }
         }
     ]
 }
