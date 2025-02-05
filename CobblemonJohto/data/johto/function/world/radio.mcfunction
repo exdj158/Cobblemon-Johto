@@ -466,13 +466,13 @@ scoreboard players set @s[x=-1207,y=0,z=-17,dx=292,dy=240,dz=111,scores={MusicCo
 
 
 #Elite Four Lance's Room
-playsound champbattle record @s[x=-1366,y=63,z=676,dx=110,dy=240,dz=74,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-scoreboard players set @s[x=-1366,y=63,z=676,dx=110,dy=240,dz=74,scores={MusicCooldown=0}] MusicCooldown 149
+#playsound champbattle record @s[x=-1366,y=63,z=676,dx=110,dy=240,dz=74,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+#scoreboard players set @s[x=-1366,y=63,z=676,dx=110,dy=240,dz=74,scores={MusicCooldown=0}] MusicCooldown 149
 
 
 #Elite Four
-playsound elitefour record @s[x=-1366,y=0,z=372,dx=110,dy=240,dz=302,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-scoreboard players set @s[x=-1366,y=0,z=372,dx=110,dy=240,dz=302,scores={MusicCooldown=0}] MusicCooldown 88
+playsound elitefour record @s[x=-1366,y=0,z=372,dx=110,dy=240,dz=378,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+scoreboard players set @s[x=-1366,y=0,z=372,dx=110,dy=240,dz=378,scores={MusicCooldown=0}] MusicCooldown 88
 
 
 #Fuchsia City
