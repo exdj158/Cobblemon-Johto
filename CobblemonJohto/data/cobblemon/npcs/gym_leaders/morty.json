@@ -34,7 +34,7 @@
             "displayName": "npc.variable.on_player_wins.name",
             "description": "npc.variable.on_player_wins.desc",
             "type": "TEXT",
-            "defaultValue": "q.run_script('cobblemon:leader_defeated');"
+            "defaultValue": "q.run_command('opendialogue mortygym_end @p');"
           }
     ],
     "names": [

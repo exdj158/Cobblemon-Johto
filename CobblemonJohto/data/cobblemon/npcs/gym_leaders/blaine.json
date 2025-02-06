@@ -34,7 +34,7 @@
             "displayName": "npc.variable.on_player_wins.name",
             "description": "npc.variable.on_player_wins.desc",
             "type": "TEXT",
-            "defaultValue": "q.run_script('cobblemon:leader_defeated');"
+            "defaultValue": "q.run_command('opendialogue blainegym_end @p');"
           }
     ],
     "names": [
@@ -52,40 +52,5 @@
             "Magmar level=54 moves=thunderpunch,confuseray,overheat,sunnyday",
             "Rapidash level=59 moves=quickattack,bounce,overheat,flareblitz"
         ]
-    },
-    "autoHealParty": false,
-    "isMovable": false,  
-    "isLeashable": false,
-    "allowProjectileHits": false,
-    "isInvulnerable": true, 
-    "canDespawn": false,
-    "skill": 5,
-    "ai": [
-        {
-            "type": "apply_presets",
-            "presets": []
-        },
-        {
-            "type": "add_tasks_to_activity",
-            "activity": "core",
-            "tasksByPriority": {
-                "0": [
-                    "look_at_target",
-                    "stay_afloat"
-                ]
-            }
-        },
-        {
-            "type": "add_tasks_to_activity",
-            "activity": "idle",
-            "tasksByPriority": {
-                "0": [
-                    "look_at_target"
-                ],
-                "1": [
-                    "look_at_entities"
-                ]
-            }
-        }
-    ]
+    }
 }
