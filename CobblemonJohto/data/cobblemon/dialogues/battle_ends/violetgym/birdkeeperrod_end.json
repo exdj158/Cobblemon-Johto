@@ -5,11 +5,11 @@
         ],
   "speakers": {
     "npc": {
-      "name": "Mikey",
+      "name": "Rod",
       "face": {
         "type": "artificial",
         "modelType": "npc",
-        "identifier": "cobblemon:youngster",
+        "identifier": "cobblemon:birdkeeper",
         "isLeftSide": true
       }
     }
@@ -18,7 +18,7 @@
     {
       "id": "greeting",
       "speaker": "npc",
-      "lines": ["Becoming a good Trainer is really tough. I'm going to battle other people to get better."],
+      "lines": ["Falkner's skills are for real! Don't get cocky!"],
             "input": {
                 "type": "option",
                 "vertical": false,

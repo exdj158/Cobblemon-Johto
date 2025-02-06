@@ -1,6 +1,6 @@
 {
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:youngster",
+    "resourceIdentifier": "cobblemon:fisherman",
     "presets": ["cobblemon:battle_npc"],
     "variation": {
         "dirt": [
@@ -12,14 +12,16 @@
     },
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:youngstermikey_interaction"
+        "dialogue": "cobblemon:fishermanjustin_interaction"
     },
-    "name": "Mikey",
+    "name": "Justin",
     "party": {
         "type": "simple",
         "pokemon": [
-            "Pidgey level=4",
-            "Rattata level=4"
+            "Magikarp level=5",
+            "Magikarp level=5",
+            "Magikarp level=15",
+            "Magikarp level=5"
         ]
     },
     "config": [
@@ -42,7 +44,7 @@
             "displayName": "npc.variable.on_player_wins.name",
             "description": "npc.variable.on_player_wins.desc",
             "type": "TEXT",
-            "defaultValue": "q.run_command('opendialogue youngstermikey_end @p');"
+            "defaultValue": "q.run_command('opendialogue fishermanjustin_end @p');"
           },
           {
             "variableName": "challenge_rejected_text",

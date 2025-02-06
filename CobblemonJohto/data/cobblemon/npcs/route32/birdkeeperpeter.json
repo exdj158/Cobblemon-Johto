@@ -1,6 +1,6 @@
 {
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:youngster",
+    "resourceIdentifier": "cobblemon:birdkeeper",
     "presets": ["cobblemon:battle_npc"],
     "variation": {
         "dirt": [
@@ -12,14 +12,15 @@
     },
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:youngstermikey_interaction"
+        "dialogue": "cobblemon:birdkeeperpeter_interaction"
     },
-    "name": "Mikey",
+    "name": "Peter",
     "party": {
         "type": "simple",
         "pokemon": [
-            "Pidgey level=4",
-            "Rattata level=4"
+            "Pidgey level=6",
+            "Pidgey level=6",
+            "Pidgey level=8"
         ]
     },
     "config": [
@@ -42,7 +43,7 @@
             "displayName": "npc.variable.on_player_wins.name",
             "description": "npc.variable.on_player_wins.desc",
             "type": "TEXT",
-            "defaultValue": "q.run_command('opendialogue youngstermikey_end @p');"
+            "defaultValue": "q.run_command('opendialogue birdkeeperpeter_end @p');"
           },
           {
             "variableName": "challenge_rejected_text",

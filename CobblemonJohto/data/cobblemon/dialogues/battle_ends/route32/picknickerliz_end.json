@@ -5,11 +5,11 @@
         ],
   "speakers": {
     "npc": {
-      "name": "Mikey",
+      "name": "Liz",
       "face": {
         "type": "artificial",
         "modelType": "npc",
-        "identifier": "cobblemon:youngster",
+        "identifier": "cobblemon:picknicker",
         "isLeftSide": true
       }
     }
@@ -18,7 +18,7 @@
     {
       "id": "greeting",
       "speaker": "npc",
-      "lines": ["Becoming a good Trainer is really tough. I'm going to battle other people to get better."],
+      "lines": ["Pfft. Before I could get serious, I lost!"],
             "input": {
                 "type": "option",
                 "vertical": false,

@@ -5,11 +5,11 @@
         ],
   "speakers": {
     "npc": {
-      "name": "Mikey",
+      "name": "Ralph",
       "face": {
         "type": "artificial",
         "modelType": "npc",
-        "identifier": "cobblemon:youngster",
+        "identifier": "cobblemon:fisherman",
         "isLeftSide": true
       }
     }
@@ -18,7 +18,7 @@
     {
       "id": "greeting",
       "speaker": "npc",
-      "lines": ["Becoming a good Trainer is really tough. I'm going to battle other people to get better."],
+      "lines": ["Fishing is a lifelong passion. Pokémon are lifelong friends!"],
             "input": {
                 "type": "option",
                 "vertical": false,

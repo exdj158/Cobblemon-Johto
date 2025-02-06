@@ -5,11 +5,11 @@
         ],
   "speakers": {
     "npc": {
-      "name": "Mikey",
+      "name": "Edmond",
       "face": {
         "type": "artificial",
         "modelType": "npc",
-        "identifier": "cobblemon:youngster",
+        "identifier": "cobblemon:sage",
         "isLeftSide": true
       }
     }
@@ -18,7 +18,7 @@
     {
       "id": "greeting",
       "speaker": "npc",
-      "lines": ["Becoming a good Trainer is really tough. I'm going to battle other people to get better."],
+      "lines": ["I tried to copy Bellsprout's gentle movements for battle... But I didn't train well enough."],
             "input": {
                 "type": "option",
                 "vertical": false,

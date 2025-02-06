@@ -5,7 +5,7 @@
         ],
   "speakers": {
     "npc": {
-      "name": "Mikey",
+      "name": "Albert",
       "face": {
         "type": "artificial",
         "modelType": "npc",
@@ -18,7 +18,7 @@
     {
       "id": "greeting",
       "speaker": "npc",
-      "lines": ["Becoming a good Trainer is really tough. I'm going to battle other people to get better."],
+      "lines": ["I'm going to try to be the best with my prized Pokémon. I'm not using the same tough Pokémon as everyone else."],
             "input": {
                 "type": "option",
                 "vertical": false,

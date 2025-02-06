@@ -27,7 +27,7 @@
             "displayName": "Cooldown",
             "description": "How long in ticks the NPC will be un-challengable from that player's last challenge.",
             "type": "NUMBER",
-            "defaultValue": "1200"
+            "defaultValue": "5"
         },
         {
             "variableName": "can_rechallenge",
@@ -41,7 +41,7 @@
             "displayName": "npc.variable.on_player_wins.name",
             "description": "npc.variable.on_player_wins.desc",
             "type": "TEXT",
-            "defaultValue": "q.run_command('opendialogue bugcatcherdon_end @p');"
+            "defaultValue": "q.run_command('opendialogue youngsterjoey_end @p');"
           },
           {
             "variableName": "challenge_rejected_text",

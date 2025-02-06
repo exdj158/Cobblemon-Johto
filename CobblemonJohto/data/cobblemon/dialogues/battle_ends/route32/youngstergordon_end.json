@@ -5,7 +5,7 @@
         ],
   "speakers": {
     "npc": {
-      "name": "Mikey",
+      "name": "Gordon",
       "face": {
         "type": "artificial",
         "modelType": "npc",
@@ -18,7 +18,7 @@
     {
       "id": "greeting",
       "speaker": "npc",
-      "lines": ["Becoming a good Trainer is really tough. I'm going to battle other people to get better."],
+      "lines": ["Each Pokémon has its own nature. They seem different every time I catch one. So there must be many natures!"],
             "input": {
                 "type": "option",
                 "vertical": false,

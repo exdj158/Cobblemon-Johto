@@ -7,6 +7,7 @@
         "q.run_command('execute as @p run function johto:tools/forceclick');",
         "q.dialogue.close();"
         ],
+    "names": ["Don"],
     "speakers": {
         "npc": {
             "name": {
@@ -23,10 +24,6 @@
             "lines": [
                 "Instead of a bug Pokémon, I found a Trainer!"
             ],
-            "interaction": [             
-                    "q.run_command('scoreboard players set @p BattleStart 2');",
-                    "q.run_command('execute as @p run function johto:tools/forceclick');"
-        ],
             "input": {
                 "type": "option",
                 "vertical": false,

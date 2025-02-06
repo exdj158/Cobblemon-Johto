@@ -1,15 +1,16 @@
 {   "initializationAction": [              
     "c.npc.set_chatting();",
     "q.run_command('scoreboard players set @p BattleEnd 1');",
-    "q.run_command('execute as @p run function johto:tools/forceclick');"
+    "q.run_command('execute as @p run function johto:tools/forceclick');",
+    "q.run_command('execute as @p run function johto:spawn/flashhm');"
         ],
   "speakers": {
     "npc": {
-      "name": "Mikey",
+      "name": "Li",
       "face": {
         "type": "artificial",
         "modelType": "npc",
-        "identifier": "cobblemon:youngster",
+        "identifier": "cobblemon:sage",
         "isLeftSide": true
       }
     }
@@ -18,7 +19,7 @@
     {
       "id": "greeting",
       "speaker": "npc",
-      "lines": ["Becoming a good Trainer is really tough. I'm going to battle other people to get better."],
+      "lines": ["You and your Pokémon should have no problem using this move. Take this Flash TM."],
             "input": {
                 "type": "option",
                 "vertical": false,

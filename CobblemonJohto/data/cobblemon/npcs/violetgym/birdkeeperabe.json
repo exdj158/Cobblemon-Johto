@@ -1,6 +1,6 @@
-{
+{  
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:youngster",
+    "resourceIdentifier": "cobblemon:birdkeeper",
     "presets": ["cobblemon:battle_npc"],
     "variation": {
         "dirt": [
@@ -12,14 +12,13 @@
     },
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:youngstermikey_interaction"
+        "dialogue": "cobblemon:birdkeeperabe_interaction"
     },
-    "name": "Mikey",
-    "party": {
+        "name": "Abe",
+        "party": {
         "type": "simple",
         "pokemon": [
-            "Pidgey level=4",
-            "Rattata level=4"
+            "Spearow level=9"
         ]
     },
     "config": [
@@ -28,7 +27,7 @@
             "displayName": "Cooldown",
             "description": "How long in ticks the NPC will be un-challengable from that player's last challenge.",
             "type": "NUMBER",
-            "defaultValue": "5"
+            "defaultValue": "0"
         },
         {
             "variableName": "can_rechallenge",
@@ -42,7 +41,7 @@
             "displayName": "npc.variable.on_player_wins.name",
             "description": "npc.variable.on_player_wins.desc",
             "type": "TEXT",
-            "defaultValue": "q.run_command('opendialogue youngstermikey_end @p');"
+            "defaultValue": "q.run_command('opendialogue birdkeeperabe_end @p');"
           },
           {
             "variableName": "challenge_rejected_text",

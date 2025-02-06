@@ -28,7 +28,7 @@
             "displayName": "Cooldown",
             "description": "How long in ticks the NPC will be un-challengable from that player's last challenge.",
             "type": "NUMBER",
-            "defaultValue": "0"
+            "defaultValue": "5"
         },
         {
             "variableName": "can_rechallenge",

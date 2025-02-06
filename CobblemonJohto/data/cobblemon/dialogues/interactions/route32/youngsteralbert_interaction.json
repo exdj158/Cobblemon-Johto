@@ -7,7 +7,7 @@
         "q.run_command('execute as @p run function johto:tools/forceclick');",
         "q.dialogue.close();"
         ],
-    "names": ["Mikey"],
+    "names": ["Albert"],
     "speakers": {
         "npc": {
             "name": {
@@ -22,7 +22,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "You're a Pokémon Trainer, right? Then you have to battle!"
+                "I haven't seen you around before. So you think you're pretty tough?"
             ],
             "input": {
                 "type": "option",

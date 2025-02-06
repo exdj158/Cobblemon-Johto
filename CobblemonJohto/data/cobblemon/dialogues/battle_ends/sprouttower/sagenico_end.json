@@ -5,11 +5,11 @@
         ],
   "speakers": {
     "npc": {
-      "name": "Mikey",
+      "name": "Nico",
       "face": {
         "type": "artificial",
         "modelType": "npc",
-        "identifier": "cobblemon:youngster",
+        "identifier": "cobblemon:sage",
         "isLeftSide": true
       }
     }
@@ -18,7 +18,7 @@
     {
       "id": "greeting",
       "speaker": "npc",
-      "lines": ["Becoming a good Trainer is really tough. I'm going to battle other people to get better."],
+      "lines": ["The flexible pillar protects the tower, even from earthquakes."],
             "input": {
                 "type": "option",
                 "vertical": false,

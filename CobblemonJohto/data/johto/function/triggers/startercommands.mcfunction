@@ -36,7 +36,6 @@ tellraw @s ["",{"text":"Starting adventure...","italic":true,"color":"gray"}]
 give @s cobblemon:poke_ball 10
 function johto:spawn/radio4
 function johto:spawn/flyhm
-function johto:spawn/flashhm
 function johto:spawn/townmap
 give @s cobblemon:potion 10
 

@@ -1,6 +1,6 @@
-{
+{  
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:youngster",
+    "resourceIdentifier": "cobblemon:psychic",
     "presets": ["cobblemon:battle_npc"],
     "variation": {
         "dirt": [
@@ -12,14 +12,13 @@
     },
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:youngstermikey_interaction"
+        "dialogue": "cobblemon:psychicnathan_interaction"
     },
-    "name": "Mikey",
-    "party": {
+        "name": "Nathan",
+        "party": {
         "type": "simple",
         "pokemon": [
-            "Pidgey level=4",
-            "Rattata level=4"
+            "Girafarig level=26"
         ]
     },
     "config": [
@@ -42,7 +41,7 @@
             "displayName": "npc.variable.on_player_wins.name",
             "description": "npc.variable.on_player_wins.desc",
             "type": "TEXT",
-            "defaultValue": "q.run_command('opendialogue youngstermikey_end @p');"
+            "defaultValue": "q.run_command('opendialogue psychicnathan_end @p');"
           },
           {
             "variableName": "challenge_rejected_text",
