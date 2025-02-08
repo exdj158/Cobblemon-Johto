@@ -5,11 +5,11 @@
         ],
   "speakers": {
     "npc": {
-      "name": "Eli",
+      "name": "Allan",
       "face": {
         "type": "artificial",
         "modelType": "npc",
-        "identifier": "cobblemon:psychic",
+        "identifier": "cobblemon:pokefan",
         "isLeftSide": true
       }
     }
@@ -18,7 +18,7 @@
     {
       "id": "greeting",
       "speaker": "npc",
-      "lines": ["With your skills, you'll do well at the Pokémon League. That's what my premonition says."],
+      "lines": ["My Teddiursa!"],
             "input": {
                 "type": "option",
                 "vertical": false,

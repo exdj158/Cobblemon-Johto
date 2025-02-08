@@ -5,11 +5,11 @@
         ],
   "speakers": {
     "npc": {
-      "name": "Eli",
+      "name": "Eddie",
       "face": {
         "type": "artificial",
         "modelType": "npc",
-        "identifier": "cobblemon:psychic",
+        "identifier": "cobblemon:sailor",
         "isLeftSide": true
       }
     }
@@ -18,7 +18,7 @@
     {
       "id": "greeting",
       "speaker": "npc",
-      "lines": ["With your skills, you'll do well at the Pokémon League. That's what my premonition says."],
+      "lines": ["Hey, let's go for a swim! Sailors have to be able to swim!"],
             "input": {
                 "type": "option",
                 "vertical": false,

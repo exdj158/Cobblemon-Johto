@@ -5,11 +5,11 @@
         ],
   "speakers": {
     "npc": {
-      "name": "Eli",
+      "name": "Joy",
       "face": {
         "type": "artificial",
         "modelType": "npc",
-        "identifier": "cobblemon:psychic",
+        "identifier": "cobblemon:swimmerf",
         "isLeftSide": true
       }
     }
@@ -18,7 +18,7 @@
     {
       "id": "greeting",
       "speaker": "npc",
-      "lines": ["With your skills, you'll do well at the Pokémon League. That's what my premonition says."],
+      "lines": ["It seems an intruder has appeared in this Gym... I don't like that idea..."],
             "input": {
                 "type": "option",
                 "vertical": false,

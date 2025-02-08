@@ -5,11 +5,11 @@
         ],
   "speakers": {
     "npc": {
-      "name": "Eli",
+      "name": "Milton",
       "face": {
         "type": "artificial",
         "modelType": "npc",
-        "identifier": "cobblemon:psychic",
+        "identifier": "cobblemon:gentleman",
         "isLeftSide": true
       }
     }
@@ -18,7 +18,7 @@
     {
       "id": "greeting",
       "speaker": "npc",
-      "lines": ["With your skills, you'll do well at the Pokémon League. That's what my premonition says."],
+      "lines": ["Stopping in the road for a battle isn't rude. No matter what, I am a Gentleman first!"],
             "input": {
                 "type": "option",
                 "vertical": false,

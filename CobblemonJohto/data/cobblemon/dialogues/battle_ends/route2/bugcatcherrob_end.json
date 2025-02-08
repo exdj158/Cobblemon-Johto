@@ -5,11 +5,11 @@
         ],
   "speakers": {
     "npc": {
-      "name": "Eli",
+      "name": "Rob",
       "face": {
         "type": "artificial",
         "modelType": "npc",
-        "identifier": "cobblemon:psychic",
+        "identifier": "cobblemon:bugcatcher",
         "isLeftSide": true
       }
     }
@@ -18,7 +18,7 @@
     {
       "id": "greeting",
       "speaker": "npc",
-      "lines": ["With your skills, you'll do well at the Pokémon League. That's what my premonition says."],
+      "lines": ["I'm going to look for stronger bug Pokémon."],
             "input": {
                 "type": "option",
                 "vertical": false,

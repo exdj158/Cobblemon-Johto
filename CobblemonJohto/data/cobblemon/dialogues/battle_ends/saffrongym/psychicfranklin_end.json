@@ -5,7 +5,7 @@
         ],
   "speakers": {
     "npc": {
-      "name": "Eli",
+      "name": "Franklin",
       "face": {
         "type": "artificial",
         "modelType": "npc",
@@ -18,7 +18,7 @@
     {
       "id": "greeting",
       "speaker": "npc",
-      "lines": ["With your skills, you'll do well at the Pokémon League. That's what my premonition says."],
+      "lines": ["You made your mind stronger, not just your abilities."],
             "input": {
                 "type": "option",
                 "vertical": false,
