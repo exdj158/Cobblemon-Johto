@@ -1,6 +1,6 @@
 {  
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:rocketgrunt",
+    "resourceIdentifier": "cobblemon:sage",
     "presets": ["cobblemon:battle_npc"],
     "variation": {
         "dirt": [
@@ -12,16 +12,14 @@
     },
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:rocketgrunt22_interaction"
+        "dialogue": "cobblemon:sagegaku_interaction"
     },
-        "name": "Rocket Grunt",
+        "name": "Gaku",
         "party": {
         "type": "simple",
         "pokemon": [
-            "Ekans level=21",
-            "Ekans level=21",
-            "Oddish level=23",
-            "Gloom level=24"
+            "Noctowl level=32",
+            "Flareon level=32"
         ]
     },
     "config": [
@@ -44,7 +42,7 @@
             "displayName": "npc.variable.on_player_wins.name",
             "description": "npc.variable.on_player_wins.desc",
             "type": "TEXT",
-            "defaultValue": "q.run_command('opendialogue rocketgrunt22_end @p');"
+            "defaultValue": "q.run_command('opendialogue sagegaku_end @p');"
           },
           {
             "variableName": "challenge_rejected_text",

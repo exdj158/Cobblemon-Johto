@@ -1,6 +1,6 @@
 {  
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:rocketgrunt",
+    "resourceIdentifier": "cobblemon:birdkeeper",
     "presets": ["cobblemon:battle_npc"],
     "variation": {
         "dirt": [
@@ -12,16 +12,15 @@
     },
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:rocketgrunt22_interaction"
+        "dialogue": "cobblemon:birdkeepertoby_interaction"
     },
-        "name": "Rocket Grunt",
+        "name": "Toby",
         "party": {
         "type": "simple",
         "pokemon": [
-            "Ekans level=21",
-            "Ekans level=21",
-            "Oddish level=23",
-            "Gloom level=24"
+            "Doduo level=16",
+            "Doduo level=17",
+            "Doduo level=18"
         ]
     },
     "config": [
@@ -44,7 +43,7 @@
             "displayName": "npc.variable.on_player_wins.name",
             "description": "npc.variable.on_player_wins.desc",
             "type": "TEXT",
-            "defaultValue": "q.run_command('opendialogue rocketgrunt22_end @p');"
+            "defaultValue": "q.run_command('opendialogue birdkeepertoby_end @p');"
           },
           {
             "variableName": "challenge_rejected_text",

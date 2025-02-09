@@ -1,6 +1,6 @@
 {  
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:rocketgrunt",
+    "resourceIdentifier": "cobblemon:firebreather",
     "presets": ["cobblemon:battle_npc"],
     "variation": {
         "dirt": [
@@ -12,16 +12,14 @@
     },
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:rocketgrunt22_interaction"
+        "dialogue": "cobblemon:firebreatherwalt_interaction"
     },
-        "name": "Rocket Grunt",
+        "name": "Walt",
         "party": {
         "type": "simple",
         "pokemon": [
-            "Ekans level=21",
-            "Ekans level=21",
-            "Oddish level=23",
-            "Gloom level=24"
+            "Magmar level=11",
+            "Magmar level=16"
         ]
     },
     "config": [
@@ -44,7 +42,7 @@
             "displayName": "npc.variable.on_player_wins.name",
             "description": "npc.variable.on_player_wins.desc",
             "type": "TEXT",
-            "defaultValue": "q.run_command('opendialogue rocketgrunt22_end @p');"
+            "defaultValue": "q.run_command('opendialogue firebreatherwalt_end @p');"
           },
           {
             "variableName": "challenge_rejected_text",

@@ -1,6 +1,6 @@
 {  
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:rocketgrunt",
+    "resourceIdentifier": "cobblemon:medium",
     "presets": ["cobblemon:battle_npc"],
     "variation": {
         "dirt": [
@@ -12,16 +12,15 @@
     },
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:rocketgrunt22_interaction"
+        "dialogue": "cobblemon:mediumartha_interaction"
     },
-        "name": "Rocket Grunt",
+        "name": "Martha",
         "party": {
         "type": "simple",
         "pokemon": [
-            "Ekans level=21",
-            "Ekans level=21",
-            "Oddish level=23",
-            "Gloom level=24"
+            "Gastly level=18",
+            "Haunter level=20",
+            "Gastly level=20"
         ]
     },
     "config": [
@@ -30,7 +29,7 @@
             "displayName": "Cooldown",
             "description": "How long in ticks the NPC will be un-challengable from that player's last challenge.",
             "type": "NUMBER",
-            "defaultValue": "5"
+            "defaultValue": "0"
         },
         {
             "variableName": "can_rechallenge",
@@ -44,7 +43,7 @@
             "displayName": "npc.variable.on_player_wins.name",
             "description": "npc.variable.on_player_wins.desc",
             "type": "TEXT",
-            "defaultValue": "q.run_command('opendialogue rocketgrunt22_end @p');"
+            "defaultValue": "q.run_command('opendialogue mediumartha_end @p');"
           },
           {
             "variableName": "challenge_rejected_text",

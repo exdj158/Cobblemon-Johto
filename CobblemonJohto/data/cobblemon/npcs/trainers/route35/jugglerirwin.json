@@ -1,6 +1,6 @@
 {  
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:rocketgrunt",
+    "resourceIdentifier": "cobblemon:juggler",
     "presets": ["cobblemon:battle_npc"],
     "variation": {
         "dirt": [
@@ -12,16 +12,16 @@
     },
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:rocketgrunt22_interaction"
+        "dialogue": "cobblemon:jugglerirwin_interaction"
     },
-        "name": "Rocket Grunt",
+        "name": "Irwin",
         "party": {
         "type": "simple",
         "pokemon": [
-            "Ekans level=21",
-            "Ekans level=21",
-            "Oddish level=23",
-            "Gloom level=24"
+            "Voltorb level=2",
+            "Voltorb level=6",
+            "Voltorb level=10",
+            "Voltorb level=14"
         ]
     },
     "config": [
@@ -44,7 +44,7 @@
             "displayName": "npc.variable.on_player_wins.name",
             "description": "npc.variable.on_player_wins.desc",
             "type": "TEXT",
-            "defaultValue": "q.run_command('opendialogue rocketgrunt22_end @p');"
+            "defaultValue": "q.run_command('opendialogue jugglerirwin_end @p');"
           },
           {
             "variableName": "challenge_rejected_text",

@@ -1,0 +1,31 @@
+{
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:slowpoke",  
+    "names": [
+      "Slowpoke"
+    ],
+    "config": [
+  
+  ],
+    "interaction": {
+      "type": "dialogue",
+      "dialogue": "cobblemon:doesnttalk"
+    },
+    "canDespawn": false,
+    "battleConfiguration": {
+      "canChallenge": false
+    },
+    
+    "isMovable": false,  
+    "isLeashable": false,
+    "allowProjectileHits": false,
+    "isInvulnerable": true, 
+    "skill": 5,
+    "party": {
+      "type": "simple",
+      "pokemon": [
+        "Slowpoke level=5"
+      ]
+    } 
+  
+  }
