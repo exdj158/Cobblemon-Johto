@@ -1,6 +1,6 @@
 {  
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:acetrainerf",
+    "resourceIdentifier": "cobblemon:acetrainerm",
     "presets": ["cobblemon:battle_npc"],
     "variation": {
         "dirt": [

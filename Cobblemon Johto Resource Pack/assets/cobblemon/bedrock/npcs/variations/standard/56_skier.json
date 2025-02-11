@@ -1,12 +1,12 @@
 {
-  "name": "cobblemon:siker",
+  "name": "cobblemon:skier",
   "order": 1,
   "variations": [
     {
       "aspects": [],
       "poser": "cobblemon:standard",
       "model": "cobblemon:trainer.geo",
-      "texture": "cobblemon:textures/npcs/standard/siker.png",
+      "texture": "cobblemon:textures/npcs/standard/skier.png",
       "layers": []
     },
     {

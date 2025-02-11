@@ -1,6 +1,6 @@
 {  
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:swimmerm",
+    "resourceIdentifier": "cobblemon:sailor",
     "presets": ["cobblemon:battle_npc"],
     "variation": {
         "dirt": [
@@ -12,14 +12,13 @@
     },
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:swimmersimon_interaction"
+        "dialogue": "cobblemon:sailorterrell_interaction"
     },
-        "name": "Simon",
+        "name": "Terrell",
         "party": {
         "type": "simple",
         "pokemon": [
-            "Tentacool level=20",
-            "Tentacool level=20"
+            "Poliwhirl level=20"
         ]
     },
     "config": [
@@ -42,7 +41,7 @@
             "displayName": "npc.variable.on_player_wins.name",
             "description": "npc.variable.on_player_wins.desc",
             "type": "TEXT",
-            "defaultValue": "q.run_command('opendialogue swimmersimon_end @p');"
+            "defaultValue": "q.run_command('opendialogue sailorterrell_end @p');"
           },
           {
             "variableName": "challenge_rejected_text",
@@ -79,9 +78,7 @@
             "activity": "core",
             "tasksByPriority": {
                 "0": [
-                    "look_at_target"
-                ],
-                "2": [
+                    "look_at_target",
                     "stay_afloat"
                 ]
             }
@@ -95,9 +92,6 @@
                 ],
                 "1": [
                     "look_at_entities"
-                ],
-                "2": [
-                    "stay_afloat"
                 ]
             }
         }

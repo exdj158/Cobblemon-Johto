@@ -1,6 +1,6 @@
 {  
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:scientist",
+    "resourceIdentifier": "cobblemon:scientistm",
     "presets": ["cobblemon:battle_npc"],
     "variation": {
         "dirt": [
