@@ -14,7 +14,7 @@
           "condition": {
               "canSeeSky": true,
               "neededNearbyBlocks": [
-                  "minecraft:grass"
+                  "minecraft:short_grass"
               ],
               "minX": -1088, "maxX": -1015, "minZ": -528, "maxZ": -482
           }
@@ -31,7 +31,7 @@
           "condition": {
               "canSeeSky": true,
               "neededNearbyBlocks": [
-                  "minecraft:grass"
+                  "minecraft:short_grass"
               ],
               "minX": -1321, "maxX": -1216, "minZ": -482, "maxZ": -284
           }

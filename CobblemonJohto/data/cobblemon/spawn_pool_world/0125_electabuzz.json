@@ -14,7 +14,7 @@
           "condition": {
               "canSeeSky": true,
               "neededNearbyBlocks": [
-                  "minecraft:grass"
+                  "minecraft:short_grass"
               ],
               "timeRange": "dawn,dusk,night",
               "minX": -3319, "maxX": -3300, "minZ": 588, "maxZ": 626

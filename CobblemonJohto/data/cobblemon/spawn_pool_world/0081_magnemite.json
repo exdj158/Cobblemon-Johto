@@ -14,7 +14,7 @@
           "condition": {
               "canSeeSky": true,
               "neededNearbyBlocks": [
-                  "minecraft:grass"
+                  "minecraft:short_grass"
               ],
               "minX": 489, "maxX": 703, "minZ": 178, "maxZ": 292
           }
@@ -31,7 +31,7 @@
           "condition": {
               "canSeeSky": true,
               "neededNearbyBlocks": [
-                  "minecraft:grass"
+                  "minecraft:short_grass"
               ],
               "minX": 704, "maxX": 822, "minZ": 57, "maxZ": 296
           }
@@ -47,7 +47,7 @@
           "weight": 10,
           "condition": {
               "neededNearbyBlocks": [
-                  "minecraft:grass"
+                  "minecraft:short_grass"
               ],
               "minX": -2816, "maxX": -2686, "minZ": 52, "maxZ": 235
           }
@@ -63,7 +63,7 @@
           "weight": 20,
           "condition": {
               "neededNearbyBlocks": [
-                  "minecraft:grass"
+                  "minecraft:short_grass"
               ],
               "minX": -3176, "maxX": -2921, "minZ": -122, "maxZ": -5
           }

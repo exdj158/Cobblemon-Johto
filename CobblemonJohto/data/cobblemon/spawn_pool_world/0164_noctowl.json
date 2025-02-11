@@ -14,7 +14,7 @@
           "condition": {
               "canSeeSky": true,
               "neededNearbyBlocks": [
-                  "minecraft:grass"
+                  "minecraft:short_grass"
               ],
               "timeRange": "night",
               "minX": 1406, "maxX": 1436, "minZ": -373, "maxZ": -349
@@ -32,7 +32,7 @@
           "condition": {
               "canSeeSky": true,
               "neededNearbyBlocks": [
-                  "minecraft:grass"
+                  "minecraft:short_grass"
               ],
               "timeRange": "night",
               "minX": -224, "maxX": -79, "minZ": 303, "maxZ": 523
@@ -50,7 +50,7 @@
           "condition": {
               "canSeeSky": true,
               "neededNearbyBlocks": [
-                  "minecraft:grass"
+                  "minecraft:short_grass"
               ],
               "timeRange": "night",
               "minX": -1700, "maxX": -1658, "minZ": 231, "maxZ": 265
@@ -67,7 +67,7 @@
           "condition": {
               "canSeeSky": true,
               "neededNearbyBlocks": [
-                  "minecraft:grass"
+                  "minecraft:short_grass"
               ],
               "timeRange": "night",
               "minX": -1682, "maxX": -1639, "minZ": 484, "maxZ": 530
@@ -84,7 +84,7 @@
           "weight": 15,
           "condition": {
               "neededNearbyBlocks": [
-                  "minecraft:grass"
+                  "minecraft:short_grass"
               ],
               "timeRange": "night",
               "minX": -1710, "maxX": -1571, "minZ": 282, "maxZ": 448
@@ -101,7 +101,7 @@
           "weight": 40,
           "condition": {
               "neededNearbyBlocks": [
-                  "minecraft:grass"
+                  "minecraft:short_grass"
               ],
               "timeRange": "night",
               "minX": -3103, "maxX": -3034, "minZ": 293, "maxZ": 344
@@ -118,7 +118,7 @@
           "weight": 20,
           "condition": {
               "neededNearbyBlocks": [
-                  "minecraft:grass"
+                  "minecraft:short_grass"
               ],
               "timeRange": "night",
               "minX": -3290, "maxX": -3198, "minZ": -354, "maxZ": -258
@@ -135,7 +135,7 @@
           "weight": 20,
           "condition": {
               "neededNearbyBlocks": [
-                  "minecraft:grass"
+                  "minecraft:short_grass"
               ],
               "timeRange": "night",
               "minX": -2931, "maxX": -2899, "minZ": -427, "maxZ": -389
@@ -152,7 +152,7 @@
           "weight": 20,
           "condition": {
               "neededNearbyBlocks": [
-                  "minecraft:grass"
+                  "minecraft:short_grass"
               ],
               "timeRange": "night",
               "minX": -2847, "maxX": -2610, "minZ": -565, "maxZ": -533

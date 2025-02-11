@@ -41,7 +41,7 @@
                 "weight": 5,
                 "condition": {
                   "neededNearbyBlocks": [
-                      "minecraft:grass"
+                      "minecraft:short_grass"
                   ],
                     "minX": -3103, "maxX": -3034, "minZ": 293, "maxZ": 344
                 }

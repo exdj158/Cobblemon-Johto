@@ -51,7 +51,7 @@
             "weight": 5,
             "condition": {
                 "neededNearbyBlocks": [
-                    "minecraft:grass"
+                    "minecraft:short_grass"
                 ],
                 "timeRange": "night",
                 "minX": -3316,
@@ -100,7 +100,7 @@
             "weight": 5,
             "condition": {
               "neededNearbyBlocks": [
-                  "minecraft:grass"
+                  "minecraft:short_grass"
               ],
                 "minX": -3316, "maxX": -2902, "minZ": 683, "maxZ": 781
             }

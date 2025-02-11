@@ -14,7 +14,7 @@
             "condition": {
                 "canSeeSky": true,
                 "neededNearbyBlocks": [
-                    "minecraft:grass"
+                    "minecraft:short_grass"
                 ],
                 "timeRange": "dawn,dusk",
                 "minX": -263, "maxX": -137, "minZ": -458, "maxZ": -188
@@ -31,7 +31,7 @@
             "condition": {
                 "canSeeSky": true,
                 "neededNearbyBlocks": [
-                    "minecraft:grass"
+                    "minecraft:short_grass"
                 ],
                 "timeRange": "day",
                 "minX": -263, "maxX": -137, "minZ": -458, "maxZ": -188
@@ -49,7 +49,7 @@
             "condition": {
                 "canSeeSky": true,
                 "neededNearbyBlocks": [
-                    "minecraft:grass"
+                    "minecraft:short_grass"
                 ],
                 "timeRange": "dawn,dusk,day",
                 "minX": -245, "maxX": -63, "minZ": -161, "maxZ": -117
@@ -96,7 +96,7 @@
             "condition": {
                 "canSeeSky": true,
                 "neededNearbyBlocks": [
-                    "minecraft:grass",
+                    "minecraft:short_grass",
                     "minecraft:tall_grass"
                 ],
                 "timeRange": "dawn,dusk",
@@ -114,7 +114,7 @@
             "condition": {
                 "canSeeSky": true,
                 "neededNearbyBlocks": [
-                    "minecraft:grass",
+                    "minecraft:short_grass",
                     "minecraft:tall_grass"
                 ],
                 "timeRange": "day",
@@ -132,7 +132,7 @@
             "weight": 40,
             "condition": {
                 "neededNearbyBlocks": [
-                    "minecraft:grass",
+                    "minecraft:short_grass",
                     "minecraft:tall_grass"
                 ],
                 "timeRange": "dawn,dusk,day",
