@@ -1,7 +1,7 @@
 {  
     "hitbox": "player",
     "resourceIdentifier": "cobblemon:lass2",
-    "presets": ["cobblemon:battle_npc"],
+    "presets": [],
     "variation": {
         "dirt": [
             "clean",

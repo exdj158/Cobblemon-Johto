@@ -1,7 +1,7 @@
 {  
     "hitbox": "player",
     "resourceIdentifier": "cobblemon:swimmerf",
-    "presets": ["cobblemon:battle_npc"],
+    "presets": [],
     "variation": {
         "dirt": [
             "clean",

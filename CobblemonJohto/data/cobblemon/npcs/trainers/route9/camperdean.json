@@ -1,7 +1,7 @@
 {  
     "hitbox": "player",
     "resourceIdentifier": "cobblemon:camper",
-    "presets": ["cobblemon:battle_npc"],
+    "presets": [],
     "variation": {
         "dirt": [
             "clean",

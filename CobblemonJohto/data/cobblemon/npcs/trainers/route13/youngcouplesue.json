@@ -1,7 +1,7 @@
 {  
     "hitbox": "player",
     "resourceIdentifier": "cobblemon:youngcouplef",
-    "presets": ["cobblemon:battle_npc"],
+    "presets": [],
     "variation": {
         "dirt": [
             "clean",

@@ -1,7 +1,7 @@
 {  
     "hitbox": "player",
     "resourceIdentifier": "cobblemon:burglar",
-    "presets": ["cobblemon:battle_npc"],
+    "presets": [],
     "variation": {
         "dirt": [
             "clean",

@@ -1,7 +1,7 @@
 {
     "hitbox": "player",
     "resourceIdentifier": "cobblemon:red",
-    "presets": ["cobblemon:battle_npc"],
+    "presets": [],
     "variation": {
         "dirt": [
             "clean",
