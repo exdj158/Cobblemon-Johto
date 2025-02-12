@@ -2,20 +2,20 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "Rocket Headquarters"
+            "text": "Setting Sail"
         },
         "description": {
-            "text": "Defeat Team Rocket in Mahogany Town"
+            "text": "Board the S.S. Aqua for Kanto"
         },
         "icon": {
-            "item": "pixelmon:rage_candy_bar"
+            "item": "minecraft:oak_boat"
         },
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": true
       },
-      "parent": "johto:rocket2",
+      "parent": "johto:adventurer",
       "criteria": {
           "example": {
               "trigger": "minecraft:impossible"

@@ -2,20 +2,20 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "Powered On"
+            "text": "The Eon Duo"
         },
         "description": {
-            "text": "Return power to the Kanto Power Plant"
+            "text": "Learn about Latios and Latias"
         },
         "icon": {
-            "item": "minecraft:music_disc_mall"
+            "item": "cobblemon:dragon_gem"
         },
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": true
       },
-      "parent": "johto:event4",
+      "parent": "johto:event9",
       "criteria": {
           "example": {
               "trigger": "minecraft:impossible"

@@ -2,20 +2,20 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "Giovanni's Past"
+            "text": "The Red Gyarados"
         },
         "description": {
-            "text": "Go with Celebi back in time."
+            "text": "Encounter the Red Gyarados at Lake of Rage"
         },
         "icon": {
-            "item": "pixelmon:ilex_shrine"
+            "item": "minecraft:tropical_fish_bucket"
         },
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": true
       },
-      "parent": "johto:rocket4",
+      "parent": "johto:lighthousepokemon",
       "criteria": {
           "example": {
               "trigger": "minecraft:impossible"

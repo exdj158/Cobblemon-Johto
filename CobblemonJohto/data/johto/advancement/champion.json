@@ -2,20 +2,20 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "The Weird Tree"
+            "text": "A New Champion"
         },
         "description": {
-            "text": "Clear the Sudowoodo blocking your path"
+            "text": "Beat the Elite Four"
         },
         "icon": {
-            "item": "pixelmon:tree"
+            "item": "minecraft:gold_chestplate"
         },
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
-        "hidden": true
+        "hidden": false
       },
-      "parent": "johto:rocket1",
+      "parent": "johto:badge8",
       "criteria": {
           "example": {
               "trigger": "minecraft:impossible"

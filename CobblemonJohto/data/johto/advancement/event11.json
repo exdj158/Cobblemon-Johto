@@ -2,20 +2,20 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "The Silent Champion"
+            "text": "Double the Badges"
         },
         "description": {
-            "text": "Defeat Red on Mt. Silver"
+            "text": "Win all the badges of Kanto and Johto"
         },
         "icon": {
-            "item": "pixelmon:cherish_ball"
+            "item": "cobblemon:display_case"
         },
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": true
       },
-      "parent": "johto:event11",
+      "parent": "johto:event4",
       "criteria": {
           "example": {
               "trigger": "minecraft:impossible"

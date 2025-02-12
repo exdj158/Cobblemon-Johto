@@ -2,20 +2,20 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "The Eon Duo"
+            "text": "Beasts Awoken"
         },
         "description": {
-            "text": "Learn about Latios and Latias"
+            "text": "Discover the Legendary Beast statues"
         },
         "icon": {
-            "item": "pixelmon:soul_dew"
+            "item": "minecraft:bone"
         },
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": true
       },
-      "parent": "johto:event9",
+      "parent": "johto:adventurer",
       "criteria": {
           "example": {
               "trigger": "minecraft:impossible"

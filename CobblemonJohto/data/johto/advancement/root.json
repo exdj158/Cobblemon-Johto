@@ -9,7 +9,7 @@
             "text": "Pick a starter!"
         },
         "icon": {
-            "item": "minecraft:white_shulker_box"
+            "item": "cobblemon:poke_ball"
         },
         "frame": "task",
         "show_toast": true,

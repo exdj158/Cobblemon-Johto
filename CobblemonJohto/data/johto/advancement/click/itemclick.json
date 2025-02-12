@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "requirement": {
+        "requirements": {
             "trigger": "minecraft:player_interacted_with_entity",
             "conditions": {
                 "entity": {

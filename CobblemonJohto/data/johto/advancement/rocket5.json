@@ -2,20 +2,20 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "The Embedded Tower"
+            "text": "Giovanni's Past"
         },
         "description": {
-            "text": "Summon Kyogre or Groudon at the Embedded Tower"
+            "text": "Go with Celebi back in time."
         },
         "icon": {
-            "item": "pixelmon:jade_orb"
+            "item": "cobblemon:medicinal_leek"
         },
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": true
       },
-      "parent": "johto:adventurer",
+      "parent": "johto:rocket4",
       "criteria": {
           "example": {
               "trigger": "minecraft:impossible"

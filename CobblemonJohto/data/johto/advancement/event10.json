@@ -2,20 +2,20 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "The Red Gyarados"
+            "text": "Mega Energy"
         },
         "description": {
-            "text": "Encounter the Red Gyarados at Lake of Rage"
+            "text": "Obtain the Mega Ring"
         },
         "icon": {
-            "item": "minecraft:music_disc_cat"
+            "item": "cobblemon:ring_target"
         },
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": true
       },
-      "parent": "johto:lighthousepokemon",
+      "parent": "johto:event4",
       "criteria": {
           "example": {
               "trigger": "minecraft:impossible"

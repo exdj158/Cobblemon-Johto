@@ -2,20 +2,20 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "Bug Catcher"
+            "text": "The Silent Champion"
         },
         "description": {
-            "text": "Participate in a Bug Catching Contest"
+            "text": "Defeat Red on Mt. Silver"
         },
         "icon": {
-            "item": "pixelmon:pixelmon_grass"
+            "item": "cobblemon:cherish_ball"
         },
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
-        "hidden": false
+        "hidden": true
       },
-      "parent": "johto:adventurer",
+      "parent": "johto:event11",
       "criteria": {
           "example": {
               "trigger": "minecraft:impossible"

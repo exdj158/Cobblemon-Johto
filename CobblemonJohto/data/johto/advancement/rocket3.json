@@ -2,20 +2,20 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "The Collector"
+            "text": "Rocket Headquarters"
         },
         "description": {
-            "text": "Discover all the wild Mega Stones"
+            "text": "Defeat Team Rocket in Mahogany Town"
         },
         "icon": {
-            "item": "pixelmon:sceptilite"
+            "item": "cobblemon:rare_candy"
         },
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
-        "hidden": false
+        "hidden": true
       },
-      "parent": "johto:event10",
+      "parent": "johto:rocket2",
       "criteria": {
           "example": {
               "trigger": "minecraft:impossible"

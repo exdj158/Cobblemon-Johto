@@ -2,20 +2,20 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "Mysterious Ruins"
+            "text": "Bug Catcher"
         },
         "description": {
-            "text": "Travel to the Sinjoh Ruins"
+            "text": "Participate in a Bug Catching Contest"
         },
         "icon": {
-            "item": "pixelmon:timespace_altar"
+            "item": "minecraft:seagrass"
         },
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
-        "hidden": true
+        "hidden": false
       },
-      "parent": "johto:event7",
+      "parent": "johto:adventurer",
       "criteria": {
           "example": {
               "trigger": "minecraft:impossible"

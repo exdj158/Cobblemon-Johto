@@ -2,20 +2,20 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "Rocket Resurgence"
+            "text": "Mysterious Ruins"
         },
         "description": {
-            "text": "Discover Team Rocket in Slowpoke Well"
+            "text": "Travel to the Sinjoh Ruins"
         },
         "icon": {
-            "item": "pixelmon:slowpoke_tail"
+            "item": "minecraft:enchanting_table"
         },
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": true
       },
-      "parent": "johto:mysteryegg",
+      "parent": "johto:event7",
       "criteria": {
           "example": {
               "trigger": "minecraft:impossible"

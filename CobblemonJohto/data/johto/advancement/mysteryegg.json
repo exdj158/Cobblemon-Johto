@@ -2,18 +2,18 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "Adventurer"
+            "text": "A Mysterious Egg"
         },
         "description": {
-            "text": "Explore Johto and Kanto"
+            "text": "Help Professor Elm with his research"
         },
         "icon": {
-            "item": "pixelmon:wide_lens"
+            "item": "minecraft:turtle_egg"
         },
         "frame": "task",
-        "show_toast": false,
-        "announce_to_chat": false,
-        "hidden": false
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
       },
       "parent": "johto:root",
       "criteria": {
