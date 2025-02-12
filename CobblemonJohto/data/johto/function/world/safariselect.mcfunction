@@ -32,6 +32,125 @@
 
 
 
+#Custom biomes for Cobblemon spawn conditions
+#1 - minecraft:desert
+#2 - minecraft:mangrove_swamp
+#3 - minecraft:jagged_peaks
+#4 - minecraft:plains
+#5 - minecraft:forest
+#6 - minecraft:sunflower_plains
+#7 - minecraft:windswept_hills
+#8 - minecraft:stony_shore
+#9 - minecraft:swamp
+#10 - minecraft:river
+#11 - minecraft:savanna
+#12 - minecraft:badlands
+
+
+
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Sets biomes for different Pokemon to spawn depending via jsons
+
+#Sets biome depending on biomeid
+#Zone 1
+execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=1}] run fillbiome 1654 82 6 1777 95 101 minecraft:desert
+execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=2}] run fillbiome 1654 82 6 1777 95 101 minecraft:mangrove_swamp
+execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=3}] run fillbiome 1654 82 6 1777 95 101 minecraft:jagged_peaks
+execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=4}] run fillbiome 1654 82 6 1777 95 101 minecraft:plains
+execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=5}] run fillbiome 1654 82 6 1777 95 101 minecraft:forest
+execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=6}] run fillbiome 1654 82 6 1777 95 101 minecraft:sunflower_plains
+execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=7}] run fillbiome 1654 82 6 1777 95 101 minecraft:windswept_hills
+execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=8}] run fillbiome 1654 82 6 1777 95 101 minecraft:stony_shore
+execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=9}] run fillbiome 1654 82 6 1777 95 101 minecraft:swamp
+execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=10}] run fillbiome 1654 82 6 1777 95 101 minecraft:river
+execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=11}] run fillbiome 1654 82 6 1777 95 101 minecraft:savanna
+execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=12}] run fillbiome 1654 82 6 1777 95 101 minecraft:badlands
+
+
+#Zone 2
+execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=1}] run fillbiome 1654 82 6 1777 95 101 minecraft:desert
+execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=2}] run fillbiome 1654 82 6 1777 95 101 minecraft:mangrove_swamp
+execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=3}] run fillbiome 1654 82 6 1777 95 101 minecraft:jagged_peaks
+execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=4}] run fillbiome 1654 82 6 1777 95 101 minecraft:plains
+execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=5}] run fillbiome 1654 82 6 1777 95 101 minecraft:forest
+execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=6}] run fillbiome 1654 82 6 1777 95 101 minecraft:sunflower_plains
+execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=7}] run fillbiome 1654 82 6 1777 95 101 minecraft:windswept_hills
+execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=8}] run fillbiome 1654 82 6 1777 95 101 minecraft:stony_shore
+execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=9}] run fillbiome 1654 82 6 1777 95 101 minecraft:swamp
+execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=10}] run fillbiome 1654 82 6 1777 95 101 minecraft:river
+execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=11}] run fillbiome 1654 82 6 1777 95 101 minecraft:savanna
+execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=12}] run fillbiome 1654 82 6 1777 95 101 minecraft:badlands
+
+
+#Zone 3
+execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=1}] run fillbiome 1654 82 6 1777 95 101 minecraft:desert
+execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=2}] run fillbiome 1654 82 6 1777 95 101 minecraft:mangrove_swamp
+execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=3}] run fillbiome 1654 82 6 1777 95 101 minecraft:jagged_peaks
+execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=4}] run fillbiome 1654 82 6 1777 95 101 minecraft:plains
+execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=5}] run fillbiome 1654 82 6 1777 95 101 minecraft:forest
+execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=6}] run fillbiome 1654 82 6 1777 95 101 minecraft:sunflower_plains
+execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=7}] run fillbiome 1654 82 6 1777 95 101 minecraft:windswept_hills
+execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=8}] run fillbiome 1654 82 6 1777 95 101 minecraft:stony_shore
+execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=9}] run fillbiome 1654 82 6 1777 95 101 minecraft:swamp
+execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=10}] run fillbiome 1654 82 6 1777 95 101 minecraft:river
+execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=11}] run fillbiome 1654 82 6 1777 95 101 minecraft:savanna
+execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=12}] run fillbiome 1654 82 6 1777 95 101 minecraft:badlands
+
+
+
+#Zone 4
+execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=1}] run fillbiome 1654 82 6 1777 95 101 minecraft:desert
+execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=2}] run fillbiome 1654 82 6 1777 95 101 minecraft:mangrove_swamp
+execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=3}] run fillbiome 1654 82 6 1777 95 101 minecraft:jagged_peaks
+execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=4}] run fillbiome 1654 82 6 1777 95 101 minecraft:plains
+execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=5}] run fillbiome 1654 82 6 1777 95 101 minecraft:forest
+execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=6}] run fillbiome 1654 82 6 1777 95 101 minecraft:sunflower_plains
+execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=7}] run fillbiome 1654 82 6 1777 95 101 minecraft:windswept_hills
+execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=8}] run fillbiome 1654 82 6 1777 95 101 minecraft:stony_shore
+execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=9}] run fillbiome 1654 82 6 1777 95 101 minecraft:swamp
+execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=10}] run fillbiome 1654 82 6 1777 95 101 minecraft:river
+execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=11}] run fillbiome 1654 82 6 1777 95 101 minecraft:savanna
+execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=12}] run fillbiome 1654 82 6 1777 95 101 minecraft:badlands
+
+
+
+#Zone 5
+execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=1}] run fillbiome 1654 82 6 1777 95 101 minecraft:desert
+execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=2}] run fillbiome 1654 82 6 1777 95 101 minecraft:mangrove_swamp
+execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=3}] run fillbiome 1654 82 6 1777 95 101 minecraft:jagged_peaks
+execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=4}] run fillbiome 1654 82 6 1777 95 101 minecraft:plains
+execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=5}] run fillbiome 1654 82 6 1777 95 101 minecraft:forest
+execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=6}] run fillbiome 1654 82 6 1777 95 101 minecraft:sunflower_plains
+execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=7}] run fillbiome 1654 82 6 1777 95 101 minecraft:windswept_hills
+execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=8}] run fillbiome 1654 82 6 1777 95 101 minecraft:stony_shore
+execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=9}] run fillbiome 1654 82 6 1777 95 101 minecraft:swamp
+execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=10}] run fillbiome 1654 82 6 1777 95 101 minecraft:river
+execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=11}] run fillbiome 1654 82 6 1777 95 101 minecraft:savanna
+execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=12}] run fillbiome 1654 82 6 1777 95 101 minecraft:badlands
+
+
+
+#Zone 6
+execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=1}] run fillbiome 1654 82 6 1777 95 101 minecraft:desert
+execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=2}] run fillbiome 1654 82 6 1777 95 101 minecraft:mangrove_swamp
+execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=3}] run fillbiome 1654 82 6 1777 95 101 minecraft:jagged_peaks
+execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=4}] run fillbiome 1654 82 6 1777 95 101 minecraft:plains
+execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=5}] run fillbiome 1654 82 6 1777 95 101 minecraft:forest
+execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=6}] run fillbiome 1654 82 6 1777 95 101 minecraft:sunflower_plains
+execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=7}] run fillbiome 1654 82 6 1777 95 101 minecraft:windswept_hills
+execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=8}] run fillbiome 1654 82 6 1777 95 101 minecraft:stony_shore
+execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=9}] run fillbiome 1654 82 6 1777 95 101 minecraft:swamp
+execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=10}] run fillbiome 1654 82 6 1777 95 101 minecraft:river
+execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=11}] run fillbiome 1654 82 6 1777 95 101 minecraft:savanna
+execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=12}] run fillbiome 1654 82 6 1777 95 101 minecraft:badlands
+
+
+
+
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 #Mirrors the scores of the item frames to the reference armor stands to execute during dialogue
 
@@ -296,6 +415,9 @@ execute as @a[scores={DialogueTrigger=201,TalkTime=13}] run execute as @e[x=-879
 execute as @a[scores={DialogueTrigger=201,TalkTime=14}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=12}] run clone -879 22 -145 -821 23 -240 1654 90 6 replace
 execute as @a[scores={DialogueTrigger=201,TalkTime=15}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=12}] run clone -879 11 -145 -815 12 -240 1713 92 6 replace
 execute as @a[scores={DialogueTrigger=201,TalkTime=16}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=12}] run clone -879 24 -145 -821 24 -240 1654 92 6 replace
+
+
+
 
 #---------------------------
 
