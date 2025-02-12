@@ -1,4 +1,4 @@
-#function custom:safariselect if @a[x=1590,y=74,z=-129,dx=10,dy=5,dz=10]
+#function custom:safariselect if @a[x=1590,y=74,z=-129,dx=10,dy=5,dz=20]
 #
 
 #North
@@ -54,96 +54,96 @@
 
 #Sets biome depending on biomeid
 #Zone 1
-execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=1}] run fillbiome 1654 82 6 1777 95 101 minecraft:desert
-execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=2}] run fillbiome 1654 82 6 1777 95 101 minecraft:mangrove_swamp
-execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=3}] run fillbiome 1654 82 6 1777 95 101 minecraft:jagged_peaks
-execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=4}] run fillbiome 1654 82 6 1777 95 101 minecraft:plains
-execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=5}] run fillbiome 1654 82 6 1777 95 101 minecraft:forest
-execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=6}] run fillbiome 1654 82 6 1777 95 101 minecraft:sunflower_plains
-execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=7}] run fillbiome 1654 82 6 1777 95 101 minecraft:windswept_hills
-execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=8}] run fillbiome 1654 82 6 1777 95 101 minecraft:stony_shore
-execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=9}] run fillbiome 1654 82 6 1777 95 101 minecraft:swamp
-execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=10}] run fillbiome 1654 82 6 1777 95 101 minecraft:river
-execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=11}] run fillbiome 1654 82 6 1777 95 101 minecraft:savanna
-execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=12}] run fillbiome 1654 82 6 1777 95 101 minecraft:badlands
+execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=1}] run fillbiome 1654 82 6 1777 99 101 minecraft:desert
+execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=2}] run fillbiome 1654 82 6 1777 99 101 minecraft:mangrove_swamp
+execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=3}] run fillbiome 1654 82 6 1777 99 101 minecraft:jagged_peaks
+execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=4}] run fillbiome 1654 82 6 1777 99 101 minecraft:plains
+execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=5}] run fillbiome 1654 82 6 1777 99 101 minecraft:forest
+execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=6}] run fillbiome 1654 82 6 1777 99 101 minecraft:sunflower_plains
+execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=7}] run fillbiome 1654 82 6 1777 99 101 minecraft:windswept_hills
+execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=8}] run fillbiome 1654 82 6 1777 99 101 minecraft:stony_shore
+execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=9}] run fillbiome 1654 82 6 1777 99 101 minecraft:swamp
+execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=10}] run fillbiome 1654 82 6 1777 99 101 minecraft:river
+execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=11}] run fillbiome 1654 82 6 1777 99 101 minecraft:savanna
+execute as @a[scores={DialogueTrigger=201,TalkTime=5}] run execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=12}] run fillbiome 1654 82 6 1777 99 101 minecraft:badlands
 
 
 #Zone 2
-execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=1}] run fillbiome 1654 82 6 1777 95 101 minecraft:desert
-execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=2}] run fillbiome 1654 82 6 1777 95 101 minecraft:mangrove_swamp
-execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=3}] run fillbiome 1654 82 6 1777 95 101 minecraft:jagged_peaks
-execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=4}] run fillbiome 1654 82 6 1777 95 101 minecraft:plains
-execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=5}] run fillbiome 1654 82 6 1777 95 101 minecraft:forest
-execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=6}] run fillbiome 1654 82 6 1777 95 101 minecraft:sunflower_plains
-execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=7}] run fillbiome 1654 82 6 1777 95 101 minecraft:windswept_hills
-execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=8}] run fillbiome 1654 82 6 1777 95 101 minecraft:stony_shore
-execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=9}] run fillbiome 1654 82 6 1777 95 101 minecraft:swamp
-execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=10}] run fillbiome 1654 82 6 1777 95 101 minecraft:river
-execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=11}] run fillbiome 1654 82 6 1777 95 101 minecraft:savanna
-execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=12}] run fillbiome 1654 82 6 1777 95 101 minecraft:badlands
+execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=1}] run fillbiome 1654 82 -90 1777 99 5 minecraft:desert
+execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=2}] run fillbiome 1654 82 -90 1777 99 5 minecraft:mangrove_swamp
+execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=3}] run fillbiome 1654 82 -90 1777 99 5 minecraft:jagged_peaks
+execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=4}] run fillbiome 1654 82 -90 1777 99 5 minecraft:plains
+execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=5}] run fillbiome 1654 82 -90 1777 99 5 minecraft:forest
+execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=6}] run fillbiome 1654 82 -90 1777 99 5 minecraft:sunflower_plains
+execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=7}] run fillbiome 1654 82 -90 1777 99 5 minecraft:windswept_hills
+execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=8}] run fillbiome 1654 82 -90 1777 99 5 minecraft:stony_shore
+execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=9}] run fillbiome 1654 82 -90 1777 99 5 minecraft:swamp
+execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=10}] run fillbiome 1654 82 -90 1777 99 5 minecraft:river
+execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=11}] run fillbiome 1654 82 -90 1777 99 5 minecraft:savanna
+execute as @a[scores={DialogueTrigger=201,TalkTime=25}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=12}] run fillbiome 1654 82 -90 1777 99 5 minecraft:badlands
 
 
 #Zone 3
-execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=1}] run fillbiome 1654 82 6 1777 95 101 minecraft:desert
-execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=2}] run fillbiome 1654 82 6 1777 95 101 minecraft:mangrove_swamp
-execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=3}] run fillbiome 1654 82 6 1777 95 101 minecraft:jagged_peaks
-execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=4}] run fillbiome 1654 82 6 1777 95 101 minecraft:plains
-execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=5}] run fillbiome 1654 82 6 1777 95 101 minecraft:forest
-execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=6}] run fillbiome 1654 82 6 1777 95 101 minecraft:sunflower_plains
-execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=7}] run fillbiome 1654 82 6 1777 95 101 minecraft:windswept_hills
-execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=8}] run fillbiome 1654 82 6 1777 95 101 minecraft:stony_shore
-execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=9}] run fillbiome 1654 82 6 1777 95 101 minecraft:swamp
-execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=10}] run fillbiome 1654 82 6 1777 95 101 minecraft:river
-execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=11}] run fillbiome 1654 82 6 1777 95 101 minecraft:savanna
-execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=12}] run fillbiome 1654 82 6 1777 95 101 minecraft:badlands
+execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=1}] run fillbiome 1530 82 -90 1653 99 5 minecraft:desert
+execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=2}] run fillbiome 1530 82 -90 1653 99 5 minecraft:mangrove_swamp
+execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=3}] run fillbiome 1530 82 -90 1653 99 5 minecraft:jagged_peaks
+execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=4}] run fillbiome 1530 82 -90 1653 99 5 minecraft:plains
+execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=5}] run fillbiome 1530 82 -90 1653 99 5 minecraft:forest
+execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=6}] run fillbiome 1530 82 -90 1653 99 5 minecraft:sunflower_plains
+execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=7}] run fillbiome 1530 82 -90 1653 99 5 minecraft:windswept_hills
+execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=8}] run fillbiome 1530 82 -90 1653 99 5 minecraft:stony_shore
+execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=9}] run fillbiome 1530 82 -90 1653 99 5 minecraft:swamp
+execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=10}] run fillbiome 1530 82 -90 1653 99 5 minecraft:river
+execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=11}] run fillbiome 1530 82 -90 1653 99 5 minecraft:savanna
+execute as @a[scores={DialogueTrigger=201,TalkTime=45}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=12}] run fillbiome 1530 82 -90 1653 99 5 minecraft:badlands
 
 
 
 #Zone 4
-execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=1}] run fillbiome 1654 82 6 1777 95 101 minecraft:desert
-execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=2}] run fillbiome 1654 82 6 1777 95 101 minecraft:mangrove_swamp
-execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=3}] run fillbiome 1654 82 6 1777 95 101 minecraft:jagged_peaks
-execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=4}] run fillbiome 1654 82 6 1777 95 101 minecraft:plains
-execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=5}] run fillbiome 1654 82 6 1777 95 101 minecraft:forest
-execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=6}] run fillbiome 1654 82 6 1777 95 101 minecraft:sunflower_plains
-execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=7}] run fillbiome 1654 82 6 1777 95 101 minecraft:windswept_hills
-execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=8}] run fillbiome 1654 82 6 1777 95 101 minecraft:stony_shore
-execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=9}] run fillbiome 1654 82 6 1777 95 101 minecraft:swamp
-execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=10}] run fillbiome 1654 82 6 1777 95 101 minecraft:river
-execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=11}] run fillbiome 1654 82 6 1777 95 101 minecraft:savanna
-execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=12}] run fillbiome 1654 82 6 1777 95 101 minecraft:badlands
+execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=1}] run fillbiome 1530 82 6 1653 99 101 minecraft:desert
+execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=2}] run fillbiome 1530 82 6 1653 99 101 minecraft:mangrove_swamp
+execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=3}] run fillbiome 1530 82 6 1653 99 101 minecraft:jagged_peaks
+execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=4}] run fillbiome 1530 82 6 1653 99 101 minecraft:plains
+execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=5}] run fillbiome 1530 82 6 1653 99 101 minecraft:forest
+execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=6}] run fillbiome 1530 82 6 1653 99 101 minecraft:sunflower_plains
+execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=7}] run fillbiome 1530 82 6 1653 99 101 minecraft:windswept_hills
+execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=8}] run fillbiome 1530 82 6 1653 99 101 minecraft:stony_shore
+execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=9}] run fillbiome 1530 82 6 1653 99 101 minecraft:swamp
+execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=10}] run fillbiome 1530 82 6 1653 99 101 minecraft:river
+execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=11}] run fillbiome 1530 82 6 1653 99 101 minecraft:savanna
+execute as @a[scores={DialogueTrigger=201,TalkTime=65}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=12}] run fillbiome 1530 82 6 1653 99 101 minecraft:badlands
 
 
 
 #Zone 5
-execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=1}] run fillbiome 1654 82 6 1777 95 101 minecraft:desert
-execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=2}] run fillbiome 1654 82 6 1777 95 101 minecraft:mangrove_swamp
-execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=3}] run fillbiome 1654 82 6 1777 95 101 minecraft:jagged_peaks
-execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=4}] run fillbiome 1654 82 6 1777 95 101 minecraft:plains
-execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=5}] run fillbiome 1654 82 6 1777 95 101 minecraft:forest
-execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=6}] run fillbiome 1654 82 6 1777 95 101 minecraft:sunflower_plains
-execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=7}] run fillbiome 1654 82 6 1777 95 101 minecraft:windswept_hills
-execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=8}] run fillbiome 1654 82 6 1777 95 101 minecraft:stony_shore
-execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=9}] run fillbiome 1654 82 6 1777 95 101 minecraft:swamp
-execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=10}] run fillbiome 1654 82 6 1777 95 101 minecraft:river
-execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=11}] run fillbiome 1654 82 6 1777 95 101 minecraft:savanna
-execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=12}] run fillbiome 1654 82 6 1777 95 101 minecraft:badlands
+execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=1}] run fillbiome 1406 82 6 1529 99 101 minecraft:desert
+execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=2}] run fillbiome 1406 82 6 1529 99 101 minecraft:mangrove_swamp
+execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=3}] run fillbiome 1406 82 6 1529 99 101 minecraft:jagged_peaks
+execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=4}] run fillbiome 1406 82 6 1529 99 101 minecraft:plains
+execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=5}] run fillbiome 1406 82 6 1529 99 101 minecraft:forest
+execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=6}] run fillbiome 1406 82 6 1529 99 101 minecraft:sunflower_plains
+execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=7}] run fillbiome 1406 82 6 1529 99 101 minecraft:windswept_hills
+execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=8}] run fillbiome 1406 82 6 1529 99 101 minecraft:stony_shore
+execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=9}] run fillbiome 1406 82 6 1529 99 101 minecraft:swamp
+execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=10}] run fillbiome 1406 82 6 1529 99 101 minecraft:river
+execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=11}] run fillbiome 1406 82 6 1529 99 101 minecraft:savanna
+execute as @a[scores={DialogueTrigger=201,TalkTime=85}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=12}] run fillbiome 1406 82 6 1529 99 101 minecraft:badlands
 
 
 
 #Zone 6
-execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=1}] run fillbiome 1654 82 6 1777 95 101 minecraft:desert
-execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=2}] run fillbiome 1654 82 6 1777 95 101 minecraft:mangrove_swamp
-execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=3}] run fillbiome 1654 82 6 1777 95 101 minecraft:jagged_peaks
-execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=4}] run fillbiome 1654 82 6 1777 95 101 minecraft:plains
-execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=5}] run fillbiome 1654 82 6 1777 95 101 minecraft:forest
-execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=6}] run fillbiome 1654 82 6 1777 95 101 minecraft:sunflower_plains
-execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=7}] run fillbiome 1654 82 6 1777 95 101 minecraft:windswept_hills
-execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=8}] run fillbiome 1654 82 6 1777 95 101 minecraft:stony_shore
-execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=9}] run fillbiome 1654 82 6 1777 95 101 minecraft:swamp
-execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=10}] run fillbiome 1654 82 6 1777 95 101 minecraft:river
-execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=11}] run fillbiome 1654 82 6 1777 95 101 minecraft:savanna
-execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=12}] run fillbiome 1654 82 6 1777 95 101 minecraft:badlands
+execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=1}] run fillbiome 1406 82 -90 1529 99 5 minecraft:desert
+execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=2}] run fillbiome 1406 82 -90 1529 99 5 minecraft:mangrove_swamp
+execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=3}] run fillbiome 1406 82 -90 1529 99 5 minecraft:jagged_peaks
+execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=4}] run fillbiome 1406 82 -90 1529 99 5 minecraft:plains
+execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=5}] run fillbiome 1406 82 -90 1529 99 5 minecraft:forest
+execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=6}] run fillbiome 1406 82 -90 1529 99 5 minecraft:sunflower_plains
+execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=7}] run fillbiome 1406 82 -90 1529 99 5 minecraft:windswept_hills
+execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=8}] run fillbiome 1406 82 -90 1529 99 5 minecraft:stony_shore
+execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=9}] run fillbiome 1406 82 -90 1529 99 5 minecraft:swamp
+execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=10}] run fillbiome 1406 82 -90 1529 99 5 minecraft:river
+execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=11}] run fillbiome 1406 82 -90 1529 99 5 minecraft:savanna
+execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=12}] run fillbiome 1406 82 -90 1529 99 5 minecraft:badlands
 
 
 
@@ -154,102 +154,104 @@ execute as @a[scores={DialogueTrigger=201,TalkTime=105}] run execute as @e[x=-87
 
 #Mirrors the scores of the item frames to the reference armor stands to execute during dialogue
 
+#execute as @e[x=210,y=53,z=-120,dz=2,nbt={Item:{components:{"minecraft:map_id":37}}}] run scoreboard players add @e[x=-867,y=69,z=-214,dy=3,type=armor_stand] PuzzleTrack 1
+
 #Zone 1
-execute if entity @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:238}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 1
-execute if entity @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:240}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 2
-execute if entity @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:243}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 3
-execute if entity @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:244}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 4
-execute if entity @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:239}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 5
-execute if entity @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:241}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 6
-execute if entity @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:242}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 7
-execute if entity @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:245}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 8
-execute if entity @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:247}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 9
-execute if entity @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:249}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 10
-execute if entity @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:246}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 11
-execute if entity @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:248}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 12
+execute if entity @e[x=1596,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":238}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 1
+execute if entity @e[x=1596,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":240}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 2
+execute if entity @e[x=1596,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":243}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 3
+execute if entity @e[x=1596,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":244}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 4
+execute if entity @e[x=1596,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":239}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 5
+execute if entity @e[x=1596,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":241}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 6
+execute if entity @e[x=1596,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":242}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 7
+execute if entity @e[x=1596,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":245}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 8
+execute if entity @e[x=1596,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":247}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 9
+execute if entity @e[x=1596,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":249}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 10
+execute if entity @e[x=1596,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":246}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 11
+execute if entity @e[x=1596,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":248}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 12
 
 
 #Zone 2
-execute if entity @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:238}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 1
-execute if entity @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:240}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 2
-execute if entity @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:243}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 3
-execute if entity @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:244}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 4
-execute if entity @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:239}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 5
-execute if entity @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:241}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 6
-execute if entity @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:242}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 7
-execute if entity @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:245}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 8
-execute if entity @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:247}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 9
-execute if entity @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:249}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 10
-execute if entity @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:246}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 11
-execute if entity @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:248}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 12
+execute if entity @e[x=1596,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":238}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 1
+execute if entity @e[x=1596,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":240}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 2
+execute if entity @e[x=1596,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":243}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 3
+execute if entity @e[x=1596,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":244}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 4
+execute if entity @e[x=1596,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":239}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 5
+execute if entity @e[x=1596,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":241}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 6
+execute if entity @e[x=1596,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":242}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 7
+execute if entity @e[x=1596,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":245}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 8
+execute if entity @e[x=1596,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":247}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 9
+execute if entity @e[x=1596,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":249}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 10
+execute if entity @e[x=1596,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":246}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 11
+execute if entity @e[x=1596,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":248}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 12
 
 
 #Zone 3
-execute if entity @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:238}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 1
-execute if entity @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:240}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 2
-execute if entity @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:243}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 3
-execute if entity @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:244}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 4
-execute if entity @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:239}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 5
-execute if entity @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:241}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 6
-execute if entity @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:242}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 7
-execute if entity @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:245}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 8
-execute if entity @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:247}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 9
-execute if entity @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:249}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 10
-execute if entity @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:246}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 11
-execute if entity @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:248}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 12
+execute if entity @e[x=1595,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":238}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 1
+execute if entity @e[x=1595,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":240}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 2
+execute if entity @e[x=1595,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":243}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 3
+execute if entity @e[x=1595,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":244}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 4
+execute if entity @e[x=1595,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":239}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 5
+execute if entity @e[x=1595,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":241}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 6
+execute if entity @e[x=1595,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":242}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 7
+execute if entity @e[x=1595,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":245}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 8
+execute if entity @e[x=1595,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":247}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 9
+execute if entity @e[x=1595,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":249}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 10
+execute if entity @e[x=1595,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":246}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 11
+execute if entity @e[x=1595,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":248}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 12
 
 
 #Zone 4
-execute if entity @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:238}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 1
-execute if entity @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:240}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 2
-execute if entity @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:243}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 3
-execute if entity @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:244}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 4
-execute if entity @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:239}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 5
-execute if entity @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:241}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 6
-execute if entity @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:242}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 7
-execute if entity @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:245}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 8
-execute if entity @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:247}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 9
-execute if entity @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:249}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 10
-execute if entity @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:246}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 11
-execute if entity @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:248}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 12
+execute if entity @e[x=1595,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":238}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 1
+execute if entity @e[x=1595,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":240}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 2
+execute if entity @e[x=1595,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":243}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 3
+execute if entity @e[x=1595,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":244}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 4
+execute if entity @e[x=1595,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":239}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 5
+execute if entity @e[x=1595,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":241}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 6
+execute if entity @e[x=1595,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":242}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 7
+execute if entity @e[x=1595,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":245}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 8
+execute if entity @e[x=1595,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":247}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 9
+execute if entity @e[x=1595,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":249}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 10
+execute if entity @e[x=1595,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":246}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 11
+execute if entity @e[x=1595,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":248}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 12
 
 
 #Zone 5
-execute if entity @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:238}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 1
-execute if entity @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:240}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 2
-execute if entity @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:243}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 3
-execute if entity @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:244}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 4
-execute if entity @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:239}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 5
-execute if entity @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:241}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 6
-execute if entity @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:242}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 7
-execute if entity @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:245}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 8
-execute if entity @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:247}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 9
-execute if entity @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:249}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 10
-execute if entity @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:246}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 11
-execute if entity @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:248}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 12
+execute if entity @e[x=1594,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":238}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 1
+execute if entity @e[x=1594,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":240}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 2
+execute if entity @e[x=1594,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":243}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 3
+execute if entity @e[x=1594,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":244}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 4
+execute if entity @e[x=1594,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":239}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 5
+execute if entity @e[x=1594,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":241}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 6
+execute if entity @e[x=1594,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":242}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 7
+execute if entity @e[x=1594,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":245}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 8
+execute if entity @e[x=1594,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":247}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 9
+execute if entity @e[x=1594,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":249}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 10
+execute if entity @e[x=1594,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":246}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 11
+execute if entity @e[x=1594,y=77,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":248}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 12
 
 
 #Zone 6
-execute if entity @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:238}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 1
-execute if entity @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:240}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 2
-execute if entity @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:243}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 3
-execute if entity @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:244}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 4
-execute if entity @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:239}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 5
-execute if entity @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:241}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 6
-execute if entity @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:242}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 7
-execute if entity @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:245}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 8
-execute if entity @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:247}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 9
-execute if entity @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:249}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 10
-execute if entity @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:246}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 11
-execute if entity @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:248}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 12
+execute if entity @e[x=1594,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":238}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 1
+execute if entity @e[x=1594,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":240}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 2
+execute if entity @e[x=1594,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":243}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 3
+execute if entity @e[x=1594,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":244}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 4
+execute if entity @e[x=1594,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":239}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 5
+execute if entity @e[x=1594,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":241}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 6
+execute if entity @e[x=1594,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":242}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 7
+execute if entity @e[x=1594,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":245}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 8
+execute if entity @e[x=1594,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":247}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 9
+execute if entity @e[x=1594,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":249}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 10
+execute if entity @e[x=1594,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":246}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 11
+execute if entity @e[x=1594,y=76,z=-122,dz=2,type=minecraft:item_frame,nbt={Item:{components:{"minecraft:map_id":248}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 12
 
 
 
 #When a number is assigned to all armor stands, prompt player to begin Safari
-execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=1..}] run scoreboard players enable @a[x=1590,y=74,z=-129,dx=10,dy=5,dz=10,scores={Cooldown=0}] TriggerCommand
-execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=1..}] run tellraw @a[x=1590,y=74,z=-129,dx=10,dy=5,dz=10,scores={Cooldown=0}] ["",{"text":"It looks like your biomes are chosen. Begin session?","color":"white"}]
-execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=1..}] run tellraw @a[x=1590,y=74,z=-129,dx=10,dy=5,dz=10,scores={Cooldown=0}] ["",{"text":"[Yes]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 23"}}]
-execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=1..}] run scoreboard players set @a[x=1590,y=74,z=-129,dx=10,dy=5,dz=10,scores={Cooldown=0}] Cooldown 45
+execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=1..}] run scoreboard players enable @a[x=1590,y=74,z=-129,dx=10,dy=5,dz=20,scores={Cooldown=0}] TriggerCommand
+execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=1..}] run tellraw @a[x=1590,y=74,z=-129,dx=10,dy=5,dz=20,scores={Cooldown=0}] ["",{"text":"It looks like your biomes are chosen. Begin session?","color":"white"}]
+execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=1..}] run tellraw @a[x=1590,y=74,z=-129,dx=10,dy=5,dz=20,scores={Cooldown=0}] ["",{"text":"[Yes]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 23"}}]
+execute as @e[x=-879,y=64,z=-170,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-172,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-174,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-176,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-178,dy=3,type=armor_stand,scores={BiomeID=1..}] run execute as @e[x=-879,y=64,z=-180,dy=3,type=armor_stand,scores={BiomeID=1..}] run scoreboard players set @a[x=1590,y=74,z=-129,dx=10,dy=5,dz=20,scores={Cooldown=0}] Cooldown 45
 
 
 
