@@ -7,7 +7,7 @@
           "id": "psyduck-1",
           "pokemon": "psyduck",
           "presets": [
-              "water_surface"
+              "water"
           ],
           "type": "pokemon",
           "context": "surface",
@@ -24,7 +24,7 @@
           "id": "psyduck-2",
           "pokemon": "psyduck",
           "presets": [
-              "water_surface"
+              "water"
           ],
           "type": "pokemon",
           "context": "surface",
@@ -41,7 +41,7 @@
           "id": "psyduck-3",
           "pokemon": "psyduck",
           "presets": [
-              "water_surface"
+              "water"
           ],
           "type": "pokemon",
           "context": "surface",
@@ -58,7 +58,7 @@
           "id": "psyduck-4",
           "pokemon": "psyduck",
           "presets": [
-              "water_surface"
+              "water"
           ],
           "type": "pokemon",
           "context": "surface",
@@ -75,7 +75,7 @@
           "id": "psyduck-5",
           "pokemon": "psyduck",
           "presets": [
-              "water_surface"
+              "water"
           ],
           "type": "pokemon",
           "context": "surface",

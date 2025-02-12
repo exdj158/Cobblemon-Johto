@@ -7,7 +7,7 @@
           "id": "lapras-1",
           "pokemon": "lapras",
           "presets": [
-              "water_surface"
+              "water"
           ],
           "type": "pokemon",
           "context": "surface",

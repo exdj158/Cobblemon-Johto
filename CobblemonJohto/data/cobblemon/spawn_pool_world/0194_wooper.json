@@ -26,7 +26,7 @@
           "pokemon": "wooper",
           "type": "pokemon",
           "presets": [
-              "underwater"
+              "water"
           ],
           "context": "submerged",
           "bucket": "common",
@@ -42,7 +42,7 @@
           "pokemon": "wooper",
           "type": "pokemon",
           "presets": [
-              "underwater"
+              "water"
           ],
           "context": "submerged",
           "bucket": "common",
@@ -57,7 +57,7 @@
           "pokemon": "wooper",
           "type": "pokemon",
           "presets": [
-              "underwater"
+              "water"
           ],
           "context": "submerged",
           "bucket": "common",

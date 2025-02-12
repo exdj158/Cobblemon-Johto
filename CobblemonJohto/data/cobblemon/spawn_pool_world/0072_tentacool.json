@@ -7,7 +7,7 @@
             "id": "tentacool-1",
             "pokemon": "tentacool",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -22,7 +22,7 @@
             "id": "tentacool-2",
             "pokemon": "tentacool",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -38,7 +38,7 @@
             "id": "tentacool-3",
             "pokemon": "tentacool",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -54,7 +54,7 @@
             "id": "tentacool-4",
             "pokemon": "tentacool",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -70,7 +70,7 @@
             "id": "tentacool-5",
             "pokemon": "tentacool",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -87,7 +87,7 @@
             "id": "tentacool-6",
             "pokemon": "tentacool",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -103,7 +103,7 @@
             "id": "tentacool-7",
             "pokemon": "tentacool",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -119,7 +119,7 @@
             "id": "tentacool-8",
             "pokemon": "tentacool",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -135,7 +135,7 @@
             "id": "tentacool-9",
             "pokemon": "tentacool",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -152,7 +152,7 @@
             "id": "tentacool-10",
             "pokemon": "tentacool",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -169,7 +169,7 @@
             "id": "tentacool-11",
             "pokemon": "tentacool",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -186,7 +186,7 @@
             "id": "tentacool-12",
             "pokemon": "tentacool",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -203,7 +203,7 @@
             "id": "tentacool-13",
             "pokemon": "tentacool",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -220,7 +220,7 @@
             "id": "tentacool-14",
             "pokemon": "tentacool",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -237,7 +237,7 @@
             "id": "tentacool-15",
             "pokemon": "tentacool",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -254,7 +254,7 @@
             "id": "tentacool-16",
             "pokemon": "tentacool",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -271,7 +271,7 @@
             "id": "tentacool-16",
             "pokemon": "tentacool",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -288,7 +288,7 @@
             "id": "tentacool-16",
             "pokemon": "tentacool",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -305,7 +305,7 @@
             "id": "tentacool-17",
             "pokemon": "tentacool",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",

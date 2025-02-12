@@ -94,7 +94,7 @@
           "id": "muk-6",
           "pokemon": "muk",
           "presets": [
-              "water_surface"
+              "water"
           ],
           "type": "pokemon",
           "context": "surface",

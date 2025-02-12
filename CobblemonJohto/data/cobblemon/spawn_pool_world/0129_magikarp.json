@@ -7,7 +7,7 @@
             "id": "magikarp-1",
             "pokemon": "magikarp",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -24,7 +24,7 @@
             "id": "magikarp-2",
             "pokemon": "magikarp",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -41,7 +41,7 @@
             "id": "magikarp-3",
             "pokemon": "magikarp",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -58,7 +58,7 @@
             "id": "magikarp-4",
             "pokemon": "magikarp",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -75,7 +75,7 @@
             "id": "magikarp-5",
             "pokemon": "magikarp",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -92,7 +92,7 @@
             "id": "magikarp-6",
             "pokemon": "magikarp",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -109,7 +109,7 @@
             "id": "magikarp-7",
             "pokemon": "magikarp",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -126,7 +126,7 @@
             "id": "magikarp-8",
             "pokemon": "magikarp",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",

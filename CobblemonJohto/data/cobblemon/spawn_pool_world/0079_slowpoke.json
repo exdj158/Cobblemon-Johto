@@ -33,7 +33,7 @@
           "id": "slowpoke-3",
           "pokemon": "slowpoke",
           "presets": [
-              "underwater"
+              "water"
           ],
           "type": "pokemon",
           "context": "submerged",
@@ -48,7 +48,7 @@
           "id": "slowpoke-4",
           "pokemon": "slowpoke",
           "presets": [
-              "underwater"
+              "water"
           ],
           "type": "pokemon",
           "context": "submerged",
@@ -77,7 +77,7 @@
           "id": "slowpoke-5",
           "pokemon": "slowpoke",
           "presets": [
-              "underwater"
+              "water"
           ],
           "type": "pokemon",
           "context": "submerged",

@@ -7,7 +7,7 @@
           "id": "quagsire-1",
           "pokemon": "quagsire",
           "presets": [
-              "water_surface"
+              "water"
           ],
           "type": "pokemon",
           "context": "surface",
@@ -23,7 +23,7 @@
           "id": "quagsire-2",
           "pokemon": "quagsire",
           "presets": [
-              "water_surface"
+              "water"
           ],
           "type": "pokemon",
           "context": "surface",
@@ -39,7 +39,7 @@
           "id": "quagsire-3",
           "pokemon": "quagsire",
           "presets": [
-              "water_surface"
+              "water"
           ],
           "type": "pokemon",
           "context": "surface",
@@ -54,7 +54,7 @@
           "id": "quagsire-4",
           "pokemon": "quagsire",
           "presets": [
-              "water_surface"
+              "water"
           ],
           "type": "pokemon",
           "context": "surface",
@@ -69,7 +69,7 @@
           "id": "quagsire-5",
           "pokemon": "quagsire",
           "presets": [
-              "water_surface"
+              "water"
           ],
           "type": "pokemon",
           "context": "surface",
@@ -168,7 +168,7 @@
           "id": "quagsire-11",
           "pokemon": "quagsire",
           "presets": [
-              "water_surface"
+              "water"
           ],
           "type": "pokemon",
           "context": "surface",

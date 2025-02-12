@@ -112,7 +112,7 @@
           "id": "grimer-6",
           "pokemon": "grimer",
           "presets": [
-              "water_surface"
+              "water"
           ],
           "type": "pokemon",
           "context": "surface",

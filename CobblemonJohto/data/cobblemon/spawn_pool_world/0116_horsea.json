@@ -7,7 +7,7 @@
             "id": "horsea-1",
             "pokemon": "horsea",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -23,7 +23,7 @@
             "id": "horsea-2",
             "pokemon": "horsea",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -40,7 +40,7 @@
           "id": "horsea-3",
           "pokemon": "horsea",
           "presets": [
-              "water_surface"
+              "water"
           ],
           "type": "pokemon",
           "context": "surface",

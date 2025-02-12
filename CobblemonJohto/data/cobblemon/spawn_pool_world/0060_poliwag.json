@@ -7,7 +7,7 @@
             "id": "poliwag-1",
             "pokemon": "poliwag",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -24,7 +24,7 @@
             "id": "poliwag-2",
             "pokemon": "poliwag",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -40,7 +40,7 @@
             "id": "poliwag-3",
             "pokemon": "poliwag",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -57,7 +57,7 @@
             "id": "poliwag-4",
             "pokemon": "poliwag",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -74,7 +74,7 @@
             "id": "poliwag-5",
             "pokemon": "poliwag",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -91,7 +91,7 @@
             "id": "poliwag-6",
             "pokemon": "poliwag",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -108,7 +108,7 @@
             "id": "poliwag-7",
             "pokemon": "poliwag",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -125,7 +125,7 @@
             "id": "poliwag-8",
             "pokemon": "poliwag",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",

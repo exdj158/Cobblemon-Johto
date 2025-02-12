@@ -7,7 +7,7 @@
             "id": "seaking-1",
             "pokemon": "seaking",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -24,7 +24,7 @@
             "id": "seaking-2",
             "pokemon": "seaking",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -40,7 +40,7 @@
             "id": "seaking-3",
             "pokemon": "seaking",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -56,7 +56,7 @@
             "id": "seaking-4",
             "pokemon": "seaking",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -73,7 +73,7 @@
             "id": "seaking-5",
             "pokemon": "seaking",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -90,7 +90,7 @@
             "id": "seaking-6",
             "pokemon": "seaking",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -107,7 +107,7 @@
             "id": "seaking-7",
             "pokemon": "seaking",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",

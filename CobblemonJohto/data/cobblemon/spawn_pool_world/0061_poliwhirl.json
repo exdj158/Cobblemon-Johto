@@ -7,7 +7,7 @@
             "id": "poliwhirl-1",
             "pokemon": "poliwhirl",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -24,7 +24,7 @@
             "id": "poliwhirl-2",
             "pokemon": "poliwhirl",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -41,7 +41,7 @@
             "id": "poliwhirl-4",
             "pokemon": "poliwhirl",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -58,7 +58,7 @@
             "id": "poliwhirl-5",
             "pokemon": "poliwhirl",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -75,7 +75,7 @@
             "id": "poliwhirl-6",
             "pokemon": "poliwhirl",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -92,7 +92,7 @@
             "id": "poliwhirl-7",
             "pokemon": "poliwhirl",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -109,7 +109,7 @@
             "id": "poliwhirl-8",
             "pokemon": "poliwhirl",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -126,7 +126,7 @@
             "id": "poliwhirl-9",
             "pokemon": "poliwhirl",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",

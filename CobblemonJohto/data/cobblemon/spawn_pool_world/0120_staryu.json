@@ -7,7 +7,7 @@
           "id": "staryu-1",
           "pokemon": "staryu",
           "presets": [
-              "water_surface"
+              "water"
           ],
           "type": "pokemon",
           "context": "surface",

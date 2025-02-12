@@ -7,7 +7,7 @@
           "id": "golduck-1",
           "pokemon": "golduck",
           "presets": [
-              "water_surface"
+              "water"
           ],
           "type": "pokemon",
           "context": "surface",
@@ -24,7 +24,7 @@
           "id": "golduck-2",
           "pokemon": "golduck",
           "presets": [
-              "water_surface"
+              "water"
           ],
           "type": "pokemon",
           "context": "surface",
@@ -55,7 +55,7 @@
           "id": "golduck-4",
           "pokemon": "golduck",
           "presets": [
-              "water_surface"
+              "water"
           ],
           "type": "pokemon",
           "context": "surface",
@@ -72,7 +72,7 @@
           "id": "golduck-5",
           "pokemon": "golduck",
           "presets": [
-              "water_surface"
+              "water"
           ],
           "type": "pokemon",
           "context": "surface",
@@ -89,7 +89,7 @@
           "id": "golduck-6",
           "pokemon": "golduck",
           "presets": [
-              "water_surface"
+              "water"
           ],
           "type": "pokemon",
           "context": "surface",

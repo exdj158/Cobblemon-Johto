@@ -7,7 +7,7 @@
             "id": "gyarados-1",
             "pokemon": "gyarados",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",

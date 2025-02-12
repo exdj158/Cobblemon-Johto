@@ -34,7 +34,7 @@
           "id": "seel-3",
           "pokemon": "seel",
           "presets": [
-              "water_surface"
+              "water"
           ],
           "type": "pokemon",
           "context": "surface",
@@ -103,7 +103,7 @@
           "id": "seel-8",
           "pokemon": "seel",
           "presets": [
-              "water_surface"
+              "water"
           ],
           "type": "pokemon",
           "context": "surface",
