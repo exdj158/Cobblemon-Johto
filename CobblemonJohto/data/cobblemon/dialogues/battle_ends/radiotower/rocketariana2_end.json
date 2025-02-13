@@ -5,7 +5,7 @@
         ],
   "speakers": {
     "npc": {
-      "name": "Rocket Grunt",
+      "name": "Rocket Admin Ariana",
       "face": {
         "type": "artificial",
         "modelType": "npc",

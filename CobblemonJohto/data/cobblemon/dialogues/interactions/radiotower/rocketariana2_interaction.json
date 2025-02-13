@@ -42,7 +42,17 @@
             "lines": [
                 "This time... Hee hee hee."
             ],
-            "input": "q.dialogue.set_page('page3');"
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
         },
         {
             "id": "page3",
@@ -57,7 +67,7 @@
                     {
                         "text": "Next",
                         "value": "next",
-                        "action": "q.dialogue.set_page('page3');"
+                        "action": "q.dialogue.set_page('page4');"
                     }
                 ]
             }
