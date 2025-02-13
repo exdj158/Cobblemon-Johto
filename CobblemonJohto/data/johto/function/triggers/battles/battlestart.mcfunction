@@ -6,27 +6,27 @@ execute as @s[tag=!RadioOff,scores={BattleStart=1}] run stopsound @s record
 execute as @s[tag=!RadioOff,scores={BattleStart=1}] run playsound rivalappears record @s ~ ~ ~ 1 1 1
 execute as @s[tag=!RadioOff,scores={BattleStart=1}] run scoreboard players set @s MusicCooldown 82
 
-#2 - Pre-battle Boy 1
+#2 - Pre-battle Boy 1 (Default) (Classes Ace Trainer, Blackbelt, Fisherman, Sailor, Swimmer)
 execute as @s[tag=!RadioOff,scores={BattleStart=2}] run stopsound @s record
 execute as @s[tag=!RadioOff,scores={BattleStart=2}] run playsound boy1appears record @s ~ ~ ~ 1 1 1
 execute as @s[tag=!RadioOff,scores={BattleStart=2}] run scoreboard players set @s MusicCooldown 34
 
-#3 - Pre-battle Sage
+#3 - Pre-battle Sage (Sage)
 execute as @s[tag=!RadioOff,scores={BattleStart=3}] run stopsound @s record
 execute as @s[tag=!RadioOff,scores={BattleStart=3}] run playsound sageappears record @s ~ ~ ~ 1 1 1
 execute as @s[tag=!RadioOff,scores={BattleStart=3}] run scoreboard players set @s MusicCooldown 35
 
-#4 - Pre-battle Girl 1
+#4 - Pre-battle Girl 1 (Beauty, Lass, Birdkeeper)
 execute as @s[tag=!RadioOff,scores={BattleStart=4}] run stopsound @s record
 execute as @s[tag=!RadioOff,scores={BattleStart=4}] run playsound girl1appears record @s ~ ~ ~ 1 1 1
 execute as @s[tag=!RadioOff,scores={BattleStart=4}] run scoreboard players set @s MusicCooldown 27
 
-#5 - Pre-battle Suspicious Figure 1
+#5 - Pre-battle Suspicious Figure 1 (Burglar, Biker, Firebreather)
 execute as @s[tag=!RadioOff,scores={BattleStart=5}] run stopsound @s record
 execute as @s[tag=!RadioOff,scores={BattleStart=5}] run playsound suspicious1appears record @s ~ ~ ~ 1 1 1
 execute as @s[tag=!RadioOff,scores={BattleStart=5}] run scoreboard players set @s MusicCooldown 30
 
-#6 - Pre-battle Suspicious Figure 2
+#6 - Pre-battle Suspicious Figure 2 (Medium, Psychic, Policeman)
 execute as @s[tag=!RadioOff,scores={BattleStart=6}] run stopsound @s record
 execute as @s[tag=!RadioOff,scores={BattleStart=6}] run playsound suspicious2appears record @s ~ ~ ~ 1 1 1
 execute as @s[tag=!RadioOff,scores={BattleStart=6}] run scoreboard players set @s MusicCooldown 73
@@ -36,12 +36,12 @@ execute as @s[tag=!RadioOff,scores={BattleStart=7}] run stopsound @s record
 execute as @s[tag=!RadioOff,scores={BattleStart=7}] run playsound rocketappears record @s ~ ~ ~ 1 1 1
 execute as @s[tag=!RadioOff,scores={BattleStart=7}] run scoreboard players set @s MusicCooldown 49
 
-#8 - Pre-battle Boy 2
+#8 - Pre-battle Boy 2 (Schoolkid, Supernerd, Pokemaniac, Hiker, Camper)
 execute as @s[tag=!RadioOff,scores={BattleStart=8}] run stopsound @s record
 execute as @s[tag=!RadioOff,scores={BattleStart=8}] run playsound boy2appears record @s ~ ~ ~ 1 1 1
 execute as @s[tag=!RadioOff,scores={BattleStart=8}] run scoreboard players set @s MusicCooldown 47
 
-#9 - Pre-battle Girl 2
+#9 - Pre-battle Girl 2 (Picknicker, Twin, Pokefan, Teacher)
 execute as @s[tag=!RadioOff,scores={BattleStart=9}] run stopsound @s record
 execute as @s[tag=!RadioOff,scores={BattleStart=9}] run playsound girl2appears record @s ~ ~ ~ 1 1 1
 execute as @s[tag=!RadioOff,scores={BattleStart=9}] run scoreboard players set @s MusicCooldown 53
