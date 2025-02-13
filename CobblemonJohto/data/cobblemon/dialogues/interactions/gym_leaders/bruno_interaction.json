@@ -20,15 +20,61 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "I am Bruno of the Elite Four. I always train to the extreme because I believe in our potential. That is how we became strong."
+                "I am Bruno of the Elite Four!"
             ],
-            "input": "q.dialogue.set_page('battle_prompt');"
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "Through rigorous training, people and Pokémon can become stronger!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "npc",
+            "lines": [
+                "I've weight trained with my Pokémon! And that will never change!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('battle_prompt');"
+                    }
+                ]
+            }
         },
         {
             "id": "battle_prompt",
             "speaker": "npc",
             "lines": [
-                "Can you withstand our power? Hm? I see no fear in you. You look determined. Perfect for battle!"
+                "We will grind you down with our superior power! Hoo hah!"
             ],
             "input": {
                 "type": "option",
@@ -37,29 +83,22 @@
                     {
                         "text": "§c⚔ Battle ⚔§r",
                         "value": "battle",
-                        "action": "q.dialogue.set_page('battle_start');"
+                        "action": [                           
+                                    "q.run_command('scoreboard players set @p BattleStart 12');",
+                                    "q.run_command('execute as @p run function johto:tools/forceclick');",
+                                    "v.battle = q.npc.start_battle(q.player);"
+                            ]
                     },
                     {
                         "text": "No",
                         "value": "no",
-                        "action": "q.dialogue.close();"
-                    }
-                ]
+                        "action": [              
+                            "q.run_command('scoreboard players set @p BattleStart 0');",
+                            "q.run_command('execute as @p run function johto:tools/forceclick');",
+                            "q.dialogue.close();"]
+                        }
+                    ]
+                }
             }
-        },
-        {
-            "id": "battle_start",
-            "speaker": "npc",
-            "lines": [
-                "Ready? You will bow down to our overwhelming power! Hoo hah!"
-            ],
-            "escapeAction": "0",
-            "input": [
-                "q.player.run_command('scoreboard players set @s BattleStart 12');",
-                "q.player.run_command('function johto:tools/forceclick');",
-                "q.dialogue.close();",
-                "v.battle = q.npc.start_battle(q.player);"
-            ]
-        }
-    ]
-}
+        ]
+    }

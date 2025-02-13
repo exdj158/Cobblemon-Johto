@@ -2153,24 +2153,6 @@ tellraw @s[scores={DialogueTrigger=97,TalkTime=12}] {"text":"<Lance> If your tea
 
 tag @s[scores={DialogueTrigger=97,TalkTime=12..}] add Dialogue97
 
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Hall of Fame Credits
-#Dialogue98
-#scoreboard players set @p[x=-1300,y=77,z=751,dx=24,dy=10,dz=33] DialogueTrigger 98
-
-execute as @s[scores={DialogueTrigger=98,TalkTime=1}] run scoreboard players set @s IP 1
-execute as @s[scores={DialogueTrigger=98,TalkTime=1}] run scoreboard players set @s click 1
-execute as @s[scores={DialogueTrigger=98,TalkTime=1}] run advancement grant @s only johto:champion
-
-tellraw @s[scores={DialogueTrigger=98,TalkTime=5}] {"text":"Congratulations, you have completed the Indigo League!"}
-tellraw @s[scores={DialogueTrigger=98,TalkTime=15}] {"text":"You can now access the Kanto region!"}
-tellraw @s[scores={DialogueTrigger=98,TalkTime=23}] {"text":"Map Creator: Jond."}
-tellraw @s[scores={DialogueTrigger=98,TalkTime=28}] {"text":"Builders: Jond, MystcraftMC, PixelmonChampion, 123abc, Giggs_, gmng24, Mackwiggs."}
-tellraw @s[scores={DialogueTrigger=98,TalkTime=38}] {"text":"Map is based off of: Pokémon Crystal, Heartgold, Soulsilver and a splash of Let's Go."}
-tellraw @s[scores={DialogueTrigger=98,TalkTime=48}] ["",{"text":"Check out my other projects if you enjoyed!\nPixelmon Kalos: "},{"text":"curseforge.com/minecraft/worlds/pixelmon-kalos","color":"aqua","clickEvent":{"action":"run_command","value":"https://www.curseforge.com/minecraft/worlds/pixelmon-kalos"}}]
-
-#runs legendary reset function
-execute as @s[scores={DialogueTrigger=98,TalkTime=58}] run function johto:triggers/legendreset
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Commands if a player chose a Hall of Fame
@@ -2220,10 +2202,6 @@ execute as @s[scores={DialogueTrigger=98,TalkTime=67}] run tag @s remove Dialogu
 execute as @s[scores={DialogueTrigger=98,TalkTime=67}] run tp @s -721 69 -493
 
 
-#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-execute as @s[scores={DialogueTrigger=98,TalkTime=75..}] run tp @s -721 69 -493
-tag @s[scores={DialogueTrigger=98,TalkTime=75..}] add Dialogue98
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Professor Elm call after the Pokémon League

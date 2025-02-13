@@ -20,15 +20,61 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "I am Karen of the Elite Four. I love Dark-type Pokémon."
+                "I am Karen of the Elite Four."
             ],
-            "input": "q.dialogue.set_page('battle_prompt');"
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "I love dark-type Pokémon. I find their wild, tough image to be so appealing."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "npc",
+            "lines": [
+                "And they're so strong. Think you can take them?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('battle_prompt');"
+                    }
+                ]
+            }
         },
         {
             "id": "battle_prompt",
             "speaker": "npc",
             "lines": [
-                "I'm known for my overpowering tactics. Think you can take them?"
+                "Just try to entertain me. Let's go."
             ],
             "input": {
                 "type": "option",
@@ -37,29 +83,22 @@
                     {
                         "text": "§c⚔ Battle ⚔§r",
                         "value": "battle",
-                        "action": "q.dialogue.set_page('battle_start');"
+                        "action": [                           
+                                    "q.run_command('scoreboard players set @p BattleStart 12');",
+                                    "q.run_command('execute as @p run function johto:tools/forceclick');",
+                                    "v.battle = q.npc.start_battle(q.player);"
+                            ]
                     },
                     {
                         "text": "No",
                         "value": "no",
-                        "action": "q.dialogue.close();"
-                    }
-                ]
+                        "action": [              
+                            "q.run_command('scoreboard players set @p BattleStart 0');",
+                            "q.run_command('execute as @p run function johto:tools/forceclick');",
+                            "q.dialogue.close();"]
+                        }
+                    ]
+                }
             }
-        },
-        {
-            "id": "battle_start",
-            "speaker": "npc",
-            "lines": [
-                "Just try to entertain me. Let's go."
-            ],
-            "escapeAction": "0",
-            "input": [
-                "q.player.run_command('scoreboard players set @s BattleStart 12');",
-                "q.player.run_command('function johto:tools/forceclick');",
-                "q.dialogue.close();",
-                "v.battle = q.npc.start_battle(q.player);"
-            ]
-        }
-    ]
-}
+        ]
+    }

@@ -20,15 +20,43 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "Fwahahahaha! I am Koga of the Elite Four. I live in shadows--a ninja! My intricate style will confound and destroy you!"
+                "Fwahahaha! A mere child like you dares to challenge me?"
             ],
-            "input": "q.dialogue.set_page('battle_prompt');"
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "Very well, I shall show you true terror as a ninja master!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('battle_prompt');"
+                    }
+                ]
+            }
         },
         {
             "id": "battle_prompt",
             "speaker": "npc",
             "lines": [
-                "Confusion, sleep, poison... Prepare to be the victim of my sinister techniques! Fwahahahaha!"
+                "You shall feel the despair of poison and sleep techniques!"
             ],
             "input": {
                 "type": "option",
@@ -37,29 +65,22 @@
                     {
                         "text": "§c⚔ Battle ⚔§r",
                         "value": "battle",
-                        "action": "q.dialogue.set_page('battle_start');"
+                        "action": [                           
+                                    "q.run_command('scoreboard players set @p BattleStart 12');",
+                                    "q.run_command('execute as @p run function johto:tools/forceclick');",
+                                    "v.battle = q.npc.start_battle(q.player);"
+                            ]
                     },
                     {
                         "text": "No",
                         "value": "no",
-                        "action": "q.dialogue.close();"
-                    }
-                ]
+                        "action": [              
+                            "q.run_command('scoreboard players set @p BattleStart 0');",
+                            "q.run_command('execute as @p run function johto:tools/forceclick');",
+                            "q.dialogue.close();"]
+                        }
+                    ]
+                }
             }
-        },
-        {
-            "id": "battle_start",
-            "speaker": "npc",
-            "lines": [
-                "Pokémon are not merely about brute force--you shall see soon enough!"
-            ],
-            "escapeAction": "0",
-            "input": [
-                "q.player.run_command('scoreboard players set @s BattleStart 12');",
-                "q.player.run_command('function johto:tools/forceclick');",
-                "q.dialogue.close();",
-                "v.battle = q.npc.start_battle(q.player);"
-            ]
-        }
-    ]
-}
+        ]
+    }

@@ -1,5 +1,5 @@
 {   
-    "names": ["Will"],
+    "names": ["Lance"],
     "speakers": {
         "npc": {
             "name": {
@@ -14,7 +14,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "Welcome to the Pokémon League! Allow me to introduce myself. "
+                "I've been waiting for you."
             ],
             "input": {
                 "type": "option",
@@ -32,7 +32,7 @@
             "id": "page2",
             "speaker": "npc",
             "lines": [
-                "I am Will. I have trained all around the world, making my Psychic-type Pokémon powerful. "
+                "I knew that you, with your skills, would eventually reach me here."
             ],
             "input": {
                 "type": "option",
@@ -50,7 +50,25 @@
             "id": "page3",
             "speaker": "npc",
             "lines": [
-                "And, at last, I've been accepted into the Elite Four. "
+                "There's no need for words now. We will battle to determine who is the stronger of the two of us. "
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "npc",
+            "lines": [
+                "As the most powerful Trainer and as the Pokémon League Champion… "
             ],
             "input": {
                 "type": "option",
@@ -68,7 +86,7 @@
             "id": "battle_prompt",
             "speaker": "npc",
             "lines": [
-                "I can only keep getting better! Losing is not an option!"
+                "I, Lance the dragon master, accept your challenge!"
             ],
             "input": {
                 "type": "option",
@@ -78,7 +96,7 @@
                         "text": "§c⚔ Battle ⚔§r",
                         "value": "battle",
                         "action": [                           
-                                    "q.run_command('scoreboard players set @p BattleStart 12');",
+                                    "q.run_command('scoreboard players set @p BattleStart 16');",
                                     "q.run_command('execute as @p run function johto:tools/forceclick');",
                                     "v.battle = q.npc.start_battle(q.player);"
                             ]

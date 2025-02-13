@@ -1,7 +1,8 @@
 {   "initializationAction": [              
     "c.npc.set_chatting();",
     "q.run_command('scoreboard players set @p BattleEnd 3');",
-    "q.run_command('execute as @p run function johto:tools/forceclick');"
+    "q.run_command('execute as @p run function johto:tools/forceclick');",
+    "q.run_command('tag @p add Bruno');"
         ],
   "speakers": {
     "npc": {
@@ -18,7 +19,7 @@
     {
       "id": "greeting",
       "speaker": "npc",
-      "lines": ["Having lost, I have no right to say anything..."],
+      "lines": ["Why? How could I lose?"],
             "input": {
                 "type": "option",
                 "vertical": false,
@@ -34,7 +35,7 @@
         {
           "id": "page2",
           "speaker": "npc",
-          "lines": ["Go face your next challenge!"],
+          "lines": ["My job is done! Go face your next challenge!"],
                 "input": {
                     "type": "option",
                     "vertical": false,

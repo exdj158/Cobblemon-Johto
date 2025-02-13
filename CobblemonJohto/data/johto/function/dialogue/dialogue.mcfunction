@@ -17,7 +17,30 @@ scoreboard players add @s[scores={DialogueTrigger=1..}] TalkTime 1
 #Most dialogues no longer present here, converting to Cobblemon's own dialogue system.
 #Legacy unported dialogues can be found in dialogue.pixelmon
 
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Hall of Fame Credits
+#Dialogue98
+#scoreboard players set @p[x=-1300,y=77,z=751,dx=24,dy=10,dz=33] DialogueTrigger 98
 
+execute as @s[scores={DialogueTrigger=98,TalkTime=1}] run scoreboard players set @s IP 1
+execute as @s[scores={DialogueTrigger=98,TalkTime=1}] run advancement grant @s only johto:champion
+execute as @s[scores={DialogueTrigger=98,TalkTime=1}] run function johto:tools/forceclick
+
+tellraw @s[scores={DialogueTrigger=98,TalkTime=5}] {"text":"Congratulations, you have completed the Indigo League!"}
+tellraw @s[scores={DialogueTrigger=98,TalkTime=15}] {"text":"You can now access the Kanto region!"}
+tellraw @s[scores={DialogueTrigger=98,TalkTime=23}] {"text":"Map Creator: Jond."}
+tellraw @s[scores={DialogueTrigger=98,TalkTime=28}] {"text":"Builders: Jond, MystcraftMC, 123abc, Giggs_, gmng24, Mackwiggs."}
+tellraw @s[scores={DialogueTrigger=98,TalkTime=38}] {"text":"Modeler: PixelmonChampion. Playtester: H3roDude"}
+tellraw @s[scores={DialogueTrigger=98,TalkTime=48}] {"text":"Map is based off of: Pokémon Crystal, Heartgold, Soulsilver."}
+tellraw @s[scores={DialogueTrigger=98,TalkTime=58}] {"text":"Check out my other projects if you enjoyed!"}
+tellraw @s[scores={DialogueTrigger=98,TalkTime=58}] ["",{"text":"["},{"text":"Pixelmon Hoenn","color":"aqua","clickEvent":{"action":"open_url","value":"https://www.curseforge.com/minecraft/worlds/pixelmon-hoenn"}},{"text":"] ["},{"text":"Pixelmon Kalos","color":"yellow","clickEvent":{"action":"open_url","value":"https://www.curseforge.com/minecraft/worlds/pixelmon-kalos"}},{"text":"] ["},{"text":"Pixelmon Johto","color":"red","clickEvent":{"action":"open_url","value":"https://www.curseforge.com/minecraft/worlds/pixelmon-johto"}},{"text":"]"}]
+
+
+#runs legendary reset function
+execute as @s[scores={DialogueTrigger=98,TalkTime=65}] run function johto:triggers/legendreset
+
+execute as @s[scores={DialogueTrigger=98,TalkTime=65..}] run tp @s -721 69 -493
+tag @s[scores={DialogueTrigger=98,TalkTime=65..}] add Dialogue98
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Odd Egg Rolls
 #scoreboard players set @a[score_TalkTime=0] DialogueTrigger 200 {Inventory:[{id:"minecraft:egg"}]}

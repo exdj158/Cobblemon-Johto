@@ -33,14 +33,8 @@ execute as @s[tag=!RadioOff,scores={BattleEnd=2}] run function johto:tools/force
 
 #3 - Elite Four ending
 execute as @s[tag=!RadioOff,scores={BattleEnd=3}] run stopsound @s record
-execute as @s[tag=!RadioOff,scores={BattleEnd=3}] run playsound victorygym record @s ~ ~ ~ 1 1 1
-execute as @s[tag=!RadioOff,scores={BattleEnd=3}] run scoreboard players set @s MusicCooldown 20
-
-execute as @s[x=-1366,y=62,z=372,dx=73,dy=30,dz=74,scores={BattleEnd=3}] run tag @s add Will
-execute as @s[x=-1366,y=62,z=448,dx=103,dy=30,dz=74,scores={BattleEnd=3}] run tag @s add Koga
-execute as @s[x=-1366,y=62,z=524,dx=103,dy=30,dz=74,scores={BattleEnd=3}] run tag @s add Bruno
-execute as @s[x=-1366,y=62,z=600,dx=103,dy=30,dz=74,scores={BattleEnd=3}] run tag @s add Karen
-execute as @s[x=-1366,y=62,z=676,dx=103,dy=30,dz=74,scores={BattleEnd=3}] run tag @s add Lance
+execute as @s[tag=!RadioOff,scores={BattleEnd=3}] run playsound victorytrainer record @s ~ ~ ~ 1 1 1
+execute as @s[tag=!RadioOff,scores={BattleEnd=3}] run scoreboard players set @s MusicCooldown 19
 
 
 
