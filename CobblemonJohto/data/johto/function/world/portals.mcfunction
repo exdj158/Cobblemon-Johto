@@ -115,7 +115,7 @@ tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Koga
 tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Bruno
 tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Karen
 tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Lance
-tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue94
+tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue98
 
 
 #Non-Rematch Track
@@ -722,24 +722,24 @@ tp @a[x=-744,y=49,z=302,dx=3,dy=3] -743 64 284
 
 #Victory Road Gate Entrance
 
-##Gym Badge check:
-#tag @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=Falkner,tag=Bugsy,tag=Whitney,tag=Morty,tag=Chuck,tag=Jasmine,tag=Pryce,tag=Clair] add JohtoBadges
-#
-#tellraw @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=!JohtoBadges] {"text":"You still need to beat the following Gym Leaders:","italic":true,"color":"gray"}
-#tellraw @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=!Falkner] {"text":"Falkner","italic":true,"color":"gray"}
-#tellraw @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=!Bugsy] {"text":"Bugsy","italic":true,"color":"gray"}
-#tellraw @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=!Whitney] {"text":"Whitney","italic":true,"color":"gray"}
-#tellraw @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=!Morty] {"text":"Morty","italic":true,"color":"gray"}
-#tellraw @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=!Chuck] {"text":"Chuck","italic":true,"color":"gray"}
-#tellraw @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=!Jasmine] {"text":"Jasmine","italic":true,"color":"gray"}
-#tellraw @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=!Pryce] {"text":"Pryce","italic":true,"color":"gray"}
-#tellraw @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=!Clair] {"text":"Clair","italic":true,"color":"gray"}
-#tp @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=!JohtoBadges] ~ ~ ~-7
-#
-#playsound door ambient @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=JohtoBadges] ~ ~ ~ 100 1 1
-#scoreboard players set @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=JohtoBadges] EscapeRope 19
-#scoreboard players set @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=JohtoBadges] click 1
-#tp @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=JohtoBadges] -1432 19 377
+#Gym Badge check:
+tag @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=Falkner,tag=Bugsy,tag=Whitney,tag=Morty,tag=Chuck,tag=Jasmine,tag=Pryce,tag=Clair] add JohtoBadges
+
+tellraw @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=!JohtoBadges] {"text":"You still need to beat the following Gym Leaders:","italic":true,"color":"gray"}
+tellraw @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=!Falkner] {"text":"Falkner","italic":true,"color":"gray"}
+tellraw @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=!Bugsy] {"text":"Bugsy","italic":true,"color":"gray"}
+tellraw @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=!Whitney] {"text":"Whitney","italic":true,"color":"gray"}
+tellraw @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=!Morty] {"text":"Morty","italic":true,"color":"gray"}
+tellraw @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=!Chuck] {"text":"Chuck","italic":true,"color":"gray"}
+tellraw @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=!Jasmine] {"text":"Jasmine","italic":true,"color":"gray"}
+tellraw @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=!Pryce] {"text":"Pryce","italic":true,"color":"gray"}
+tellraw @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=!Clair] {"text":"Clair","italic":true,"color":"gray"}
+tp @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=!JohtoBadges] ~ ~ ~-7
+
+playsound door ambient @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=JohtoBadges] ~ ~ ~ 100 1 1
+scoreboard players set @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=JohtoBadges] EscapeRope 19
+scoreboard players set @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=JohtoBadges] click 1
+tp @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=JohtoBadges] -1432 19 377
 
 playsound door ambient @a[x=-1260,y=64,z=118,dx=3,dy=3] ~ ~ ~ 100 1 1
 scoreboard players set @a[x=-1260,y=64,z=118,dx=3,dy=3] EscapeRope 19

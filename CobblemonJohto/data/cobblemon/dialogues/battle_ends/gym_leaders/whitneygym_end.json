@@ -1,7 +1,8 @@
 {   "initializationAction": [              
     "c.npc.set_chatting();",
     "q.run_command('scoreboard players set @p BattleEnd 2');",
-    "q.run_command('execute as @p run function johto:tools/forceclick');"
+    "q.run_command('execute as @p run function johto:tools/forceclick');",
+    "q.run_command('execute as @p run tag @p add Whitney');"
         ],
   "speakers": {
     "npc": {
