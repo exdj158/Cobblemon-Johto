@@ -15,6 +15,25 @@
                 "canSeeSky": false,
                 "minX": -22, "maxX": 206, "minY": 42, "maxY": 66, "minZ": 217, "maxZ": 301
             }
-        }
+        },
+
+        {
+            "id": "marill-2",
+            "pokemon": "abra",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "10-20",
+            "weight": 10.0,
+            "condition": {
+                "minX": 1406, "maxX": 1777, "minZ": -90, "maxZ": 101,
+                "biomes": [
+                    "minecraft:sunflower_plains"
+                ]
+                }
+            }
     ]
 }

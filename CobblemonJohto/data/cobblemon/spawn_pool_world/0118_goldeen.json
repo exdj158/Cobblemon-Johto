@@ -118,6 +118,26 @@
                 "canSeeSky": true,
                 "minX": -3338, "maxX": -2572, "minZ": 523, "maxZ": 1013
             }
+        },
+
+        {
+            "id": "goldeen-8",
+            "pokemon": "goldeen",
+            "presets": [
+                "water"
+            ],
+            "type": "pokemon",
+            "context": "surface",
+            "bucket": "common",
+            "level": "5-10",
+            "weight": 90.0,
+            "condition": {
+                "minX": 1406, "maxX": 1777, "minZ": -90, "maxZ": 101,
+                "biomes": [
+                "minecraft:swamp",
+                "minecraft:stony_shore"
+            ]
+            }
         }
     ]
 }

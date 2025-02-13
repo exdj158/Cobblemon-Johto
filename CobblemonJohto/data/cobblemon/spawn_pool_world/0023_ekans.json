@@ -69,6 +69,25 @@
               ],
               "minX": -2584, "maxX": -2314, "minZ": 672, "maxZ": 744
           }
-      }
+      },
+
+      {
+        "id": "ekans-5",
+        "pokemon": "ekans",
+        "presets": [
+            "natural"
+        ],
+        "type": "pokemon",
+        "context": "grounded",
+        "bucket": "common",
+        "level": "10-20",
+        "weight": 10.0,
+        "condition": {
+            "minX": 1406, "maxX": 1777, "minZ": -90, "maxZ": 101,
+            "biomes": [
+                "minecraft:mangrove_swamp"
+            ]
+            }
+        }
     ]
 }

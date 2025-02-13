@@ -68,6 +68,25 @@
                 ],
                 "minX": -2856, "maxX": -2816, "minZ": 997, "maxZ": 1017
             }
-        }
+        },
+
+        {
+            "id": "weepinbell-5",
+            "pokemon": "weepinbell",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "10-20",
+            "weight": 10.0,
+            "condition": {
+                "minX": 1406, "maxX": 1777, "minZ": -90, "maxZ": 101,
+                "biomes": [
+                    "minecraft:swamp"
+                ]
+                }
+            }
     ]
 }

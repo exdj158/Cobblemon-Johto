@@ -292,6 +292,26 @@
                 "canSeeSky": false,
                 "minX": -2128, "maxX": -2022, "minY": 0, "maxY": 24, "minZ": -889, "maxZ": -825
             }
-        }
+        },
+
+        {
+            "id": "golbat-22",
+            "pokemon": "golbat",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "10-20",
+            "weight": 10.0,
+            "condition": {
+                "minX": 1406, "maxX": 1777, "minZ": -90, "maxZ": 101,
+                "biomes": [
+                    "minecraft:windswept_hills",
+                    "minecraft:savanna"
+                ]
+                }
+            }
     ]
 }

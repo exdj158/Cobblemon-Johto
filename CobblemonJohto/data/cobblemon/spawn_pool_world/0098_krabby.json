@@ -28,6 +28,26 @@
               "canSeeSky": false,
               "minX": 1219, "maxX": 1270, "minY": 25, "maxY": 39, "minZ": 164, "maxZ": 197
           }
-      }
+      },
+
+      {
+        "id": "krabby-3",
+        "pokemon": "krabby",
+        "presets": [
+            "natural"
+        ],
+        "type": "pokemon",
+        "context": "grounded",
+        "bucket": "common",
+        "level": "10-20",
+        "weight": 10.0,
+        "condition": {
+            "minX": 1406, "maxX": 1777, "minZ": -90, "maxZ": 101,
+            "biomes": [
+                "minecraft:windswept_hills",
+                "minecraft:stony_shore"
+            ]
+            }
+        }
     ]
 }

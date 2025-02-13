@@ -18,6 +18,25 @@
               "canSeeSky": false,
               "minX": 99, "maxX": 134, "minY": 10, "maxY": 25, "minZ": -865, "maxZ": -839
           }
-      }
+      },
+
+      {
+        "id": "lapras-2",
+        "pokemon": "lapras",
+        "presets": [
+            "water"
+        ],
+        "type": "pokemon",
+        "context": "surface",
+        "bucket": "common",
+        "level": "10-20",
+        "weight": 10.0,
+        "condition": {
+            "minX": 1406, "maxX": 1777, "minZ": -90, "maxZ": 101,
+            "biomes": [
+                "minecraft:stony_shore"
+            ]
+            }
+        }
     ]
 }

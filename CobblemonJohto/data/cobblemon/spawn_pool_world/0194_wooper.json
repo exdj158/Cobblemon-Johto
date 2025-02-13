@@ -66,6 +66,27 @@
           "condition": {
               "minX": 79, "maxX": 225, "minY": 26, "maxY": 39, "minZ": -880, "maxZ": -585
           }
-      }
+      },
+
+      {
+        "id": "wooper-5",
+        "pokemon": "wooper",
+        "presets": [
+            "natural"
+        ],
+        "type": "pokemon",
+        "context": "grounded",
+        "bucket": "common",
+        "level": "10-20",
+        "weight": 10.0,
+        "condition": {
+            "minX": 1406, "maxX": 1777, "minZ": -90, "maxZ": 101,
+            "biomes": [
+                "minecraft:sunflower_plains",
+                "minecraft:mangrove_swamp",
+                "minecraft:river"
+            ]
+            }
+        }
     ]
 }

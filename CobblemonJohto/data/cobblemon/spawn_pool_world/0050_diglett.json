@@ -32,6 +32,25 @@
                 "canSeeSky": false,
                 "minX": -3091, "maxX": -2945, "minY": 39, "maxY": 57, "minZ": 72, "maxZ": 222
             }
-        }
+        },
+
+        {
+            "id": "diglett-3",
+            "pokemon": "diglett",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "10-20",
+            "weight": 10.0,
+            "condition": {
+                "minX": 1406, "maxX": 1777, "minZ": -90, "maxZ": 101,
+                "biomes": [
+                    "minecraft:mangrove_swamp"
+                ]
+                }
+            }
     ]
 }

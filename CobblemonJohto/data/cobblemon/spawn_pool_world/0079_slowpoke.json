@@ -87,6 +87,25 @@
           "condition": {
               "minX": -977, "maxX": -859, "minZ": -482, "maxZ": -420
           }
-      }
+      },
+
+      {
+        "id": "slowpoke-6",
+        "pokemon": "slowpoke",
+        "presets": [
+            "natural"
+        ],
+        "type": "pokemon",
+        "context": "grounded",
+        "bucket": "common",
+        "level": "10-20",
+        "weight": 10.0,
+        "condition": {
+            "minX": 1406, "maxX": 1777, "minZ": -90, "maxZ": 101,
+            "biomes": [
+                "minecraft:stony_shore"
+            ]
+            }
+        }
     ]
 }

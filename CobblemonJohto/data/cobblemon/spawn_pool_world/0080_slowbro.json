@@ -17,6 +17,26 @@
           "condition": {
               "minX": -2128, "maxX": -2022, "minY": 0, "maxY": 32, "minZ": -889, "maxZ": -825
           }
-      }
+      },
+
+      {
+        "id": "slowbro-2",
+        "pokemon": "slowbro",
+        "presets": [
+            "natural"
+        ],
+        "type": "pokemon",
+        "context": "grounded",
+        "bucket": "common",
+        "level": "10-20",
+        "weight": 10.0,
+        "condition": {
+            "minX": 1406, "maxX": 1777, "minZ": -90, "maxZ": 101,
+            "biomes": [
+                "minecraft:jagged_peaks",
+                "minecraft:stony_shore"
+            ]
+        }
+    }
     ]
 }

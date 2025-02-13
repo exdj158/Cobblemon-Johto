@@ -419,7 +419,28 @@
                 "canSeeSky": false,
                 "minX": -2128, "maxX": -2022, "minY": 25, "maxY": 32, "minZ": -889, "maxZ": -825
             }
-        }
+        },
+
+        {
+            "id": "zubat-30",
+            "pokemon": "zubat",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "10-20",
+            "weight": 10.0,
+            "condition": {
+                "minX": 1406, "maxX": 1777, "minZ": -90, "maxZ": 101,
+                "biomes": [
+                    "minecraft:windswept_hills",
+                    "minecraft:stony_shore",
+                    "minecraft:savanna"
+                ]
+                }
+            }
 
 
     ]

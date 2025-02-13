@@ -28,6 +28,25 @@
                 "canSeeSky": false,
                 "minX": -1039, "maxX": -932, "maxY": 98, "minZ": 233, "maxZ": 364
             }
-        }
+        },
+
+        {
+            "id": "larvitar-3",
+            "pokemon": "larvitar",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "10-20",
+            "weight": 10.0,
+            "condition": {
+                "minX": 1406, "maxX": 1777, "minZ": -90, "maxZ": 101,
+                "biomes": [
+                    "minecraft:windswept_hills"
+                ]
+                }
+            }
     ]
 }

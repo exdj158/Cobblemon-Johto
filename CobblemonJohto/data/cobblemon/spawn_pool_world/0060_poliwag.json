@@ -136,6 +136,28 @@
                 "canSeeSky": true,
                 "minX": -1565, "maxX": -1408, "minZ": -1, "maxZ": 72
             }
+        },
+
+        {
+            "id": "poliwag-9",
+            "pokemon": "poliwag",
+            "presets": [
+                "water"
+            ],
+            "type": "pokemon",
+            "context": "surface",
+            "bucket": "common",
+            "level": "5-10",
+            "weight": 90.0,
+            "condition": {
+                "minX": 1406, "maxX": 1777, "minZ": -90, "maxZ": 101,
+                "biomes": [
+                "minecraft:sunflower_plains",
+                "minecraft:mangrove_swamp",
+                "minecraft:stony_shore",
+                "minecraft:river"
+            ]
+            }
         }
     ]
 }

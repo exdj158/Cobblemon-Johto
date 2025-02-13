@@ -210,6 +210,26 @@
                 "timeRange": "night",
               "minX": -2816, "maxX": -2686, "minZ": 52, "maxZ": 235
           }
-      }
+      },
+
+      {
+        "id": "bellsprout-13",
+        "pokemon": "bellsprout",
+        "presets": [
+            "natural"
+        ],
+        "type": "pokemon",
+        "context": "grounded",
+        "bucket": "common",
+        "level": "10-20",
+        "weight": 10.0,
+        "condition": {
+            "minX": 1406, "maxX": 1777, "minZ": -90, "maxZ": 101,
+            "biomes": [
+                "minecraft:forest",
+                "minecraft:badlands"
+            ]
+            }
+        }
     ]
 }
