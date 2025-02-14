@@ -37,6 +37,35 @@
                     "minecraft:swamp"
                 ]
                 }
+            },
+
+            {
+                "id": "dratini-3",
+                "pokemon": "dratini",
+                "type": "pokemon",
+                "context": "fishing",
+                "bucket": "common",
+                "level": "20",
+                "weight": 10.0,
+                "condition": {
+                    "minX": -744, "maxX": -583, "minZ": 507, "maxZ": 654,
+                    "minLureLevel": 2,
+                    "maxLureLevel": 2
+                }
+            },
+            {
+                "id": "dratini-4",
+                "pokemon": "dratini",
+                "type": "pokemon",
+                "context": "fishing",
+                "bucket": "common",
+                "level": "40",
+                "weight": 32.0,
+                "condition": {
+                    "minX": -744, "maxX": -583, "minZ": 507, "maxZ": 654,
+                    "minLureLevel": 3,
+                    "maxLureLevel": 3
+                }
             }
     ]
 }

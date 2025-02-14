@@ -138,6 +138,156 @@
                 "minecraft:stony_shore"
             ]
             }
+        },
+
+        {
+            "id": "seaking-9",
+            "pokemon": "seaking",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "40",
+            "weight": 10.0,
+            "condition": {
+                "minX": -418, "maxX": -203, "minZ": -191, "maxZ": 126,
+                "minLureLevel": 3,
+                "maxLureLevel": 3
+            }
+        },
+
+        {
+            "id": "seaking-10",
+            "pokemon": "seaking",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "40",
+            "weight": 10.0,
+            "condition": {
+                "minX": 79 , "maxX": 226, "minY":20, "minZ": -880, "maxZ": -580,
+                "minLureLevel": 3,
+                "maxLureLevel": 3
+            }
+        },
+
+        {
+            "id": "seaking-11",
+            "pokemon": "seaking",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "40",
+            "weight": 10.0,
+            "condition": {
+                "minX": 232, "maxX": 326, "minZ": -731, "maxZ": -650,
+                "minLureLevel": 3,
+                "maxLureLevel": 3
+            }
+        },
+
+        {
+            "id": "seaking-12",
+            "pokemon": "seaking",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "40",
+            "weight": 10.0,
+            "condition": {
+                "minX": 6, "maxX": 188, "minZ": 140, "maxZ": 216,
+                "minLureLevel": 3,
+                "maxLureLevel": 3
+            }
+        },
+
+        {
+            "id": "seaking-13",
+            "pokemon": "seaking",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "40",
+            "weight": 10.0,
+            "condition": {
+                "minX": -22, "maxX": 222, "minZ": 217, "maxZ": 590,
+                "minLureLevel": 3,
+                "maxLureLevel": 3
+            }
+        },
+
+        {
+            "id": "seaking-14",
+            "pokemon": "seaking",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "40",
+            "weight": 10.0,
+            "condition": {
+                "minX": -984, "maxX": -859, "minZ": -482, "maxZ": -420,
+                "minLureLevel": 3,
+                "maxLureLevel": 3
+            }
+        },
+
+        {
+            "id": "seaking-14",
+            "pokemon": "seaking",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "40",
+            "weight": 10.0,
+            "condition": {
+                "minX": -3338, "maxX": -2572, "minZ": 523, "maxZ": 1013,
+                "minLureLevel": 3,
+                "maxLureLevel": 3
+            }
+        },
+
+        {
+            "id": "seaking-15",
+            "pokemon": "seaking",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "20",
+            "weight": 10.0,
+            "condition": {
+                "minX": -1047, "maxX": -927, "minZ": 255, "maxZ": 367,
+                "minLureLevel": 2,
+                "maxLureLevel": 2
+            }
+        },
+        {
+            "id": "seaking-16",
+            "pokemon": "seaking",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "40",
+            "weight": 50.0,
+            "condition": {
+                "timeRange": "dawn,dusk,day",
+                "minX": -1047, "maxX": -927, "minZ": 255, "maxZ": 367,
+                "minLureLevel": 3,
+                "maxLureLevel": 3
+            }
+        },
+        {
+            "id": "seaking-17",
+            "pokemon": "seaking",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "40",
+            "weight": 20.0,
+            "condition": {
+                "timeRange": "night",
+                "minX": -1047, "maxX": -927, "minZ": 255, "maxZ": 367,
+                "minLureLevel": 3,
+                "maxLureLevel": 3
+            }
         }
     ]
 }

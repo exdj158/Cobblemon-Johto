@@ -350,6 +350,96 @@
                 "minLureLevel": 3,
                 "maxLureLevel": 3
             }
+        },
+
+        {
+            "id": "tentacruel-19",
+            "pokemon": "tentacruel",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "40",
+            "weight": 7.0,
+            "condition": {
+                "minX": 870, "maxX": 1144, "minZ": -532, "maxZ": -227,
+                "minLureLevel": 3,
+                "maxLureLevel": 3
+            }
+        },
+
+        {
+            "id": "tentacruel-20",
+            "pokemon": "tentacruel",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "40",
+            "weight": 20.0,
+            "condition": {
+                "minX": -1309, "maxX": -1249, "minZ": -570, "maxZ": -458,
+                "minLureLevel": 3,
+                "maxLureLevel": 3
+            }
+        },
+
+        {
+            "id": "tentacruel-21",
+            "pokemon": "tentacruel",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "40",
+            "weight": 20.0,
+            "condition": {
+                "minX": -2932, "maxX": -2647, "minZ": -226, "maxZ": 68,
+                "minLureLevel": 3,
+                "maxLureLevel": 3
+            }
+        },
+
+        {
+            "id": "tentacruel-21",
+            "pokemon": "tentacruel",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "40",
+            "weight": 7.0,
+            "condition": {
+                "minX": -2479, "maxX": -1620, "minZ": -969, "maxZ": -832,
+                "minLureLevel": 3,
+                "maxLureLevel": 3
+            }
+        },
+
+        {
+            "id": "tentacruel-22",
+            "pokemon": "tentacruel",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "40",
+            "weight": 7.0,
+            "condition": {
+                "minX": -1767, "maxX": -1620, "minZ": -831, "maxZ": -328,
+                "minLureLevel": 3,
+                "maxLureLevel": 3
+            }
+        },
+
+        {
+            "id": "tentacruel-22",
+            "pokemon": "tentacruel",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "40",
+            "weight": 7.0,
+            "condition": {
+                "minX": 528, "maxX": 975, "minZ": 320, "maxZ": 799,
+                "minLureLevel": 3,
+                "maxLureLevel": 3
+            }
         }
     ]
 }

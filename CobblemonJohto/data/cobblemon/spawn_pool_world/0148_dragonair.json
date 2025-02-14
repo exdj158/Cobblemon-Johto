@@ -20,6 +20,21 @@
                     "minecraft:swamp"
                 ]
                 }
+            },
+
+            {
+                "id": "dragonair-2",
+                "pokemon": "dragonair",
+                "type": "pokemon",
+                "context": "fishing",
+                "bucket": "common",
+                "level": "40",
+                "weight": 3.0,
+                "condition": {
+                    "minX": -744, "maxX": -583, "minZ": 507, "maxZ": 654,
+                    "minLureLevel": 3,
+                    "maxLureLevel": 3
+                }
             }
     ]
 }
