@@ -160,6 +160,35 @@
                 "minecraft:river"
             ]
             }
+        },
+
+        {
+            "id": "magikarp-11",
+            "pokemon": "tentacool",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "10",
+            "weight": 95.0,
+            "condition": {
+                "minX": -898, "maxX": -747, "minZ": -560, "maxZ": -483,
+                "minLureLevel": 1,
+                "maxLureLevel": 1
+            }
+        },
+        {
+            "id": "magikarp-12",
+            "pokemon": "tentacool",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "20",
+            "weight": 60.0,
+            "condition": {
+                "minX": -898, "maxX": -747, "minZ": -560, "maxZ": -483,
+                "minLureLevel": 2,
+                "maxLureLevel": 2
+            }
         }
     ]
 }

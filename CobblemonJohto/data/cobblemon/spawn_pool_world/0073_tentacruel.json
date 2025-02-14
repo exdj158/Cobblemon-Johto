@@ -335,6 +335,21 @@
                 "canSeeSky": true,
                 "minX": -2479, "maxX": -1620, "minZ": -969, "maxZ": -832
             }
+        },
+
+        {
+            "id": "tentacruel-18",
+            "pokemon": "tentacruel",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "40",
+            "weight": 7.0,
+            "condition": {
+                "minX": -898, "maxX": -747, "minZ": -560, "maxZ": -483,
+                "minLureLevel": 3,
+                "maxLureLevel": 3
+            }
         }
     ]
 }

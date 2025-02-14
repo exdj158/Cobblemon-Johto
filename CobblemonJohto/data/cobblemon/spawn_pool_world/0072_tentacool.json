@@ -324,25 +324,27 @@
             "type": "pokemon",
             "context": "fishing",
             "bucket": "common",
-            "level": "10-10",
+            "level": "10",
             "weight": 90.0,
             "condition": {
                 "minX": -898, "maxX": -747, "minZ": -560, "maxZ": -483,
-                "bobber": "cobblemon:poke_ball"
+                "minLureLevel": 1,
+                "maxLureLevel": 1
                   }
             },
-        {
-            "id": "tentacool-19",
-            "pokemon": "tentacool",
-            "type": "pokemon",
-            "context": "fishing",
-            "bucket": "common",
-            "level": "20-20",
-            "weight": 90.0,
-            "condition": {
-                "minX": -898, "maxX": -747, "minZ": -560, "maxZ": -483,
-                "bobber": "cobblemon:great_ball"
+            {
+                "id": "tentacool-19",
+                "pokemon": "tentacool",
+                "type": "pokemon",
+                "context": "fishing",
+                "bucket": "common",
+                "level": "20",
+                "weight": 30.0,
+                "condition": {
+                    "minX": -898, "maxX": -747, "minZ": -560, "maxZ": -483,
+                    "minLureLevel": 2,
+                    "maxLureLevel": 2
+                }
             }
-        }
     ]
 }

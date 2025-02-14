@@ -1,0 +1,35 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "chinchou-1",
+            "pokemon": "chinchou",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "20",
+            "weight": 7.0,
+            "condition": {
+                "minX": -898, "maxX": -747, "minZ": -560, "maxZ": -483,
+                "minLureLevel": 2,
+                "maxLureLevel": 2
+            }
+        },
+        {
+            "id": "chinchou-2",
+            "pokemon": "chinchou",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "40",
+            "weight": 60.0,
+            "condition": {
+                "minX": -898, "maxX": -747, "minZ": -560, "maxZ": -483,
+                "minLureLevel": 3,
+                "maxLureLevel": 3
+            }
+        }
+    ]
+}
