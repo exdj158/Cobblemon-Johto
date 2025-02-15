@@ -202,6 +202,10 @@ spawnpoint @a[x=-3287,y=64,z=675,distance=..5] -3287 64 675
 
 #-------------------------------------------------------------------------------------------------------------------------
 #Dialogues function
+
+#Runs dialogue triggers to set scores or to open Cobble dialogues
+execute as @a[tag=!InDialogue] run function johto:dialogue/dialoguetriggers
+
 #Runs primary dialogue functions
 execute as @a[scores={DialogueTrigger=1..500}] run function johto:dialogue/dialogue
 
