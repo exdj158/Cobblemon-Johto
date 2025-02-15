@@ -5,6 +5,8 @@
 	},
 	"overrides": [
 	{"predicate": {"custom_model_data":0}, "model": "playeritems/radio"},
-	{"predicate": {"custom_model_data":1}, "model": "hms/fly"}
+	{"predicate": {"custom_model_data":1}, "model": "hms/fly"},
+	{"predicate": {"custom_model_data":2}, "model": "world/rocksmash"},
+	{"predicate": {"custom_model_data":3}, "model": "world/rocksmash1"}
 ]
 }
