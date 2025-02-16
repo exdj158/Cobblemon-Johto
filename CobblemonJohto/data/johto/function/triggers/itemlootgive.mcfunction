@@ -1848,6 +1848,10 @@ execute as @s[x=-3289,y=65,z=-136,distance=..4,tag=!ItemLoot370] run tellraw @s 
 execute as @s[x=-3289,y=65,z=-136,distance=..4,tag=!ItemLoot370] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=-3289,y=65,z=-136,distance=..4,tag=!ItemLoot370] run tag @s add ItemLoot370
 
+execute as @s[x=-270,y=65,z=-505,distance=..5,tag=!ItemLoot371] run function johto:spawn/townmap
+execute as @s[x=-270,y=65,z=-505,distance=..5,tag=!ItemLoot371] run tellraw @s {"text":"You received a Town Map!","italic":true,"color":"gray"}
+execute as @s[x=-270,y=65,z=-505,distance=..5,tag=!ItemLoot371] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-270,y=65,z=-505,distance=..5,tag=!ItemLoot371] run tag @s add ItemLoot371
 
 
 
