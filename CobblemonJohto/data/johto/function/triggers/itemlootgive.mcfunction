@@ -148,10 +148,10 @@ execute as @s[x=50,y=104,z=25,distance=..4,tag=!ItemLoot30] run tellraw @s {"tex
 execute as @s[x=50,y=104,z=25,distance=..4,tag=!ItemLoot30] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=50,y=104,z=25,distance=..4,tag=!ItemLoot30] run tag @s add ItemLoot30
 
-execute as @s[x=83,y=64,z=-225,distance=..4,tag=!ItemLoot31] run give @s cobblemon:miracle_seed
-execute as @s[x=83,y=64,z=-225,distance=..4,tag=!ItemLoot31] run tellraw @s {"text":"You found a Miracle Seed!","italic":true,"color":"gray"}
-execute as @s[x=83,y=64,z=-225,distance=..4,tag=!ItemLoot31] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
-execute as @s[x=83,y=64,z=-225,distance=..4,tag=!ItemLoot31] run tag @s add ItemLoot31
+execute as @s[x=83,y=64,z=-224,distance=..5,tag=!ItemLoot31] run give @s cobblemon:miracle_seed
+execute as @s[x=83,y=64,z=-224,distance=..5,tag=!ItemLoot31] run tellraw @s {"text":"You found a Miracle Seed!","italic":true,"color":"gray"}
+execute as @s[x=83,y=64,z=-224,distance=..5,tag=!ItemLoot31] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=83,y=64,z=-224,distance=..5,tag=!ItemLoot31] run tag @s add ItemLoot31
 
 execute as @s[x=123,y=64,z=-546,distance=..4,tag=!ItemLoot32] run give @s cobblemon:great_ball
 execute as @s[x=123,y=64,z=-546,distance=..4,tag=!ItemLoot32] run tellraw @s {"text":"You found a Great Ball!","italic":true,"color":"gray"}
@@ -1833,10 +1833,10 @@ execute as @s[x=-1292,y=64,z=212,distance=..4,tag=!ItemLoot367] run tellraw @s {
 execute as @s[x=-1292,y=64,z=212,distance=..4,tag=!ItemLoot367] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=-1292,y=64,z=212,distance=..4,tag=!ItemLoot367] run tag @s add ItemLoot367
 
-execute as @s[x=128,y=65,z=-571,distance=..4,tag=!ItemLoot368] run give @s cobblemon:poke_rod[custom_name='["",{"text":"Old Rod","italic":false}]',lore=['["",{"text":"An old and beat-up fishing rod.","italic":false}]','["",{"text":"Use it by any body of water to","italic":false}]','["",{"text":"fish for wild aquatic Pokémon.","italic":false}]'],enchantment_glint_override=false,enchantments={levels:{lure:1},show_in_tooltip:false},unbreakable={}]
-execute as @s[x=128,y=65,z=-571,distance=..4,tag=!ItemLoot368] run tellraw @s {"text":"You found an Old Rod!","italic":true,"color":"gray"}
-execute as @s[x=128,y=65,z=-571,distance=..4,tag=!ItemLoot368] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
-execute as @s[x=128,y=65,z=-571,distance=..4,tag=!ItemLoot368] run tag @s add ItemLoot368
+execute as @s[x=130,y=65,z=-571,distance=..4,tag=!ItemLoot368] run give @s cobblemon:poke_rod[custom_name='["",{"text":"Old Rod","italic":false}]',lore=['["",{"text":"An old and beat-up fishing rod.","italic":false}]','["",{"text":"Use it by any body of water to","italic":false}]','["",{"text":"fish for wild aquatic Pokémon.","italic":false}]'],enchantment_glint_override=false,enchantments={levels:{lure:1},show_in_tooltip:false},unbreakable={}]
+execute as @s[x=130,y=65,z=-571,distance=..4,tag=!ItemLoot368] run tellraw @s {"text":"You found an Old Rod!","italic":true,"color":"gray"}
+execute as @s[x=130,y=65,z=-571,distance=..4,tag=!ItemLoot368] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=130,y=65,z=-571,distance=..4,tag=!ItemLoot368] run tag @s add ItemLoot368
 
 execute as @s[x=792,y=65,z=-2,distance=..4,tag=!ItemLoot369] run give @s cobblemon:great_rod[custom_name='["",{"text":"Good Rod","italic":false}]',lore=['["",{"text":"A new, good-quality fishing rod.","italic":false}]','["",{"text":"Use it by any body of water to","italic":false}]','["",{"text":"fish for wild aquatic Pokémon.","italic":false}]'],enchantment_glint_override=false,enchantments={levels:{lure:2},show_in_tooltip:false},unbreakable={}]
 execute as @s[x=792,y=65,z=-2,distance=..4,tag=!ItemLoot369] run tellraw @s {"text":"You found a Great Rod!","italic":true,"color":"gray"}
