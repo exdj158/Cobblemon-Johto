@@ -229,11 +229,6 @@ scoreboard players set @a[scores={DialogueTrigger=1..},tag=Dialogue49] DialogueT
 #Runs Ruins of Alph puzzle if player is in the ruins
 execute if entity @e[x=-867,y=69,z=-214,dy=3,dz=4,tag=!UnownSpawning,limit=1] if entity @a[x=174,y=36,z=-163,dx=42,dy=22,dz=85] run function johto:world/ruinspuzzle
 
-#Safari Zone Prompt
-execute as @a[x=1587,y=88,z=-106,distance=..5,scores={TalkTime=0,Cooldown=0}] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=!SafariActive] run scoreboard players enable @s TriggerCommand
-execute as @a[x=1587,y=88,z=-106,distance=..5,scores={TalkTime=0,Cooldown=0}] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=!SafariActive] run tellraw @s {"text": "<Safari Clerk> Begin your Safari Zone session? ", "extra": [{"text":"[Yes]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 22"}}]}
-execute as @a[x=1587,y=88,z=-106,distance=..5,scores={TalkTime=0,Cooldown=0}] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=!SafariActive] run scoreboard players set @s Cooldown 120
-
 #Safari Zone Mapping Function
 execute as @a[x=1590,y=74,z=-129,dx=10,dy=5,dz=10] run function johto:world/safariselect
 

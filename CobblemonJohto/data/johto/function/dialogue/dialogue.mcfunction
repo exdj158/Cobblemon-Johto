@@ -171,8 +171,12 @@ execute as @s[scores={DialogueTrigger=202,TalkTime=65}] run advancement grant @s
 
 tag @s[scores={DialogueTrigger=202,TalkTime=65..}] add Dialogue202
 
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#PokeManiac Kirk giving Shuckle, Cianwood City
 
-
+execute as @s[scores={DialogueTrigger=203,TalkTime=1}] run playsound egghatch ambient @s ~ ~ ~ 1 1 1
+execute as @s[scores={DialogueTrigger=203,TalkTime=1}] run pokegiveother @s shuckle level=15
+tag @s[scores={DialogueTrigger=203,TalkTime=2..}] add Dialogue203
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #EndDialogue tag, ends a dialogue without finishing. Trigger may take over again as tag is not given

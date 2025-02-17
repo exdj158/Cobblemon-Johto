@@ -20,8 +20,6 @@ give @s cobblemon:pokedex_red
 function johto:spawn/radio4
 give @s cobblemon:poke_ball 10
 give @s cobblemon:potion 10
-function johto:spawn/flyhm
-function johto:spawn/townmap
 
 
 #Sets Spawnpoint
