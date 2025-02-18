@@ -1,6 +1,6 @@
 {  
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:officerjenny",
+    "resourceIdentifier": "cobblemon:supernerd",
     "presets": [],
     "variation": {
         "dirt": [
@@ -12,9 +12,9 @@
     },
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:indigo_officerjenny_interaction"
+        "dialogue": "cobblemon:cinnabar_supernerd_interaction"
     },
-        "name": "Officer Jenny",
+        "name": "     ",
         "party": {
         "type": "simple",
         "pokemon": [
