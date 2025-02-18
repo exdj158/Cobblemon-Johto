@@ -1,6 +1,6 @@
 {  
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:hiker",
+    "resourceIdentifier": "cobblemon:blackbelt",
     "presets": [],
     "variation": {
         "dirt": [
@@ -12,9 +12,9 @@
     },
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:safari_hiker_interaction"
+        "dialogue": "cobblemon:blackthorn_blackbelt_interaction"
     },
-        "name": "      ",
+        "name": "     ",
         "party": {
         "type": "simple",
         "pokemon": [
