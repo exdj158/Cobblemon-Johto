@@ -1883,8 +1883,8 @@ execute as @a[x=-1292,y=64,z=212,distance=..15] unless entity @e[x=-1292,y=64,z=
 #setblock 792 65 -2 minecraft:player_head[rotation=0]{profile:{id:[I;1620469368,974799382,-1927819010,373990640],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTVmZWY4MTU1MDNiODZjZTljZDNiYTgxZTljOWE3OTI2ZGQ3ZTE3MjFjYTYyYjMwMGVlYjgyYmVkNDRjNTkzZCJ9fX0="}]}} replace
 #execute as @a[x=792,y=65,z=-2,distance=..15] unless entity @e[x=792,y=65,z=-2,dy=2,type=minecraft:interaction] run summon minecraft:interaction 792 65 -2 {width:0.75,height:0.75,response:1,Tags:[ItemLoot]}
 
-setblock -3289 65 -136 minecraft:player_head[rotation=0]{profile:{id:[I;1620469368,974799382,-1927819010,373990640],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTVmZWY4MTU1MDNiODZjZTljZDNiYTgxZTljOWE3OTI2ZGQ3ZTE3MjFjYTYyYjMwMGVlYjgyYmVkNDRjNTkzZCJ9fX0="}]}} replace
-execute as @a[x=-3289,y=65,z=-136,distance=..15] unless entity @e[x=-3289,y=65,z=-136,dy=2,type=minecraft:interaction] run summon minecraft:interaction -3289 65 -136 {width:0.75,height:0.75,response:1,Tags:[ItemLoot]}
+#setblock -3289 65 -136 minecraft:player_head[rotation=0]{profile:{id:[I;1620469368,974799382,-1927819010,373990640],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTVmZWY4MTU1MDNiODZjZTljZDNiYTgxZTljOWE3OTI2ZGQ3ZTE3MjFjYTYyYjMwMGVlYjgyYmVkNDRjNTkzZCJ9fX0="}]}} replace
+#execute as @a[x=-3289,y=65,z=-136,distance=..15] unless entity @e[x=-3289,y=65,z=-136,dy=2,type=minecraft:interaction] run summon minecraft:interaction -3289 65 -136 {width:0.75,height:0.75,response:1,Tags:[ItemLoot]}
 
 
 

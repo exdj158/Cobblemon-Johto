@@ -1843,10 +1843,10 @@ execute as @s[x=793,y=65,z=-2,distance=..4,tag=!ItemLoot369] run tellraw @s {"te
 execute as @s[x=793,y=65,z=-2,distance=..4,tag=!ItemLoot369] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=793,y=65,z=-2,distance=..4,tag=!ItemLoot369] run tag @s add ItemLoot369
 
-execute as @s[x=-3289,y=65,z=-136,distance=..4,tag=!ItemLoot370] run give @s cobblemon:ultra_rod[custom_name='["",{"text":"Super Rod","italic":false}]',lore=['["",{"text":"An awesome, high-tech fishing rod.","italic":false}]','["",{"text":"Use it by any body of water to","italic":false}]','["",{"text":"fish for wild aquatic Pokémon.","italic":false}]'],enchantment_glint_override=false,enchantments={levels:{lure:3},show_in_tooltip:false},unbreakable={}]
-execute as @s[x=-3289,y=65,z=-136,distance=..4,tag=!ItemLoot370] run tellraw @s {"text":"You found a Super Rod!","italic":true,"color":"gray"}
-execute as @s[x=-3289,y=65,z=-136,distance=..4,tag=!ItemLoot370] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
-execute as @s[x=-3289,y=65,z=-136,distance=..4,tag=!ItemLoot370] run tag @s add ItemLoot370
+execute as @s[x=-3287,y=65,z=-135,distance=..4,tag=!ItemLoot370] run give @s cobblemon:ultra_rod[custom_name='["",{"text":"Super Rod","italic":false}]',lore=['["",{"text":"An awesome, high-tech fishing rod.","italic":false}]','["",{"text":"Use it by any body of water to","italic":false}]','["",{"text":"fish for wild aquatic Pokémon.","italic":false}]'],enchantment_glint_override=false,enchantments={levels:{lure:3},show_in_tooltip:false},unbreakable={}]
+execute as @s[x=-3287,y=65,z=-135,distance=..4,tag=!ItemLoot370] run tellraw @s {"text":"You found a Super Rod!","italic":true,"color":"gray"}
+execute as @s[x=-3287,y=65,z=-135,distance=..4,tag=!ItemLoot370] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-3287,y=65,z=-135,distance=..4,tag=!ItemLoot370] run tag @s add ItemLoot370
 
 execute as @s[x=-270,y=65,z=-505,distance=..5,tag=!ItemLoot371] run function johto:spawn/townmap
 execute as @s[x=-270,y=65,z=-505,distance=..5,tag=!ItemLoot371] run tellraw @s {"text":"You received a Town Map!","italic":true,"color":"gray"}
