@@ -1413,10 +1413,10 @@ execute as @s[x=-3017,y=64,z=956,distance=..4,tag=!ItemLoot283] run tellraw @s {
 execute as @s[x=-3017,y=64,z=956,distance=..4,tag=!ItemLoot283] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=-3017,y=64,z=956,distance=..4,tag=!ItemLoot283] run tag @s add ItemLoot283
 
-execute as @s[x=-2751,y=64,z=509,distance=..4,tag=!ItemLoot284] run give @s cobblemon:cleanse_tag
-execute as @s[x=-2751,y=64,z=509,distance=..4,tag=!ItemLoot284] run tellraw @s {"text":"You found a Cleanse Tag!","italic":true,"color":"gray"}
-execute as @s[x=-2751,y=64,z=509,distance=..4,tag=!ItemLoot284] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
-execute as @s[x=-2751,y=64,z=509,distance=..4,tag=!ItemLoot284] run tag @s add ItemLoot284
+execute as @s[x=-2750,y=64,z=509,distance=..4,tag=!ItemLoot284] run give @s cobblemon:cleanse_tag
+execute as @s[x=-2750,y=64,z=509,distance=..4,tag=!ItemLoot284] run tellraw @s {"text":"You found a Cleanse Tag!","italic":true,"color":"gray"}
+execute as @s[x=-2750,y=64,z=509,distance=..4,tag=!ItemLoot284] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-2750,y=64,z=509,distance=..4,tag=!ItemLoot284] run tag @s add ItemLoot284
 
 execute as @s[x=-3114,y=64,z=691,distance=..4,tag=!ItemLoot285] run give @s cobblemon:max_potion
 execute as @s[x=-3114,y=64,z=691,distance=..4,tag=!ItemLoot285] run tellraw @s {"text":"You found a Max Potion!","italic":true,"color":"gray"}
@@ -1473,10 +1473,10 @@ execute as @s[x=-3296,y=33,z=663,distance=..4,tag=!ItemLoot295] run tellraw @s {
 execute as @s[x=-3296,y=33,z=663,distance=..4,tag=!ItemLoot295] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=-3296,y=33,z=663,distance=..4,tag=!ItemLoot295] run tag @s add ItemLoot295
 
-execute as @s[x=-2767,y=64,z=345,distance=..4,tag=!ItemLoot296] run give @s cobblemon:upgrade
-execute as @s[x=-2767,y=64,z=345,distance=..4,tag=!ItemLoot296] run tellraw @s {"text":"You found a Up-Grade!","italic":true,"color":"gray"}
-execute as @s[x=-2767,y=64,z=345,distance=..4,tag=!ItemLoot296] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
-execute as @s[x=-2767,y=64,z=345,distance=..4,tag=!ItemLoot296] run tag @s add ItemLoot296
+execute as @s[x=-2767,y=64,z=346,distance=..4,tag=!ItemLoot296] run give @s cobblemon:upgrade
+execute as @s[x=-2767,y=64,z=346,distance=..4,tag=!ItemLoot296] run tellraw @s {"text":"You found a Up-Grade!","italic":true,"color":"gray"}
+execute as @s[x=-2767,y=64,z=346,distance=..4,tag=!ItemLoot296] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-2767,y=64,z=346,distance=..4,tag=!ItemLoot296] run tag @s add ItemLoot296
 
 execute as @s[x=-2715,y=64,z=-33,distance=..4,tag=!ItemLoot297] run give @s cobblemon:full_heal
 execute as @s[x=-2715,y=64,z=-33,distance=..4,tag=!ItemLoot297] run tellraw @s {"text":"You found a Full Heal!","italic":true,"color":"gray"}

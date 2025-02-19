@@ -1,6 +1,6 @@
 {  
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:hiker",
+    "resourceIdentifier": "cobblemon:officerjenny",
     "presets": [],
     "variation": {
         "dirt": [
@@ -12,9 +12,9 @@
     },
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:route20_hiker_interaction"
+        "dialogue": "cobblemon:saffron_officerjenny_interaction"
     },
-        "name": "    ",
+        "name": "Officer Jenny",
         "party": {
         "type": "simple",
         "pokemon": [

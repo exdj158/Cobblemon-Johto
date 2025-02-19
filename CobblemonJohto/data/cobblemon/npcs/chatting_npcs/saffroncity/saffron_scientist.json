@@ -1,6 +1,6 @@
 {  
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:hiker",
+    "resourceIdentifier": "cobblemon:scientistm",
     "presets": [],
     "variation": {
         "dirt": [
@@ -12,9 +12,9 @@
     },
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:route20_hiker_interaction"
+        "dialogue": "cobblemon:saffron_scientist_interaction"
     },
-        "name": "    ",
+        "name": "     ",
         "party": {
         "type": "simple",
         "pokemon": [

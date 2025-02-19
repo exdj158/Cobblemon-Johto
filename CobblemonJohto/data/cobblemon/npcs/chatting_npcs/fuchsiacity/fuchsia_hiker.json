@@ -12,9 +12,9 @@
     },
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:route20_hiker_interaction"
+        "dialogue": "cobblemon:fuchsia_hiker_interaction"
     },
-        "name": "    ",
+        "name": "     ",
         "party": {
         "type": "simple",
         "pokemon": [

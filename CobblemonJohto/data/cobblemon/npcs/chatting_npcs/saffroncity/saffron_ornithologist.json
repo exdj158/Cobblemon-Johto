@@ -1,6 +1,6 @@
 {  
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:hiker",
+    "resourceIdentifier": "cobblemon:ornithologist",
     "presets": [],
     "variation": {
         "dirt": [
@@ -12,9 +12,9 @@
     },
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:route20_hiker_interaction"
+        "dialogue": "cobblemon:saffron_ornithologist_interaction"
     },
-        "name": "    ",
+        "name": "     ",
         "party": {
         "type": "simple",
         "pokemon": [
