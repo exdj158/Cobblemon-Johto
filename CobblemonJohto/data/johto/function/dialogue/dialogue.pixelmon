@@ -3688,28 +3688,7 @@ execute as @s[scores={DialogueTrigger=176,TalkTime=88}] run particle cloud -1046
 tag @s[scores={DialogueTrigger=176,TalkTime=88..}] add Dialogue176
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Abra taking player home
-#Dialogue177
 
-#Blinds player
-execute as @s[scores={DialogueTrigger=177,TalkTime=1}] run effect give @s minecraft:blindness 5 1 true
-
-#tps to real Ruins of Alph
-execute as @s[scores={DialogueTrigger=177,TalkTime=2}] run tp @a[x=-1099,y=0,z=-252,dx=102,dy=100,dz=189] 197 38 -118 -75 ~
-execute as @s[scores={DialogueTrigger=177,TalkTime=2}] run playsound flee ambient @a[x=-1099,y=0,z=-252,dx=102,dy=100,dz=189] ~ ~ ~ 1000 1 1
-
-#tp Archeologist in
-execute as @s[scores={DialogueTrigger=177,TalkTime=5}] run tp @e[x=-699,y=86,z=-242,distance=..1,nbt=!{cobblemon:npc_chatting}] 201 38 -118
-
-tellraw @s[scores={DialogueTrigger=177,TalkTime=5}] {"text":"<Archaeologist> Oh, are you all right?"}
-tellraw @s[scores={DialogueTrigger=177,TalkTime=13}] {"text":"<Archaeologist> You disappeared right in front of me. I was so surprised!"}
-tellraw @s[scores={DialogueTrigger=177,TalkTime=21}] {"text":"<Archaeologist> I see. The power of Arceus and Unown affected each other to create a huge energy, which sent you to the Sinjoh Ruins...?"}
-tellraw @s[scores={DialogueTrigger=177,TalkTime=36}] {"text":"<Archaeologist> Unown, the Ruins of Alph, and Arceus... The mystery deepens... "}
-tellraw @s[scores={DialogueTrigger=177,TalkTime=43}] {"text":"<Archaeologist> It has made me even more inquisitive!"}
-tellraw @s[scores={DialogueTrigger=177,TalkTime=50}] {"text":"<Archaeologist> I will one day solve all the mysteries!"}
-execute as @s[scores={DialogueTrigger=177,TalkTime=50}] run advancement grant @s only johto:event8
-
-tag @s[scores={DialogueTrigger=177,TalkTime=50..}] add Dialogue177
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Radio Tower Quiz prompt

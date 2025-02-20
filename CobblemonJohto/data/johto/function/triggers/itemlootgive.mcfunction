@@ -1493,10 +1493,10 @@ execute as @s[x=-2834,y=64,z=11,distance=..4,tag=!ItemLoot299] run tellraw @s {"
 execute as @s[x=-2834,y=64,z=11,distance=..4,tag=!ItemLoot299] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=-2834,y=64,z=11,distance=..4,tag=!ItemLoot299] run tag @s add ItemLoot299
 
-execute as @s[x=-2694,y=64,z=-32,distance=..4,tag=!ItemLoot300] run give @s cobblemon:rare_candy
-execute as @s[x=-2694,y=64,z=-32,distance=..4,tag=!ItemLoot300] run tellraw @s {"text":"You found a Rare Candy!","italic":true,"color":"gray"}
-execute as @s[x=-2694,y=64,z=-32,distance=..4,tag=!ItemLoot300] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
-execute as @s[x=-2694,y=64,z=-32,distance=..4,tag=!ItemLoot300] run tag @s add ItemLoot300
+execute as @s[x=-2695,y=64,z=-32,distance=..4,tag=!ItemLoot300] run give @s cobblemon:rare_candy
+execute as @s[x=-2695,y=64,z=-32,distance=..4,tag=!ItemLoot300] run tellraw @s {"text":"You found a Rare Candy!","italic":true,"color":"gray"}
+execute as @s[x=-2695,y=64,z=-32,distance=..4,tag=!ItemLoot300] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-2695,y=64,z=-32,distance=..4,tag=!ItemLoot300] run tag @s add ItemLoot300
 
 execute as @s[x=-2785,y=64,z=-77,distance=..4,tag=!ItemLoot301] run give @s cobblemon:iron
 execute as @s[x=-2785,y=64,z=-77,distance=..4,tag=!ItemLoot301] run tellraw @s {"text":"You found a Iron!","italic":true,"color":"gray"}
