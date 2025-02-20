@@ -1,6 +1,6 @@
 {  
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:sailor",
+    "resourceIdentifier": "cobblemon:juggler",
     "presets": [],
     "variation": {
         "dirt": [

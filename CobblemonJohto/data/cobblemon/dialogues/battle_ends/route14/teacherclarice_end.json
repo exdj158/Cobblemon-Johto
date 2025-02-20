@@ -9,7 +9,7 @@
       "face": {
         "type": "artificial",
         "modelType": "npc",
-        "identifier": "cobblemon:schoolkid",
+        "identifier": "cobblemon:teacher",
         "isLeftSide": true
       }
     }

@@ -14,13 +14,11 @@
         "type": "dialogue",
         "dialogue": "cobblemon:gentlemanmilton_interaction"
     },
-        "name": "Tyrone",
+        "name": "Milton",
         "party": {
         "type": "simple",
         "pokemon": [
-            "Magnemite level=40",
-            "Magnemite level=40",
-            "Magnemite level=40"
+            "Growlithe level=45"
         ]
     },
     "config": [

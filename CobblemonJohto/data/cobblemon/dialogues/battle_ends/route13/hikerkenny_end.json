@@ -9,7 +9,7 @@
       "face": {
         "type": "artificial",
         "modelType": "npc",
-        "identifier": "cobblemon:hker",
+        "identifier": "cobblemon:hiker",
         "isLeftSide": true
       }
     }

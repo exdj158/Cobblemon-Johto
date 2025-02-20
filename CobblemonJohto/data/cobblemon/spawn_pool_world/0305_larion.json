@@ -4,8 +4,8 @@
     "neededUninstalledMods": [],
     "spawns": [
         {
-            "id": "larion-1",
-            "pokemon": "larion",
+            "id": "lairon-1",
+            "pokemon": "lairon",
             "presets": [
                 "natural"
             ],

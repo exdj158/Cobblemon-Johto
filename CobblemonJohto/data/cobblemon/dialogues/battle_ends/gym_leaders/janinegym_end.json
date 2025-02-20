@@ -1,0 +1,56 @@
+{   "initializationAction": [              
+    "c.npc.set_chatting();",
+    "q.run_command('scoreboard players set @p BattleEnd 2');",
+    "q.run_command('execute as @p run function johto:tools/forceclick');",
+    "q.run_command('execute as @p run tag @p add Janine');"
+        ],
+  "speakers": {
+    "npc": {
+      "name": "Janine",
+      "face": {
+        "type": "artificial",
+        "modelType": "npc",
+        "identifier": "cobblemon:ninja",
+        "isLeftSide": true
+      }
+    }
+  },
+  "pages": [
+    {
+      "id": "greeting",
+      "speaker": "npc",
+      "lines": ["I see... You have defeated Koga, my father and a member of the Elite Four, to come here."],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+          "id": "page2",
+          "speaker": "npc",
+          "lines": ["No wonder you are strong! You've definitely won... Here's the Soul Badge."],
+                "input": {
+                    "type": "option",
+                    "vertical": false,
+                    "options": [
+                        {
+                            "text": "Close",
+                            "value": "close",
+                            "action": [              
+                                "q.dialogue.close();"]
+                        }
+                    ]
+                }
+            }
+    ],
+    "escapeAction": [              
+      "q.dialogue.close();"
+      ]
+}

@@ -12,7 +12,7 @@
     },
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:bikeradien_interaction"
+        "dialogue": "cobblemon:bikeraiden_interaction"
     },
         "name": "Aiden",
         "party": {

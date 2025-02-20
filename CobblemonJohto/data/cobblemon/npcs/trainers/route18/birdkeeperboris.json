@@ -12,7 +12,7 @@
     },
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:birdkeeperborris_interaction"
+        "dialogue": "cobblemon:birdkeeperboris_interaction"
     },
         "name": "Boris",
         "party": {
@@ -20,7 +20,7 @@
         "pokemon": [
             "Doduo level=39",
             "Doduo level=37",
-            "Doduo level=41"
+            "Dodrio level=41"
         ]
     },
     "config": [
