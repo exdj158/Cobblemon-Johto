@@ -1,8 +1,8 @@
 {
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:slowpoke",  
+    "resourceIdentifier": "cobblemon:mewtwo",  
     "names": [
-      "Slowpoke"
+      "Mewtwo"
     ],
     "config": [
   
@@ -24,7 +24,7 @@
     "party": {
       "type": "simple",
       "pokemon": [
-        "Slowpoke level=5"
+        "mewtwo level=5"
       ]
     } 
   

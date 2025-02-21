@@ -1,0 +1,31 @@
+{
+    "names": [
+      "§lJond is Awesome§r"
+    ],
+    "resourceIdentifier": "cobblemon:jond",
+    "interaction": {
+        "type": "dialogue",
+        "dialogue": "cobblemon:test_interaction"
+    },
+    "presets": [
+      "cobblemon:base_npc",
+      "cobblemon:looks_in_one_direction",
+      "cobblemon:battle_npc"
+    ],
+    "config": [
+      {
+        "variableName": "battle_cooldown_time",
+        "displayName": "Cooldown Time (IN HOURS)",
+        "description": "The time in hours that the player must wait before utilizing this NPC again.",
+        "type": "NUMBER",
+        "defaultValue": "0.0"
+      }
+    ],
+    "party": {
+      "type": "simple",
+      "pokemon": [
+          "spheal uncatchable=true level=11 nature=docile ability=thickfat hp_iv=10 attack_iv=10 defence_iv=10 special_defence_iv=10 speed_iv=10",
+          "frillish uncatchable=true level=11 nature=docile ability=waterabsorb hp_iv=10 attack_iv=10 defence_iv=10 special_defence_iv=10 speed_iv=10"
+     ]
+  }
+}
