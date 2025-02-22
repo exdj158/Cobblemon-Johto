@@ -2,15 +2,21 @@ tellraw @s ["",{"text":"Starting adventure...","italic":true,"color":"gray"}]
 
 
 #Sets Gamerules for the world
+difficulty peaceful
 gamerule randomTickSpeed 100
 gamerule doDaylightCycle true
 gamerule doFireTick false
 gamerule commandBlockOutput false
-difficulty peaceful
 scoreboard objectives setdisplay sidebar
 scoreboard objectives setdisplay list
 gamemode adventure @s
 team add default
+
+#Cobblemon specific gamerules
+gamerule doPokemonLoot false
+gamerule naturalRegeneration false
+gamerule disableRaids true
+gamerule doPokemonSpawning true
 
 effect give @s minecraft:speed infinite 1 true
 effect give @s minecraft:dolphins_grace infinite 1 true
