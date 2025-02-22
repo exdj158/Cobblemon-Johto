@@ -18,7 +18,7 @@ gamerule naturalRegeneration false
 gamerule disableRaids true
 gamerule doPokemonSpawning true
 
-effect give @s minecraft:speed infinite 1 true
+effect give @s minecraft:speed infinite 5 true
 effect give @s minecraft:dolphins_grace infinite 1 true
 
 #Gives starting items
