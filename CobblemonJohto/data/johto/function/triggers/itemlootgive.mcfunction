@@ -1853,6 +1853,7 @@ execute as @s[x=-270,y=65,z=-505,distance=..5,tag=!ItemLoot371] run tellraw @s {
 execute as @s[x=-270,y=65,z=-505,distance=..5,tag=!ItemLoot371] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=-270,y=65,z=-505,distance=..5,tag=!ItemLoot371] run tag @s add ItemLoot371
 
+#ItemLoot372 Flash HM
 
 
 
@@ -1866,8 +1867,7 @@ execute as @s[x=-270,y=65,z=-505,distance=..5,tag=!ItemLoot371] run tag @s add I
 
 
 
-
-
+#If over 400, add more tags to startercommands to clear on spawn
 
 advancement revoke @s only johto:click/itemclick
 tag @s remove ItemLoot
