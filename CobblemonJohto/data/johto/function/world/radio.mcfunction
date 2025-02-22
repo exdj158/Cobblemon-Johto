@@ -381,11 +381,11 @@ scoreboard players set @s[x=-1043,y=60,z=102,dx=135,dy=100,dz=270,scores={MusicC
 
 
 #Mt. Silver Summit before Arceus
-playsound champbattle record @s[x=-967,y=174,z=189,dx=50,dy=30,dz=140,scores={MusicCooldown=0,Arceus=0},tag=!Red] ~ ~ ~ 1 1 1
-scoreboard players set @s[x=-967,y=174,z=189,dx=50,dy=30,dz=140,scores={MusicCooldown=0,Arceus=0},tag=!Red] MusicCooldown 149
+#playsound champbattle record @s[x=-967,y=174,z=189,dx=50,dy=30,dz=140,scores={MusicCooldown=0,Arceus=0},tag=!Red] ~ ~ ~ 1 1 1
+#scoreboard players set @s[x=-967,y=174,z=189,dx=50,dy=30,dz=140,scores={MusicCooldown=0,Arceus=0},tag=!Red] MusicCooldown 149
 
-#Placeholder Silence when Red is beaten
-scoreboard players set @s[x=-967,y=174,z=189,dx=50,dy=30,dz=140,scores={MusicCooldown=0,Arceus=0},tag=Red] MusicCooldown 70
+#Mt. Silver silence
+scoreboard players set @s[x=-967,y=174,z=189,dx=50,dy=30,dz=140,scores={MusicCooldown=0}] MusicCooldown 70
 
 
 #Sinjoh Ruins
