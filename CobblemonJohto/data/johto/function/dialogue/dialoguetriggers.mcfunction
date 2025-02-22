@@ -23,7 +23,8 @@ execute as @s[x=-683,y=63,z=-478,distance=..10,tag=!Dialogue3] run opendialogue 
 execute as @s[x=1261,y=64,z=-488,distance=..10,tag=Chuck,tag=!Dialogue43] run opendialogue chuckswife_dialogue43 @s
 
 
-
+#Red Gyarados Spawn
+scoreboard players set @a[x=-169,y=65,z=645,distance=..15,tag=!Dialogue49] DialogueTrigger 49
 
 
 

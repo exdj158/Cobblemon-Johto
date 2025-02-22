@@ -211,18 +211,6 @@ execute as @a[scores={DialogueTrigger=1..500}] run function johto:dialogue/dialo
 
 
 
-#Shiny Gyarados one-off
-
-scoreboard players set @a[x=-169,y=65,z=645,distance=..15,tag=!Dialogue49] DialogueTrigger 49
-
-execute as @a[scores={DialogueTrigger=49}] run particle cloud ~ ~ ~ 3 3 3 1 200
-execute at @a[scores={DialogueTrigger=49}] run pokespawn Gyarados shiny level=30
-execute as @a[scores={DialogueTrigger=49}] run playsound gyarados hostile @s ~ ~ ~ 1 1 1
-execute as @a[scores={DialogueTrigger=49}] run playsound shiny hostile @s ~ ~ ~ 1 1 1
-
-tag @a[scores={DialogueTrigger=49}] add Dialogue49
-scoreboard players set @a[scores={DialogueTrigger=1..},tag=Dialogue49] DialogueTrigger 0
-
 #-------------------------------------------------------------------------------------------------------------------------
 #Misc World Events 
 
@@ -236,6 +224,13 @@ execute as @a[x=1590,y=74,z=-129,dx=10,dy=5,dz=10] run function johto:world/safa
 
 #-------------------------------------------------------------------------------------------------------------------------
 #Road Blocks & World Blocks
+
+#Ecruteak City Gym teleport from falling
+playsound flee ambient @a[x=-1075,y=0,z=550,dx=31,dy=62,dz=51] ~ ~ ~ 1000 1 1
+execute at @a[x=-1075,y=0,z=550,dx=31,dy=62,dz=51] run tp @a[x=-1075,y=0,z=550,dx=31,dy=62,dz=51] -1059 65 543 0 10
+effect give @e[x=-1091,y=0,z=522,dx=63,dy=63,dz=105,type=cobblemon:pokemon] minecraft:levitation 1 1 true
+execute at @e[x=-1091,y=0,z=522,dx=63,dy=63,dz=105,type=item] run tp @e[x=-1091,y=0,z=522,dx=63,dy=63,dz=105,type=item] -1059 65 538
+
 
 #Elite Four Gates
 #Will
@@ -297,7 +292,6 @@ execute unless entity @a[x=-1341,y=77,z=745,dx=6,dy=10,dz=5,tag=Lance] run clone
 #Tps player from Rematched Hall of Fame to real Hall of Fame room
 execute at @a[x=-1354,y=77,z=751,dx=24,dy=10,dz=34] run clone -730 64 -328 -726 68 -328 -1343 78 750
 execute at @a[x=-1354,y=77,z=751,dx=24,dy=10,dz=34] run tp @a[x=-1354,y=77,z=751,dx=24,dy=10,dz=34] ~53 ~ ~
-
 
 
 
