@@ -22,7 +22,17 @@
             "lines": [
                 "........"
             ],
-            "input": "q.dialogue.set_page('battle_prompt');"
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('battle_prompt');"
+                    }
+                ]
+            }
         },
         {
             "id": "battle_prompt",
@@ -55,8 +65,8 @@
             ],
             "escapeAction": "0",
             "input": [
-                "q.player.run_command('scoreboard players set @s BattleStart 16');",
-                "q.player.run_command('function johto:tools/forceclick');",
+                "q.run_command('scoreboard players set @s BattleStart 16');",
+                "q.run_command('execute as @p run function johto:tools/forceclick');",
                 "q.dialogue.close();",
                 "v.battle = q.npc.start_battle(q.player);"
             ]

@@ -24,7 +24,17 @@
             "lines": [
                 "What? You're saying I was asleep? Show some respect!"
             ],
-            "input": "q.dialogue.set_page('battle_prompt');"
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('battle_prompt');"
+                    }
+                ]
+            }
         },
         {
             "id": "battle_prompt",
