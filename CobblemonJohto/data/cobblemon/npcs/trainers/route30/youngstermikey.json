@@ -62,7 +62,7 @@
     "battleConfiguration": {
         "canChallenge": true
     },
-    "autoHealParty": false,
+    "autoHealParty": true,
     "isMovable": false,  
     "isLeashable": false,
     "allowProjectileHits": false,

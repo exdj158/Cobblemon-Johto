@@ -1,13 +1,16 @@
-{   "initializationAction": [              
-    "q.run_command('scoreboard players set @p BattleStart 2');",
-    "q.run_command('execute as @p run function johto:tools/forceclick');"
-        ],
-    "escapeAction": [              
+{
+    "initializationAction": [
+        "q.run_command('scoreboard players set @p BattleStart 2');",
+        "q.run_command('execute as @p run function johto:tools/forceclick');"
+    ],
+    "escapeAction": [
         "q.run_command('scoreboard players set @p BattleStart 0');",
         "q.run_command('execute as @p run function johto:tools/forceclick');",
         "q.dialogue.close();"
-        ],
-    "names": ["Joey"],
+    ],
+    "names": [
+        "Joey"
+    ],
     "speakers": {
         "npc": {
             "name": {
@@ -31,22 +34,23 @@
                     {
                         "text": "§c⚔ Battle ⚔§r",
                         "value": "battle",
-                        "action": [                           
-                                    "q.run_command('scoreboard players set @p BattleStart 11');",
-                                    "q.run_command('execute as @p run function johto:tools/forceclick');",
-                                    "v.battle = q.npc.start_battle(q.player);"
-                            ]
+                        "action": [
+                            "q.run_command('scoreboard players set @p BattleStart 11');",
+                            "q.run_command('execute as @p run function johto:tools/forceclick');",
+                            "v.battle = q.npc.start_battle(q.player);"
+                        ]
                     },
                     {
                         "text": "No",
                         "value": "no",
-                        "action": [              
+                        "action": [
                             "q.run_command('scoreboard players set @p BattleStart 0');",
                             "q.run_command('execute as @p run function johto:tools/forceclick');",
-                            "q.dialogue.close();"]
-                        }
-                    ]
-                }
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
             }
-        ]
-    }
+        }
+    ]
+}
