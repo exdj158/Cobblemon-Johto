@@ -1,6 +1,6 @@
 {   
     "initializationAction": [              
-        "q.run_command('tag @p add InDialogue');"
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
             ],
 
     "names": ["Professor Elm"],
@@ -175,9 +175,9 @@
                         "value": "close",
                         "action": [
                             "q.dialogue.close();",
-                            "q.run_command('tag @p add Dialogue3');",
-                            "q.run_command('tag @p remove InDialogue');",
-                            "q.run_command('openstarterscreen @p');"
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue3');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');",
+                            "q.run_command('openstarterscreen ' + q.player.username + '');"
                             ]
                     }
                 ]

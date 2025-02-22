@@ -25,7 +25,7 @@
                         "text": "§c⚔ Battle ⚔§r",
                         "value": "battle",
                         "action": [ 
-                                    "q.run_command('execute as @p run pokespawn mewtwo level=75');",
+                                    "q.run_command('execute as ' + q.player.username + ' run pokespawn mewtwo level=75');",
                                     "v.battle = q.npc.start_battle(q.player);"
                             ]
                     },

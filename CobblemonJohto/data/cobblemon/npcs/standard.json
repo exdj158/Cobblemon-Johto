@@ -92,7 +92,7 @@
   "battleConfiguration": {
     "canChallenge": true
   },
-  "autoHealParty": false,
+  "autoHealParty": true,
   "skill": 5,
   "party": {
     "type": "simple",

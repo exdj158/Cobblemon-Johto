@@ -1,10 +1,10 @@
 {   "initializationAction": [              
-    "q.run_command('scoreboard players set @p BattleStart 7');",
-    "q.run_command('execute as @p run function johto:tools/forceclick');"
+    "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 7');",
+    "q.run_command('execute as ' + q.player.username + ' run function johto:tools/forceclick');"
         ],
     "escapeAction": [              
-        "q.run_command('scoreboard players set @p BattleStart 0');",
-        "q.run_command('execute as @p run function johto:tools/forceclick');",
+        "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 0');",
+        "q.run_command('execute as ' + q.player.username + ' run function johto:tools/forceclick');",
         "q.dialogue.close();"
         ],
     "names": ["Rocket Admin Ariana"],
@@ -104,8 +104,8 @@
                         "text": "§c⚔ Battle ⚔§r",
                         "value": "battle",
                         "action": [                           
-                                    "q.run_command('scoreboard players set @p BattleStart 11');",
-                                    "q.run_command('execute as @p run function johto:tools/forceclick');",
+                                    "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 11');",
+                                    "q.run_command('execute as ' + q.player.username + ' run function johto:tools/forceclick');",
                                     "v.battle = q.npc.start_battle(q.player);"
                             ]
                     },
@@ -113,8 +113,8 @@
                         "text": "No",
                         "value": "no",
                         "action": [              
-                            "q.run_command('scoreboard players set @p BattleStart 0');",
-                            "q.run_command('execute as @p run function johto:tools/forceclick');",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 0');",
+                            "q.run_command('execute as ' + q.player.username + ' run function johto:tools/forceclick');",
                             "q.dialogue.close();"]
                         }
                     ]

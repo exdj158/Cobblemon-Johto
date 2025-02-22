@@ -1,2 +1,2 @@
-q.run_command('scoreboard players set @p BattleEnd 1');
-q.run_command('execute as @p run function johto:triggers/battles/battleend');
+q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 1');
+q.run_command('execute as ' + q.player.username + ' run function johto:triggers/battles/battleend');

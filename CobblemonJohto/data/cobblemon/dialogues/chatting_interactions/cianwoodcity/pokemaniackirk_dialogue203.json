@@ -97,7 +97,7 @@
                         "text": "Close",
                         "value": "close",
                         "action": [
-                            "q.run_command('scoreboard players set @p DialogueTrigger 203');",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' DialogueTrigger 203');",
                             "q.dialogue.close();"
                             ]
                     }

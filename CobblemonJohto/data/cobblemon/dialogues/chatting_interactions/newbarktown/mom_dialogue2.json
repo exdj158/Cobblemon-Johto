@@ -1,6 +1,6 @@
 {   
     "initializationAction": [              
-        "q.run_command('tag @p add InDialogue');"
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
             ],
 
     "speakers": {
@@ -73,8 +73,8 @@
                         "value": "close",
                         "action": [
                             "q.dialogue.close();",
-                            "q.run_command('tag @p add Dialogue2');",
-                            "q.run_command('tag @p remove InDialogue');"
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue2');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
                             ]
                     }
                 ]

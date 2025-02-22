@@ -43,7 +43,7 @@
                         "text": "Leave Ruins",
                         "value": "battle",
                         "action": [                           
-                                    "q.run_command('scoreboard players set @p TriggerCommand 26');",
+                                    "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 26');",
                                     "q.dialogue.close();"
                             ]
                     },

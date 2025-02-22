@@ -34,7 +34,7 @@
             "displayName": "npc.variable.on_player_wins.name",
             "description": "npc.variable.on_player_wins.desc",
             "type": "TEXT",
-            "defaultValue": "q.run_command('opendialogue acetrainerlola_end @p');"
+            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue acetrainerlola_end @s');"
           }
     ]
 }

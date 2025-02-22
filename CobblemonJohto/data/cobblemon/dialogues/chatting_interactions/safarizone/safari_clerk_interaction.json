@@ -79,7 +79,7 @@
                         "text": "Start Safari!",
                         "value": "battle",
                         "action": [                           
-                                    "q.run_command('scoreboard players set @p TriggerCommand 22');",
+                                    "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 22');",
                                     "q.dialogue.close();"
                             ]
                     },
