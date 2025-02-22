@@ -1,15 +1,7 @@
 {  
     "hitbox": "player",
     "resourceIdentifier": "cobblemon:picknicker",
-    "presets": [],
-    "variation": {
-        "dirt": [
-            "clean",
-            "slightly_dirty",
-            "dirty",
-            "filthy"
-        ]
-    },
+    "presets": ["cobblemon:trainer_basics"],
     "interaction": {
         "type": "dialogue",
         "dialogue": "cobblemon:picknickercheyenne_interaction"
@@ -23,13 +15,6 @@
     },
     "config": [
         {
-            "variableName": "challenge_cooldown",
-            "displayName": "Cooldown",
-            "description": "How long in ticks the NPC will be un-challengable from that player's last challenge.",
-            "type": "NUMBER",
-            "defaultValue": "5"
-        },
-        {
             "variableName": "can_rechallenge",
             "displayName": "Rechallenging",
             "description": "This NPC can be battled multiple times.",
@@ -42,58 +27,6 @@
             "description": "npc.variable.on_player_wins.desc",
             "type": "TEXT",
             "defaultValue": "q.run_command('opendialogue picknickercheyenne_end @p');"
-          },
-          {
-            "variableName": "challenge_rejected_text",
-            "displayName": "Reject Text",
-            "description": "The text that appears when the player rejects the challenge.",
-            "type": "TEXT",
-            "defaultValue": "That's too bad. Maybe next time!"
-          },
-          {
-            "variableName": "challenge_cooldown_text",
-            "displayName": "Cooling Down Text",
-            "description": "The text that is displayed while the cooldown is in effect.",
-            "type": "TEXT",
-            "defaultValue": "I'm sorry, but I'm not ready for another battle yet. Please come back later."
           }
-    ],
-    "battleConfiguration": {
-        "canChallenge": true
-    },
-    "autoHealParty": false,
-    "isMovable": false,  
-    "isLeashable": false,
-    "allowProjectileHits": false,
-    "isInvulnerable": true, 
-    "canDespawn": false,
-    "skill": 5,
-    "ai": [
-        {
-            "type": "apply_presets",
-            "presets": []
-        },
-        {
-            "type": "add_tasks_to_activity",
-            "activity": "core",
-            "tasksByPriority": {
-                "0": [
-                    "look_at_target",
-                    "stay_afloat"
-                ]
-            }
-        },
-        {
-            "type": "add_tasks_to_activity",
-            "activity": "idle",
-            "tasksByPriority": {
-                "0": [
-                    "look_at_target"
-                ],
-                "1": [
-                    "look_at_entities"
-                ]
-            }
-        }
     ]
 }

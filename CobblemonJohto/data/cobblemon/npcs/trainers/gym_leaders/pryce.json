@@ -1,27 +1,12 @@
 {
     "hitbox": "player",
     "resourceIdentifier": "cobblemon:pryce",
-    "presets": [],
-    "variation": {
-        "dirt": [
-            "clean",
-            "slightly_dirty",
-            "dirty",
-            "filthy"
-        ]
-    },
+    "presets": ["cobblemon:trainer_basics"],
     "interaction": {
         "type": "dialogue",
         "dialogue": "cobblemon:pryce_interaction"
     },
     "config": [
-        {
-            "variableName": "challenge_cooldown",
-            "displayName": "Cooldown",
-            "description": "How long in ticks the NPC will be un-challengable from that player's last challenge.",
-            "type": "NUMBER",
-            "defaultValue": "5"
-        },
         {
             "variableName": "can_rechallenge",
             "displayName": "Rechallenging",
