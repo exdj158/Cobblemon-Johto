@@ -1,19 +1,9 @@
 
-#Entities are moving and I don't want them to
-effect give @e[nbt=!{cobblemon:npc_trainer}] minecraft:slowness 1000 100 true
-effect give @e[nbt=!{cobblemon:npc_chatting}] minecraft:slowness 1000 100 true
-effect give @e[type=pixelmon:npc_nursejoy] minecraft:slowness 1000 100 true
-effect give @e[nbt=!{cobblemon:npc_shopkeeper}] minecraft:slowness 1000 100 true
-effect give @e[nbt=!{cobblemon:npc_trader}] minecraft:slowness 1000 100 true
-effect give @e[type=pixelmon:npc_tutor] minecraft:slowness 1000 100 true
-effect give @e[type=pixelmon:npc_tutor] minecraft:slowness 1000 100 true
-
-
 #Item Clears
 clear @a[gamemode=adventure] minecraft:ender_pearl
 clear @a[gamemode=adventure] minecraft:oak_log
 clear @a[gamemode=adventure] minecraft:spruce_log
-clear @a[gamemode=adventure] pixelmon:tree
+#clear @a[gamemode=adventure] pixelmon:tree
 
 
 #Enables Unown Spawning in Ruins of Alph when any puzzle is complete
