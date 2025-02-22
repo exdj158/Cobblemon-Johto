@@ -6,9 +6,11 @@ difficulty peaceful
 gamerule randomTickSpeed 100
 gamerule doDaylightCycle true
 gamerule doFireTick false
+gamerule fallDamage false
 gamerule commandBlockOutput false
 scoreboard objectives setdisplay sidebar
 scoreboard objectives setdisplay list
+scoreboard objectives setdisplay below_name
 gamemode adventure @s
 team add default
 
