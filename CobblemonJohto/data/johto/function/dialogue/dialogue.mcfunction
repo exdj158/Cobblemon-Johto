@@ -52,6 +52,16 @@ execute as @s[scores={DialogueTrigger=98,TalkTime=65}] run function johto:trigge
 
 execute as @s[scores={DialogueTrigger=98,TalkTime=65..}] run tp @s -721 69 -493
 tag @s[scores={DialogueTrigger=98,TalkTime=65..}] add Dialogue98
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Union Cave Friday Lapras
+execute as @s[scores={DialogueTrigger=105,TalkTime=1}] run particle cloud 120 13 -852 1 1 1 1 100
+execute as @s[scores={DialogueTrigger=105,TalkTime=1}] positioned 120 13 -852 run pokespawn lapras lvl=20
+execute as @s[scores={DialogueTrigger=105,TalkTime=1}] run playsound lapras ambient @s ~ ~ ~ 1 1 1
+
+tag @s[scores={DialogueTrigger=105,TalkTime=1..}] add Dialogue105
+
+
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Odd Egg Rolls
 #scoreboard players set @a[score_TalkTime=0] DialogueTrigger 200 {Inventory:[{id:"minecraft:egg"}]}
@@ -213,6 +223,69 @@ tag @s[scores={DialogueTrigger=202,TalkTime=65..}] add Dialogue202
 execute as @s[scores={DialogueTrigger=203,TalkTime=1}] run playsound egghatch ambient @s ~ ~ ~ 1 1 1
 execute as @s[scores={DialogueTrigger=203,TalkTime=1}] run pokegiveother @s shuckle level=15
 tag @s[scores={DialogueTrigger=203,TalkTime=2..}] add Dialogue203
+
+
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#SS Aqua Voyage
+#execute as @s[x=744,y=73,z=-193,distance=..15,tag=Dialogue101,score_TalkTime=0] run tag @s remove Dialogue214
+#execute as @s[x=-2749,y=72,z=-159,distance=..15,tag=Dialogue101,score_TalkTime=0] run tag @s remove Dialogue214
+
+#execute as @s[x=744,y=73,z=-193,distance=..15,tag=Dialogue101,score_TalkTime=0] run scoreboard players set @s DialogueTrigger 214
+#execute as @s[x=-2749,y=72,z=-159,distance=..15,tag=Dialogue101,score_TalkTime=0] run scoreboard players set @s DialogueTrigger 214
+
+#Tags player depending on their location of departure
+execute as @s[scores={DialogueTrigger=214,TalkTime=1..10}] run scoreboard players set @s[x=744,y=73,z=-193,distance=..15] SSState 1
+execute as @s[scores={DialogueTrigger=214,TalkTime=1..10}] run scoreboard players set @s[x=-2749,y=72,z=-159,distance=..15] SSState 2
+
+#Tps player to ship
+execute as @s[scores={DialogueTrigger=214,TalkTime=1..10}] run tp @s[x=744,y=73,z=-193,distance=..15] 748 72 555 90 0
+execute as @s[scores={DialogueTrigger=214,TalkTime=1..10}] run tp @s[x=-2749,y=72,z=-159,distance=..15] 748 72 555 90 0
+
+#TPs players in the water
+execute as @s[x=530,y=0,z=324,dx=442,dy=63,dz=471,scores={DialogueTrigger=214,TalkTime=1..800}] run tp @s 748 72 555 90 0
+
+#Now Boarding messages
+tellraw @s[scores={DialogueTrigger=214,TalkTime=1,SSState=1}] {"text":"Now boarding the S.S. Aqua voyage for Vermilion City!"}
+tellraw @s[scores={DialogueTrigger=214,TalkTime=1,SSState=2}] {"text":"Now boarding the S.S. Aqua voyage for Olivine City!"}
+execute as @s[scores={DialogueTrigger=214,TalkTime=1}] run advancement grant @s only johto:event4
+execute as @s[scores={DialogueTrigger=214,TalkTime=1}] run scoreboard players set @s click 1
+
+
+
+tellraw @s[scores={DialogueTrigger=214,TalkTime=80}] {"text":"<Intercom> 9 minutes remain in this voyage."}
+tellraw @s[scores={DialogueTrigger=214,TalkTime=160}] {"text":"<Intercom> 8 minutes remain in this voyage."}
+tellraw @s[scores={DialogueTrigger=214,TalkTime=240}] {"text":"<Intercom> 7 minutes remain in this voyage."}
+tellraw @s[scores={DialogueTrigger=214,TalkTime=320}] {"text":"<Intercom> 6 minutes remain in this voyage."}
+tellraw @s[scores={DialogueTrigger=214,TalkTime=400}] {"text":"<Intercom> 5 minutes remain in this voyage."}
+tellraw @s[scores={DialogueTrigger=214,TalkTime=480}] {"text":"<Intercom> 4 minutes remain in this voyage."}
+tellraw @s[scores={DialogueTrigger=214,TalkTime=560}] {"text":"<Intercom> 3 minutes remain in this voyage."}
+tellraw @s[scores={DialogueTrigger=214,TalkTime=640}] {"text":"<Intercom> 2 minutes remain in this voyage."}
+tellraw @s[scores={DialogueTrigger=214,TalkTime=720}] {"text":"<Intercom> 1 minute remains in this voyage."}
+tellraw @s[scores={DialogueTrigger=214,TalkTime=760}] {"text":"<Intercom> SS Aqua now docking. Please stand by."}
+
+tellraw @s[scores={DialogueTrigger=214,TalkTime=790,SSState=1}] {"text":"The S.S. Aqua has docked in Vermilion City. Thank you for sailing with us!"}
+execute as @s[scores={DialogueTrigger=214,TalkTime=797,SSState=1}] run spawnpoint @s -2749 64 -129
+execute as @s[scores={DialogueTrigger=214,TalkTime=797,SSState=1}] run tp @s -2749 64 -129 0 ~
+
+tellraw @s[scores={DialogueTrigger=214,TalkTime=790,SSState=2}] {"text":"The S.S. Aqua has docked in Olivine City. Thank you for sailing with us!"}
+execute as @s[scores={DialogueTrigger=214,TalkTime=797,SSState=2}] run spawnpoint @s 758 64 -91
+execute as @s[scores={DialogueTrigger=214,TalkTime=797,SSState=2}] run tp @s 758 64 -91 0 ~
+
+#State Reset
+execute as @s[scores={DialogueTrigger=214,TalkTime=799}] run scoreboard players set @s SSState 0
+execute as @s[scores={DialogueTrigger=214,TalkTime=799}] run scoreboard players set @s click 1
+
+
+#If the player sleeps during the voyage
+execute as @s[scores={DialogueTrigger=214,TalkTime=1..750,sleep=0..5}] run scoreboard players set @s TalkTime 750
+execute as @s[scores={DialogueTrigger=214,TalkTime=1..750,sleep=0..5}] run tellraw @s ["",{"text":"<"},{"selector":"@s"},{"text":"> "},{"text":"zzz.....","italic":true,"color":"gray"}]
+
+
+tag @s[scores={DialogueTrigger=214,TalkTime=800..}] add Dialogue214
+
+
+
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #EndDialogue tag, ends a dialogue without finishing. Trigger may take over again as tag is not given

@@ -1929,22 +1929,6 @@ tellraw @s[scores={DialogueTrigger=80,TalkTime=20}] {"text":"<Professor Elm> See
 tag @s[scores={DialogueTrigger=80,TalkTime=20..}] add Dialogue80
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Elm giving the Master Ball
-#execute as @s[x=-693,y=63,z=-490,dx=20,dy=5,dz=20,score_TalkTime=0,tag=Clair] run scoreboard players set @s[tag=!Dialogue81] DialogueTrigger 81
-
-tellraw @s[scores={DialogueTrigger=81,TalkTime=1}] ["",{"text":"<Professor Elm> Hi, "},{"selector":"@s"},{"text":"!"}]
-tellraw @s[scores={DialogueTrigger=81,TalkTime=7}] {"text":"<Professor Elm> Thanks to you, my research is going great!"}
-tellraw @s[scores={DialogueTrigger=81,TalkTime=15}] {"text":"<Professor Elm> Take this as a token of my appreciation."}
-execute as @s[scores={DialogueTrigger=81,TalkTime=18}] run give @s pixelmon:master_ball
-execute as @s[scores={DialogueTrigger=81,TalkTime=18}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
-tellraw @s[scores={DialogueTrigger=81,TalkTime=23}] {"text":"<Professor Elm> The Master Ball is the best! It's the ultimate Ball!"}
-tellraw @s[scores={DialogueTrigger=81,TalkTime=31}] {"text":"<Professor Elm> It'll catch any Pokémon without fail."}
-tellraw @s[scores={DialogueTrigger=81,TalkTime=38}] {"text":"<Professor Elm> It's given only to recognized Pokémon researchers."}
-tellraw @s[scores={DialogueTrigger=81,TalkTime=46}] ["",{"text":"<Professor Elm> I think you can make better use of it than I can, "},{"selector":"@s"},{"text":"!"}]
-
-tag @s[scores={DialogueTrigger=81,TalkTime=46..}] add Dialogue81
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Post-Falkner call from Elm
 #execute as @s[x=88,y=64,z=-67,distance=..20,score_TalkTime=0,tag=Falkner] run execute @s[tag=!Dialogue13] run scoreboard players set @s[tag=!Dialogue82] DialogueTrigger 82
 
@@ -2215,22 +2199,7 @@ tellraw @s[scores={DialogueTrigger=100,TalkTime=13}] {"text":"<Professor Elm> Co
 
 tag @s[scores={DialogueTrigger=100,TalkTime=13..}] add Dialogue100
 
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Professor Elm after the Elite Four, giving SS Ticket
-#execute as @s[x=-693,y=63,z=-490,dx=20,dy=5,dz=20,score_DialogueTrigger=0,tag=Dialogue81] run scoreboard players set @s[tag=!Dialogue101] DialogueTrigger 101
-
-tellraw @s[scores={DialogueTrigger=101,TalkTime=1}] ["",{"text":"<Professor Elm> "},{"selector":"@s"},{"text":"! There you are!"}]
-tellraw @s[scores={DialogueTrigger=101,TalkTime=8}] {"text":"<Professor Elm> I called because I have something for you."}
-execute as @s[scores={DialogueTrigger=101,TalkTime=13}] run give @s pixelmon:ss_ticket{display:{Lore:['[{"text":"The ticket required for sailing on","italic":false}]','[{"text":"the ferry S.S. Aqua in Olivine and","italic":false}]','[{"text":"Vermilion City. It has a drawing","italic":false}]','[{"text":"of a ship in it.","italic":false}]']}}
-execute as @s[scores={DialogueTrigger=101,TalkTime=13}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
-tellraw @s[scores={DialogueTrigger=101,TalkTime=16}] {"text":"<Professor Elm> See? It's an S.S. Ticket. Now you can catch Pokémon in Kanto."}
-tellraw @s[scores={DialogueTrigger=101,TalkTime=26}] ["",{"text":"<Professor Elm> The ship departs from Olivine City. But you knew that already, "},{"selector":"@s"},{"text":"."}]
-tellraw @s[scores={DialogueTrigger=101,TalkTime=37}] {"text":"<Professor Elm> After all, you've traveled all over with your Pokémon."}
-tellraw @s[scores={DialogueTrigger=101,TalkTime=47}] {"text":"<Professor Elm> Give my regards to Professor Oak in Kanto!"}
-
-tag @s[scores={DialogueTrigger=101,TalkTime=47..}] add Dialogue101
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Mr Pokémon giving an orb after the Elite Four
 #execute as @s[x=-255,y=63,z=-198,dx=20,dy=5,dz=8,score_DialogueTrigger=0,score_IP_min=1] run scoreboard players set @s[tag=!Dialogue102] DialogueTrigger 102
 
@@ -2296,14 +2265,6 @@ execute as @s[scores={DialogueTrigger=104,TalkTime=13}] run scoreboard players s
 
 tag @s[scores={DialogueTrigger=104,TalkTime=13..}] add Dialogue104
 
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Whirl Islands Friday Lapras
-execute as @s[scores={DialogueTrigger=105,TalkTime=1}] run particle cloud 120 13 -852 1 1 1 1 100
-execute as @s[scores={DialogueTrigger=105,TalkTime=1}] run execute at @e[x=120,y=13,z=-852,distance=..5,type=armor_stand] run pokespawn Lapras lvl:20 gr:7
-execute as @s[scores={DialogueTrigger=105,TalkTime=1}] run setblock 120 12 -852 minecraft:water
-execute as @s[scores={DialogueTrigger=105,TalkTime=1}] run playsound lapras ambient @s ~ ~ ~ 1 1 1
-
-tag @s[scores={DialogueTrigger=105,TalkTime=1..}] add Dialogue105
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Obtaining the GS ball from Goldenrod City Poke Center
@@ -4560,63 +4521,6 @@ execute as @s[scores={DialogueTrigger=213,TalkTime=26}] run scoreboard players s
 
 tag @s[scores={DialogueTrigger=213,TalkTime=26..}] add Dialogue213
 
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#SS Aqua Voyage
-#execute as @s[x=744,y=73,z=-193,distance=..15,tag=Dialogue101,score_TalkTime=0] run tag @s remove Dialogue214
-#execute as @s[x=-2749,y=72,z=-159,distance=..15,tag=Dialogue101,score_TalkTime=0] run tag @s remove Dialogue214
-
-#execute as @s[x=744,y=73,z=-193,distance=..15,tag=Dialogue101,score_TalkTime=0] run scoreboard players set @s DialogueTrigger 214
-#execute as @s[x=-2749,y=72,z=-159,distance=..15,tag=Dialogue101,score_TalkTime=0] run scoreboard players set @s DialogueTrigger 214
-
-#Tags player depending on their location of departure
-execute as @s[scores={DialogueTrigger=214,TalkTime=1..10}] run scoreboard players set @s[x=744,y=73,z=-193,distance=..15] SSState 1
-execute as @s[scores={DialogueTrigger=214,TalkTime=1..10}] run scoreboard players set @s[x=-2749,y=72,z=-159,distance=..15] SSState 2
-
-#Tps player to ship
-execute as @s[scores={DialogueTrigger=214,TalkTime=1..10}] run tp @s[x=744,y=73,z=-193,distance=..15] 748 72 555 90 0
-execute as @s[scores={DialogueTrigger=214,TalkTime=1..10}] run tp @s[x=-2749,y=72,z=-159,distance=..15] 748 72 555 90 0
-
-#TPs players in the water
-execute as @s[x=530,y=0,z=324,dx=442,dy=63,dz=471,scores={DialogueTrigger=214,TalkTime=1..800}] run tp @s 748 72 555 90 0
-
-#Now Boarding messages
-tellraw @s[scores={DialogueTrigger=214,TalkTime=1,SSState=1}] {"text":"Now boarding the S.S. Aqua voyage for Vermilion City!"}
-tellraw @s[scores={DialogueTrigger=214,TalkTime=1,SSState=2}] {"text":"Now boarding the S.S. Aqua voyage for Olivine City!"}
-execute as @s[scores={DialogueTrigger=214,TalkTime=1}] run advancement grant @s only johto:event4
-execute as @s[scores={DialogueTrigger=214,TalkTime=1}] run scoreboard players set @s click 1
-
-
-
-tellraw @s[scores={DialogueTrigger=214,TalkTime=80}] {"text":"<Intercom> 9 minutes remain in this voyage."}
-tellraw @s[scores={DialogueTrigger=214,TalkTime=160}] {"text":"<Intercom> 8 minutes remain in this voyage."}
-tellraw @s[scores={DialogueTrigger=214,TalkTime=240}] {"text":"<Intercom> 7 minutes remain in this voyage."}
-tellraw @s[scores={DialogueTrigger=214,TalkTime=320}] {"text":"<Intercom> 6 minutes remain in this voyage."}
-tellraw @s[scores={DialogueTrigger=214,TalkTime=400}] {"text":"<Intercom> 5 minutes remain in this voyage."}
-tellraw @s[scores={DialogueTrigger=214,TalkTime=480}] {"text":"<Intercom> 4 minutes remain in this voyage."}
-tellraw @s[scores={DialogueTrigger=214,TalkTime=560}] {"text":"<Intercom> 3 minutes remain in this voyage."}
-tellraw @s[scores={DialogueTrigger=214,TalkTime=640}] {"text":"<Intercom> 2 minutes remain in this voyage."}
-tellraw @s[scores={DialogueTrigger=214,TalkTime=720}] {"text":"<Intercom> 1 minute remains in this voyage."}
-tellraw @s[scores={DialogueTrigger=214,TalkTime=760}] {"text":"<Intercom> SS Aqua now docking. Please stand by."}
-
-tellraw @s[scores={DialogueTrigger=214,TalkTime=790,SSState=1}] {"text":"The S.S. Aqua has docked in Vermilion City. Thank you for sailing with us!"}
-execute as @s[scores={DialogueTrigger=214,TalkTime=797,SSState=1}] run spawnpoint @s -2749 64 -129
-execute as @s[scores={DialogueTrigger=214,TalkTime=797,SSState=1}] run tp @s -2749 64 -129 0 ~
-
-tellraw @s[scores={DialogueTrigger=214,TalkTime=790,SSState=2}] {"text":"The S.S. Aqua has docked in Olivine City. Thank you for sailing with us!"}
-execute as @s[scores={DialogueTrigger=214,TalkTime=797,SSState=2}] run spawnpoint @s 758 64 -91
-execute as @s[scores={DialogueTrigger=214,TalkTime=797,SSState=2}] run tp @s 758 64 -91 0 ~
-
-#State Reset
-execute as @s[scores={DialogueTrigger=214,TalkTime=799}] run scoreboard players set @s SSState 0
-execute as @s[scores={DialogueTrigger=214,TalkTime=799}] run scoreboard players set @s click 1
-
-
-#If the player sleeps during the voyage
-execute as @s[scores={DialogueTrigger=214,TalkTime=1..750,sleep=0..5}] run scoreboard players set @s TalkTime 750
-execute as @s[scores={DialogueTrigger=214,TalkTime=1..750,sleep=0..5}] run tellraw @s ["",{"text":"<"},{"selector":"@s"},{"text":"> "},{"text":"zzz.....","italic":true,"color":"gray"}]
-
-
-tag @s[scores={DialogueTrigger=214,TalkTime=800..}] add Dialogue214
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Power Plant Manager before finding the part
