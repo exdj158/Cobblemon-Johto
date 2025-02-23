@@ -281,7 +281,6 @@ execute as @s[scores={EscapeRope=22,EscapeRopeUse=1..}] run tp @s -2108 64 -914 
 
 
 #Removes EscapeRope and EscapeRopeUse scores
-execute as @s[tag=EscapeRopeUse] run scoreboard players set @s click 1
 tellraw @s[tag=EscapeRopeUse] {"text":"You used an Escape Rope!","italic":true,"color":"gray"}
 scoreboard players set @s[tag=EscapeRopeUse] EscapeRope 0
 scoreboard players set @s[tag=EscapeRopeUse] EscapeRopeUse 0

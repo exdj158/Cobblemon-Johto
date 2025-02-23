@@ -5,6 +5,8 @@ scoreboard players set @s BattleStart 0
 #Resets Radio if player logs out while listening to music
 scoreboard players set @s click 1
 
+#If player crashes/quits in the middle of a pop-up dialogue
+tag @s remove InDialogue
 
 #Resets PokemonMusicTalk
 tag @s remove PokemonMusicTalk

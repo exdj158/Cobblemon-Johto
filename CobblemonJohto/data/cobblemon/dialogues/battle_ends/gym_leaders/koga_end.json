@@ -2,6 +2,7 @@
     "c.npc.set_chatting();",
     "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 3');",
     "q.run_command('execute as ' + q.player.username + ' run function johto:tools/forceclick');",
+    "q.run_command('execute as ' + q.player.username + ' run pokeheal');",
     "q.run_command('execute as ' + q.player.username + ' run tag ' + q.player.username + ' add Koga');"
         ],
   "speakers": {

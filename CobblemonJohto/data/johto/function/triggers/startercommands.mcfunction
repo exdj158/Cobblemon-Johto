@@ -8,6 +8,7 @@ gamerule doDaylightCycle true
 gamerule doFireTick false
 gamerule fallDamage false
 gamerule commandBlockOutput false
+gamerule naturalRegeneration true
 scoreboard objectives setdisplay sidebar
 scoreboard objectives setdisplay list
 scoreboard objectives setdisplay below_name

@@ -72,11 +72,13 @@ tp @a[scores={TalkTime=0},x=-667,y=74,z=631,dx=3,dy=3] -652 64 329 ~180 ~
 playsound door ambient @a[x=1597,y=87,z=-426,dx=3,dy=3] ~ ~ ~ 100 1 1
 tp @a[x=1597,y=87,z=-426,dx=3,dy=3] -1173 64 -237
 
-execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=0,TalkTime=0}] run execute at @a[x=-1174,y=64,z=-238,dx=2,dy=2] run fill -1196 63 -231 -1150 63 -186 minecraft:cyan_terracotta
-execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=0,TalkTime=0}] run playsound door ambient @a[x=-1174,y=64,z=-238,dx=2,dy=2] ~ ~ ~ 100 1 1
-execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=0,TalkTime=0}] run scoreboard players set @a[x=-1174,y=64,z=-238,dx=2,dy=2] click 1
-execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=0,TalkTime=0}] run tp @a[x=-1174,y=64,z=-238,dx=2,dy=2] 1599 87 -427
+#execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=0,TalkTime=0}] run execute at @a[x=-1174,y=64,z=-238,dx=2,dy=2] run fill -1196 63 -231 -1150 63 -186 minecraft:cyan_terracotta
+#execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=0,TalkTime=0}] run playsound door ambient @a[x=-1174,y=64,z=-238,dx=2,dy=2] ~ ~ ~ 100 1 1
+#execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=0,TalkTime=0}] run scoreboard players set @a[x=-1174,y=64,z=-238,dx=2,dy=2] click 1
+#execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=0,TalkTime=0}] run tp @a[x=-1174,y=64,z=-238,dx=2,dy=2] 1599 87 -427
 
+tp @a[x=-1174,y=64,z=-238,dx=2,dy=2] 1599 87 -427
+playsound door ambient @a[x=-1174,y=64,z=-238,dx=2,dy=2] ~ ~ ~ 100 1 1
 
 #Ruins of Alph Main Portal
 
@@ -126,17 +128,17 @@ tp @a[x=-1342,y=64,z=372,dx=4,dy=4] -1277 84 352
 
 
 #National Park
-tellraw @a[x=466,y=64,z=63,dy=2,dz=2,scores={BugContest=1..}] ["",{"text":"You can't leave an active Bug Contest!","color":"white","italic":true}]
-tellraw @a[x=571,y=64,z=-44,dx=2,dy=2,dz=0,scores={BugContest=1..}] ["",{"text":"You can't leave an active Bug Contest!","color":"white","italic":true}]
+#tellraw @a[x=466,y=64,z=63,dy=2,dz=2,scores={BugContest=1..}] ["",{"text":"You can't leave an active Bug Contest!","color":"white","italic":true}]
+#tellraw @a[x=571,y=64,z=-44,dx=2,dy=2,dz=0,scores={BugContest=1..}] ["",{"text":"You can't leave an active Bug Contest!","color":"white","italic":true}]
 
 playsound door ambient @a[x=466,y=64,z=63,dy=2,dz=2,scores={BugContest=0}] ~ ~ ~ 100 1 1
 playsound door ambient @a[x=571,y=64,z=-44,dx=2,dy=2,dz=0,scores={BugContest=0}] ~ ~ ~ 10 1 1
 
-tp @a[x=466,y=64,z=63,dy=2,dz=2,scores={BugContest=1..}] ~5 ~ ~
-tp @a[x=466,y=64,z=63,dy=2,dz=2,scores={BugContest=0}] 430 64 -13
+#tp @a[x=466,y=64,z=63,dy=2,dz=2,scores={BugContest=1..}] ~5 ~ ~
+tp @a[x=466,y=64,z=63,dy=2,dz=2] 430 64 -13
 
-tp @a[x=571,y=64,z=-44,dx=2,dy=2,dz=0,scores={BugContest=1..}] ~ ~ ~5
-tp @a[x=571,y=64,z=-44,dx=2,dy=2,dz=0,scores={BugContest=0}] 511 64 -77
+#tp @a[x=571,y=64,z=-44,dx=2,dy=2,dz=0,scores={BugContest=1..}] ~ ~ ~5
+tp @a[x=571,y=64,z=-44,dx=2,dy=2,dz=0] 511 64 -77
 
 #Tp In
 playsound door ambient @a[x=431,y=64,z=-14,dy=2,dz=2] ~ ~ ~ 100 1 1
@@ -223,9 +225,9 @@ tp @a[x=-795,y=65,z=529,dx=9,dy=5] 88 64 -64
 #tag @a[x=355,y=64,z=-762,dx=4,dy=4,tag=Dialogue16,scores={TalkTime=0}] remove GymVictory
 #tp @a[x=355,y=64,z=-762,dx=4,dy=4,tag=Dialogue16,scores={TalkTime=0}] -855 65 530
 
-playsound door ambient @a[x=355,y=64,z=-762,dx=4,dy=4,scores={TalkTime=0}] ~ ~ ~ 100 1 1
-tag @a[x=355,y=64,z=-762,dx=4,dy=4,scores={TalkTime=0}] remove GymVictory
-tp @a[x=355,y=64,z=-762,dx=4,dy=4,scores={TalkTime=0}] -855 65 530
+playsound door ambient @a[x=355,y=64,z=-762,dx=4,dy=4] ~ ~ ~ 100 1 1
+tag @a[x=355,y=64,z=-762,dx=4,dy=4] remove GymVictory
+tp @a[x=355,y=64,z=-762,dx=4,dy=4] -855 65 530
 
 playsound door ambient @a[x=-859,y=65,z=529,dx=9,dy=5] ~ ~ ~ 100 1 1
 tp @a[x=-859,y=65,z=529,dx=9,dy=5] 357 64 -763
@@ -264,13 +266,16 @@ tp @a[x=-1194,y=65,z=529,dx=9,dy=6] 1269 64 -470
 
 #--------------------------------------------------
 #Olivine City
-tellraw @a[x=807,y=64,z=16,dx=4,dy=3,tag=!Dialogue42] {"text":"Jasmine is not currently in the gym!","italic":true,"color":"gray"}
-tp @a[x=807,y=64,z=16,dx=4,dy=3,tag=!Dialogue42] ~ ~ ~-10
+#tellraw @a[x=807,y=64,z=16,dx=4,dy=3,tag=!Dialogue42] {"text":"Jasmine is not currently in the gym!","italic":true,"color":"gray"}
+#tp @a[x=807,y=64,z=16,dx=4,dy=3,tag=!Dialogue42] ~ ~ ~-10
 
-playsound door ambient @a[x=807,y=64,z=16,dx=4,dy=3,tag=Dialogue42] ~ ~ ~ 100 1 1
-tag @a[x=807,y=64,z=16,dx=4,dy=3,tag=Dialogue42] remove GymVictory
-tp @a[x=807,y=64,z=16,dx=4,dy=3,tag=Dialogue42] -1126 65 530
+#playsound door ambient @a[x=807,y=64,z=16,dx=4,dy=3,tag=Dialogue42] ~ ~ ~ 100 1 1
+#tag @a[x=807,y=64,z=16,dx=4,dy=3,tag=Dialogue42] remove GymVictory
+#tp @a[x=807,y=64,z=16,dx=4,dy=3,tag=Dialogue42] -1126 65 530
 
+playsound door ambient @a[x=807,y=64,z=16,dx=4,dy=3] ~ ~ ~ 100 1 1
+tag @a[x=807,y=64,z=16,dx=4,dy=3] remove GymVictory
+tp @a[x=807,y=64,z=16,dx=4,dy=3] -1126 65 530
 
 playsound door ambient @a[x=-1130,y=65,z=529,dx=9,dy=6] ~ ~ ~ 100 1 1
 tp @a[x=-1130,y=65,z=529,dx=9,dy=6] 809 64 15
