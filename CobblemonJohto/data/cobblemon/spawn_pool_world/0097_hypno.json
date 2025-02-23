@@ -9,42 +9,8 @@
           "type": "pokemon",
           "context": "grounded",
           "bucket": "common",
-          "level": "10-13",
-          "weight": 50,
-          "condition": {
-              "canSeeSky": true,
-              "neededNearbyBlocks": [
-                  "minecraft:short_grass"
-              ],
-              "minX": 422, "maxX": 512, "minZ": -721, "maxZ": -488
-          }
-      },
-
-      {
-          "id": "hypno-2",
-          "pokemon": "hypno",
-          "type": "pokemon",
-          "context": "grounded",
-          "bucket": "common",
-          "level": "12-14",
-          "weight": 20,
-          "condition": {
-              "canSeeSky": true,
-              "neededNearbyBlocks": [
-                  "minecraft:short_grass"
-              ],
-              "minX": 426, "maxX": 492, "minZ": -252, "maxZ": -94
-          }
-      },
-
-      {
-          "id": "hypno-3",
-          "pokemon": "hypno",
-          "type": "pokemon",
-          "context": "grounded",
-          "bucket": "common",
-          "level": "14-16",
-          "weight": 40,
+          "level": "14-15",
+          "weight": 10,
           "condition": {
               "canSeeSky": true,
               "neededNearbyBlocks": [
@@ -55,7 +21,7 @@
       },
 
       {
-        "id": "hypno-4",
+        "id": "hypno-2",
         "pokemon": "hypno",
         "presets": [
             "natural"

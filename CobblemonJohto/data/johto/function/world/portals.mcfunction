@@ -805,6 +805,7 @@ tp @a[x=183,y=49,z=-150,dx=3,dy=3] 183 64 -252
 
 
 #Ruins Kabuto Chamber
+execute as @a[x=189,y=53,z=-111,dx=3,dy=3] run bossbar remove johto:kabutoruins
 playsound door ambient @a[x=189,y=53,z=-111,dx=3,dy=3] ~ ~ ~ 100 1 1
 tp @a[x=189,y=53,z=-111,dx=3,dy=3] 191 64 -113
 
@@ -812,8 +813,6 @@ tp @a[x=189,y=53,z=-111,dx=3,dy=3] 191 64 -113
 
 #execute as @a[x=185,y=52,z=-110,dx=11,dy=5,dz=16] run tag @e[x=-867,y=69,z=-210,dy=3,type=armor_stand] add Skip
 #execute as @e[x=-867,y=69,z=-210,dy=3,type=armor_stand,tag=!Skip] run bossbar remove johto:kabutoruins
-
-execute as @a[x=189,y=64,z=-112,dx=3,dy=3] run bossbar remove johto:kabutoruins
 
 playsound door ambient @a[x=189,y=64,z=-112,dx=3,dy=3] ~ ~ ~ 100 1 1
 tp @a[x=189,y=64,z=-112,dx=3,dy=3] 191 53 -110
@@ -830,13 +829,12 @@ tp @a[x=200,y=51,z=-159,dx=3,dy=3] 253 64 -230
 
 
 #Ruins Ho-Oh Chamber
+execute as @a[x=207,y=49,z=-135,dx=3,dy=3] run bossbar remove johto:hoohruins
 playsound door ambient @a[x=207,y=49,z=-135,dx=3,dy=3] ~ ~ ~ 100 1 1
 tp @a[x=207,y=49,z=-135,dx=3,dy=3] 254 64 -166 ~0 ~0
 
 #execute as @a[x=203,y=50,z=-134,dx=11,dy=5,dz=16] run tag @e[x=-867,y=69,z=-214,dy=3,type=armor_stand] add Skip
 #execute as @e[x=-867,y=69,z=-214,dy=3,type=armor_stand,tag=!Skip] run bossbar remove johto:hoohruins
-
-execute as @a[x=253,y=63,z=-165,dx=3,dy=3] run bossbar remove johto:hoohruins
 
 playsound door ambient @a[x=253,y=63,z=-165,dx=3,dy=3] ~ ~ ~ 100 1 1
 tp @a[x=253,y=63,z=-165,dx=3,dy=3] 209 50 -133
