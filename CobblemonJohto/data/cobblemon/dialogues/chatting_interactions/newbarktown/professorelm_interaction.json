@@ -15,7 +15,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "Pokemon hide in the grass."
+                "You should heal it with this machine. It's so easy to use. "
             ],
             "input": {
                 "type": "option",
@@ -33,7 +33,7 @@
             "id": "page2",
             "speaker": "npc",
             "lines": [
-                "Who knows when they'll pop out..."
+                "And you can manage Pokémon with the PC at my desk!"
             ],
             "input": {
                 "type": "option",
