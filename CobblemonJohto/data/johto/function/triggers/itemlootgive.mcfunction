@@ -1855,7 +1855,10 @@ execute as @s[x=-270,y=65,z=-505,distance=..5,tag=!ItemLoot371] run tag @s add I
 
 #ItemLoot372 Flash HM
 
-
+execute as @s[x=291,y=64,z=-746,distance=..5,tag=!ItemLoot373] run give @s cobblemon:charcoal_stick
+execute as @s[x=291,y=64,z=-746,distance=..5,tag=!ItemLoot373] run tellraw @s {"text":"You received a Charcoal Stick!","italic":true,"color":"gray"}
+execute as @s[x=291,y=64,z=-746,distance=..5,tag=!ItemLoot373] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=291,y=64,z=-746,distance=..5,tag=!ItemLoot373] run tag @s add ItemLoot373
 
 
 

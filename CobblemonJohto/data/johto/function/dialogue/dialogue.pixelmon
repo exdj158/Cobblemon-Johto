@@ -676,19 +676,6 @@ execute as @s[scores={DialogueTrigger=26,TalkTime=25}] run scoreboard players se
 
 tag @s[scores={DialogueTrigger=26,TalkTime=25..}] add Dialogue26
 
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Charcoal Kiln after player finds Farfetch'd
-#execute as @s[x=286,y=63,z=-749,dx=20,dy=5,dz=8,score_TalkTime=0,score_Farfetchd_min=2] run scoreboard players set @s[tag=!Dialogue24] DialogueTrigger 24
-
-tellraw @s[scores={DialogueTrigger=24,TalkTime=1}] {"text":"<Charcoal Apprentice> I'm sorry--I forgot to thank you."}
-tellraw @s[scores={DialogueTrigger=24,TalkTime=8}] {"text":"<Charcoal Apprentice> This is Charcoal that I made."}
-execute as @s[scores={DialogueTrigger=24,TalkTime=11}] run give @s pixelmon:charcoal
-execute as @s[scores={DialogueTrigger=24,TalkTime=11}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
-tellraw @s[scores={DialogueTrigger=24,TalkTime=14}] {"text":"<Charcoal Apprentice> Fire-type Pokémon would be happy to hold that."}
-tellraw @s[scores={DialogueTrigger=24,TalkTime=22}] {"text":"<Charcoal Apprentice> The Slowpoke came back, and you even found Farfetch'd"}
-tellraw @s[scores={DialogueTrigger=24,TalkTime=31}] {"text":"<Charcoal Apprentice> You're the coolest, man!"}
-
-tag @s[scores={DialogueTrigger=24,TalkTime=31..}] add Dialogue24
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #https://youtu.be/HQEaaIuyKAM?t=7812
@@ -3063,20 +3050,6 @@ tag @s[scores={DialogueTrigger=149,TalkTime=34..}] add Dialogue149
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #150-153, armor stand events
 
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Professor Oak giving Kanto Starters
-#scoreboard players set @a[x=-1726,y=63,z=-319,dx=23,dy=5,dz=25,tag=!Dialogue153] DialogueTrigger 153
-
-tellraw @s[scores={DialogueTrigger=153,TalkTime=1}] ["",{"text":"<Professor Oak> Hello, "},{"selector":"@s"},{"text":". Good to see you."}]
-tellraw @s[scores={DialogueTrigger=153,TalkTime=8}] {"text":"<Professor Oak> I heard a lot about you. Your Pokédex must be close to complete?"}
-tellraw @s[scores={DialogueTrigger=153,TalkTime=17}] {"text":"<Professor Oak> For all your hard work, I would like to give you something."}
-tellraw @s[scores={DialogueTrigger=153,TalkTime=26}] {"text":"<Professor Oak> Haha! What's next to me..."}
-tellraw @s[scores={DialogueTrigger=153,TalkTime=33}] {"text":"<Professor Oak> You must have figured it out right away. Yes, it is a Pokémon!"}
-tellraw @s[scores={DialogueTrigger=153,TalkTime=42}] {"text":"<Professor Oak> You don't see them very often in Kanto."}
-tellraw @s[scores={DialogueTrigger=153,TalkTime=50}] {"text":"<Professor Oak> Choose one and it'll be yours! ...Go ahead!"}
-execute as @s[scores={DialogueTrigger=153,TalkTime=50}] run clone -1720 62 -311 -1724 62 -311
-
-tag @s[scores={DialogueTrigger=153,TalkTime=50..}] add Dialogue153
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #After Professor Oak giving Kanto Starter, gives Mega Ring
