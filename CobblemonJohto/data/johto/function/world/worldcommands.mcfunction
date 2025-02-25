@@ -7,24 +7,14 @@ execute as @e[type=cobblemon:npc,nbt={PersistenceRequired:0b}] run data merge en
 #Runs custom clickable loots
 execute as @a[tag=ItemLoot] run function johto:triggers/itemlootgive
 
-
 #Runs TriggerCommand Function
 execute as @a[scores={TriggerCommand=1..}] run function johto:triggers/triggercommands
 
-
-
 #Gives you starting items and commands
 execute as @a[tag=!InitialTags] run function johto:triggers/startercommands
-#
 
 #Removes Cooldown score if present
 scoreboard players remove @a[scores={Cooldown=1..}] Cooldown 1
-
-#tin Tower
-execute as @a run function johto:world/tintower
-
-#Runs Goldenrod Department Center Elevator
-execute if entity @a[x=438,y=63,z=-395,dx=3,dy=34,dz=3] run function johto:world/departmentelevator
 
 #---------------------
 #Runs infolist command for non-ops
@@ -42,6 +32,43 @@ execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=18
 execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=18000..},tag=!DailyExecuted] run tag @e[x=-799,y=64,z=-284,dy=3,type=armor_stand] add DailyExecuted
 tag @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=..1000},tag=DailyExecuted] remove DailyExecuted
 
+
+#-------------------------------------------------------------------------------------------------------------------------
+#Runs HMs/Important Items
+
+#Fly Map Refresh
+execute as @a[x=1169,y=252,z=619,distance=..40] run function johto:hms/flymap
+
+#HM Fly
+execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"HM02: Fly"}],"text":""}'}}}] run scoreboard players set @s Fly 1
+execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"HM02: Fly"}],"text":""}'}}}] run function johto:hms/fly
+execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"HM02: Fly"}],"text":""}'}}}] run scoreboard players set @s click 0
+
+
+#HM Flash
+execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"HM05: Flash"}],"text":""}'}}}] run tellraw @s {"text":"You used Flash!","italic":true,"color":"gray"}
+execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"HM05: Flash"}],"text":""}'}}}] run effect give @s minecraft:night_vision 900 1 true
+execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"HM05: Flash"}],"text":""}'}}}] run playsound minecraft:entity.firework_rocket.launch ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"HM05: Flash"}],"text":""}'}}}] run scoreboard players set @s click 0
+
+
+#Town Map
+team leave @a[team=black]
+execute as @a[nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Town Map"}],"text":""}'}}}] run function johto:world/townmap
+execute as @a[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Town Map"}],"text":""}'}}]}] run function johto:world/townmap
+
+
+#MusicTitles function, tracks player around map checking for new areas or music
+execute as @a[scores={TalkTime=0}] run function johto:world/musictitles
+
+
+#Runs relog function if player is found with relog score
+execute as @a[scores={relog=1..}] run function johto:triggers/relog
+
+#Escape Ropes
+execute as @a[scores={EscapeRopeUse=1..}] run function johto:world/escaperope
+
+
 #-------------------------------------------------------------------------------------------------------------------------
 #Music-based commands
 
@@ -49,8 +76,8 @@ tag @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=..1000},tag=Dail
 #Music rate: 86 ticks per 60 seconds
 
 #Runs the click trigger if player uses Carrot on a Stick
-execute as @a[scores={click=1..},tag=TempDelay] run function johto:triggers/click
-tag @a[scores={click=1..},tag=!TempDelay] add TempDelay
+execute as @a[scores={click=1..},tag=TempDelay,nbt={Inventory:[{Slot:1b,components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Radio"}],"text":""}'}}]}] run function johto:triggers/click
+tag @a[scores={click=1..},tag=!TempDelay,nbt={Inventory:[{Slot:1b,components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Radio"}],"text":""}'}}]}] add TempDelay
 
 
 
@@ -87,46 +114,6 @@ execute as @a[tag=!RadioOff,scores={MusicCooldown=0},nbt={Inventory:[{Slot:7b,co
 
 #Removes a MusicCooldown score each refresh if present
 scoreboard players remove @a[scores={MusicCooldown=1..}] MusicCooldown 1
-
-
-#-------------------------------------------------------------------------------------------------------------------------
-#Runs HMs/Important Items
-
-#Fly Map Refresh
-execute as @a[x=1169,y=252,z=619,distance=..40] run function johto:hms/flymap
-
-#HM Fly
-execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"HM02: Fly"}],"text":""}'}}}] run scoreboard players set @s Fly 1
-execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"HM02: Fly"}],"text":""}'}}}] run function johto:hms/fly
-execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"HM02: Fly"}],"text":""}'}}}] run scoreboard players set @s click 0
-
-
-#Flash
-execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"HM05: Flash"}],"text":""}'}}}] run tellraw @s {"text":"You used Flash!","italic":true,"color":"gray"}
-execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"HM05: Flash"}],"text":""}'}}}] run effect give @s minecraft:night_vision 900 1 true
-execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"HM05: Flash"}],"text":""}'}}}] run playsound minecraft:entity.firework_rocket.launch ambient @s ~ ~ ~ 1 1 1
-execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"HM05: Flash"}],"text":""}'}}}] run scoreboard players set @s click 0
-
-
-
-
-
-#Town Map
-team leave @a[team=black]
-execute as @a[nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Town Map"}],"text":""}'}}}] run function johto:world/townmap
-execute as @a[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Town Map"}],"text":""}'}}]}] run function johto:world/townmap
-
-
-#MusicTitles function, tracks player around map checking for new areas or music
-execute as @a[scores={TalkTime=0}] run function johto:world/musictitles
-
-
-#Runs relog function if player is found with relog score
-execute as @a[scores={relog=1..}] run function johto:triggers/relog
-
-#Escape Ropes
-execute as @a[scores={EscapeRopeUse=1..}] run function johto:world/escaperope
-
 
 #-------------------------------------------------------------------------------------------------------------------------
 #Unlocks Fly spots by visiting respective Pokemon Centers, sets spawnpoint if player dies
@@ -237,6 +224,13 @@ execute as @a[x=240,y=63,z=297,dx=33,dy=240,dz=33] run function johto:world/tint
 
 #Bill's Grandfather giving out stones
 execute as @a[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,tag=Dialogue195] run function johto:triggers/billshouse
+
+#Tin Tower
+execute as @a[x=240,y=63,z=297,dx=33,dy=240,dz=33] run function johto:world/tintower
+
+#Runs Goldenrod Department Center Elevator
+execute if entity @a[x=438,y=63,z=-395,dx=3,dy=34,dz=3] run function johto:world/departmentelevator
+
 
 #-------------------------------------------------------------------------------------------------------------------------
 #Road Blocks & World Blocks
