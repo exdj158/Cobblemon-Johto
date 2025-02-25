@@ -35,9 +35,14 @@ execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=7}] 
 
 #Day Specific Commands
 
-#Toggles Bargain Merchant Off
-#execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=2}] run setblock -813 65 -282 minecraft:iron_block
-
+#Adds to Bill's Grandfather seeking stones
+scoreboard players add @e[x=-792,y=65,z=-284,dy=3,type=armor_stand] BillGP 1
+scoreboard players set @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,scores={BillGP=5..}] BillGP 0
+tag @a remove ItemLoot375
+tag @a remove ItemLoot376
+tag @a remove ItemLoot377
+tag @a remove ItemLoot378
+tag @a remove ItemLoot379
 
 
 #Daily Resets:

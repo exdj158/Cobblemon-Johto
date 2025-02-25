@@ -1864,7 +1864,31 @@ execute as @s[x=549,y=64,z=-409,distance=..5,tag=!ItemLoot374] run pokegive Eeve
 execute as @s[x=549,y=64,z=-409,distance=..5,tag=!ItemLoot374] run playsound egghatch ambient @s ~ ~ ~ 10 1 1
 execute as @s[x=549,y=64,z=-409,distance=..5,tag=!ItemLoot374] run tag @s add ItemLoot374
 
+#Bill's Grandfather giving stones, intentionally not applying tags to be repeatable
+execute as @s[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,tag=!ItemLoot375] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,scores={BillGP=0}] run give @s cobblemon:everstone
+execute as @s[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,tag=!ItemLoot375] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,scores={BillGP=0}] run tellraw @s {"text":"You received an Everstone!","italic":true,"color":"gray"}
+execute as @s[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,tag=!ItemLoot375] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,scores={BillGP=0}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,tag=!ItemLoot375] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,scores={BillGP=0}] run tag @s add ItemLoot375
 
+execute as @s[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,tag=!ItemLoot376] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,scores={BillGP=1}] run give @s cobblemon:leaf_stone
+execute as @s[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,tag=!ItemLoot376] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,scores={BillGP=1}] run tellraw @s {"text":"You received a Leaf Stone!","italic":true,"color":"gray"}
+execute as @s[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,tag=!ItemLoot376] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,scores={BillGP=1}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,tag=!ItemLoot376] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,scores={BillGP=1}] run tag @s add ItemLoot376
+
+execute as @s[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,tag=!ItemLoot377] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,scores={BillGP=2}] run give @s cobblemon:water_stone
+execute as @s[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,tag=!ItemLoot377] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,scores={BillGP=2}] run tellraw @s {"text":"You received a Water Stone","italic":true,"color":"gray"}
+execute as @s[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,tag=!ItemLoot377] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,scores={BillGP=2}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,tag=!ItemLoot377] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,scores={BillGP=2}] run tag @s add ItemLoot377
+
+execute as @s[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,tag=!ItemLoot378] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,scores={BillGP=3}] run give @s cobblemon:fire_stone
+execute as @s[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,tag=!ItemLoot378] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,scores={BillGP=3}] run tellraw @s {"text":"You received a Fire Stone","italic":true,"color":"gray"}
+execute as @s[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,tag=!ItemLoot378] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,scores={BillGP=3}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,tag=!ItemLoot378] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,scores={BillGP=3}] run tag @s add ItemLoot378
+
+execute as @s[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,tag=!ItemLoot379] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,scores={BillGP=4}] run give @s cobblemon:thunder_stone
+execute as @s[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,tag=!ItemLoot379] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,scores={BillGP=4}] run tellraw @s {"text":"You received a Thunder Stone!","italic":true,"color":"gray"}
+execute as @s[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,tag=!ItemLoot379] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,scores={BillGP=4}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,tag=!ItemLoot379] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,scores={BillGP=4}] run tag @s add ItemLoot379
 
 
 

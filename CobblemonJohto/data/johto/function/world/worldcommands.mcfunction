@@ -235,6 +235,8 @@ execute as @a[x=-1222,y=0,z=500,dx=470,dy=240,dz=342] run function johto:world/s
 #Tin Tower portals
 execute as @a[x=240,y=63,z=297,dx=33,dy=240,dz=33] run function johto:world/tintower
 
+#Bill's Grandfather giving out stones
+execute as @a[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,tag=Dialogue195] run function johto:triggers/billshouse
 
 #-------------------------------------------------------------------------------------------------------------------------
 #Road Blocks & World Blocks

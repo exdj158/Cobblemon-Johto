@@ -3981,44 +3981,6 @@ execute as @s[scores={DialogueTrigger=194,TalkTime=5}] run playsound pixelmon:pi
 tag @s[scores={DialogueTrigger=194,TalkTime=5..}] add Dialogue194
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Bill's Grandfather housesitting opening dialogue
-#scoreboard players set @a[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,score_TalkTime=0,tag=!Dialogue195] DialogueTrigger 195
-
-tellraw @s[scores={DialogueTrigger=195,TalkTime=1}] {"text":"<Bill's Grandfather> Hm? You know Bill? He's my grandson."}
-tellraw @s[scores={DialogueTrigger=195,TalkTime=10}] {"text":"<Bill's Grandfather> He's in Johto. He does something with PCs, so I'm house-sitting."}
-execute as @s[scores={DialogueTrigger=195,TalkTime=10}] run scoreboard players set @s BillGP 1
-
-tag @s[scores={DialogueTrigger=195,TalkTime=20..}] add Dialogue195
-
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Bill's Grandfather shown a correct Pokemon
-#Repeatable
-#scoreboard players set @a[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,score_TalkTime=0,tag=!Dialogue196] DialogueTrigger 196
-
-tellraw @s[scores={DialogueTrigger=196,TalkTime=1,BillGP=1}] {"text":"<Bill's Grandfather> Ah, so that is Lickitung? Isn't it cute!"}
-tellraw @s[scores={DialogueTrigger=196,TalkTime=1,BillGP=2}] {"text":"<Bill's Grandfather> Ah, so that is Oddish? Isn't it cute!"}
-tellraw @s[scores={DialogueTrigger=196,TalkTime=1,BillGP=3}] {"text":"<Bill's Grandfather> Ah, so that is Staryu? Isn't it cute!"}
-tellraw @s[scores={DialogueTrigger=196,TalkTime=1,BillGP=4}] {"text":"<Bill's Grandfather> Ah, so that is Growlithe? Isn't it cute!"}
-tellraw @s[scores={DialogueTrigger=196,TalkTime=1,BillGP=5}] {"text":"<Bill's Grandfather> Ah, so that is Pichu? Isn't it cute!"}
-
-
-tellraw @s[scores={DialogueTrigger=196,TalkTime=9}] {"text":"<Bill's Grandfather> Thanks! This is a token of my appreciation."}
-
-#Rewards
-execute as @s[scores={DialogueTrigger=196,TalkTime=13,BillGP=1}] run give @s pixelmon:ever_stone
-execute as @s[scores={DialogueTrigger=196,TalkTime=13,BillGP=2}] run give @s pixelmon:leaf_stone
-execute as @s[scores={DialogueTrigger=196,TalkTime=13,BillGP=3}] run give @s pixelmon:water_stone
-execute as @s[scores={DialogueTrigger=196,TalkTime=13,BillGP=4}] run give @s pixelmon:fire_stone
-execute as @s[scores={DialogueTrigger=196,TalkTime=13,BillGP=5}] run give @s pixelmon:thunder_stone
-execute as @s[scores={DialogueTrigger=196,TalkTime=13,BillGP=1..5}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
-
-execute as @s[scores={DialogueTrigger=196,TalkTime=13,BillGP=1..5}] run scoreboard players add @s BillGP 1
-execute as @s[scores={DialogueTrigger=196,TalkTime=13,BillGP=1..5}] run scoreboard players set @s Cooldown 45
-
-tag @s[scores={DialogueTrigger=196,TalkTime=13..}] add Dialogue196
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Bug Catching Contest intro
 #Dialogue198
 
