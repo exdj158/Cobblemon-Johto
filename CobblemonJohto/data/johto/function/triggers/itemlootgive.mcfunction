@@ -1860,6 +1860,10 @@ execute as @s[x=291,y=64,z=-746,distance=..5,tag=!ItemLoot373] run tellraw @s {"
 execute as @s[x=291,y=64,z=-746,distance=..5,tag=!ItemLoot373] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=291,y=64,z=-746,distance=..5,tag=!ItemLoot373] run tag @s add ItemLoot373
 
+execute as @s[x=549,y=64,z=-409,distance=..5,tag=!ItemLoot374] run pokegive Eevee level=5
+execute as @s[x=549,y=64,z=-409,distance=..5,tag=!ItemLoot374] run playsound egghatch ambient @s ~ ~ ~ 10 1 1
+execute as @s[x=549,y=64,z=-409,distance=..5,tag=!ItemLoot374] run tag @s add ItemLoot374
+
 
 
 

@@ -52,6 +52,13 @@ execute as @a[scores={TriggerCommand=26}] run tag @s remove Dialogue177
 scoreboard players set @a[scores={TriggerCommand=26}] TriggerCommand 0
 
 
+
+#Bill tps out
+execute as @a[scores={TriggerCommand=93}] run particle cloud 337 64 191 1 1 1 1 100
+execute as @a[scores={TriggerCommand=93}] run tp @e[x=337,y=63,z=191,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[scores={TriggerCommand=93}] run scoreboard players set @s TriggerCommand 0
+
+
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #tellraw @a[scores={TriggerCommand=0..1000}] {"text":"Success!"}
 scoreboard players set @a[scores={TriggerCommand=0..11}] TriggerCommand 0

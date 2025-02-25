@@ -48,7 +48,13 @@ execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTra
 execute as @s[x=-1715,y=64,z=-307,distance=..5,tag=!Dialogue153] run opendialogue professoroak_dialogue153 @s
 
 
+#NPC Spawns
+#Dialogue 204 NPC spawn, Bill in Ecruteak
+#execute as @a[x=337,y=64,z=191,distance=..20,tag=!Dialogue204] unless entity @e[x=337,y=64,z=191,dy=3,type=cobblemon:npc] run npcspawnat 337 64 191 bill_dialogue204 1
 
+#Dialogue 205 Bill in Goldenrod Spawn
+#execute as @p[x=549,y=64,z=-409,distance=..20,tag=!Dialogue204,tag=!Dialogue205] if entity @e[x=549,y=64,z=-409,dy=3,type=cobblemon:npc] run tp @e[x=549,y=64,z=-409,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+#execute as @a[x=549,y=64,z=-409,distance=..20,tag=Dialogue204,tag=!Dialogue205] unless entity @e[x=549,y=64,z=-409,dy=3,type=cobblemon:npc] run npcspawnat 549 64 -409 bill_dialogue205 1
 
 
 
