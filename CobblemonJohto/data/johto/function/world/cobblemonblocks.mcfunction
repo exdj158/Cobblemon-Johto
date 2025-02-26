@@ -15,57 +15,6 @@ execute as @p[x=-682,y=64,z=-490,distance=..10] unless entity @e[x=-687,y=64,z=-
 
 execute as @p[x=-682,y=64,z=-490,distance=..10] unless entity @e[x=-689,y=64,z=-478,dy=3] run summon cobblemon:pokemon -689 65 -478 {NoAI:1, EntityEffects: {}, Brain: {memories: {}}, HurtByTimestamp: 0, Sitting: 0b, Attributes: [{Base: 10.0d, Name: "minecraft:generic.max_health"}, {Base: 0.699999988079071d, Name: "minecraft:generic.movement_speed"}], Invulnerable: 0b, FallFlying: 0b, ForcedAge: 0, PortalCooldown: 0, AbsorptionAmount: 0.0f, FallDistance: 0.0f, InLove: 0, DeathTime: 0s, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, Pokemon: {Tradeable: 1b, valencian: 0b, PersistentData: {}, Gender: "FEMALE", HealingTimer: 60, Friendship: 70s, GmaxFactor: 0b, CaughtBall: "cobblemon:poke_ball", ScaleModifier: 1.0f, FormId: "normal", UUID: [I; -805296620, 1252149317, -1697989421, -1250655439], CobblemonVersion: "1.5.2", Species: "cobblemon:cyndaquil", Shiny: 0b, PokemonData: [], Ability: {AbilityPriority: "LOWEST", AbilityName: "shielddust", AbilityForced: 0b, AbilityIndex: 0}, Nature: "cobblemon:lax", BenchedMoves: [], EVs: {}, PokemonOriginalTrainerType: "NONE", Health: 15s, TeraType: "cobblemon:bug", MoveSet: [{MoveName: "tackle", MovePP: 35, RaisedPPStages: 0}, {MoveName: "stringshot", MovePP: 40, RaisedPPStages: 0}], IVs: {defence: 27s, attack: 1s, hp: 4s, special_defence: 25s, special_attack: 10s, speed: 15s}, FaintedTimer: -1, DmaxLevel: 0, Evolutions: {Pending: {pending: [], progress: []}}, Experience: 27, Level: 3s}, Age: 0, Motion: [0.0d, -0.0784000015258789d, 0.0d], BehaviourFlags: 0b, Health: 10.0f, LeftHanded: 0b, Air: 300s, OnGround: 1b, PoseType: "STAND", Rotation: [-180.0f, 0.0f], HandItems: [{}, {}], ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Pos: [-153.5d, 64.0d, -204.5d], Fire: -1s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, HurtTime: 0s, CustomNameVisible: 1b}
 
-#Apricorn trees
-execute if block -382 64 -491 air run setblock -382 64 -491 cobblemon:green_apricorn_sapling
-execute if block -171 64 -386 air run setblock -171 64 -386 cobblemon:green_apricorn_sapling
-execute if block -222 64 -196 air run setblock -222 64 -196 cobblemon:pink_apricorn_sapling
-execute if block -128 64 -105 air run setblock -128 64 -105 cobblemon:black_apricorn_sapling
-execute if block 110 64 -126 air run setblock 110 64 -126 cobblemon:yellow_apricorn_sapling
-execute if block 117 64 -767 air run setblock 117 64 -767 cobblemon:black_apricorn_sapling
-execute if block 112 64 -766 air run setblock 112 64 -766 cobblemon:pink_apricorn_sapling
-execute if block 379 64 -700 air run setblock 379 64 -700 cobblemon:white_apricorn_sapling
-execute if block 520 64 -213 air run setblock 520 64 -213 cobblemon:green_apricorn_sapling
-execute if block 416 64 -4 air run setblock 416 64 -4 cobblemon:blue_apricorn_sapling
-execute if block 346 64 107 air run setblock 346 64 107 cobblemon:red_apricorn_sapling
-execute if block 326 64 109 air run setblock 326 64 109 cobblemon:blue_apricorn_sapling
-execute if block 333 64 97 air run setblock 333 64 97 cobblemon:black_apricorn_sapling
-execute if block 633 64 224 air run setblock 633 64 224 cobblemon:white_apricorn_sapling
-execute if block 763 64 266 air run setblock 763 64 266 cobblemon:green_apricorn_sapling
-execute if block 94 64 146 air run setblock 94 64 146 cobblemon:pink_apricorn_sapling
-execute if block 98 64 145 air run setblock 98 64 145 cobblemon:green_apricorn_sapling
-execute if block 88 64 145 air run setblock 88 64 145 cobblemon:yellow_apricorn_sapling
-execute if block -94 64 392 air run setblock -94 64 392 cobblemon:black_apricorn_sapling
-execute if block -257 64 203 air run setblock -257 64 203 cobblemon:red_apricorn_sapling
-execute if block -632 64 -328 air run setblock -632 64 -328 cobblemon:green_apricorn_sapling
-execute if block -471 64 -298 air run setblock -471 64 -298 cobblemon:green_apricorn_sapling
-execute if block -467 64 -302 air run setblock -467 64 -302 cobblemon:yellow_apricorn_sapling
-execute if block -1294 64 -270 air run setblock -1294 64 -270 cobblemon:blue_apricorn_sapling
-execute if block -1657 64 -71 air run setblock -1657 64 -71 cobblemon:black_apricorn_sapling
-execute if block -1740 64 434 air run setblock -1740 64 434 cobblemon:pink_apricorn_sapling
-execute if block -1684 64 391 air run setblock -1684 64 391 cobblemon:green_apricorn_sapling
-execute if block -1765 64 695 air run setblock -1765 64 695 cobblemon:blue_apricorn_sapling
-execute if block -1759 64 695 air run setblock -1759 64 695 cobblemon:white_apricorn_sapling
-execute if block -3188 64 350 air run setblock -3188 64 350 cobblemon:yellow_apricorn_sapling
-execute if block -3156 64 -33 air run setblock -3156 64 -33 cobblemon:green_apricorn_sapling
-execute if block -2365 64 -519 air run setblock -2365 64 -519 cobblemon:red_apricorn_sapling
-
-
-#Fossil Machines
-execute if block -1655 73 719 air run setblock -1655 74 719 cobblemon:monitor[facing=south]
-execute if block -1655 73 719 air run setblock -1656 73 719 cobblemon:restoration_tank[facing=south,part=bottom]
-execute if block -1655 73 719 air run setblock -1656 74 719 cobblemon:restoration_tank[facing=south,part=top]
-execute if block -1655 73 719 air run setblock -1655 73 719 cobblemon:fossil_analyzer[facing=south]
-
-execute if block -1647 73 719 air run setblock -1647 74 719 cobblemon:monitor[facing=south]
-execute if block -1647 73 719 air run setblock -1648 73 719 cobblemon:restoration_tank[facing=south,part=bottom]
-execute if block -1647 73 719 air run setblock -1648 74 719 cobblemon:restoration_tank[facing=south,part=top]
-execute if block -1647 73 719 air run setblock -1647 73 719 cobblemon:fossil_analyzer[facing=south]
-
-execute if block -1678 64 -871 air run setblock -1678 65 -871 cobblemon:monitor[facing=south]
-execute if block -1678 64 -871 air run setblock -1679 64 -871 cobblemon:restoration_tank[facing=south,part=bottom]
-execute if block -1678 64 -871 air run setblock -1679 65 -871 cobblemon:restoration_tank[facing=south,part=top]
-execute if block -1678 64 -871 air run setblock -1678 64 -871 cobblemon:fossil_analyzer[facing=south]
-
 
 #Daycare blocks
 execute if block 441 65 -574 air run setblock 441 65 -574 cobblemon:pasture[part=top,facing=east,waterlogged=false]
