@@ -1,0 +1,41 @@
+{
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:bruno",
+    "presets": ["cobblemon:trainer_basics"],
+    "interaction": {
+        "type": "dialogue",
+        "dialogue": "cobblemon:bruno_interaction"
+    },
+    "config": [
+        {
+            "variableName": "can_rechallenge",
+            "displayName": "Rechallenging",
+            "description": "This NPC can be battled multiple times.",
+            "type": "BOOLEAN",
+            "defaultValue": true
+        },
+        {
+            "variableName": "on_player_wins",
+            "displayName": "npc.variable.on_player_wins.name",
+            "description": "npc.variable.on_player_wins.desc",
+            "type": "TEXT",
+            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue bruno_end @s');"
+          }
+    ],
+    "names": [
+        "Bruno"
+    ],
+    "autoHealParty": true,
+    "skill": 5,
+    "party": {
+        "type": "simple",
+        "pokemon": [
+            "Hitmontop level=62 moves=closecombat,earthquake,counter,quickattack",
+            "Hitmonlee level=61 moves=closecombat,blazekick,reversal,swagger",
+            "Hitmonchan level=61 moves=closecombat,drainpunch,bulletpunch,substitute",
+            "Hariyama level=62 moves=bulkup,lowkick,payback,bulletpunch",
+            "Machamp level=64 moves=dynamicpunch,stoneedge,bulletpunch,foresight",
+            "Lucario level=64 moves=closecombat,irontail,counter,extremespeed"
+        ]
+    }
+}

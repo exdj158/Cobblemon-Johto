@@ -1,0 +1,41 @@
+{
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:lance",
+    "presets": ["cobblemon:trainer_basics"],
+    "interaction": {
+        "type": "dialogue",
+        "dialogue": "cobblemon:lance_interaction"
+    },
+    "config": [
+        {
+            "variableName": "can_rechallenge",
+            "displayName": "Rechallenging",
+            "description": "This NPC can be battled multiple times.",
+            "type": "BOOLEAN",
+            "defaultValue": true
+        },
+        {
+            "variableName": "on_player_wins",
+            "displayName": "npc.variable.on_player_wins.name",
+            "description": "npc.variable.on_player_wins.desc",
+            "type": "TEXT",
+            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue lance_end @s');"
+          }
+    ],
+    "names": [
+        "Lance"
+    ],
+    "autoHealParty": true,
+    "skill": 5,
+    "party": {
+        "type": "simple",
+        "pokemon": [
+            "Salamence level=72 moves=dragonclaw,flamethrower,shadowclaw,rest",
+            "Gyarados level=68 moves=dragondance,waterfall,icefang,thunderwave",
+            "Garchomp level=72 moves=outrage,swordsdance,earthquake,roar",
+            "Altaria level=73 moves=doubleteam,dragonbreath,perishsong,hyperbeam",
+            "Charizard level=68 moves=flamethrower,hyperbeam,dragonclaw,airslash",
+            "Dragonite level=75 moves=dracometeor,safeguard,fireblast,hyperbeam"
+        ]
+    }
+}

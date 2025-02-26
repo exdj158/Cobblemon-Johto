@@ -1,0 +1,41 @@
+{
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:will",
+    "presets": ["cobblemon:trainer_basics"],
+    "interaction": {
+        "type": "dialogue",
+        "dialogue": "cobblemon:will_interaction"
+    },
+    "config": [
+        {
+            "variableName": "can_rechallenge",
+            "displayName": "Rechallenging",
+            "description": "This NPC can be battled multiple times.",
+            "type": "BOOLEAN",
+            "defaultValue": true
+        },
+        {
+            "variableName": "on_player_wins",
+            "displayName": "npc.variable.on_player_wins.name",
+            "description": "npc.variable.on_player_wins.desc",
+            "type": "TEXT",
+            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue will_end @s');"
+          }
+    ],
+    "names": [
+        "Will"
+    ],
+    "autoHealParty": true,
+    "skill": 5,
+    "party": {
+        "type": "simple",
+        "pokemon": [
+            "Bronzong level=58 moves=gravity,reflect,payback,psychic",
+            "Jynx level=60 moves=faketears,lovelykiss,dreameater,blizzard",
+            "Grumpig level=59 moves=confuseray,signalbeam,powergem,psychic",
+            "Slowbro level=60 moves=curse,amnesia,bodyslam,psychic",
+            "Gardevoir level=61 moves=calmmind,chargebeam,focusblast,psychic",
+            "Xatu level=62 moves=confuseray,quickattack,shadowball,psychic"
+        ]
+    }
+}

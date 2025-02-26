@@ -293,9 +293,9 @@ execute if block -1341 73 675 quartz_pillar as @a[x=-1341,y=67,z=675,distance=..
 execute unless entity @a[x=-1341,y=67,z=675,distance=..15,tag=Karen] run clone -730 64 -328 -728 67 -328 -1342 73 675
 
 #Lance
-execute if block -1341 78 750 quartz_pillar as @a[x=-1341,y=77,z=745,dx=6,dy=10,dz=5,tag=Lance] run playsound minecraft:entity.iron_golem.death ambient @s ~ ~ ~ 1 1 1
-execute if block -1341 78 750 quartz_pillar as @a[x=-1341,y=77,z=745,dx=6,dy=10,dz=5,tag=Lance] run fill -1343 82 750 -1339 78 750 air
-execute unless entity @a[x=-1341,y=77,z=745,dx=6,dy=10,dz=5,tag=Lance] run clone -730 64 -328 -726 68 -328 -1343 78 750
+execute if block -1341 78 750 quartz_pillar as @a[x=-1344,y=77,z=746,dx=6,dy=10,dz=5,tag=Lance] run playsound minecraft:entity.iron_golem.death ambient @s ~ ~ ~ 1 1 1
+execute if block -1341 78 750 quartz_pillar as @a[x=-1344,y=77,z=746,dx=6,dy=10,dz=5,tag=Lance] run fill -1343 82 750 -1339 78 750 air
+execute unless entity @a[x=-1344,y=77,z=746,dx=6,dy=10,dz=5,tag=Lance] run clone -730 64 -328 -726 68 -328 -1343 78 750
 
 
 

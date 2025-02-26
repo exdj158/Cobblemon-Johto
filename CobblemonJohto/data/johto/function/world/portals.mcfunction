@@ -111,6 +111,7 @@ tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Karen
 tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Lance
 tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue98
 
+tag @a[x=-1283,y=84,z=353,dx=12,dy=5,tag=Clair,tag=Pryce,tag=Jasmine,tag=Chuck,tag=Morty,tag=Whitney,tag=Bugsy,tag=Falkner,tag=Brock,tag=Misty,tag=Surge,tag=Erika,tag=Janine,tag=Sabrina,tag=Blaine,tag=Blue,tag=!AllGyms] add AllGyms
 
 #Non-Rematch Track
 playsound door ambient @a[x=-1283,y=84,z=353,dx=12,dy=5] ~ ~ ~ 100 1 1

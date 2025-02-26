@@ -1,0 +1,41 @@
+{
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:karen",
+    "presets": ["cobblemon:trainer_basics"],
+    "interaction": {
+        "type": "dialogue",
+        "dialogue": "cobblemon:karen_interaction"
+    },
+    "config": [
+        {
+            "variableName": "can_rechallenge",
+            "displayName": "Rechallenging",
+            "description": "This NPC can be battled multiple times.",
+            "type": "BOOLEAN",
+            "defaultValue": true
+        },
+        {
+            "variableName": "on_player_wins",
+            "displayName": "npc.variable.on_player_wins.name",
+            "description": "npc.variable.on_player_wins.desc",
+            "type": "TEXT",
+            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue karen_end @s');"
+          }
+    ],
+    "names": [
+        "Karen"
+    ],
+    "autoHealParty": true,
+    "skill": 5,
+    "party": {
+        "type": "simple",
+        "pokemon": [
+            "Weavile level=62 moves=icepunch,nightslash,lowkick,iceshard",
+            "Absol level=62 moves=detect,perishsong,nightslash,psychocut",
+            "Spiritomb level=62 moves=curse,confuseray,painsplit,suckerpunch",
+            "Houndoom level=63 moves=nastyplot,darkpulse,flamethrower,sludgebomb",
+            "Honchkrow level=64 moves=thunderwave,whirlwind,drillpeck,suckerpunch",
+            "Umbreon level=64 moves=confuseray,curse,payback,suckerpunch"
+        ]
+    }
+}

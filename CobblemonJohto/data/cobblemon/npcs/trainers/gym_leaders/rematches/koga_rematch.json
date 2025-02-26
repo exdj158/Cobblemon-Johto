@@ -1,0 +1,41 @@
+{
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:koga",
+    "presets": ["cobblemon:trainer_basics"],
+    "interaction": {
+        "type": "dialogue",
+        "dialogue": "cobblemon:koga_interaction"
+    },
+    "config": [
+        {
+            "variableName": "can_rechallenge",
+            "displayName": "Rechallenging",
+            "description": "This NPC can be battled multiple times.",
+            "type": "BOOLEAN",
+            "defaultValue": true
+        },
+        {
+            "variableName": "on_player_wins",
+            "displayName": "npc.variable.on_player_wins.name",
+            "description": "npc.variable.on_player_wins.desc",
+            "type": "TEXT",
+            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue koga_end @s');"
+          }
+    ],
+    "names": [
+        "Koga"
+    ],
+    "autoHealParty": true,
+    "skill": 5,
+    "party": {
+        "type": "simple",
+        "pokemon": [
+            "Skuntank level=61 moves=toxic,dig,suckerpunch,explosion",
+            "Venomoth level=63 moves=batonpass,doubleteam,silverwind,psychic",
+            "Toxicroak level=60 moves=swagger,xscissor,crosschop,gunkshot",
+            "Swalot level=62 moves=sludgebomb,amnesia,painsplit,yawn",
+            "Crobat level=64 moves=fly,crosspoison,meanlook,toxic",
+            "Muk level=62 moves=minimize,screech,swagger,toxic"
+        ]
+    }
+}

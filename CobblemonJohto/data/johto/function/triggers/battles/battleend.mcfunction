@@ -19,6 +19,9 @@ execute as @s[tag=!RadioOff,scores={BattleEnd=3}] run stopsound @s record
 execute as @s[tag=!RadioOff,scores={BattleEnd=3}] run playsound victorytrainer record @s ~ ~ ~ 1 1 1
 execute as @s[tag=!RadioOff,scores={BattleEnd=3}] run scoreboard players set @s MusicCooldown 19
 
+#Gives player AllGyms tag and achievement
+#advancement grant @s[tag=Clair,tag=Pryce,tag=Jasmine,tag=Chuck,tag=Morty,tag=Whitney,tag=Bugsy,tag=Falkner,tag=Brock,tag=Misty,tag=Surge,tag=Erika,tag=Janine,tag=Sabrina,tag=Blaine,tag=Blue,tag=!AllGyms] only johto:event11
+tag @s[tag=Clair,tag=Pryce,tag=Jasmine,tag=Chuck,tag=Morty,tag=Whitney,tag=Bugsy,tag=Falkner,tag=Brock,tag=Misty,tag=Surge,tag=Erika,tag=Janine,tag=Sabrina,tag=Blaine,tag=Blue,tag=!AllGyms] add AllGyms
 
 
 
