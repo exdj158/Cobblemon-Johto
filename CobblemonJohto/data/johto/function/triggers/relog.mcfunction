@@ -1,3 +1,5 @@
+#Relogs to fix some issues with Cobblemon and player commands
+execute as @s run reload
 
 #removes BattleStart score that mainly defines music
 scoreboard players set @s BattleStart 0

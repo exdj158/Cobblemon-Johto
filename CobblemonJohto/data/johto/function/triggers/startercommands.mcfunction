@@ -1021,6 +1021,8 @@ tag @s remove ItemLoot400
 #Gives InitialTags score to check for later in case of an issue
 tag @s add InitialTags
 
+#Relogs to fix some issues with Cobblemon and player commands
+execute as @s run reload
 
 #TPs to lobby
 tp @s[tag=InitialTags] -977 66 -365.0 -91 21
