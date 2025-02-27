@@ -1022,7 +1022,7 @@ tag @s remove ItemLoot400
 tag @s add InitialTags
 
 #Relogs to fix some issues with Cobblemon and player commands
-execute as @s run reload
+execute as @s at @s unless entity @a[distance=2..] run reload
 
 #TPs to lobby
 tp @s[tag=InitialTags] -977 66 -365.0 -91 21
