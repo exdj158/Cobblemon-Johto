@@ -274,8 +274,8 @@ scoreboard players set @s[x=-214,y=64,z=125,dx=117,dy=240,dz=119,scores={MusicCo
 
 
 #Route 42
-playsound route42 record @s[x=-96,y=63,z=120,dx=329,dy=240,dz=331,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-scoreboard players set @s[x=-96,y=63,z=120,dx=329,dy=240,dz=331,scores={MusicCooldown=0}] MusicCooldown 82
+playsound route42 record @s[x=-96,y=63,z=120,dx=329,dy=239,dz=98,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+scoreboard players set @s[x=-96,y=63,z=120,dx=329,dy=239,dz=98,scores={MusicCooldown=0}] MusicCooldown 82
 
 
 #Route 39
