@@ -1,0 +1,35 @@
+{  
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:silver",
+    "presets": ["cobblemon:trainer_basics"],
+    "interaction": {
+        "type": "dialogue",
+        "dialogue": "cobblemon:burnedtower_silver_interaction"
+    },
+        "name": "Silver",
+        "party": {
+        "type": "simple",
+        "pokemon": [
+            "Gastly level=20",
+            "Zubat level=20",
+            "Magnemite level=18",
+            "Bayleef level=22"
+        ]
+    },
+    "config": [
+        {
+            "variableName": "can_rechallenge",
+            "displayName": "Rechallenging",
+            "description": "This NPC can be battled multiple times.",
+            "type": "BOOLEAN",
+            "defaultValue": true
+        },
+        {
+            "variableName": "on_player_wins",
+            "displayName": "npc.variable.on_player_wins.name",
+            "description": "npc.variable.on_player_wins.desc",
+            "type": "TEXT",
+            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue burnedtower_silver_end @s');"
+          }
+    ]
+}

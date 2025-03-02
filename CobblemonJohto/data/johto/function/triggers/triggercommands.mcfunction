@@ -53,10 +53,63 @@ scoreboard players set @a[scores={TriggerCommand=26}] TriggerCommand 0
 
 
 
+
+#Rocket HQ Silver TP out
+execute as @a[scores={TriggerCommand=89}] run particle cloud -82 34 182 1 1 1 1 100
+execute as @a[scores={TriggerCommand=89}] run tp @e[x=-82,y=33,z=182,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[scores={TriggerCommand=89}] run scoreboard players set @s TriggerCommand 0
+
+#Ecruteak Silver TP out
+execute as @a[scores={TriggerCommand=90}] run particle cloud 343 64 216 1 1 1 1 100
+execute as @a[scores={TriggerCommand=90}] run tp @e[x=-2200,y=64,z=800,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[scores={TriggerCommand=90}] run scoreboard players set @s TriggerCommand 0
+
+#Silver Sprout Tower TP out
+execute as @a[scores={TriggerCommand=91}] run tellraw @s {"text":"Silver used an Escape Rope!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=91}] run playsound flee ambient @s ~ ~ ~ 100 1 1
+execute as @a[scores={TriggerCommand=91}] run particle cloud 57 104 29 1 1 1 0.15 100
+execute as @a[scores={TriggerCommand=91}] run tp @e[x=343,y=63,z=216,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[scores={TriggerCommand=91}] run scoreboard players set @s TriggerCommand 0
+
+#Silver Olivine TP out
+execute as @a[scores={TriggerCommand=92}] run particle cloud -2200 64 800 1 1 1 1 100
+execute as @a[scores={TriggerCommand=92}] run tp @e[x=-2200,y=64,z=800,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[scores={TriggerCommand=92}] run scoreboard players set @s TriggerCommand 0
+
 #Bill tps out
 execute as @a[scores={TriggerCommand=93}] run particle cloud 337 64 191 1 1 1 1 100
 execute as @a[scores={TriggerCommand=93}] run tp @e[x=337,y=63,z=191,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 execute as @a[scores={TriggerCommand=93}] run scoreboard players set @s TriggerCommand 0
+
+#Cherrygrove Silver TPs out
+execute as @a[scores={TriggerCommand=94}] run particle cloud -300 64 -509 1 1 1 1 100
+execute as @a[scores={TriggerCommand=94}] run tp @e[x=-300,y=63,z=-509,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[scores={TriggerCommand=94}] run scoreboard players set @s TriggerCommand 0
+
+#Azalea Silver TPs out
+execute as @a[scores={TriggerCommand=95}] run particle cloud 402 64 -734 1 1 1 1 100
+execute as @a[scores={TriggerCommand=95}] run tp @e[x=402,y=64,z=-734,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[scores={TriggerCommand=95}] run scoreboard players set @s TriggerCommand 0
+
+#Goldenrod Silver TP out
+execute as @a[scores={TriggerCommand=96}] run particle cloud 481 47 -305 1 1 1 1 100
+execute as @a[scores={TriggerCommand=96}] run tp @e[x=481,y=47,z=-305,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[scores={TriggerCommand=96}] run scoreboard players set @s TriggerCommand 0
+
+#Burned Tower Silver TP out
+execute as @a[scores={TriggerCommand=97}] run particle cloud 441 64 312 1 1 1 1 100
+execute as @a[scores={TriggerCommand=97}] run tp @e[x=441,y=64,z=312,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[scores={TriggerCommand=97}] run scoreboard players set @s TriggerCommand 0
+
+#Victory Road Silver TP out
+execute as @a[scores={TriggerCommand=98}] run particle cloud -1449 51 528 1 1 1 1 100
+execute as @a[scores={TriggerCommand=98}] run tp @e[x=-1449,y=51,z=528,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[scores={TriggerCommand=98}] run scoreboard players set @s TriggerCommand 0
+
+#Mt. Moon Silver TP out
+execute as @a[scores={TriggerCommand=99}] run particle cloud -2200 64 800 1 1 1 1 100
+execute as @a[scores={TriggerCommand=99}] run tp @e[x=-2200,y=64,z=800,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[scores={TriggerCommand=99}] run scoreboard players set @s TriggerCommand 0
 
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

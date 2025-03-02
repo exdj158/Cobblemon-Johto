@@ -1,0 +1,34 @@
+{  
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:silver",
+    "presets": ["cobblemon:trainer_basics"],
+    "interaction": {
+        "type": "dialogue",
+        "dialogue": "cobblemon:azalea_silver_interaction"
+    },
+        "name": "Silver",
+        "party": {
+        "type": "simple",
+        "pokemon": [
+            "Gastly level=14",
+            "Zubat level=16",
+            "Quilava level=18"
+        ]
+    },
+    "config": [
+        {
+            "variableName": "can_rechallenge",
+            "displayName": "Rechallenging",
+            "description": "This NPC can be battled multiple times.",
+            "type": "BOOLEAN",
+            "defaultValue": true
+        },
+        {
+            "variableName": "on_player_wins",
+            "displayName": "npc.variable.on_player_wins.name",
+            "description": "npc.variable.on_player_wins.desc",
+            "type": "TEXT",
+            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue azalea_silver_end @s');"
+          }
+    ]
+}

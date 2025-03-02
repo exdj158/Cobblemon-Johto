@@ -1,0 +1,37 @@
+{  
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:silver",
+    "presets": ["cobblemon:trainer_basics"],
+    "interaction": {
+        "type": "dialogue",
+        "dialogue": "cobblemon:mtmoon_silver_interaction"
+    },
+        "name": "Silver",
+        "party": {
+        "type": "simple",
+        "pokemon": [
+            "Sneasel level=46",
+            "Golbat level=47",
+            "Magneton level=46",
+            "Alakazam level=48",
+            "Gengar level=48",
+            "Feraligatr level=50"
+        ]
+    },
+    "config": [
+        {
+            "variableName": "can_rechallenge",
+            "displayName": "Rechallenging",
+            "description": "This NPC can be battled multiple times.",
+            "type": "BOOLEAN",
+            "defaultValue": true
+        },
+        {
+            "variableName": "on_player_wins",
+            "displayName": "npc.variable.on_player_wins.name",
+            "description": "npc.variable.on_player_wins.desc",
+            "type": "TEXT",
+            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue mtmoon_silver_end @s');"
+          }
+    ]
+}
