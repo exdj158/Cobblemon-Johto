@@ -25,9 +25,8 @@ effect give @s minecraft:speed infinite 5 true
 effect give @s minecraft:dolphins_grace infinite 1 true
 
 #Gives starting items
-give @s cobblemon:pokedex_red
-function johto:spawn/radio4
 give @s cobblemon:poke_ball 10
+function johto:spawn/radio4
 give @s cobblemon:potion 10
 
 

@@ -1,13 +1,18 @@
 {   "initializationAction": [              
     "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 1');",
-    "q.run_command('execute as ' + q.player.username + ' run function johto:tools/forceclick');"
+    "q.run_command('execute as ' + q.player.username + ' run function johto:tools/forceclick');",
+    "q.run_command('tag ' + q.player.username + ' add InDialogue');"
         ],
     "escapeAction": [              
         "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 0');",
         "q.run_command('execute as ' + q.player.username + ' run function johto:tools/forceclick');",
+        "q.run_command('tag ' + q.player.username + ' remove InDialogue');",
         "q.dialogue.close();"
         ],
     "names": ["???"],
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:silver",
+    "presets": ["cobblemon:trainer_basics"],
     "speakers": {
         "npc": {
             "name": {
@@ -131,6 +136,8 @@
                         "action": [                           
                                     "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 13');",
                                     "q.run_command('execute as ' + q.player.username + ' run function johto:tools/forceclick');",
+                                    "q.run_command('tag ' + q.player.username + ' remove InDialogue');",
+                                    "q.run_command('tag ' + q.player.username + ' add Dialogue6');",
                                     "v.battle = q.npc.start_battle(q.player);"
                             ]
                     },
@@ -140,6 +147,8 @@
                         "action": [              
                             "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 0');",
                             "q.run_command('execute as ' + q.player.username + ' run function johto:tools/forceclick');",
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue6');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');",
                             "q.dialogue.close();"]
                         }
                     ]

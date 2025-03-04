@@ -6,9 +6,9 @@ scoreboard players set @a[x=-517,y=64,z=193,distance=..5,scores={EscapeRope=1..}
 scoreboard players set @a[x=-614,y=50,z=333,distance=..10,scores={ER=5}] ER 5
 
 #Lobby to New Bark Town/Oak Welcome area
-#scoreboard players set @a[x=-958,y=66,z=-366,dy=2,dz=1,tag=!Dialogue1] DialogueTrigger 1
-#playsound door ambient @a[x=-958,y=66,z=-366,dy=2,dz=1,tag=!Dialogue1] ~ ~ ~ 100 1 1
-#tp @a[x=-958,y=66,z=-366,dy=2,dz=1,tag=!Dialogue1] -970 65 -405
+scoreboard players set @a[x=-958,y=66,z=-366,dy=2,dz=1,tag=!Dialogue1] click 1
+playsound door ambient @a[x=-958,y=66,z=-366,dy=2,dz=1,tag=!Dialogue1] ~ ~ ~ 100 1 1
+tp @a[x=-958,y=66,z=-366,dy=2,dz=1,tag=!Dialogue1] -970 65 -405
 
 playsound door ambient @a[x=-958,y=66,z=-366,dy=2,dz=1] ~ ~ ~ 100 1 1
 scoreboard players set @a[x=-958,y=66,z=-366,dy=2,dz=1] click 1

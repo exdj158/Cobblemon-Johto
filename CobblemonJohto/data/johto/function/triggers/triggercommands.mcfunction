@@ -53,6 +53,10 @@ scoreboard players set @a[scores={TriggerCommand=26}] TriggerCommand 0
 
 
 
+#Elm's Lab tps out policeman
+execute as @a[scores={TriggerCommand=88}] run particle cloud -682 64 -481 1 1 1 0.15 100
+execute as @a[scores={TriggerCommand=88}] run tp @e[x=-682,y=63,z=-481,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[scores={TriggerCommand=88}] run scoreboard players set @s TriggerCommand 0
 
 #Rocket HQ Silver TP out
 execute as @a[scores={TriggerCommand=89}] run particle cloud -82 34 182 1 1 1 1 100
