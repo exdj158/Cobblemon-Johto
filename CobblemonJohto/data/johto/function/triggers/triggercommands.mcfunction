@@ -72,7 +72,7 @@ execute as @a[scores={TriggerCommand=90}] run scoreboard players set @s TriggerC
 execute as @a[scores={TriggerCommand=91}] run tellraw @s {"text":"Silver used an Escape Rope!","italic":true,"color":"gray"}
 execute as @a[scores={TriggerCommand=91}] run playsound flee ambient @s ~ ~ ~ 100 1 1
 execute as @a[scores={TriggerCommand=91}] run particle cloud 57 104 29 1 1 1 0.15 100
-execute as @a[scores={TriggerCommand=91}] run tp @e[x=343,y=63,z=216,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[scores={TriggerCommand=91}] run tp @e[x=57,y=103,z=29,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 execute as @a[scores={TriggerCommand=91}] run scoreboard players set @s TriggerCommand 0
 
 #Silver Olivine TP out
