@@ -1,11 +1,9 @@
 {   "initializationAction": [              
     "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 1');",
-    "q.run_command('execute as ' + q.player.username + ' run function johto:tools/forceclick');"
+    "q.run_command('execute as ' + q.player.username + ' run function johto:tools/forceclick');",
+    "q.run_command('tag ' + q.player.username + ' add InDialogue');"
         ],
     "escapeAction": [              
-        "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 0');",
-        "q.run_command('execute as ' + q.player.username + ' run function johto:tools/forceclick');",
-        "q.dialogue.close();"
         ],
     "speakers": {
         "npc": {
@@ -23,7 +21,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "How? How is this possible? How can I lose to mere Kimono Girls"
+                "You again? There's no need to be alert. I don't bother with wimps like you."
             ],
             "input": {
                 "type": "option",
@@ -41,10 +39,7 @@
             "id": "page2",
             "speaker": "npc",
             "lines": [
-                {
-                    "type": "expression",
-                    "expression": "'You were watching me, ' + q.player.username + '?';"
-                }
+                "Speaking of weaklings, the city's Gym Leader isn't here, and is supposedly taking care of a sick Pokémon at the Lighthouse."
             ],
             "input": {
                 "type": "option",
@@ -62,7 +57,7 @@
             "id": "page3",
             "speaker": "npc",
             "lines": [
-                "Yeah, that's right! I never thought defeating five Kimono Girls would be so hard!"
+                "Humph! Boo-hoo! Just let sick Pokémon go!"
             ],
             "input": {
                 "type": "option",
@@ -80,7 +75,7 @@
             "id": "page4",
             "speaker": "npc",
             "lines": [
-                "I got beaten to a pulp... Don't get cocky just because you defeated Team Rocket!"
+                "A Pokémon that can't battle is worthless!"
             ],
             "input": {
                 "type": "option",
@@ -98,7 +93,7 @@
             "id": "page5",
             "speaker": "npc",
             "lines": [
-                "Go ahead! But I'm not going back."
+                "Why don't you go train at the Lighthouse?"
             ],
             "input": {
                 "type": "option",
@@ -116,7 +111,7 @@
             "id": "page6",
             "speaker": "npc",
             "lines": [
-                "I don't want to see you win. These Kimono Girls are insanely strong."
+                "Who knows? It may make you a bit of a better Trainer!"
             ],
             "input": {
                 "type": "option",
@@ -129,8 +124,9 @@
                             "q.dialogue.close();",
                             "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 0');",
                             "q.run_command('execute as ' + q.player.username + ' run function johto:tools/forceclick');",
-                            "q.run_command('tag ' + q.player.username + ' add Dialogue31');",
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 90');"
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue39');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 92');"
                             ]
                     }
                 ]

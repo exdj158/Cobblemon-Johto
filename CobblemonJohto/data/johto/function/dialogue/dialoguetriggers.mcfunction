@@ -109,6 +109,9 @@ execute as @s[x=-279,y=64,z=-509,distance=0..10,tag=!Dialogue7,scores={StarterPi
 execute as @s[x=-681,y=64,z=-493,distance=..10,tag=!Dialogue8] unless entity @e[x=-682,y=64,z=-481,dy=3,type=cobblemon:npc] run npcspawnat -682 64 -481 newbark_policeman 1
 execute as @s[x=-683,y=63,z=-478,distance=..10,tag=Dialogue5,tag=!Dialogue8] run opendialogue elmslab_dialogue8 @s
 
+#Dialogue 9 - Sprout Tower Silver
+execute as @s[x=57,y=104,z=13,distance=..10,tag=!Dialogue9] unless entity @e[x=57,y=103,z=29,dy=3,type=cobblemon:npc] run npcspawnat 57 104 29 sprouttower_silver 1
+execute as @s[x=54,y=103,z=22,dx=12,dy=5,dz=10,tag=!Dialogue9] run opendialogue sprouttower_silver_dialogue9 @s 
 
 
 

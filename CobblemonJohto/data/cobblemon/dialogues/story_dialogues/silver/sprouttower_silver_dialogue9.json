@@ -1,14 +1,11 @@
 {   "initializationAction": [              
     "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 1');",
-    "q.run_command('execute as ' + q.player.username + ' run function johto:tools/forceclick');"
+    "q.run_command('execute as ' + q.player.username + ' run function johto:tools/forceclick');",
+    "q.run_command('tag ' + q.player.username + ' add InDialogue');"
         ],
-    "escapeAction": [              
-        "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 0');",
-        "q.run_command('execute as ' + q.player.username + ' run function johto:tools/forceclick');",
-        "q.dialogue.close();"
-        ],
+    "escapeAction": [],
     "speakers": {
-        "npc": {
+        "silver": {
           "name": "Silver",
           "face": {
             "type": "artificial",
@@ -16,14 +13,23 @@
             "identifier": "cobblemon:silver",
             "isLeftSide": true
           }
+        },
+        "sage": {
+          "name": "Elder Li",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:sage",
+            "isLeftSide": false
+          }
         }
       },
     "pages": [
         {
             "id": "greeting",
-            "speaker": "npc",
+            "speaker": "sage",
             "lines": [
-                "So you are messing with them again."
+                "You are indeed skilled as a trainer. As promised, here is your HM."
             ],
             "input": {
                 "type": "option",
@@ -39,9 +45,9 @@
         },
         {
             "id": "page2",
-            "speaker": "npc",
+            "speaker": "sage",
             "lines": [
-                "Humph, you must really like Team Rocket so much."
+                "But let me say this: You should treat your Pokémon better."
             ],
             "input": {
                 "type": "option",
@@ -57,9 +63,9 @@
         },
         {
             "id": "page3",
-            "speaker": "npc",
+            "speaker": "sage",
             "lines": [
-                "Tell me, who was the guy in the cape who used Dragon-type Pokémon?"
+                "The way you battle is far too harsh. Pokémon are not tools of war..."
             ],
             "input": {
                 "type": "option",
@@ -75,9 +81,9 @@
         },
         {
             "id": "page4",
-            "speaker": "npc",
+            "speaker": "silver",
             "lines": [
-                "My Pokémon were no match at all."
+                "... ...Humph! He claims to be the Elder but he's weak. It stands to reason."
             ],
             "input": {
                 "type": "option",
@@ -93,9 +99,9 @@
         },
         {
             "id": "page5",
-            "speaker": "npc",
+            "speaker": "silver",
             "lines": [
-                "I don't care that I lost. I can beat him by getting stronger Pokémon."
+                "I'd never lose to fools who babble about being nice to Pokémon."
             ],
             "input": {
                 "type": "option",
@@ -111,9 +117,9 @@
         },
         {
             "id": "page6",
-            "speaker": "npc",
+            "speaker": "silver",
             "lines": [
-                "It's what he said that bothers me."
+                "I only care about strong Pokémon that can win."
             ],
             "input": {
                 "type": "option",
@@ -129,45 +135,9 @@
         },
         {
             "id": "page7",
-            "speaker": "npc",
+            "speaker": "silver",
             "lines": [
-                "He told me that I don't love and trust my Pokémon enough."
-            ],
-            "input": {
-                "type": "option",
-                "vertical": false,
-                "options": [
-                    {
-                        "text": "Next",
-                        "value": "next",
-                        "action": "q.dialogue.set_page('page8');"
-                    }
-                ]
-            }
-        },
-        {
-            "id": "page8",
-            "speaker": "npc",
-            "lines": [
-                "I'm furious that I lost to a bleeding heart like him."
-            ],
-            "input": {
-                "type": "option",
-                "vertical": false,
-                "options": [
-                    {
-                        "text": "Next",
-                        "value": "next",
-                        "action": "q.dialogue.set_page('page9');"
-                    }
-                ]
-            }
-        },
-        {
-            "id": "page9",
-            "speaker": "npc",
-            "lines": [
-                "Humph! I don't have time for the likes of you!"
+                "I really couldn't care less about weak Pokémon."
             ],
             "input": {
                 "type": "option",
@@ -180,8 +150,9 @@
                             "q.dialogue.close();",
                             "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 0');",
                             "q.run_command('execute as ' + q.player.username + ' run function johto:tools/forceclick');",
-                            "q.run_command('tag ' + q.player.username + ' add Dialogue59');",
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 89');"
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue9');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 91');"
                             ]
                     }
                 ]
