@@ -113,13 +113,34 @@ execute as @s[x=-683,y=63,z=-478,distance=..10,tag=Dialogue5,tag=!Dialogue8] run
 execute as @s[x=57,y=104,z=13,distance=..10,tag=!Dialogue9] unless entity @e[x=57,y=103,z=29,dy=3,type=cobblemon:npc] run npcspawnat 57 104 29 sprouttower_silver 1
 execute as @s[x=54,y=103,z=22,dx=12,dy=5,dz=10,tag=!Dialogue9] run opendialogue sprouttower_silver_dialogue9 @s 
 
+#Dialogue 13 - Elm's Aide giving Togepi
+execute as @s[x=15,y=64,z=-111,distance=..15,tag=Falkner,tag=!Dialogue13] unless entity @e[x=11,y=64,z=-100,dy=3,type=cobblemon:npc] run npcspawnat 11 64 -100 violet_elmsaide 1
 
+#Rocket guarding Slowpoke Well until Kurt runs in
+execute as @s[x=244,y=56,z=-714,distance=0..25,tag=!Dialogue14] unless entity @e[x=247,y=54,z=-714,dy=3,type=cobblemon:npc] run npcspawnat 247 54 -714 slowpokewell_rocketexterior 1
+execute as @s[x=244,y=56,z=-714,distance=0..25,tag=Dialogue14] run tp @e[x=247,y=54,z=-714,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 
+#Dialogue 14 - Kurt first hearing of Team Rocket
+execute as @s[x=371,y=64,z=-698,distance=..4,tag=!Dialogue14] run opendialogue kurt_dialogue14 @s 
 
+#Makes Kurt invisible if player is between quests
+execute as @s[x=371,y=64,z=-698,distance=..4,tag=Dialogue14,tag=!Dialogue16] run effect give @e[x=371,y=64,z=-698,dy=4,type=cobblemon:npc] minecraft:invisibility 10 1 true
 
+#Dialogue 15 - Kurt in the well
+execute as @s[x=244,y=39,z=-708,distance=..10,tag=Dialogue14,tag=!Dialogue15] unless entity @e[x=244,y=39,z=-708,dy=3,type=cobblemon:npc] run npcspawnat 244 39 -708 slowpokewell_kurt 1
+execute as @s[x=244,y=39,z=-708,distance=..7,tag=Dialogue14,tag=!Dialogue15] run opendialogue kurt_dialogue15 @s 
 
+#Summons the Rocket Grunts in the well
+execute as @s[x=244,y=39,z=-708,distance=..10,tag=Dialogue15,tag=!Dialogue16] unless entity @e[x=251,y=39,z=-691,dy=3,type=cobblemon:npc] run npcspawnat 251 39 -691 rocketgrunt1 1
+execute as @s[x=244,y=39,z=-708,distance=..10,tag=Dialogue15,tag=!Dialogue16] unless entity @e[x=262,y=43,z=-671,dy=3,type=cobblemon:npc] run npcspawnat 262 43 -671 rocketgrunt2 1
+execute as @s[x=244,y=39,z=-708,distance=..10,tag=Dialogue15,tag=!Dialogue16] unless entity @e[x=291,y=39,z=-679,dy=3,type=cobblemon:npc] run npcspawnat 291 39 -679 rocketgrunt3 1
+execute as @s[x=244,y=39,z=-708,distance=..10,tag=Dialogue15,tag=!Dialogue16] unless entity @e[x=289,y=39,z=-661,dy=3,type=cobblemon:npc] run npcspawnat 289 39 -661 rocketproton1 1
 
-
+#Azalea Silver Spawn
+execute as @s[x=402,y=64,z=-734,distance=..15,tag=Bugsy,tag=Dialogue16,tag=!Dialogue20,scores={StarterPick=1}] unless entity @e[x=402,y=64,z=-734,dy=3,type=cobblemon:npc] run particle cloud 402 64 -734 1 1 1 1 100
+execute as @s[x=402,y=64,z=-734,distance=..15,tag=Bugsy,tag=Dialogue16,tag=!Dialogue20,scores={StarterPick=1}] unless entity @e[x=402,y=64,z=-734,dy=3,type=cobblemon:npc] run npcspawnat 402 64 -734 azalea_silver1 1
+execute as @s[x=402,y=64,z=-734,distance=..15,tag=Bugsy,tag=Dialogue16,tag=!Dialogue20,scores={StarterPick=2}] unless entity @e[x=402,y=64,z=-734,dy=3,type=cobblemon:npc] run npcspawnat 402 64 -734 azalea_silver1 2
+execute as @s[x=402,y=64,z=-734,distance=..15,tag=Bugsy,tag=Dialogue16,tag=!Dialogue20,scores={StarterPick=3}] unless entity @e[x=402,y=64,z=-734,dy=3,type=cobblemon:npc] run npcspawnat 402 64 -734 azalea_silver1 3
 
 
 

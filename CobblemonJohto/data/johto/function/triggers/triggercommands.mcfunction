@@ -53,6 +53,23 @@ scoreboard players set @a[scores={TriggerCommand=26}] TriggerCommand 0
 
 
 
+#Cleans out Slowpoke Well before teleport out
+execute as @a[scores={TriggerCommand=86}] run particle cloud 289 39 -661 1 1 1 1 100
+execute as @a[scores={TriggerCommand=86}] run tp @e[x=251,y=38,z=-691,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[scores={TriggerCommand=86}] run tp @e[x=262,y=42,z=-671,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[scores={TriggerCommand=86}] run tp @e[x=289,y=38,z=-661,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[scores={TriggerCommand=86}] run tp @e[x=291,y=38,z=-679,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[scores={TriggerCommand=86}] run tp @e[x=244,y=38,z=-708,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[scores={TriggerCommand=86}] run scoreboard players set @s TriggerCommand 0
+
+#Runs teleport back to Kurt's
+execute as @a[scores={TriggerCommand=87}] run effect give @s minecraft:blindness 3 1 true
+execute as @a[scores={TriggerCommand=87}] run playsound flee ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=87}] run tp @s 366 64 -703 -30 13
+execute as @a[scores={TriggerCommand=87}] run scoreboard players set @s click 1
+execute as @a[scores={TriggerCommand=87}] run scoreboard players set @s TriggerCommand 0
+
+
 #Elm's Lab tps out policeman
 execute as @a[scores={TriggerCommand=88}] run particle cloud -682 64 -481 1 1 1 0.15 100
 execute as @a[scores={TriggerCommand=88}] run tp @e[x=-682,y=63,z=-481,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000

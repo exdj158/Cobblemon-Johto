@@ -1890,6 +1890,12 @@ execute as @s[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,tag=!ItemLoot379] if entity @
 execute as @s[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,tag=!ItemLoot379] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,scores={BillGP=4}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,tag=!ItemLoot379] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,scores={BillGP=4}] run tag @s add ItemLoot379
 
+execute as @s[x=11,y=64,z=-100,distance=..5,tag=!ItemLoot380] run pokegive togepi level=5
+execute as @s[x=11,y=64,z=-100,distance=..5,tag=!ItemLoot380] run playsound egghatch ambient @s ~ ~ ~ 10 1 1
+execute as @s[x=11,y=64,z=-100,distance=..5,tag=!ItemLoot380] run particle cloud 11 64 -100 1 1 1 1 100
+execute as @s[x=11,y=64,z=-100,distance=..5,tag=!ItemLoot380] run tp @e[x=11,y=63,z=-100,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @s[x=11,y=64,z=-100,distance=..5,tag=!ItemLoot380] run tag @s add Dialogue13
+execute as @s[x=11,y=64,z=-100,distance=..5,tag=!ItemLoot380] run tag @s add ItemLoot380
 
 
 
