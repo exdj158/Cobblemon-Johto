@@ -1,6 +1,8 @@
 {   "initializationAction": [              
     "c.npc.set_chatting();",
     "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 1');",
+    "q.run_command('scoreboard players set ' + q.player.username + ' Cooldown 20');",
+    "q.run_command('tag ' + q.player.username + ' add Kimono5');",
     "q.run_command('execute as ' + q.player.username + ' run function johto:tools/forceclick');"
         ],
   "speakers": {

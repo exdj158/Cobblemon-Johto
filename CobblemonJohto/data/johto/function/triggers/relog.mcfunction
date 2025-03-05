@@ -18,7 +18,7 @@ tag @s remove PokemonMusicTalk
 scoreboard players set @s TownDisplay 0
 
 effect give @s minecraft:speed infinite 5 true
-effect give @s minecraft:dolphins_grace infinite 1 true
+effect give @s[tag=Surf] minecraft:dolphins_grace infinite 1 true
 
 
 

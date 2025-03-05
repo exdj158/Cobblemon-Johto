@@ -22,7 +22,6 @@ gamerule disableRaids true
 gamerule doPokemonSpawning true
 
 effect give @s minecraft:speed infinite 5 true
-effect give @s minecraft:dolphins_grace infinite 1 true
 
 #Gives starting items
 give @s cobblemon:poke_ball 10
@@ -45,6 +44,11 @@ tag @s remove EXPNCard
 tag @s remove RadioCard
 tag @s remove GuideTour
 
+tag @s remove Kimono1
+tag @s remove Kimono2
+tag @s remove Kimono3
+tag @s remove Kimono4
+tag @s remove Kimono5
 
 
 #Removes Gym Leader win Tags

@@ -82,7 +82,7 @@ execute as @a[scores={TriggerCommand=89}] run scoreboard players set @s TriggerC
 
 #Ecruteak Silver TP out
 execute as @a[scores={TriggerCommand=90}] run particle cloud 343 64 216 1 1 1 1 100
-execute as @a[scores={TriggerCommand=90}] run tp @e[x=-2200,y=64,z=800,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[scores={TriggerCommand=90}] run tp @e[x=343,y=64,z=216,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 execute as @a[scores={TriggerCommand=90}] run scoreboard players set @s TriggerCommand 0
 
 #Silver Sprout Tower TP out
