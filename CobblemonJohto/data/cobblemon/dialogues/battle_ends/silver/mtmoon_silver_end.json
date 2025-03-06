@@ -123,7 +123,7 @@
                         "value": "close",
                         "action": [              
                             "q.dialogue.close();",
-                            "q.run_command('tag ' + q.player.username + ' add Dialogue68');",
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue131');",
                             "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 99');"
                           ]
                     }
