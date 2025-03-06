@@ -1,4 +1,7 @@
 {
+    "initializationAction": [
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
+    ],
     "speakers": {
         "npc": {
             "name": "Bill",
