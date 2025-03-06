@@ -1,0 +1,1 @@
+give @s music_disc_11[custom_name='["",{"text":"SecretPotion","italic":false,"color":"yellow"}]',lore=['["",{"text":"A fantastic medicine dispensed by","italic":false}]','["",{"text":"the pharmacy in Cianwood City.","italic":false}]','["",{"text":"It fully heals a Pokémon of any","italic":false}]','["",{"text":"ailment.","italic":false}]'],enchantment_glint_override=false]

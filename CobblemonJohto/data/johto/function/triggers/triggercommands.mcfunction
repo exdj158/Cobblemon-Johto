@@ -52,6 +52,10 @@ execute as @a[scores={TriggerCommand=26}] run tag @s remove Dialogue177
 scoreboard players set @a[scores={TriggerCommand=26}] TriggerCommand 0
 
 
+#Jasmine teleports back to gym from lighthouse
+execute as @a[scores={TriggerCommand=85}] run particle cloud 705 119 -40 1 1 1 0.15 100
+execute as @a[scores={TriggerCommand=85}] run tp @e[x=705,y=119,z=-40,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[scores={TriggerCommand=85}] run scoreboard players set @s TriggerCommand 0
 
 #Cleans out Slowpoke Well before teleport out
 execute as @a[scores={TriggerCommand=86}] run particle cloud 289 39 -661 1 1 1 1 100
@@ -93,8 +97,8 @@ execute as @a[scores={TriggerCommand=91}] run tp @e[x=57,y=103,z=29,dy=3,type=co
 execute as @a[scores={TriggerCommand=91}] run scoreboard players set @s TriggerCommand 0
 
 #Silver Olivine TP out
-execute as @a[scores={TriggerCommand=92}] run particle cloud -2200 64 800 1 1 1 1 100
-execute as @a[scores={TriggerCommand=92}] run tp @e[x=-2200,y=64,z=800,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[scores={TriggerCommand=92}] run particle cloud 809 64 14 1 1 1 1 100
+execute as @a[scores={TriggerCommand=92}] run tp @e[x=809,y=64,z=14,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 execute as @a[scores={TriggerCommand=92}] run scoreboard players set @s TriggerCommand 0
 
 #Bill tps out

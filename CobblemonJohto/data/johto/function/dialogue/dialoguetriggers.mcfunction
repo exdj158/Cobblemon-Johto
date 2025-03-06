@@ -162,7 +162,21 @@ execute as @s[x=441,y=64,z=312,distance=..20,tag=!Dialogue35,scores={StarterPick
 execute as @s[x=441,y=64,z=312,distance=..20,tag=!Dialogue35,scores={StarterPick=2}] unless entity @e[x=441,y=64,z=312,dy=3,type=cobblemon:npc] run npcspawnat 441 64 312 burnedtower_silver2 1
 execute as @s[x=441,y=64,z=312,distance=..20,tag=!Dialogue35,scores={StarterPick=3}] unless entity @e[x=441,y=64,z=312,dy=3,type=cobblemon:npc] run npcspawnat 441 64 312 burnedtower_silver3 1
 
+#Dialogue 39 - Silver outside Olivine Gym
+execute at @s[x=809,y=63,z=14,distance=..40,tag=!Dialogue39] unless entity @e[x=809,y=64,z=14,dy=3,type=cobblemon:npc] run spawnnpcat 809 64 14 olivine_silver 1
 
+#Dialogue 40 - Olivine Lighthouse Jasmine first introduction
+execute at @s[x=694,y=119,z=-48,dx=17,dy=10,dz=15,tag=!Dialogue42] unless entity @e[x=705,y=119,z=-40,dy=3,type=cobblemon:npc] run spawnnpcat 705 119 -40 jasmine_lighthouse 1
+execute at @s[x=694,y=119,z=-48,dx=17,dy=10,dz=15,tag=!Dialogue42] unless entity @e[x=706,y=119,z=-38,dy=3,type=cobblemon:pokemon] run pokespawnat 706 119 -38 ampharos uncatchable=yes no_ai=yes level=30
+execute at @s[x=694,y=119,z=-48,dx=17,dy=10,dz=15,tag=!Dialogue42] as @e[x=706,y=119,z=-38,dy=3,type=cobblemon:pokemon] at @s run tp @s ~ ~ ~ 150 50
+execute at @s[x=694,y=119,z=-48,dx=17,dy=10,dz=15,nbt={PersistenceRequired:0b}] as @e[x=706,y=119,z=-38,dy=3,type=cobblemon:pokemon] run data merge entity @s {PersistenceRequired:1b}
+execute at @s[x=694,y=119,z=-48,dx=17,dy=10,dz=15,tag=Dialogue42] as @e[x=706,y=119,z=-38,dy=3,type=cobblemon:pokemon] at @s run tp @s ~ ~ ~ 150 10
+
+#Dialogue 41 - Cianwood Medicine Doctor
+execute as @s[x=1221,y=63,z=-491,dx=19,dy=5,dz=10,tag=Dialogue40,tag=!Dialogue41] run opendialogue cianwood_doctor_dialogue41 @s 
+
+#Dialogue 42 - Jasmine Olivine Return to gym
+execute as @s[x=705,y=119,z=-40,distance=..5,tag=Dialogue41,tag=!Dialogue42] run opendialogue jasmine_dialogue42 @s 
 
 
 #Chuck's Wife Fly HM

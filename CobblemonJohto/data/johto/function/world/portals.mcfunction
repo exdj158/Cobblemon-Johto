@@ -267,12 +267,12 @@ tp @a[x=-1194,y=65,z=529,dx=9,dy=6] 1269 64 -470
 
 #--------------------------------------------------
 #Olivine City
-#tellraw @a[x=807,y=64,z=16,dx=4,dy=3,tag=!Dialogue42] {"text":"Jasmine is not currently in the gym!","italic":true,"color":"gray"}
-#tp @a[x=807,y=64,z=16,dx=4,dy=3,tag=!Dialogue42] ~ ~ ~-10
+tellraw @a[x=807,y=64,z=16,dx=4,dy=3,tag=!Dialogue42] {"text":"Jasmine is not currently in the gym!","italic":true,"color":"gray"}
+tp @a[x=807,y=64,z=16,dx=4,dy=3,tag=!Dialogue42] ~ ~ ~-10
 
-#playsound door ambient @a[x=807,y=64,z=16,dx=4,dy=3,tag=Dialogue42] ~ ~ ~ 100 1 1
-#tag @a[x=807,y=64,z=16,dx=4,dy=3,tag=Dialogue42] remove GymVictory
-#tp @a[x=807,y=64,z=16,dx=4,dy=3,tag=Dialogue42] -1126 65 530
+playsound door ambient @a[x=807,y=64,z=16,dx=4,dy=3,tag=Dialogue42] ~ ~ ~ 100 1 1
+tag @a[x=807,y=64,z=16,dx=4,dy=3,tag=Dialogue42] remove GymVictory
+tp @a[x=807,y=64,z=16,dx=4,dy=3,tag=Dialogue42] -1126 65 530
 
 playsound door ambient @a[x=807,y=64,z=16,dx=4,dy=3] ~ ~ ~ 100 1 1
 tag @a[x=807,y=64,z=16,dx=4,dy=3] remove GymVictory
