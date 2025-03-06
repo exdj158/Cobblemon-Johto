@@ -178,16 +178,58 @@ execute as @s[x=1221,y=63,z=-491,dx=19,dy=5,dz=10,tag=Dialogue40,tag=!Dialogue41
 #Dialogue 42 - Jasmine Olivine Return to gym
 execute as @s[x=705,y=119,z=-40,distance=..5,tag=Dialogue41,tag=!Dialogue42] run opendialogue jasmine_dialogue42 @s 
 
-
 #Chuck's Wife Fly HM
 execute as @s[x=1261,y=64,z=-488,distance=..10,tag=Chuck,tag=!Dialogue43] run opendialogue chuckswife_dialogue43 @s
 
+#Dialogue 64 - Route 43 Rocket mugging
+execute as @s[x=-198,y=63,z=343,dx=19,dy=5,dz=19,tag=!Dialogue48] run opendialogue route43_rocketgrunt_interaction @s
+execute as @s[x=-187,y=64,z=352,distance=..30,tag=!Dialogue64] unless entity @e[x=-184,y=64,z=352,dy=3,type=cobblemon:npc] run npcspawnat -184 64 352 route43_rocketgrunt 1
+execute as @s[x=-187,y=64,z=352,distance=..30,tag=!Dialogue64] unless entity @e[x=-190,y=64,z=352,dy=3,type=cobblemon:npc] run npcspawnat -190 64 352 route43_rocketgrunt 1
+
+execute as @s[x=-187,y=64,z=352,distance=..30,tag=Dialogue64] as @e[x=-184,y=64,z=352,dy=3,type=cobblemon:npc] run tp @s 10000000 -50000 -10000000
+execute as @s[x=-187,y=64,z=352,distance=..30,tag=Dialogue64] as @e[x=-190,y=64,z=352,dy=3,type=cobblemon:npc] run tp @s 10000000 -50000 -10000000
+
+execute as @s[x=-187,y=64,z=352,distance=..30,tag=Dialogue64] unless entity @e[x=-181,y=64,z=352,dy=3,type=cobblemon:npc] run npcspawnat -181 64 352 route43_officerjenny 1
+execute as @s[x=-187,y=64,z=352,distance=..30,tag=!Dialogue64] as @e[x=-181,y=64,z=352,dy=3,type=cobblemon:npc] run tp @s 10000000 -50000 -10000000
 
 #Red Gyarados Spawn
 scoreboard players set @a[x=-169,y=65,z=645,distance=..15,tag=!Dialogue49] DialogueTrigger 49
 
+#Lance after battling the Gyarados
+execute as @s[x=-159,y=64,z=590,distance=..50,tag=Dialogue49,tag=!Dialogue51] unless entity @e[x=-159,y=64,z=590,dy=3,type=cobblemon:npc] run npcspawnat -159 64 590 lake_lance 1
+
+#Rocket HQ
+
+
+#Silver in rocket HQ
+execute as @s[x=-82,y=34,z=182,distance=..20,tag=!Dialogue59] unless entity @e[x=-82,y=34,z=182,dy=3,type=cobblemon:npc] run npcspawnat -82 34 182 rockethq_silver 1
+
+
+
+#Goldenrod Underground Silver
+execute as @s[x=481,y=47,z=-305,distance=..25,tag=!Dialogue68,scores={StarterPick=1..}] unless entity @e[x=481,y=47,z=-305,dy=3,type=cobblemon:npc] run particle cloud 481 47 -305 1 1 1 1 100
+execute as @s[x=481,y=47,z=-305,distance=..25,tag=!Dialogue68,scores={StarterPick=1}] unless entity @e[x=481,y=47,z=-305,dy=3,type=cobblemon:npc] run npcspawnat 481 47 -305 goldenrod_silver1 1
+execute as @s[x=481,y=47,z=-305,distance=..25,tag=!Dialogue68,scores={StarterPick=2}] unless entity @e[x=481,y=47,z=-305,dy=3,type=cobblemon:npc] run npcspawnat 481 47 -305 goldenrod_silver2 1
+execute as @s[x=481,y=47,z=-305,distance=..25,tag=!Dialogue68,scores={StarterPick=3}] unless entity @e[x=481,y=47,z=-305,dy=3,type=cobblemon:npc] run npcspawnat 481 47 -305 goldenrod_silver3 1
+
+
+
+
+
+
+
 #Elm granting Master Ball
 execute as @s[x=-683,y=63,z=-478,distance=..10,tag=Clair,tag=!Dialogue81] run opendialogue professorelm_dialogue81 @s
+
+#Silver Victory Road
+execute as @s[x=-1449,y=51,z=528,distance=..25,tag=!Dialogue85,scores={StarterPick=1..}] unless entity @e[x=-1449,y=51,z=528,dy=3,type=cobblemon:npc] run particle cloud -1449 51 528 1 1 1 1 100
+execute as @s[x=-1449,y=51,z=528,distance=..25,tag=!Dialogue85,scores={StarterPick=1}] unless entity @e[x=-1449,y=51,z=528,dy=3,type=cobblemon:npc] run npcspawnat -1449 51 528 victoryroad_silver1 1
+execute as @s[x=-1449,y=51,z=528,distance=..25,tag=!Dialogue85,scores={StarterPick=2}] unless entity @e[x=-1449,y=51,z=528,dy=3,type=cobblemon:npc] run npcspawnat -1449 51 528 victoryroad_silver2 1
+execute as @s[x=-1449,y=51,z=528,distance=..25,tag=!Dialogue85,scores={StarterPick=3}] unless entity @e[x=-1449,y=51,z=528,dy=3,type=cobblemon:npc] run npcspawnat -1449 51 528 victoryroad_silver3 1
+
+
+
+
 
 #Elm granting SS Ticket
 execute as @s[x=-683,y=63,z=-478,distance=..10,tag=Dialogue81,tag=!Dialogue101,scores={IP=1..}] run opendialogue professorelm_dialogue101 @s
@@ -207,8 +249,14 @@ execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTra
 #Oak Kanto Starters
 execute as @s[x=-1715,y=64,z=-307,distance=..5,tag=!Dialogue153] run opendialogue professoroak_dialogue153 @s
 
+#Mt. Moon Silver
+execute as @s[x=-2200,y=64,z=800,distance=..25,tag=!Dialogue131,scores={StarterPick=1..}] unless entity @e[x=-2200,y=64,z=800,dy=3,type=cobblemon:npc] run particle cloud -2200 64 800 1 1 1 1 100
+execute as @s[x=-2200,y=64,z=800,distance=..25,tag=!Dialogue131,scores={StarterPick=1}] unless entity @e[x=-2200,y=64,z=800,dy=3,type=cobblemon:npc] run npcspawnat -2200 64 800 mtmoon_silver1 1
+execute as @s[x=-2200,y=64,z=800,distance=..25,tag=!Dialogue131,scores={StarterPick=2}] unless entity @e[x=-2200,y=64,z=800,dy=3,type=cobblemon:npc] run npcspawnat -2200 64 800 mtmoon_silver2 1
+execute as @s[x=-2200,y=64,z=800,distance=..25,tag=!Dialogue131,scores={StarterPick=3}] unless entity @e[x=-2200,y=64,z=800,dy=3,type=cobblemon:npc] run npcspawnat -2200 64 800 mtmoon_silver3 1
 
-#NPC Spawns
+
+
 #Dialogue 204 NPC spawn, Bill in Ecruteak
 execute as @a[x=337,y=64,z=191,distance=..20,tag=!Dialogue204] unless entity @e[x=337,y=64,z=191,dy=3,type=cobblemon:npc] run npcspawnat 337 64 191 bill_dialogue204 1
 

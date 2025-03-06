@@ -24,11 +24,6 @@ effect give @s[tag=Surf] minecraft:dolphins_grace infinite 1 true
 
 #Re-tells player the prompts if they crash or log out of important choices and prompt would disappear
 
-#Lance at Lake of Rage
-execute as @s[tag=Dialogue51] run scoreboard players enable @s[tag=!Dialogue52] TriggerCommand
-execute as @s[tag=Dialogue51] run tellraw @s[tag=!Dialogue52] ["",{"text":"<Lance> If you don't mind, could you help me investigate?\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 39"}},{"text":"]"}]
-
-
 #Steven giving Hoenn Starters
 execute as @s[tag=Dialogue137] run scoreboard players enable @s[tag=!Dialogue138] TriggerCommand
 execute as @s[tag=Dialogue137] run tellraw @a[tag=!Dialogue138] ["",{"text":"<Steven> Which color would you pick?\n\n["},{"text":"Green Stone","color":"dark_green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 29"}},{"text":"]\n\n["},{"text":"Red Stone","color":"red","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 30"}},{"text":"]\n\n["},{"text":"Blue Stone","color":"blue","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 31"}},{"text":"]"}]

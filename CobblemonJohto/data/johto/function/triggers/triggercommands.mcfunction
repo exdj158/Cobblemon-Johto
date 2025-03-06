@@ -52,6 +52,19 @@ execute as @a[scores={TriggerCommand=26}] run tag @s remove Dialogue177
 scoreboard players set @a[scores={TriggerCommand=26}] TriggerCommand 0
 
 
+
+
+
+
+
+
+
+
+#Lance teleporting out from Lake of Rage
+execute as @a[scores={TriggerCommand=84}] run particle cloud -159 64 590 1 1 1 1 100
+execute as @a[scores={TriggerCommand=84}] run tp @e[x=-159,y=63,z=590,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[scores={TriggerCommand=84}] run scoreboard players set @s TriggerCommand 0
+
 #Jasmine teleports back to gym from lighthouse
 execute as @a[scores={TriggerCommand=85}] run particle cloud 705 119 -40 1 1 1 0.15 100
 execute as @a[scores={TriggerCommand=85}] run tp @e[x=705,y=119,z=-40,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
