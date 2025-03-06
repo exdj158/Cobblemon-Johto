@@ -13,6 +13,9 @@ execute as @a[scores={TriggerCommand=1..}] run function johto:triggers/triggerco
 #Gives you starting items and commands
 execute as @a[tag=!InitialTags] run function johto:triggers/startercommands
 
+#Runs story roadblocks for story checks
+execute as @a run function johto:world/roadblocks
+
 #Removes Cooldown score if present
 scoreboard players remove @a[scores={Cooldown=1..}] Cooldown 1
 
@@ -240,63 +243,6 @@ playsound flee ambient @a[x=-1075,y=0,z=550,dx=31,dy=62,dz=51] ~ ~ ~ 1000 1 1
 execute at @a[x=-1075,y=0,z=550,dx=31,dy=62,dz=51] run tp @a[x=-1075,y=0,z=550,dx=31,dy=62,dz=51] -1059 65 543 0 10
 effect give @e[x=-1091,y=0,z=522,dx=63,dy=63,dz=105,type=cobblemon:pokemon] minecraft:levitation 1 1 true
 execute at @e[x=-1091,y=0,z=522,dx=63,dy=63,dz=105,type=item] run tp @e[x=-1091,y=0,z=522,dx=63,dy=63,dz=105,type=item] -1059 65 538
-
-
-#Elite Four Gates
-#Will
-execute if block -1288 67 446 quartz_pillar as @a[x=-1288,y=67,z=446,distance=..15,tag=Will] run playsound minecraft:entity.iron_golem.death ambient @s ~ ~ ~ 1 1 1
-execute if block -1288 67 446 quartz_pillar as @a[x=-1288,y=67,z=446,distance=..15,tag=Will] run fill -1287 67 446 -1289 70 446 air
-execute unless entity @a[x=-1287,y=67,z=446,distance=..15,tag=Will] run clone -730 64 -328 -728 67 -328 -1289 67 446
-
-#Koga
-execute if block -1288 67 523 quartz_pillar as @a[x=-1288,y=67,z=523,distance=..15,tag=Koga] run playsound minecraft:entity.iron_golem.death ambient @s ~ ~ ~ 1 1 1
-execute if block -1288 67 523 quartz_pillar as @a[x=-1288,y=67,z=523,distance=..15,tag=Koga] run fill -1287 67 523 -1289 70 523 air
-execute unless entity @a[x=-1288,y=67,z=523,distance=..15,tag=Koga] run clone -730 64 -328 -728 67 -328 -1289 67 523
-
-#Bruno
-execute if block -1288 70 599 quartz_pillar as @a[x=-1288,y=70,z=599,distance=..15,tag=Bruno] run playsound minecraft:entity.iron_golem.death ambient @s ~ ~ ~ 1 1 1
-execute if block -1288 70 599 quartz_pillar as @a[x=-1288,y=70,z=599,distance=..15,tag=Bruno] run fill -1287 70 599 -1289 73 599 air
-execute unless entity @a[x=-1288,y=70,z=599,distance=..15,tag=Bruno] run clone -730 64 -328 -728 67 -328 -1289 70 599
-
-#Karen
-execute if block -1288 73 675 quartz_pillar as @a[x=-1288,y=73,z=675,distance=..15,tag=Karen] run playsound minecraft:entity.iron_golem.death ambient @s ~ ~ ~ 1 1 1
-execute if block -1288 73 675 quartz_pillar as @a[x=-1288,y=73,z=675,distance=..15,tag=Karen] run fill -1287 73 675 -1289 76 675 air
-execute unless entity @a[x=-1288,y=73,z=675,distance=..15,tag=Karen] run clone -730 64 -328 -728 67 -328 -1289 73 675
-
-#Lance
-execute if block -1288 78 750 quartz_pillar as @a[x=-1291,y=77,z=745,dx=6,dy=10,dz=5,tag=Lance] run playsound minecraft:entity.iron_golem.death ambient @s ~ ~ ~ 1 1 1
-execute if block -1288 78 750 quartz_pillar as @a[x=-1291,y=77,z=745,dx=6,dy=10,dz=5,tag=Lance] run fill -1286 82 750 -1290 78 750 air
-execute unless entity @a[x=-1291,y=77,z=745,dx=6,dy=10,dz=5,tag=Lance] run clone -730 64 -328 -726 68 -328 -1290 78 750
-
-
-
-#REMATCH GATES
-
-#Will
-execute if block -1341 67 446 quartz_pillar as @a[x=-1341,y=67,z=446,distance=..15,tag=Will] run playsound minecraft:entity.iron_golem.death ambient @s ~ ~ ~ 1 1 1
-execute if block -1341 67 446 quartz_pillar as @a[x=-1341,y=67,z=446,distance=..15,tag=Will] run fill -1342 67 446 -1340 70 446 air
-execute unless entity @a[x=-1341,y=67,z=446,distance=..15,tag=Will] run clone -730 64 -328 -728 67 -328 -1342 67 446
-
-#Koga
-execute if block -1341 67 523 quartz_pillar as @a[x=-1341,y=67,z=523,distance=..15,tag=Koga] run playsound minecraft:entity.iron_golem.death ambient @s ~ ~ ~ 1 1 1
-execute if block -1341 67 523 quartz_pillar as @a[x=-1341,y=67,z=523,distance=..15,tag=Koga] run fill -1342 70 523 -1340 67 523 air
-execute unless entity @a[x=-1341,y=67,z=523,distance=..15,tag=Koga] run clone -730 64 -328 -728 67 -328 -1342 67 523
-
-#Bruno
-execute if block -1341 70 599 quartz_pillar as @a[x=-1341,y=70,z=599,distance=..15,tag=Bruno] run playsound minecraft:entity.iron_golem.death ambient @s ~ ~ ~ 1 1 1
-execute if block -1341 70 599 quartz_pillar as @a[x=-1341,y=70,z=599,distance=..15,tag=Bruno] run fill -1340 70 599 -1342 73 599 air
-execute unless entity @a[x=-1341,y=70,z=599,distance=..15,tag=Bruno] run clone -730 64 -328 -728 67 -328 -1342 70 599
-
-#Karen
-execute if block -1341 73 675 quartz_pillar as @a[x=-1341,y=67,z=675,distance=..15,tag=Karen] run playsound minecraft:entity.iron_golem.death ambient @s ~ ~ ~ 1 1 1
-execute if block -1341 73 675 quartz_pillar as @a[x=-1341,y=67,z=675,distance=..15,tag=Karen] run fill -1340 73 675 -1342 76 675 air
-execute unless entity @a[x=-1341,y=67,z=675,distance=..15,tag=Karen] run clone -730 64 -328 -728 67 -328 -1342 73 675
-
-#Lance
-execute if block -1341 78 750 quartz_pillar as @a[x=-1344,y=77,z=746,dx=6,dy=10,dz=5,tag=Lance] run playsound minecraft:entity.iron_golem.death ambient @s ~ ~ ~ 1 1 1
-execute if block -1341 78 750 quartz_pillar as @a[x=-1344,y=77,z=746,dx=6,dy=10,dz=5,tag=Lance] run fill -1343 82 750 -1339 78 750 air
-execute unless entity @a[x=-1344,y=77,z=746,dx=6,dy=10,dz=5,tag=Lance] run clone -730 64 -328 -726 68 -328 -1343 78 750
-
 
 
 #Tps player from Rematched Hall of Fame to real Hall of Fame room
