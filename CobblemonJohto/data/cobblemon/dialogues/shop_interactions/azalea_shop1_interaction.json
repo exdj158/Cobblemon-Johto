@@ -119,7 +119,7 @@
                     },
                     {
                         "text": "<< Previous Page Page",
-                        "value": "paralyzeheal",
+                        "value": "page1",
                         "action": "q.dialogue.set_page('buy1');"
                     }
                 ]
