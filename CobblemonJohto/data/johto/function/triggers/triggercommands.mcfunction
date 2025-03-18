@@ -24,6 +24,7 @@ execute as @a[scores={TriggerCommand=22}] run scoreboard players set @s TriggerC
 #23 - Safari Zone Confirm Maps
 execute as @a[scores={TriggerCommand=23}] run tag @s remove Dialogue201
 execute as @a[scores={TriggerCommand=23}] run tag @s remove Dialogue202
+execute as @a[scores={TriggerCommand=23}] run scoreboard players remove @s Money 500
 execute as @a[scores={TriggerCommand=23}] run scoreboard players set @s[x=1590,y=74,z=-129,dx=10,dy=5,dz=10] DialogueTrigger 201
 execute as @a[scores={TriggerCommand=23}] run scoreboard players set @s TriggerCommand 0
 

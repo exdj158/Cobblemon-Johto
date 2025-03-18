@@ -27,7 +27,7 @@ effect give @s minecraft:speed infinite 5 true
 give @s cobblemon:poke_ball 10
 function johto:spawn/radio4
 give @s cobblemon:potion 10
-
+scoreboard players add @s Money 2000
 
 #Sets Spawnpoint
 spawnpoint @s -723 69 -485
