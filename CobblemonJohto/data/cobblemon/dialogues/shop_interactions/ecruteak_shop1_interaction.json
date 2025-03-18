@@ -1605,7 +1605,7 @@
                         "text": "Buy 1",
                         "value": "buy1",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 250');",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 154');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
