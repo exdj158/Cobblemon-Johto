@@ -3,7 +3,9 @@
     "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 1');",
     "q.run_command('scoreboard players set ' + q.player.username + ' Cooldown 20');",
     "q.run_command('tag ' + q.player.username + ' add Kimono4');",
-    "q.run_command('execute as ' + q.player.username + ' run function johto:tools/forceclick');"
+    "q.run_command('execute as ' + q.player.username + ' run function johto:tools/forceclick');",
+    "q.run_command('tellraw ' + q.player.username + ' {\"text\":\"You got $1,224 for winning!\",\"italic\":true,\"color\":\"gray\"}');",
+    "q.run_command('scoreboard players add ' + q.player.username + ' Money 1224');"
         ],
   "speakers": {
     "npc": {
