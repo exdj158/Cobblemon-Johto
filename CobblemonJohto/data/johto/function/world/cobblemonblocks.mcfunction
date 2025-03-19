@@ -1,10 +1,5 @@
 #Places blocks to replace Pixelmon counterparts like PCs, healers, portal blocks, etc
 
-#Clears out spawn
-fill -966 66 -373 -975 69 -368 air
-fill -975 69 -363 -970 66 -358 air
-fill -976 68 -360 -976 68 -362 minecraft:quartz_pillar[axis=z]
-
 #Elm's lab statues
 execute if block -684 65 -479 air run fill -684 66 -479 -690 65 -477 barrier
 fill -685 65 -478 -689 65 -478 air
