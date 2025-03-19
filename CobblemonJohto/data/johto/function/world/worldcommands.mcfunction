@@ -120,81 +120,120 @@ scoreboard players remove @a[scores={MusicCooldown=1..}] MusicCooldown 1
 
 #-------------------------------------------------------------------------------------------------------------------------
 #Unlocks Fly spots by visiting respective Pokemon Centers, sets spawnpoint if player dies
+
+#Elm's Lab
+scoreboard players set @a[x=-679,y=64,z=-480,distance=..10] Whiteout 0
+
 scoreboard players set @a[x=-256,y=64,z=-489,distance=..5,scores={FlyCherrygrove=0}] FlyCherrygrove 1
+scoreboard players set @a[x=-256,y=64,z=-489,distance=..5] Whiteout 1
 spawnpoint @a[x=-256,y=64,z=-489,distance=..5] -256 64 -489
 
 scoreboard players set @a[x=15,y=64,z=-106,distance=..5,scores={FlyViolet=0}] FlyViolet 1
+scoreboard players set @a[x=15,y=64,z=-106,distance=..5] Whiteout 2
 spawnpoint @a[x=15,y=64,z=-109,distance=..5] 15 64 -109
 
 scoreboard players set @a[x=330,y=64,z=-728,distance=..5,scores={FlyAzalea=0}] FlyAzalea 1
+scoreboard players set @a[x=330,y=64,z=-728,distance=..5] Whiteout 3
 spawnpoint @a[x=330,y=64,z=-728,distance=..5] 330 64 -728
 
 scoreboard players set @a[x=499,y=64,z=-424,distance=..5,scores={FlyGoldenrod=0}] FlyGoldenrod 1
+scoreboard players set @a[x=499,y=64,z=-424,distance=..5] Whiteout 4
 spawnpoint @a[x=499,y=64,z=-424,distance=..5] 499 64 -424
 
 scoreboard players set @a[x=341,y=64,z=186,distance=..5,scores={FlyEcruteak=0}] FlyEcruteak 1
+scoreboard players set @a[x=341,y=64,z=186,distance=..5] Whiteout 5
 spawnpoint @a[x=341,y=64,z=183,distance=..5] 341 64 183
 
 scoreboard players set @a[x=791,y=65,z=-40,distance=..5,scores={FlyOlivine=0}] FlyOlivine 1
+scoreboard players set @a[x=791,y=65,z=-40,distance=..5] Whiteout 6
 spawnpoint @a[x=791,y=64,z=-41,distance=..5] 791 64 -41
 
 scoreboard players set @a[x=1186,y=65,z=-468,distance=..5,scores={FlyCianwood=0}] FlyCianwood 1
+scoreboard players set @a[x=1186,y=65,z=-468,distance=..5] Whiteout 7
 spawnpoint @a[x=1186,y=64,z=-469,distance=..5] 1186 64 -469
 
 scoreboard players set @a[x=1617,y=88,z=-158,distance=..5,scores={FlySafari=0}] FlySafari 1
+scoreboard players set @a[x=1617,y=88,z=-158,distance=..5] Whiteout 8
 spawnpoint @a[x=1617,y=88,z=-160,distance=..5] 1617 88 -160
 
 scoreboard players set @a[x=-177,y=64,z=162,distance=..5,scores={FlyMahogany=0}] FlyMahogany 1
+scoreboard players set @a[x=-177,y=64,z=162,distance=..5] Whiteout 9
 spawnpoint @a[x=-177,y=64,z=160,distance=..5] -177 64 160
 
 scoreboard players set @a[x=-154,y=63,z=533,dx=22,dy=5,dz=5,scores={FlyLake=0}] FlyLake 1
 
 scoreboard players set @a[x=-663,y=64,z=174,distance=..5,scores={FlyBlackthorn=0}] FlyBlackthorn 1
+scoreboard players set @a[x=-663,y=64,z=174,distance=..5] Whiteout 10
 spawnpoint @a[x=-663,y=64,z=171,distance=..5] -663 64 171
 
 scoreboard players set @a[x=-999,y=64,z=64,distance=..5,scores={FlySilver=0}] FlySilver 1
+scoreboard players set @a[x=-999,y=64,z=64,distance=..5] Whiteout 11
 spawnpoint @a[x=-999,y=64,z=62,distance=..5] -999 64 62
 
 scoreboard players set @a[x=-1258,y=64,z=15,distance=..5,scores={FlyVictory=0}] FlyVictory 1
 
 scoreboard players set @a[x=-1292,y=84,z=322,distance=..5,scores={FlyVictory=0}] FlyIndigo 1
+scoreboard players set @a[x=-1292,y=84,z=322,distance=..5] Whiteout 12
 spawnpoint @a[x=-1292,y=84,z=322,distance=..5] -1292 84 322
 
 scoreboard players set @a[x=-1704,y=64,z=-899,distance=..5,scores={FlyCinnabar=0}] FlyCinnabar 1
+scoreboard players set @a[x=-1704,y=64,z=-899,distance=..5] Whiteout 13
 spawnpoint @a[x=-1704,y=64,z=-899,distance=..5] -1704 64 -899
 
 scoreboard players set @a[x=-1715,y=64,z=-321,distance=..15,scores={FlyPallet=0}] FlyPallet 1
+scoreboard players set @a[x=-1715,y=64,z=-321,distance=..15] Whiteout 14
 spawnpoint @a[x=-1715,y=64,z=-321,distance=..15] -1715 64 -321
 
 scoreboard players set @a[x=-1701,y=64,z=7,distance=..5,scores={FlyViridian=0}] FlyViridian 1
+scoreboard players set @a[x=-1701,y=64,z=7,distance=..5] Whiteout 15
 spawnpoint @a[x=-1701,y=64,z=7,distance=..5] -1701 64 7
 
 scoreboard players set @a[x=-1660,y=64,z=602,distance=..5,scores={FlyPewter=0}] FlyPewter 1
+scoreboard players set @a[x=-1660,y=64,z=602,distance=..5] Whiteout 16
 spawnpoint @a[x=-1660,y=64,z=602,distance=..5] -1660 64 602
 
+scoreboard players set @a[x=-2165,y=64,z=749,distance=..5] Whiteout 17
 spawnpoint @a[x=-2165,y=64,z=749,distance=..5] -2165 64 749
 
 scoreboard players set @a[x=-2744,y=64,z=728,distance=..5,scores={FlyCerulean=0}] FlyCerulean 1
+scoreboard players set @a[x=-2744,y=64,z=728,distance=..5] Whiteout 18
 spawnpoint @a[x=-2744,y=64,z=728,distance=..5] -2744 64 728
 
 scoreboard players set @a[x=-2405,y=64,z=-606,distance=..5,scores={FlyFuchsia=0}] FlyFuchsia 1
+scoreboard players set @a[x=-2405,y=64,z=-606,distance=..5] Whiteout 19
 spawnpoint @a[x=-2405,y=64,z=-608,distance=..5] -2405 64 -608
 
 scoreboard players set @a[x=-2714,y=64,z=8,distance=..5,scores={FlyVermilion=0}] FlyVermilion 1
+scoreboard players set @a[x=-2714,y=64,z=8,distance=..5] Whiteout 20
 spawnpoint @a[x=-2714,y=64,z=8,distance=..5] -2714 64 8
 
 scoreboard players set @a[x=-2704,y=64,z=279,distance=..5,scores={FlySaffron=0}] FlySaffron 1
+scoreboard players set @a[x=-2704,y=64,z=279,distance=..5] Whiteout 21
 spawnpoint @a[x=-2704,y=64,z=279,distance=..5] -2704 64 279
 
 scoreboard players set @a[x=-2460,y=64,z=375,distance=..5,scores={FlyCeladon=0}] FlyCeladon 1
+scoreboard players set @a[x=-2460,y=64,z=375,distance=..5] Whiteout 22
 spawnpoint @a[x=-2460,y=64,z=375,distance=..5] -2460 64 375
 
 scoreboard players set @a[x=-3253,y=64,z=357,distance=..5,scores={FlyLavender=0}] FlyLavender 1
+scoreboard players set @a[x=-3253,y=64,z=357,distance=..5] Whiteout 23
 spawnpoint @a[x=-3253,y=64,z=356,distance=..5] -3253 64 356
 
+scoreboard players set @a[x=-3287,y=64,z=675,distance=..5] Whiteout 24
 spawnpoint @a[x=-3287,y=64,z=675,distance=..5] -3287 64 675
 
+#Route 32
+scoreboard players set @a[x=127,y=64,z=-582,distance=..5] Whiteout 25
+spawnpoint @a[x=127,y=64,z=-582,distance=..5] 127 64 -582
 
+
+
+#Runs Whiteout function
+
+#Removes tag if Whiteout is disabled via lobby rule
+execute if entity @e[x=-792,y=65,z=-284,dy=3,tag=WhiteoutDisable] run tag @a[tag=Whiteout] remove Whiteout
+
+execute as @a[tag=Whiteout] run function johto:triggers/whiteout
 
 #-------------------------------------------------------------------------------------------------------------------------
 #Dialogues function
