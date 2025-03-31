@@ -96,6 +96,48 @@ execute as @s[tag=!RadioOff,scores={BattleStart=18}] run playsound gymbattlekant
 execute as @s[tag=!RadioOff,scores={BattleStart=18}] run scoreboard players set @s MusicCooldown 117
 
 
+#----------------------------------------------------------------------------
+#19 - Wild Pokemon
+
+#Tags if it's a legendary Pokemon species and wild
+execute as @s[scores={BattleStart=19}] at @s run tag @e[distance=..20,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:articuno",PokemonOriginalTrainerType:"NONE"}}] add Legendary
+execute as @s[scores={BattleStart=19}] at @s run tag @e[distance=..20,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:zapdos",PokemonOriginalTrainerType:"NONE"}}] add Legendary
+execute as @s[scores={BattleStart=19}] at @s run tag @e[distance=..20,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:moltres",PokemonOriginalTrainerType:"NONE"}}] add Legendary
+execute as @s[scores={BattleStart=19}] at @s run tag @e[distance=..20,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:mewtwo",PokemonOriginalTrainerType:"NONE"}}] add Legendary
+execute as @s[scores={BattleStart=19}] at @s run tag @e[distance=..20,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:mew",PokemonOriginalTrainerType:"NONE"}}] add Legendary
+execute as @s[scores={BattleStart=19}] at @s run tag @e[distance=..20,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:entei",PokemonOriginalTrainerType:"NONE"}}] add Legendary
+execute as @s[scores={BattleStart=19}] at @s run tag @e[distance=..20,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:raikou",PokemonOriginalTrainerType:"NONE"}}] add Legendary
+execute as @s[scores={BattleStart=19}] at @s run tag @e[distance=..20,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:suicune",PokemonOriginalTrainerType:"NONE"}}] add Legendary
+execute as @s[scores={BattleStart=19}] at @s run tag @e[distance=..20,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:lugia",PokemonOriginalTrainerType:"NONE"}}] add Legendary
+execute as @s[scores={BattleStart=19}] at @s run tag @e[distance=..20,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:hooh",PokemonOriginalTrainerType:"NONE"}}] add Legendary
+
+#First priority play for legendary species
+execute as @s[tag=!RadioOff,scores={BattleStart=19,MusicCooldown=0}] at @s if entity @e[distance=..15,tag=Legendary] run stopsound @s record
+execute as @s[tag=!RadioOff,scores={BattleStart=19,MusicCooldown=0}] at @s if entity @e[distance=..15,tag=Legendary] run playsound legendarybattle record @s ~ ~ ~ 1 1 1
+execute as @s[tag=!RadioOff,scores={BattleStart=19,MusicCooldown=0}] at @s if entity @e[distance=..15,tag=Legendary] run scoreboard players set @s MusicCooldown 284
+
+
+
+# Wild Pokemon Battle (Johto, Day)
+execute as @s[x=-877,y=0,z=-598,dx=2914,dy=256,dz=1509,tag=!RadioOff,scores={BattleStart=19,MusicCooldown=0}] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=..12999}] run stopsound @s record
+execute as @s[x=-877,y=0,z=-598,dx=2914,dy=256,dz=1509,tag=!RadioOff,scores={BattleStart=19,MusicCooldown=0}] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=..12999}] run playsound wildday record @s ~ ~ ~ 1 1 1
+execute as @s[x=-877,y=0,z=-598,dx=2914,dy=256,dz=1509,tag=!RadioOff,scores={BattleStart=19,MusicCooldown=0}] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=..12999}] run scoreboard players set @s MusicCooldown 131
+
+#Johto Night
+execute as @s[x=-877,y=0,z=-598,dx=2914,dy=256,dz=1509,tag=!RadioOff,scores={BattleStart=19,MusicCooldown=0}] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=13000..}] run stopsound @s record
+execute as @s[x=-877,y=0,z=-598,dx=2914,dy=256,dz=1509,tag=!RadioOff,scores={BattleStart=19,MusicCooldown=0}] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=13000..}] run playsound wildnight record @s ~ ~ ~ 1 1 1
+execute as @s[x=-877,y=0,z=-598,dx=2914,dy=256,dz=1509,tag=!RadioOff,scores={BattleStart=19,MusicCooldown=0}] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=13000..}] run scoreboard players set @s MusicCooldown 135
+
+#Kanto
+execute as @s[x=-3552,y=0,z=-1136,dx=2675,dy=256,dz=2185,tag=!RadioOff,scores={BattleStart=19,MusicCooldown=0}] run stopsound @s record
+execute as @s[x=-3552,y=0,z=-1136,dx=2675,dy=256,dz=2185,tag=!RadioOff,scores={BattleStart=19,MusicCooldown=0}] run playsound wildkanto record @s ~ ~ ~ 1 1 1
+execute as @s[x=-3552,y=0,z=-1136,dx=2675,dy=256,dz=2185,tag=!RadioOff,scores={BattleStart=19,MusicCooldown=0}] run scoreboard players set @s MusicCooldown 102
+
+
+
+
+
+
 
 
 
