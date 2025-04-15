@@ -605,6 +605,7 @@
                         "text": "Buy 1",
                         "value": "buy1",
                         "action": [
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 162');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -612,7 +613,6 @@
                         "text": "Go Back",
                         "value": "goback",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 162');",
                             "q.dialogue.set_page('buy1');"
                         ]
                     }
