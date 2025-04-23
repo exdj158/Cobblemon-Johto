@@ -11,10 +11,6 @@ clear @a[gamemode=adventure] minecraft:spruce_log
 execute as @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=UnownSpawning] run setblock -880 67 -302 minecraft:redstone_block
 
 
-#Regenerates Cut Trees
-function johto:world/cuttrees
-
-
 #Runs a Poke-Loot regeneration function if enabled, should be one-time-only by default, adds tag to regenerate daily by default
 execute if entity @e[x=-793,y=65,z=-284,dy=3,tag=RepeatedLoot] as @p run function johto:data/pokeloot
 
