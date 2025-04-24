@@ -126,44 +126,83 @@ execute as @a[x=-2960,y=64,z=1004,distance=30..150] as @e[x=-2960,y=64,z=1004,di
 execute as @a[x=-2960,y=64,z=1004,distance=30..150] as @e[x=-2960,y=64,z=1004,distance=..5,type=minecraft:armor_stand,tag=CutTree] at @s run summon minecraft:interaction ~ ~ ~ {width:1.5,height:1.5,response:1,Tags:[CutTree]}
 execute as @a[x=-2960,y=64,z=1004,distance=30..150] as @e[x=-2960,y=64,z=1004,distance=..5,type=minecraft:armor_stand,tag=CutTree] at @s run summon minecraft:interaction ~ ~1 ~ {width:1.5,height:1.5,response:1,Tags:[CutTree]}
 
+#Route 28
+execute as @a[x=-1040,y=64,z=48,distance=30..150] run fill -1042 64 48 -1039 67 48 barrier replace air
+execute as @a[x=-1040,y=64,z=48,distance=30..150] as @e[x=-1040,y=64,z=48,distance=..10,type=minecraft:armor_stand,tag=CutTree] run data merge entity @s {ArmorItems:[{},{},{},{id:"nether_gold_ore",Count:1}]}
+execute as @a[x=-1040,y=64,z=48,distance=30..150] as @e[x=-1040,y=64,z=48,distance=..10,type=minecraft:armor_stand,tag=CutTree] at @s run summon minecraft:interaction ~ ~ ~ {width:1.5,height:1.5,response:1,Tags:[CutTree]}
+execute as @a[x=-1040,y=64,z=48,distance=30..150] as @e[x=-1040,y=64,z=48,distance=..10,type=minecraft:armor_stand,tag=CutTree] at @s run summon minecraft:interaction ~ ~1 ~ {width:1.5,height:1.5,response:1,Tags:[CutTree]}
 
+#Route 30
+execute as @a[x=-192,y=64,z=-188,distance=30..150] run fill -192 64 -188 -192 66 -188 barrier replace air
+execute as @a[x=-192,y=64,z=-188,distance=30..150] as @e[x=-192,y=64,z=-188,distance=..10,type=minecraft:armor_stand,tag=CutTree] run data merge entity @s {ArmorItems:[{},{},{},{id:"nether_gold_ore",Count:1}]}
+execute as @a[x=-192,y=64,z=-188,distance=30..150] as @e[x=-192,y=64,z=-188,distance=..10,type=minecraft:armor_stand,tag=CutTree] at @s run summon minecraft:interaction ~ ~ ~ {width:1.5,height:1.5,response:1,Tags:[CutTree]}
+execute as @a[x=-192,y=64,z=-188,distance=30..150] as @e[x=-192,y=64,z=-188,distance=..10,type=minecraft:armor_stand,tag=CutTree] at @s run summon minecraft:interaction ~ ~1 ~ {width:1.5,height:1.5,response:1,Tags:[CutTree]}
 
+#Route 31 (Mr P side)
+execute as @a[x=-173,y=64,z=-122,distance=30..150] run fill -172 64 -122 -173 67 -122 barrier replace air
+execute as @a[x=-173,y=64,z=-122,distance=30..150] as @e[x=-173,y=64,z=-122,distance=..10,type=minecraft:armor_stand,tag=CutTree] run data merge entity @s {ArmorItems:[{},{},{},{id:"nether_gold_ore",Count:1}]}
+execute as @a[x=-173,y=64,z=-122,distance=30..150] as @e[x=-173,y=64,z=-122,distance=..10,type=minecraft:armor_stand,tag=CutTree] at @s run summon minecraft:interaction ~ ~ ~ {width:1.5,height:1.5,response:1,Tags:[CutTree]}
+execute as @a[x=-173,y=64,z=-122,distance=30..150] as @e[x=-173,y=64,z=-122,distance=..10,type=minecraft:armor_stand,tag=CutTree] at @s run summon minecraft:interaction ~ ~1 ~ {width:1.5,height:1.5,response:1,Tags:[CutTree]}
 
+#Route 31 (By ramp)
+execute as @a[x=-109,y=64,z=-95,distance=30..150] run fill -109 64 -97 -109 68 -92 barrier replace air
+execute as @a[x=-109,y=64,z=-95,distance=30..150] as @e[x=-109,y=64,z=-95,distance=..10,type=minecraft:armor_stand,tag=CutTree] run data merge entity @s {ArmorItems:[{},{},{},{id:"nether_gold_ore",Count:1}]}
+execute as @a[x=-109,y=64,z=-95,distance=30..150] as @e[x=-109,y=64,z=-95,distance=..10,type=minecraft:armor_stand,tag=CutTree] at @s run summon minecraft:interaction ~ ~ ~ {width:1.5,height:1.5,response:1,Tags:[CutTree]}
+execute as @a[x=-109,y=64,z=-95,distance=30..150] as @e[x=-109,y=64,z=-95,distance=..10,type=minecraft:armor_stand,tag=CutTree] at @s run summon minecraft:interaction ~ ~1 ~ {width:1.5,height:1.5,response:1,Tags:[CutTree]}
 
+#Route 32
+execute as @a[x=134,y=64,z=-264,distance=30..150] run fill 138 64 -264 127 68 -264 barrier replace air
+execute as @a[x=134,y=64,z=-264,distance=30..150] as @e[x=134,y=64,z=-264,distance=..10,type=minecraft:armor_stand,tag=CutTree] run data merge entity @s {ArmorItems:[{},{},{},{id:"nether_gold_ore",Count:1}]}
+execute as @a[x=134,y=64,z=-264,distance=30..150] as @e[x=134,y=64,z=-264,distance=..10,type=minecraft:armor_stand,tag=CutTree] at @s run summon minecraft:interaction ~ ~ ~ {width:1.5,height:1.5,response:1,Tags:[CutTree]}
+execute as @a[x=134,y=64,z=-264,distance=30..150] as @e[x=134,y=64,z=-264,distance=..10,type=minecraft:armor_stand,tag=CutTree] at @s run summon minecraft:interaction ~ ~1 ~ {width:1.5,height:1.5,response:1,Tags:[CutTree]}
 
+#Ilex Forest
+execute as @a[x=617,y=64,z=-711,distance=30..150] run fill 618 64 -711 616 68 -711 barrier replace air
+execute as @a[x=617,y=64,z=-711,distance=30..150] as @e[x=617,y=64,z=-711,distance=..10,type=minecraft:armor_stand,tag=CutTree] run data merge entity @s {ArmorItems:[{},{},{},{id:"nether_gold_ore",Count:1}]}
+execute as @a[x=617,y=64,z=-711,distance=30..150] as @e[x=617,y=64,z=-711,distance=..10,type=minecraft:armor_stand,tag=CutTree] at @s run summon minecraft:interaction ~ ~ ~ {width:1.5,height:1.5,response:1,Tags:[CutTree]}
+execute as @a[x=617,y=64,z=-711,distance=30..150] as @e[x=617,y=64,z=-711,distance=..10,type=minecraft:armor_stand,tag=CutTree] at @s run summon minecraft:interaction ~ ~1 ~ {width:1.5,height:1.5,response:1,Tags:[CutTree]}
 
+#Route 35
+execute as @a[x=432,y=64,z=-101,distance=30..150] run fill 435 64 -101 430 67 -101 barrier replace air
+execute as @a[x=432,y=64,z=-101,distance=30..150] as @e[x=432,y=64,z=-101,distance=..10,type=minecraft:armor_stand,tag=CutTree] run data merge entity @s {ArmorItems:[{},{},{},{id:"nether_gold_ore",Count:1}]}
+execute as @a[x=432,y=64,z=-101,distance=30..150] as @e[x=432,y=64,z=-101,distance=..10,type=minecraft:armor_stand,tag=CutTree] at @s run summon minecraft:interaction ~ ~ ~ {width:1.5,height:1.5,response:1,Tags:[CutTree]}
+execute as @a[x=432,y=64,z=-101,distance=30..150] as @e[x=432,y=64,z=-101,distance=..10,type=minecraft:armor_stand,tag=CutTree] at @s run summon minecraft:interaction ~ ~1 ~ {width:1.5,height:1.5,response:1,Tags:[CutTree]}
 
+#Route 42
+execute as @a[x=102,y=64,z=164,distance=30..150] run fill 101 64 164 105 67 164 barrier replace air
+execute as @a[x=102,y=64,z=164,distance=30..150] as @e[x=102,y=64,z=164,distance=..10,type=minecraft:armor_stand,tag=CutTree] run data merge entity @s {ArmorItems:[{},{},{},{id:"nether_gold_ore",Count:1}]}
+execute as @a[x=102,y=64,z=164,distance=30..150] as @e[x=102,y=64,z=164,distance=..10,type=minecraft:armor_stand,tag=CutTree] at @s run summon minecraft:interaction ~ ~ ~ {width:1.5,height:1.5,response:1,Tags:[CutTree]}
+execute as @a[x=102,y=64,z=164,distance=30..150] as @e[x=102,y=64,z=164,distance=..10,type=minecraft:armor_stand,tag=CutTree] at @s run summon minecraft:interaction ~ ~1 ~ {width:1.5,height:1.5,response:1,Tags:[CutTree]}
 
+#Route 43
+execute as @a[x=-104,y=64,z=385,distance=30..150] run fill -104 64 385 -104 67 382 barrier replace air
+execute as @a[x=-104,y=64,z=385,distance=30..150] as @e[x=-104,y=64,z=385,distance=..10,type=minecraft:armor_stand,tag=CutTree] run data merge entity @s {ArmorItems:[{},{},{},{id:"nether_gold_ore",Count:1}]}
+execute as @a[x=-104,y=64,z=385,distance=30..150] as @e[x=-104,y=64,z=385,distance=..10,type=minecraft:armor_stand,tag=CutTree] at @s run summon minecraft:interaction ~ ~ ~ {width:1.5,height:1.5,response:1,Tags:[CutTree]}
+execute as @a[x=-104,y=64,z=385,distance=30..150] as @e[x=-104,y=64,z=385,distance=..10,type=minecraft:armor_stand,tag=CutTree] at @s run summon minecraft:interaction ~ ~1 ~ {width:1.5,height:1.5,response:1,Tags:[CutTree]}
 
+#Lake of Rage (first bit of maze)
+execute as @a[x=-72,y=64,z=612,distance=30..150] run fill -71 63 612 -75 67 612 barrier replace air
+execute as @a[x=-72,y=64,z=612,distance=30..150] as @e[x=-72,y=64,z=612,distance=..10,type=minecraft:armor_stand,tag=CutTree] run data merge entity @s {ArmorItems:[{},{},{},{id:"nether_gold_ore",Count:1}]}
+execute as @a[x=-72,y=64,z=612,distance=30..150] as @e[x=-72,y=64,z=612,distance=..10,type=minecraft:armor_stand,tag=CutTree] at @s run summon minecraft:interaction ~ ~ ~ {width:1.5,height:1.5,response:1,Tags:[CutTree]}
+execute as @a[x=-72,y=64,z=612,distance=30..150] as @e[x=-72,y=64,z=612,distance=..10,type=minecraft:armor_stand,tag=CutTree] at @s run summon minecraft:interaction ~ ~1 ~ {width:1.5,height:1.5,response:1,Tags:[CutTree]}
 
+#Lake of Rage (eastern side)
+execute as @a[x=-60,y=64,z=665,distance=30..150] run fill -59 64 665 -63 67 665 barrier replace air
+execute as @a[x=-60,y=64,z=665,distance=30..150] as @e[x=-60,y=64,z=665,distance=..10,type=minecraft:armor_stand,tag=CutTree] run data merge entity @s {ArmorItems:[{},{},{},{id:"nether_gold_ore",Count:1}]}
+execute as @a[x=-60,y=64,z=665,distance=30..150] as @e[x=-60,y=64,z=665,distance=..10,type=minecraft:armor_stand,tag=CutTree] at @s run summon minecraft:interaction ~ ~ ~ {width:1.5,height:1.5,response:1,Tags:[CutTree]}
+execute as @a[x=-60,y=64,z=665,distance=30..150] as @e[x=-60,y=64,z=665,distance=..10,type=minecraft:armor_stand,tag=CutTree] at @s run summon minecraft:interaction ~ ~1 ~ {width:1.5,height:1.5,response:1,Tags:[CutTree]}
 
+#Lake of Rage
+execute as @a[x=-98,y=64,z=677,distance=30..150] run fill -101 64 677 -96 67 677 barrier replace air
+execute as @a[x=-98,y=64,z=677,distance=30..150] as @e[x=-98,y=64,z=677,distance=..10,type=minecraft:armor_stand,tag=CutTree] run data merge entity @s {ArmorItems:[{},{},{},{id:"nether_gold_ore",Count:1}]}
+execute as @a[x=-98,y=64,z=677,distance=30..150] as @e[x=-98,y=64,z=677,distance=..10,type=minecraft:armor_stand,tag=CutTree] at @s run summon minecraft:interaction ~ ~ ~ {width:1.5,height:1.5,response:1,Tags:[CutTree]}
+execute as @a[x=-98,y=64,z=677,distance=30..150] as @e[x=-98,y=64,z=677,distance=..10,type=minecraft:armor_stand,tag=CutTree] at @s run summon minecraft:interaction ~ ~1 ~ {width:1.5,height:1.5,response:1,Tags:[CutTree]}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Lake of Rage
+execute as @a[x=-162,y=64,z=719,distance=30..150] run fill -161 64 719 -165 67 719 barrier replace air
+execute as @a[x=-162,y=64,z=719,distance=30..150] as @e[x=-162,y=64,z=719,distance=..10,type=minecraft:armor_stand,tag=CutTree] run data merge entity @s {ArmorItems:[{},{},{},{id:"nether_gold_ore",Count:1}]}
+execute as @a[x=-162,y=64,z=719,distance=30..150] as @e[x=-162,y=64,z=719,distance=..10,type=minecraft:armor_stand,tag=CutTree] at @s run summon minecraft:interaction ~ ~ ~ {width:1.5,height:1.5,response:1,Tags:[CutTree]}
+execute as @a[x=-162,y=64,z=719,distance=30..150] as @e[x=-162,y=64,z=719,distance=..10,type=minecraft:armor_stand,tag=CutTree] at @s run summon minecraft:interaction ~ ~1 ~ {width:1.5,height:1.5,response:1,Tags:[CutTree]}
 
 
 
