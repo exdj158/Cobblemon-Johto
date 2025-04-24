@@ -55,6 +55,11 @@ execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custo
 execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"HM05: Flash"}],"text":""}'}}}] run scoreboard players set @s click 0
 
 
+#HM Surf giving faster swimming and water breathing
+execute as @a[tag=Surf] at @s if block ~ ~ ~ minecraft:water run effect give @s minecraft:water_breathing 10 255 true
+execute as @a[tag=Surf] at @s if block ~ ~ ~ minecraft:water run effect give @s minecraft:dolphins_grace 10 2 true
+
+
 #Town Map
 team leave @a[team=black]
 execute as @a[nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Town Map"}],"text":""}'}}}] run function johto:world/townmap
@@ -71,6 +76,9 @@ execute as @a[scores={relog=1..}] run function johto:triggers/relog
 #Escape Ropes
 execute as @a[scores={EscapeRopeUse=1..}] run function johto:world/escaperope
 
+#Running Shoes Effects
+execute as @a[nbt={Inventory:[{Slot:100b,id:"minecraft:golden_boots"}]}] run effect give @s minecraft:speed 30 2 true
+execute as @a unless entity @s[nbt={Inventory:[{Slot:100b,id:"minecraft:golden_boots"}]}] run effect clear @s minecraft:speed
 
 #-------------------------------------------------------------------------------------------------------------------------
 #Music-based commands
