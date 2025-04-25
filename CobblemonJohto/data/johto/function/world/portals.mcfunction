@@ -53,18 +53,18 @@ tp @a[x=524,y=31,z=-249,dx=2,dy=2] 555 64 -346
 #Dragon's Den
 
 #Pre-badge
-#tellraw @a[x=-654,y=64,z=331,dx=3,dy=3,tag=!Dialogue77] {"text":"Only those who have beaten Clair may enter!","italic":true,"color":"gray"}
-#tp @a[x=-654,y=64,z=331,dx=3,dy=3,tag=!Dialogue77] ~ ~ ~-10
+tellraw @a[x=-654,y=64,z=331,dx=3,dy=3,tag=!Clair] {"text":"Only those who have beaten Clair may enter!","italic":true,"color":"gray"}
+tp @a[x=-654,y=64,z=331,dx=3,dy=3,tag=!Clair] ~ ~ ~-10
 
-#playsound door ambient @a[scores={TalkTime=0},x=-654,y=64,z=331,dx=3,dy=3,tag=Dialogue77] ~ ~ ~ 100 1 1
-#tp @a[scores={TalkTime=0},x=-654,y=64,z=331,dx=3,dy=3,tag=Dialogue77] -665 74 629 ~180 ~
+playsound door ambient @a[x=-654,y=64,z=331,dx=3,dy=3,tag=Clair] ~ ~ ~ 100 1 1
+tp @a[x=-654,y=64,z=331,dx=3,dy=3,tag=Clair] -665 74 629 ~180 ~
 
 #Beaten Clair
-playsound door ambient @a[scores={TalkTime=0},x=-654,y=64,z=331,dx=3,dy=3] ~ ~ ~ 100 1 1
-tp @a[scores={TalkTime=0},x=-654,y=64,z=331,dx=3,dy=3] -665 74 629 ~180 ~
+playsound door ambient @a[x=-654,y=64,z=331,dx=3,dy=3] ~ ~ ~ 100 1 1
+tp @a[x=-654,y=64,z=331,dx=3,dy=3] -665 74 629 ~180 ~
 
-playsound door ambient @a[scores={TalkTime=0},x=-667,y=74,z=631,dx=3,dy=3] ~ ~ ~ 100 1 1
-tp @a[scores={TalkTime=0},x=-667,y=74,z=631,dx=3,dy=3] -652 64 329 ~180 ~
+playsound door ambient @a[x=-667,y=74,z=631,dx=3,dy=3] ~ ~ ~ 100 1 1
+tp @a[x=-667,y=74,z=631,dx=3,dy=3] -652 64 329 ~180 ~
 
 
 
@@ -310,13 +310,13 @@ tp @a[x=-793,y=65,z=641,dx=9,dy=6] -126 64 160
 #--------------------------------------------------
 #Blackthorn City
 
-#tellraw @a[x=-646,y=64,z=274,dx=4,dy=3,tag=!Dialogue72,scores={Cooldown=0}] {"text":"<Lass> I am sorry. Clair, our Gym Leader, entered the Dragon's Den behind the Gym. I have no idea when our Leader will return."}
-#scoreboard players add @a[x=-646,y=64,z=274,dx=4,dy=3,tag=!Dialogue72] Cooldown 25
-#tp @a[x=-646,y=64,z=274,dx=4,dy=3,tag=!Dialogue72] ~ ~ ~-5
+tellraw @a[x=-646,y=64,z=274,dx=4,dy=3,tag=!Dialogue72,scores={Cooldown=0}] {"text":"<Lass> I am sorry. Clair, our Gym Leader, entered the Dragon's Den behind the Gym. I have no idea when our Leader will return."}
+scoreboard players add @a[x=-646,y=64,z=274,dx=4,dy=3,tag=!Dialogue72] Cooldown 25
+tp @a[x=-646,y=64,z=274,dx=4,dy=3,tag=!Dialogue72] ~ ~ ~-5
 
-#playsound door ambient @a[x=-646,y=64,z=274,dx=4,dy=3,tag=Dialogue72] ~ ~ ~ 100 1 1
-#tag @a[x=-646,y=64,z=274,dx=4,dy=3,tag=Dialogue72] remove GymVictory
-#tp @a[x=-646,y=64,z=274,dx=4,dy=3,tag=Dialogue72] -854 65 642
+playsound door ambient @a[x=-646,y=64,z=274,dx=4,dy=3,tag=Dialogue72] ~ ~ ~ 100 1 1
+tag @a[x=-646,y=64,z=274,dx=4,dy=3,tag=Dialogue72] remove GymVictory
+tp @a[x=-646,y=64,z=274,dx=4,dy=3,tag=Dialogue72] -854 65 642
 
 playsound door ambient @a[x=-646,y=64,z=274,dx=4,dy=3] ~ ~ ~ 100 1 1
 tag @a[x=-646,y=64,z=274,dx=4,dy=3] remove GymVictory

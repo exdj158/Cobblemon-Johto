@@ -36,7 +36,23 @@
         {
           "id": "page2",
           "speaker": "npc",
-          "lines": ["People like you will never in a million years understand our brilliance! It's too bad... I've really come to respect your strength."],
+          "lines": ["People like you will never in a million years understand our brilliance!"],
+                "input": {
+                    "type": "option",
+                    "vertical": false,
+                    "options": [
+                        {
+                            "text": "Next",
+                            "value": "next",
+                            "action": "q.dialogue.set_page('page3');"
+                        }
+                    ]
+                }
+            },
+        {
+          "id": "page3",
+          "speaker": "npc",
+          "lines": ["It's too bad... I've really come to respect your strength."],
                 "input": {
                     "type": "option",
                     "vertical": false,

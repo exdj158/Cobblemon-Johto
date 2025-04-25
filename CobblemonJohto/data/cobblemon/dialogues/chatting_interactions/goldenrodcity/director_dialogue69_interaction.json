@@ -1,37 +1,25 @@
 {
     "initializationAction": [
-        "c.npc.set_chatting();",
-        "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 1');",
-        "q.run_command('execute as ' + q.player.username + ' run function johto:tools/forceclick');",
-        "q.run_command('tellraw ' + q.player.username + ' {\"text\":\"You got $3,040 for winning!\",\"italic\":true,\"color\":\"gray\"}');",
-        "q.run_command('scoreboard players add ' + q.player.username + ' Money 3040');"
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
     ],
+    "escapeAction": [],
     "speakers": {
-        "archer": {
-            "name": "Rocket Admin Archer",
-            "face": {
-                "type": "artificial",
-                "modelType": "npc",
-                "identifier": "cobblemon:rocketgrunt",
-                "isLeftSide": true
-            }
-        },
-        "director": {
+        "npc": {
             "name": "Radio Tower Director",
             "face": {
                 "type": "artificial",
                 "modelType": "npc",
                 "identifier": "cobblemon:gentleman",
-                "isLeftSide": false
+                "isLeftSide": true
             }
         }
     },
     "pages": [
         {
             "id": "greeting",
-            "speaker": "archer",
+            "speaker": "npc",
             "lines": [
-                "How could this be...? Our dreams have come to naught."
+                "Who? What? You came to rescue me?"
             ],
             "input": {
                 "type": "option",
@@ -47,17 +35,17 @@
         },
         {
             "id": "page2",
-            "speaker": "archer",
+            "speaker": "npc",
             "lines": [
-                "I was not up to the task after all."
+                "Thank you!"
             ],
             "input": {
                 "type": "option",
                 "vertical": false,
                 "options": [
                     {
-                        "text": "Close",
-                        "value": "close",
+                        "text": "Next",
+                        "value": "next",
                         "action": "q.dialogue.set_page('page3');"
                     }
                 ]
@@ -65,9 +53,9 @@
         },
         {
             "id": "page3",
-            "speaker": "archer",
+            "speaker": "npc",
             "lines": [
-                "Like Giovanni has done before me, I will disband Team Rocket here today."
+                "The Radio Tower! What's happening there?"
             ],
             "input": {
                 "type": "option",
@@ -83,9 +71,9 @@
         },
         {
             "id": "page4",
-            "speaker": "archer",
+            "speaker": "npc",
             "lines": [
-                "Farewell..."
+                "Taken over by Team Rocket?"
             ],
             "input": {
                 "type": "option",
@@ -94,24 +82,16 @@
                     {
                         "text": "Next",
                         "value": "next",
-                        "action": [
-                            "q.dialogue.set_page('page5');",
-                            "q.run_command('execute as ' + q.player.username + ' run effect give @s minecraft:blindness 3 1 true');",
-                            "q.run_command('execute as ' + q.player.username + ' at @s run tp @s ~ ~ ~-26');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s click 1');"
-                        ]
+                        "action": "q.dialogue.set_page('page5');"
                     }
                 ]
             }
         },
         {
             "id": "page5",
-            "speaker": "director",
+            "speaker": "npc",
             "lines": [
-                {
-                    "type": "expression",
-                    "expression": "'' + q.player.username + ', thank you!';"
-                }
+                "Here. Take this Card Key."
             ],
             "input": {
                 "type": "option",
@@ -127,9 +107,9 @@
         },
         {
             "id": "page6",
-            "speaker": "director",
+            "speaker": "npc",
             "lines": [
-                "Your courageous actions have saved Pokémon nationwide."
+                "Use that to open the shutters on 3F"
             ],
             "input": {
                 "type": "option",
@@ -145,9 +125,9 @@
         },
         {
             "id": "page7",
-            "speaker": "director",
+            "speaker": "npc",
             "lines": [
-                "I know it's not much, but please take this."
+                "I'm beging you to help."
             ],
             "input": {
                 "type": "option",
@@ -163,9 +143,9 @@
         },
         {
             "id": "page8",
-            "speaker": "director",
+            "speaker": "npc",
             "lines": [
-                "There used to be a tower right here in Goldenrod City."
+                "There's no telling what they'll do if they control the transmitter."
             ],
             "input": {
                 "type": "option",
@@ -181,9 +161,9 @@
         },
         {
             "id": "page9",
-            "speaker": "director",
+            "speaker": "npc",
             "lines": [
-                "But it was old and creaky. So we replaced it with our Radio Tower."
+                "They may even be able to control Pokémon using a special signal!"
             ],
             "input": {
                 "type": "option",
@@ -199,9 +179,9 @@
         },
         {
             "id": "page10",
-            "speaker": "director",
+            "speaker": "npc",
             "lines": [
-                "We dug up that feather during construction."
+                "You're the only one I can call on."
             ],
             "input": {
                 "type": "option",
@@ -217,45 +197,9 @@
         },
         {
             "id": "page11",
-            "speaker": "director",
+            "speaker": "npc",
             "lines": [
-                "I heard that all sorts of Pokémon lived in Goldenrod in the past."
-            ],
-            "input": {
-                "type": "option",
-                "vertical": false,
-                "options": [
-                    {
-                        "text": "Next",
-                        "value": "next",
-                        "action": "q.dialogue.set_page('page12');"
-                    }
-                ]
-            }
-        },
-        {
-            "id": "page12",
-            "speaker": "director",
-            "lines": [
-                "Perhaps... That feather has some connection to the Tin Tower in Ecruteak City..."
-            ],
-            "input": {
-                "type": "option",
-                "vertical": false,
-                "options": [
-                    {
-                        "text": "Next",
-                        "value": "next",
-                        "action": "q.dialogue.set_page('page13');"
-                    }
-                ]
-            }
-        },
-        {
-            "id": "page13",
-            "speaker": "director",
-            "lines": [
-                "OK, I better go to my Office."
+                "Please save the Radio Tower... And all the Pokémon nationwide!"
             ],
             "input": {
                 "type": "option",
@@ -265,15 +209,14 @@
                         "text": "Close",
                         "value": "close",
                         "action": [
-                            "q.dialogue.close();",
-                            "q.run_command('execute as ' + q.player.username + ' run tag @s add Dialogue72');",
-                            "q.run_command('execute as ' + q.player.username + ' run particle cloud 503 55 -271 1 1 1 1 100');",
-                            "q.run_command('execute as ' + q.player.username + ' run advancement grant @s only johto:rocket4');"
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue69');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');",
+                            "q.run_command('execute as ' + q.player.username + ' run function johto:triggers/itemlootgive');",
+                            "q.dialogue.close();"
                         ]
                     }
                 ]
             }
         }
-    ],
-    "escapeAction": []
+    ]
 }

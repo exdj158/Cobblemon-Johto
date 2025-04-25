@@ -2293,6 +2293,13 @@ execute as @s[x=-2562,y=66,z=889,distance=..4,tag=!ItemLoot444] run playsound mi
 execute as @s[x=-2562,y=66,z=889,distance=..4,tag=!ItemLoot444] run tag @s add ItemLoot444
 
 
+execute as @s[x=426,y=38,z=-304,distance=..4,tag=ItemLoot445] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
+execute as @s[x=426,y=38,z=-304,distance=..4,tag=!ItemLoot445] run tag @s add CardKey
+execute as @s[x=426,y=38,z=-304,distance=..4,tag=!ItemLoot445] run tellraw @s {"text":"You received a Card Key!","italic":true,"color":"gray"}
+execute as @s[x=426,y=38,z=-304,distance=..4,tag=!ItemLoot445] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=426,y=38,z=-304,distance=..4,tag=!ItemLoot445] run tag @s add ItemLoot445
+
+
 
 
 #If over 400, add more tags to startercommands to clear on spawn
