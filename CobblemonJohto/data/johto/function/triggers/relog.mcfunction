@@ -17,6 +17,11 @@ tag @s remove PokemonMusicTalk
 #Resets Town Display title cooldowns
 scoreboard players set @s TownDisplay 0
 
+#Resets click based advancements that should be repeatable
+advancement revoke @s only johto:click/npcs
+advancement revoke @s only johto:click/itemclick
+advancement revoke @s only johto:click/cuttrees
+advancement revoke @s only johto:click/rocksmashuse
 
 
 
