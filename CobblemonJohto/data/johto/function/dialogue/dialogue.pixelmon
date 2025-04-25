@@ -977,19 +977,6 @@ tellraw @s[scores={DialogueTrigger=154,TalkTime=93}] {"text":"You can now find w
 
 tag @s[scores={DialogueTrigger=154,TalkTime=93..}] add Dialogue154
 
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Rock Smash TM post-clearing Sudowoodo
-#execute as @s[x=247,y=63,z=-20,distance=..7,tag=Dialogue30] run scoreboard players set @s[tag=!Dialogue155] DialogueTrigger 155
-
-tellraw @s[scores={DialogueTrigger=155,TalkTime=1}] {"text":"<Black Belt> Are you the one who took care of the odd tree in the way?"}
-tellraw @s[scores={DialogueTrigger=155,TalkTime=10}] {"text":"<Black Belt> You're quite the Trainer! Take this!"}
-execute as @s[scores={DialogueTrigger=155,TalkTime=14}] run give @s pixelmon:tm_gen2{tm:8}
-execute as @s[scores={DialogueTrigger=155,TalkTime=14}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
-tellraw @s[scores={DialogueTrigger=155,TalkTime=18}] {"text":"<Black Belt> It contains make-'em-faint Rock Smash. Use it well!"}
-
-tag @s[scores={DialogueTrigger=155,TalkTime=18..}] add Dialogue155
-
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Hoenn Sounds
 #DialogueTrigger 156

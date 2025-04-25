@@ -1,6 +1,12 @@
 #Function that manages with specific NPCs say when you click on boxes surroung them.
 #Used to have the same NPC say different lines depending on the player's own tags.
 
+#Rock Smash guy before and after clearing Sudowoodo
+execute as @s[x=247,y=64,z=-20,distance=..6,tag=!Dialogue30] run opendialogue route36_blackbelt_interaction @s
+execute as @s[x=247,y=64,z=-20,distance=..6,tag=Dialogue30,tag=!RockSmash] run opendialogue route36_blackbelt_interaction2 @s
+execute as @s[x=247,y=64,z=-20,distance=..6,tag=Dialogue30,tag=RockSmash] run opendialogue route36_blackbelt_interaction @s
+
+
 #Copycat
 #Needs to have fixed the Power Plant before starting the doll quest
 execute as @s[x=-2722,y=69,z=372,distance=..6,tag=!Dialogue133] run opendialogue copycat_generic_pre @s
