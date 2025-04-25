@@ -1,0 +1,2 @@
+execute as @e[distance=..3,type=cobblemon:npc] at @s run summon minecraft:interaction ~ ~ ~ {width:1,height:1,response:1,Tags:[NPCs]}
+execute as @e[distance=..3,type=cobblemon:npc] at @s run summon minecraft:interaction ~ ~1 ~ {width:1,height:1,response:1,Tags:[NPCs]}
