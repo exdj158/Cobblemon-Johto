@@ -238,13 +238,15 @@ execute if block 502 43 -244 minecraft:iron_bars if entity @a[x=498,y=42,z=-246,
 execute if block 502 43 -244 minecraft:iron_bars if entity @a[x=498,y=42,z=-246,dx=9,dy=5,dz=10,tag=Dialogue69] run scoreboard players set @a[x=498,y=42,z=-246,dx=9,dy=5,dz=10,tag=Dialogue69,scores={Cooldown=0}] Cooldown 10
 execute if block 502 43 -244 minecraft:iron_bars if entity @a[x=498,y=42,z=-246,dx=9,dy=5,dz=10,tag=Dialogue69] run fill 502 43 -244 502 46 -239 minecraft:air
 
+execute as @s[x=-744,y=69,z=507,dx=162,dy=70,dz=147,tag=!Dialogue79,nbt={Inventory:[{id:"cobblemon:dragon_fang"}]}] run opendialogue dragonsden_clair_dialogue79 @s
 
+#Route 27 first steps into Kanto
+execute as @s[x=-878,y=63,z=-533,dx=14,dy=5,dz=7,tag=!Dialogue83] run opendialogue route27_hiker_interaction @s
 
-
-
-
-
-
+#Elm's Phone Calls
+execute as @s[x=-654,y=63,z=325,distance=..20,tag=!Dialogue80,tag=Clair] run opendialogue elm_masterball_call @s
+execute as @s[x=88,y=64,z=-67,distance=..20,tag=!Dialogue82,tag=Falkner] run opendialogue elm_togepi_call @s
+execute as @s[x=-723,y=68,z=-492,distance=..20,scores={IP=1..},tag=!Dialogue100] run opendialogue elm_ssticket_call @s
 
 #Elm granting Master Ball
 execute as @s[x=-683,y=63,z=-478,distance=..10,tag=Clair,tag=!Dialogue81] run opendialogue professorelm_dialogue81 @s
@@ -254,9 +256,6 @@ execute as @s[x=-1449,y=51,z=528,distance=..25,tag=!Dialogue85,scores={StarterPi
 execute as @s[x=-1449,y=51,z=528,distance=..25,tag=!Dialogue85,scores={StarterPick=1}] unless entity @e[x=-1449,y=51,z=528,dy=3,type=cobblemon:npc] run npcspawnat -1449 51 528 victoryroad_silver1 1
 execute as @s[x=-1449,y=51,z=528,distance=..25,tag=!Dialogue85,scores={StarterPick=2}] unless entity @e[x=-1449,y=51,z=528,dy=3,type=cobblemon:npc] run npcspawnat -1449 51 528 victoryroad_silver2 1
 execute as @s[x=-1449,y=51,z=528,distance=..25,tag=!Dialogue85,scores={StarterPick=3}] unless entity @e[x=-1449,y=51,z=528,dy=3,type=cobblemon:npc] run npcspawnat -1449 51 528 victoryroad_silver3 1
-
-
-
 
 
 #Elm granting SS Ticket

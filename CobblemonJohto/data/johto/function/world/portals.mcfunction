@@ -53,11 +53,11 @@ tp @a[x=524,y=31,z=-249,dx=2,dy=2] 555 64 -346
 #Dragon's Den
 
 #Pre-badge
-tellraw @a[x=-654,y=64,z=331,dx=3,dy=3,tag=!Clair] {"text":"Only those who have beaten Clair may enter!","italic":true,"color":"gray"}
-tp @a[x=-654,y=64,z=331,dx=3,dy=3,tag=!Clair] ~ ~ ~-10
+tellraw @a[x=-654,y=64,z=331,dx=3,dy=3,tag=!Dialogue78] {"text":"Only those who have beaten Clair may enter!","italic":true,"color":"gray"}
+tp @a[x=-654,y=64,z=331,dx=3,dy=3,tag=!Dialogue78] ~ ~ ~-10
 
-playsound door ambient @a[x=-654,y=64,z=331,dx=3,dy=3,tag=Clair] ~ ~ ~ 100 1 1
-tp @a[x=-654,y=64,z=331,dx=3,dy=3,tag=Clair] -665 74 629 ~180 ~
+playsound door ambient @a[x=-654,y=64,z=331,dx=3,dy=3,tag=Dialogue78] ~ ~ ~ 100 1 1
+tp @a[x=-654,y=64,z=331,dx=3,dy=3,tag=Dialogue78] -665 74 629 ~180 ~
 
 #Beaten Clair
 playsound door ambient @a[x=-654,y=64,z=331,dx=3,dy=3] ~ ~ ~ 100 1 1

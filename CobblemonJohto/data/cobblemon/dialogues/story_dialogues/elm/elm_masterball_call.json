@@ -1,24 +1,35 @@
 {
     "initializationAction": [
-        "q.run_command('tag ' + q.player.username + ' add Dialogue83');"
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');",
+        "q.run_command('tag ' + q.player.username + ' add Dialogue80');",
+        "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:block.note_block.bell ambient @s ~ ~ ~ 10 1 1');"
+    ],
+    "escapeAction": [              
+        ],
+
+    "names": [
+        "Professor Elm"
     ],
     "speakers": {
-        "npc": {
-          "name": "    ",
-          "face": {
-            "type": "artificial",
-            "modelType": "npc",
-            "identifier": "cobblemon:hiker",
-            "isLeftSide": true
-          }
+        "elm": {
+            "name": "Professor Elm",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:professorelm",
+                "isLeftSide": true
+            }
         }
-      },
-      "pages": [
+    },
+    "pages": [
         {
             "id": "greeting",
-            "speaker": "npc",
+            "speaker": "elm",
             "lines": [
-                "Do you know what you just did?"
+                {
+                    "type": "expression",
+                    "expression": "'Hello, ' + q.player.username + '?';"
+                }
             ],
             "input": {
                 "type": "option",
@@ -34,9 +45,9 @@
         },
         {
             "id": "page2",
-            "speaker": "npc",
+            "speaker": "elm",
             "lines": [
-                "You've taken your first step into Kanto."
+                "I have something here for you. Could you swing by my Lab?"
             ],
             "input": {
                 "type": "option",
@@ -49,12 +60,12 @@
                     }
                 ]
             }
-        },
+        }, 
         {
             "id": "page3",
-            "speaker": "npc",
+            "speaker": "elm",
             "lines": [
-                "Check your town map and see."
+                "See you later!"
             ],
             "input": {
                 "type": "option",
@@ -64,11 +75,13 @@
                         "text": "Close",
                         "value": "close",
                         "action": [
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue80');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');",
                             "q.dialogue.close();"
-                            ]
+                        ]
                     }
                 ]
             }
         }
-        ]
-    }
+    ]
+}
