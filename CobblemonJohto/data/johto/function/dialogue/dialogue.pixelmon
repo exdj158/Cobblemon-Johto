@@ -655,63 +655,6 @@ execute as @s[scores={DialogueTrigger=132,TalkTime=4}] run playsound pixelmon:pi
 tag @s[scores={DialogueTrigger=132,TalkTime=4..}] add Dialogue132
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Copycat First Talk
-#execute as @s[x=-2725,y=69,z=368,dx=10,dy=5,dz=9,score_TalkTime=0,tag=Dialogue221] run scoreboard players set @a[tag=!Dialogue133] DialogueTrigger 133
-
-execute as @s[scores={DialogueTrigger=133,TalkTime=1}] run data merge entity @e[limit=1,x=-2722,y=69,z=372,distance=..1,nbt=!{cobblemon:npc_chatting}] {CustomSteveTexture:"red.png"}
-tellraw @s[scores={DialogueTrigger=133,TalkTime=3}] ["",{"text":"<"},{"selector":"@s"},{"text":"> Hi! I heard you lost your cherished Poké Doll."}]
-tellraw @s[scores={DialogueTrigger=133,TalkTime=10}] ["",{"text":"<"},{"selector":"@s"},{"text":"> If I find it, you'll give me a rail Pass?"}]
-tellraw @s[scores={DialogueTrigger=133,TalkTime=18}] ["",{"text":"<"},{"selector":"@s"},{"text":"> I'll go find it for you. You think you lost it when you went to Vermilion City?"}]
-
-#Rerolls Copycat skin
-execute as @s[scores={DialogueTrigger=133,TalkTime=25}] run setblock -860 64 -335 minecraft:redstone_block
-
-tellraw @s[scores={DialogueTrigger=133,TalkTime=29}] {"text":"<Copycat> Pardon? I shouldn't decide what you should do?"}
-tellraw @s[scores={DialogueTrigger=133,TalkTime=37}] {"text":"<Copycat> But I'm really worried... What if someone finds it?"}
-
-tag @s[scores={DialogueTrigger=133,TalkTime=37..}] add Dialogue133
-
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Vermilion City Pokémon Fan after speaking with Copycat
-#execute as @s[x=-2696,y=64,z=-37,distance=..5,score_TalkTime=0,tag=Dialogue133] run scoreboard players set @s[tag=!Dialogue134] DialogueTrigger 134
-
-#tps in Clefary Doll
-#execute as @s[x=-2697,y=65,z=-39,distance=..20,score_TalkTime=0,tag=!Dialogue133] run /tp @e[x=-738,y=75,z=-242,distance=..1,nbt=!{cobblemon:statue}] -2697 65 -39
-
-tellraw @s[scores={DialogueTrigger=134,TalkTime=1}] {"text":"<Poke Fan> I love Clefairy, but I could never catch one."}
-tellraw @s[scores={DialogueTrigger=134,TalkTime=9}] {"text":"<Poke Fan> So I'm making due with a Poke Doll that I found."}
-tellraw @s[scores={DialogueTrigger=134,TalkTime=18}] {"text":"<Poke Fan> Oh, I see now. The girl who lost this Poke Doll is sad..."}
-tellraw @s[scores={DialogueTrigger=134,TalkTime=27}] {"text":"<Poke Fan> OK. Could you take this Poke Doll back to that poor little girl?"}
-execute as @s[scores={DialogueTrigger=134,TalkTime=31}] run data merge entity @e[x=-2697,y=65,z=-39,distance=..2,nbt=!{cobblemon:statue},limit=1] {ndex:1999}
-execute as @s[scores={DialogueTrigger=134,TalkTime=31}] run give @s minecraft:music_disc_13{display:{Name:'[{"text":"Clefairy Doll","italic":false}]',Lore:['[{"text":"The Poké Doll lost","italic":false}]','[{"text":"by the Copycat.","italic":false}]']},HideFlags:36} 1
-execute as @s[scores={DialogueTrigger=134,TalkTime=31}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
-tellraw @s[scores={DialogueTrigger=134,TalkTime=36}] {"text":"<Poke Fan> I'll befriend a real Clefairy on my own one day. No worries!"}
-
-tag @s[scores={DialogueTrigger=134,TalkTime=36..}] add Dialogue134
-
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Saffron City Bringing Copycat her doll
-#execute as @s[x=-2725,y=69,z=368,dx=10,dy=5,dz=9,score_TalkTime=0,tag=Dialogue134] run /scoreboard players set @s[tag=!Dialogue135] DialogueTrigger 135 {Inventory:[{id:"minecraft:music_disc_13"}]}
-
-#tps Clefary Doll out in if player hasn't completed this dialogue
-#execute as @p[x=-2721,y=68,z=374,distance=..20,score_TalkTime=0,tag=!Dialogue135] run /tp @e[x=-2721,y=70,z=374,distance=..1,nbt=!{cobblemon:statue}] -736 75 -242
-
-execute as @s[scores={DialogueTrigger=135,TalkTime=1}] run clear @s minecraft:music_disc_13
-tellraw @s[scores={DialogueTrigger=135,TalkTime=1}] {"text":"<Copycat> Yay! That's my Clefairy Poké Doll!"}
-tellraw @s[scores={DialogueTrigger=135,TalkTime=8}] {"text":"<Copycat> See the tear where the right arm is sewn on? That's proof!"}
-execute as @s[scores={DialogueTrigger=135,TalkTime=13}] run tp @e[x=-736,y=75,z=-242,distance=..1,nbt=!{cobblemon:statue}] -2721 70 374
-tellraw @s[scores={DialogueTrigger=135,TalkTime=18}] {"text":"<Copycat> OK. Here's the Magnet Train Pass like I promised!"}
-execute as @s[scores={DialogueTrigger=135,TalkTime=22}] run give @s minecraft:music_disc_blocks{display:{Name:'[{"text":"Magnet Train Pass","italic":false}]',Lore:['[{"text":"A ticket required for riding the","italic":false}]','[{"text":"Magnet Train. It allows you to","italic":false}]','[{"text":"ride whenever and however much","italic":false}]','[{"text":"you\'d like","italic":false}]']},HideFlags:36} 1
-execute as @s[scores={DialogueTrigger=135,TalkTime=22}] run tag @s add MagnetPass
-execute as @s[scores={DialogueTrigger=135,TalkTime=22}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
-tellraw @s[scores={DialogueTrigger=135,TalkTime=27}] {"text":"<Copycat> That's the Pass for the Magnet Train."}
-tellraw @s[scores={DialogueTrigger=135,TalkTime=34}] {"text":"<Copycat> The rail company man gave me that when they tore down our old house for the Station."}
-
-tag @s[scores={DialogueTrigger=135,TalkTime=34..}] add Dialogue135
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Vermilion Steven Latios/Latias Intro
 #execute as @s[x=-2710,y=64,z=-55,distance=..7,score_TalkTime=0,tag=Dialogue134] run scoreboard players set @s[tag=!Dialogue136] DialogueTrigger 136
 
