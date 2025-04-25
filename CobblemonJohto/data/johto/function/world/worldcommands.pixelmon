@@ -349,89 +349,6 @@ execute if entity @a[x=-178,y=0,z=152,dx=121,dy=63,dz=73] run function johto:wor
 execute as @e[x=-801,y=64,z=-287,dy=3,scores={DialogueTrigger=1..}] run function johto:dialogue/worlddialogues
 
 
-#Dialogue 1 - Oak Welcome
-scoreboard players set @a[x=-972,y=64,z=-410,dx=10,dy=7,dz=10,scores={TalkTime=0},tag=!Dialogue1] DialogueTrigger 1
-
-#Dialogue 2 - New Bark Town Mom, Elm looking for player
-scoreboard players set @a[x=-736,y=64,z=-491,dx=10,dy=3,dz=6,scores={TalkTime=0},tag=!Dialogue2] DialogueTrigger 2
-
-#Dialogue3 - New Bark Town Elm intro
-scoreboard players set @a[x=-693,y=63,z=-490,dx=20,dy=5,dz=20,scores={TalkTime=0},tag=!Dialogue3] DialogueTrigger 3
-
-#---------------------
-
-#Dialogue4 - Elm after picking starter
-scoreboard players set @a[x=-693,y=63,z=-490,dx=20,dy=5,dz=20,scores={TalkTime=0,StarterPick=1..},tag=!Dialogue4] DialogueTrigger 4
-
-#Sets starters to regular models if in town
-execute as @a[x=-704,y=62,z=-508,dx=50,dy=3,dz=50,scores={StarterPick=1}] run setblock -687 65 -478 pixelmon:poke_display[facing=north]{PokeDisplayPokemon:{ndex:152,Growth:3b}} replace
-execute as @a[x=-704,y=62,z=-508,dx=50,dy=3,dz=50,scores={StarterPick=2}] run setblock -689 65 -478 pixelmon:poke_display[facing=north]{PokeDisplayPokemon:{ndex:155,Growth:3b}} replace
-execute as @a[x=-704,y=62,z=-508,dx=50,dy=3,dz=50,scores={StarterPick=3}] run setblock -685 65 -478 pixelmon:poke_display[facing=north]{PokeDisplayPokemon:{ndex:158,Growth:3b}} replace
-
-#Sets first starters as invisible
-execute as @a[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,scores={StarterPick=1}] run setblock -687 65 -478 minecraft:air
-execute as @a[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,scores={StarterPick=2}] run setblock -689 65 -478 minecraft:air
-execute as @a[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,scores={StarterPick=3}] run setblock -685 65 -478 minecraft:air
-
-#---------------------
-
-#Dialogue5 - Route 30, Mr. Pokemon Intro w/ Mystery Egg
-scoreboard players set @a[x=-255,y=63,z=-198,dx=20,dy=5,dz=8,tag=!Dialogue5,scores={TalkTime=0}] DialogueTrigger 5
-
-#Turns Oak invisible after Oak leaves in dialogue
-execute at @p[x=-252,y=63,z=-196,distance=0..30,tag=Dialogue5] run effect give @e[x=-252,y=63,z=-196,dy=3,nbt=!{cobblemon:npc_chatting}] minecraft:invisibility 10 10 true
-
-#---------------------
-
-#Dialogue6 - Cherrygrove Silver before battle
-scoreboard players set @a[x=-300,y=64,z=-509,distance=0..20,tag=Dialogue5,tag=!Dialogue6,scores={TalkTime=0}] DialogueTrigger 6
-
-#Dialogue7 - Cherrygrove Silver post-battle
-scoreboard players set @a[x=-300,y=64,z=-509,distance=0..25,scores={TalkTime=0},nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 7
-execute as @a[x=-300,y=64,z=-509,distance=0..10,tag=Dialogue6,tag=!Dialogue7,scores={StarterPick=1}] run tp @e[x=-760,y=84,z=-242,dy=10,nbt=!{cobblemon:npc_trainer},scores={StarterPick=1}] -300 64 -509
-execute as @a[x=-300,y=64,z=-509,distance=0..10,tag=Dialogue6,tag=!Dialogue7,scores={StarterPick=2}] run tp @e[x=-760,y=84,z=-242,dy=10,nbt=!{cobblemon:npc_trainer},scores={StarterPick=2}] -300 64 -509
-execute as @a[x=-300,y=64,z=-509,distance=0..10,tag=Dialogue6,tag=!Dialogue7,scores={StarterPick=3}] run tp @e[x=-760,y=84,z=-242,dy=10,nbt=!{cobblemon:npc_trainer},scores={StarterPick=3}] -300 64 -509
-
-#---------------------
-
-#Dialogue8 - New Bark Town Elm's Lab stolen Pokemon
-scoreboard players set @a[x=-693,y=63,z=-490,dx=20,dy=5,dz=20,tag=!Dialogue8,tag=Dialogue5,scores={TalkTime=0}] DialogueTrigger 8
-
-#Silver's Starters invisible
-execute as @a[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,tag=Dialogue5,scores={StarterPick=1}] run setblock -687 65 -478 minecraft:air
-execute as @a[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,tag=Dialogue5,scores={StarterPick=2}] run setblock -689 65 -478 minecraft:air
-execute as @a[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,tag=Dialogue5,scores={StarterPick=3}] run setblock -685 65 -478 minecraft:air
-
-#Toggles Silver outside Elm's Lab
-execute as @a[x=-665,y=64,z=-493,distance=0..100,tag=Dialogue6] run tp @e[x=-665,y=63,z=-493,dy=2,nbt=!{cobblemon:npc_chatting}] -758 93 -242
-execute as @a[x=-665,y=64,z=-493,distance=0..25,tag=!Dialogue6] run tp @e[x=-758,y=92,z=-242,dy=3,nbt=!{cobblemon:npc_chatting}] -665 64 -493
-
-#---------------------
-
-#Dialogue9 - Sprout Tower Silver and Elder
-scoreboard players set @a[x=54,y=103,z=22,dx=12,dy=5,dz=10,tag=!Dialogue9,scores={TalkTime=0}] DialogueTrigger 9
-
-#Dialogue10 - Sprout Tower Elder post-battle
-scoreboard players set @a[x=56,y=103,z=33,distance=0..25,scores={TalkTime=0},tag=!Dialogue10,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 10
-
-#Dialogue11 - Violet City Falkner pre-battle
-scoreboard players set @a[x=-791,y=64,z=595,distance=0..13,scores={TalkTime=0},tag=!Dialogue11] DialogueTrigger 11
-
-#Dialogue12 - Violet City Dalkner post-battle
-scoreboard players set @a[x=-791,y=64,z=595,distance=0..20,scores={TalkTime=0},nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 12
-
-#Dialogue13 - Violet City Elm's Aide giving Togepi Egg
-scoreboard players set @a[x=11,y=64,z=-100,distance=0..7,scores={TalkTime=0},tag=!Dialogue13,tag=Falkner] DialogueTrigger 13
-
-#---------------------
-
-#Dialogue14 - Azalea Town Kurt starting Well quest
-scoreboard players set @a[x=354,y=63,z=-704,dx=19,dy=5,dz=8,tag=!Dialogue14,scores={TalkTime=0}] DialogueTrigger 14
-
-#tps out villagers
-execute at @p[x=371,y=64,z=-698,distance=0..25,tag=!Dialogue16,scores={TalkTime=0}] run tp @e[x=371,y=63,z=-698,dy=3,nbt=!{cobblemon:npc_chatting}] 371 64 -698
-execute at @p[x=371,y=64,z=-698,distance=0..25,tag=!Dialogue16] run tp @e[x=370,y=64,z=-699,dx=1,dy=3,dz=1,type=villager,limit=1] -724 91 -242
-execute at @p[x=371,y=64,z=-698,distance=0..25,tag=!Dialogue16] run tp @e[x=370,y=64,z=-699,dx=1,dy=3,dz=1,type=villager,limit=1] -722 91 -242
 
 #---------------------
 
@@ -446,43 +363,6 @@ execute at @p[x=244,y=56,z=-714,distance=0..25,tag=!Dialogue14] run tp @e[x=-750
 
 #Exterior Guard out
 execute at @p[x=244,y=56,z=-714,distance=0..25,tag=Dialogue14] run tp @e[x=247,y=53,z=-714,dy=3,nbt=!{cobblemon:npc_chatting}] -750 91 -242
-
-#---------------------
-
-#Dialogue16 - Slowpoke Well post-battle with Proton
-scoreboard players set @a[x=289,y=38,z=-665,distance=0..20,scores={TalkTime=0},tag=!Dialogue16,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 16
-
-#Respawn Proton
-execute at @a[x=289,y=38,z=-665,distance=0..10,tag=Dialogue15,tag=!Dialogue16,scores={TalkTime=0}] run tp @e[x=-742,y=90,z=-242,dy=3,nbt=!{cobblemon:npc_trainer}] 289 39 -661
-
-#Kurt NPC
-execute at @p[x=371,y=64,z=-698,distance=0..25,tag=Dialogue16,scores={TalkTime=0}] run tp @e[x=-726,y=90,z=-242,dy=3,nbt=!{cobblemon:npc_chatting}] 371 64 -698
-
-#tp in villager
-execute at @p[x=371,y=64,z=-698,distance=0..25,tag=Dialogue16,scores={TalkTime=0}] run tp @e[x=-724,y=90,z=-242,dy=3,type=minecraft:villager,name=Kurt,limit=1] 371.0 64 -698
-execute at @p[x=371,y=64,z=-698,distance=0..25,tag=Dialogue16,scores={TalkTime=0}] run tp @e[x=-722,y=90,z=-242,dy=3,type=minecraft:villager,name=Kurt,limit=1] 371.5 64 -698.0
-
-#---------------------
-
-#Dialogue17 - Azalea Town Bugsy pre-battle
-scoreboard players set @a[x=-860,y=64,z=582,dx=11,dy=5,dz=15,scores={TalkTime=0},tag=!Dialogue17] DialogueTrigger 17
-
-#Dialogue18 - Azalea Town Bugsy post-battle
-scoreboard players set @a[x=-884,y=0,z=522,dx=57,dy=240,dz=86,scores={TalkTime=0},tag=!Dialogue18,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 18
-
-#Dialogue19 - Azalea Town Silver pre-battle
-scoreboard players set @a[x=402,y=64,z=-734,distance=0..15,tag=!Dialogue19,tag=Bugsy,scores={TalkTime=0}] DialogueTrigger 19
-
-#---------------------
-
-#Dialogue20 - Azalea Town Silver post-battle
-scoreboard players set @a[x=402,y=64,z=-734,distance=0..25,scores={TalkTime=0},tag=!Dialogue20,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 20
-
-#TPs in Silvers
-execute at @a[x=402,y=64,z=-734,distance=0..15,scores={StarterPick=1,TalkTime=0},tag=Dialogue19,tag=!Dialogue20] run tp @e[x=-762,y=84,z=-242,dy=10,scores={StarterPick=1}] 402 64 -734
-execute at @a[x=402,y=64,z=-734,distance=0..15,scores={StarterPick=2,TalkTime=0},tag=Dialogue19,tag=!Dialogue20] run tp @e[x=-762,y=84,z=-242,dy=10,scores={StarterPick=2}] 402 64 -734
-execute at @a[x=402,y=64,z=-734,distance=0..15,scores={StarterPick=3,TalkTime=0},tag=Dialogue19,tag=!Dialogue20] run tp @e[x=-762,y=84,z=-242,dy=10,scores={StarterPick=3}] 402 64 -734
-
 
 #---------------------
 
@@ -510,15 +390,6 @@ scoreboard players set @a[x=286,y=63,z=-749,dx=20,dy=5,dz=8,scores={Farfetchd=2.
 #Dialogue26 - Bicycle Clerk follow-up
 scoreboard players set @s[tag=Bicycle,tag=!Dialogue26,scores={BicycleCD=0,Bicycle=1,TalkTime=0}] DialogueTrigger 26
 
-#Dialogue27 - Goldenrod City Whitney pre-battle
-scoreboard players set @a[x=-979,y=64,z=589,dx=13,dy=5,dz=15,tag=!Dialogue27] DialogueTrigger 27
-
-#Dialogue28 - Goldenrod City Whitney post-battle
-scoreboard players set @a[x=-1011,y=0,z=522,dx=116,dy=240,dz=107,scores={TalkTime=0},tag=!Dialogue28,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 28
-
-#Dialogue29 - Goldenrod City Flower Shop give Squirtbottle
-scoreboard players set @a[x=420,y=63,z=-307,dx=8,dy=5,dz=8,tag=!Dialogue29,tag=Whitney,scores={TalkTime=0}] DialogueTrigger 29
-
 #---------------------
 
 #Dialogue30 - Route 36 Sudowoodo Spawn
@@ -527,23 +398,7 @@ scoreboard players set @a[x=332,y=64,z=-16,distance=0..10,tag=Dialogue29,tag=!Di
 #Sets up Sudowoodo
 execute at @a[x=332,y=64,z=-16,distance=0..30,tag=!Dialogue30,scores={TalkTime=0}] run setblock 333 64 -17 pixelmon:poke_display[facing=north]{PokeDisplayPokemon:{ndex:185,Growth:7b}} replace
 
-#Dialogue31 - Ecruteak City Silver at Dance Theatre
-scoreboard players set @a[x=343,y=64,z=216,distance=..3,tag=!Dialogue31,scores={TalkTime=0}] DialogueTrigger 31
-execute as @a[x=343,y=64,z=216,distance=..50,tag=!Dialogue31,scores={TalkTime=0}] run tp @e[x=-758,y=84,z=-242,dy=3,nbt=!{cobblemon:npc_chatting}] 343 64 216
-
-#Dialogue32 - Ecruteak City HM Surf Guy intro
-scoreboard players set @a[x=333,y=64,z=219,dx=20,dy=5,dz=14,tag=!Dialogue32,scores={TalkTime=0}] DialogueTrigger 32
-
-#Dialogue33 - Ecruteak City HM Surf Guy after all stars
-scoreboard players set @a[x=333,y=64,z=219,dx=20,dy=5,dz=14,scores={TalkTime=0},tag=!Dialogue33,tag=Dialogue32,nbt={Inventory:[{id:"minecraft:nether_star",Count:5b}]}] DialogueTrigger 33
-
 #---------------------
-
-#Dialogue34 - Ecruteak City Burned Tower Silver pre-battle
-scoreboard players set @a[x=441,y=64,z=312,distance=..7,tag=!Dialogue34] DialogueTrigger 34
-
-#Dialogue35 - post-battle
-scoreboard players set @a[x=441,y=64,z=312,distance=..20,tag=!Dialogue35,scores={TalkTime=0},nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 35
 
 execute as @a[x=441,y=64,z=312,distance=..20,tag=Dialogue34,tag=!Dialogue35,scores={TalkTime=0,StarterPick=1}] run tp @e[x=-764,y=84,z=-242,dy=10,scores={StarterPick=1}] 441 64 312
 execute as @a[x=441,y=64,z=312,distance=..20,tag=Dialogue34,tag=!Dialogue35,scores={TalkTime=0,StarterPick=2}] run tp @e[x=-764,y=84,z=-242,dy=10,scores={StarterPick=2}] 441 64 312
@@ -557,42 +412,6 @@ execute if entity @a[x=444,y=58,z=328,distance=..20,tag=!Dialogue36,scores={Talk
 execute if entity @a[x=444,y=58,z=328,distance=..20,tag=!Dialogue36,scores={TalkTime=0}] run setblock 443 59 328 pixelmon:poke_display[facing=north]{PokeDisplayPokemon:{ndex:2006,Growth:2b},PokeDisplayTextureMode:1} replace
 
 #---------------------
-#Dialogue37 - Ecruteak City Gym Morty pre-battle
-scoreboard players set @a[x=-1059,y=64,z=614,distance=..10,tag=!Dialogue37] DialogueTrigger 37
-
-#Dialogue38 - Ecruteak City Gym Morty post-battle
-scoreboard players set @a[x=-1059,y=64,z=614,distance=..20,tag=!Dialogue38,scores={TalkTime=0},nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 38
-
-#Dialogue39 - Olivine City Silver front of gym
-scoreboard players set @a[x=809,y=64,z=14,distance=..5,tag=!Dialogue39,scores={TalkTime=0}] DialogueTrigger 39
-execute at @a[x=809,y=63,z=14,distance=..50,tag=!Dialogue39] run tp @e[x=-772,y=92,z=-242,dy=3,nbt=!{cobblemon:npc_chatting}] 809 64 14
-
-#Dialogue40
-#Olivine Lighthouse Ampharos is sick
-scoreboard players set @a[x=694,y=119,z=-48,dx=17,dy=10,dz=15,tag=!Dialogue40] DialogueTrigger 40
-
-#Dialogue41 - Cianwood Pharmacy
-scoreboard players set @a[x=1221,y=63,z=-491,dx=19,dy=5,dz=10,tag=Dialogue40,tag=!Dialogue41] DialogueTrigger 41
-
-#Dialogue42 - Olivine Lighthouse bringing medicine
-scoreboard players set @a[x=694,y=119,z=-48,dx=17,dy=10,dz=15,tag=Dialogue40,tag=Dialogue41,tag=!Dialogue42,scores={TalkTime=0}] DialogueTrigger 42
-
-#Dialogue43 - Cianwood City Chuck's wife gives Fly
-scoreboard players set @a[x=1261,y=64,z=-488,distance=..10,scores={TalkTime=0},tag=Chuck,tag=!Dialogue43] DialogueTrigger 43
-
-#Dialogue44 - Cianwood City Chuck pre-battle
-scoreboard players set @a[x=-1187,y=64,z=616,distance=..20,tag=!Dialogue44,scores={TalkTime=0}] DialogueTrigger 44
-
-#Dialogue45 - Cianwood City Chuck post-battle
-scoreboard players set @a[x=-1221,y=0,z=524,dx=60,dy=240,dz=100,tag=!Dialogue45,scores={TalkTime=0},nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 45
-
-#Dialogue46 - Olivine City Jasmine pre-battle
-scoreboard players set @a[x=-1126,y=67,z=595,distance=..20,scores={TalkTime=0},tag=!Dialogue47] DialogueTrigger 46
-
-#Dialogue47 - Olivine City Jasmine post-battle
-scoreboard players set @a[x=-1156,y=0,z=522,dx=60,dy=240,dz=93,scores={TalkTime=0},tag=!Dialogue47,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 47
-
-#---------------------
 #Dialogue48 - Route 43 Team Rocket Mugging
 scoreboard players set @a[x=-198,y=63,z=343,dx=19,dy=5,dz=19,tag=!Dialogue48,tag=!Dialogue64] DialogueTrigger 48
 execute as @p[x=-187,y=64,z=352,distance=..30,tag=!Dialogue64] run tp @e[x=-181,y=63,z=352,dy=3,nbt=!{cobblemon:npc_chatting}] -809 93 -242
@@ -602,10 +421,6 @@ execute as @p[x=-187,y=64,z=352,distance=..30,tag=Dialogue64] run tp @e[x=-809,y
 execute as @p[x=-187,y=64,z=352,distance=..30,tag=Dialogue64] run tp @e[x=-190,y=63,z=352,dy=3,nbt=!{cobblemon:npc_chatting}] -811 93 -242
 execute as @p[x=-187,y=64,z=352,distance=..30,tag=Dialogue64] run tp @e[x=-184,y=63,z=352,dy=3,nbt=!{cobblemon:npc_chatting}] -813 93 -242
 
-#---------------------
-#Route 49 - Lake of Rage Shiny Gyarados
-scoreboard players set @a[x=-169,y=65,z=645,distance=..30,scores={TalkTime=0},tag=!Dialogue49] DialogueTrigger 49
-execute if entity @a[x=-169,y=65,z=645,distance=..100,tag=!Dialogue49,scores={TalkTime=0}] run setblock -167 62 632 pixelmon:poke_display[facing=north,waterlogged=true]{PokeDisplayPokemon:{ndex:130,Growth:6b,palette:"shiny"}} replace
 
 
 #Dialogue50 - Mr. Pokemon Red Scale trade prompt
@@ -701,133 +516,7 @@ execute at @a[x=349,y=63,z=-461,dx=239,dy=10,dz=194,tag=Dialogue72] run tp @e[x=
 execute at @a[x=349,y=63,z=-461,dx=239,dy=10,dz=194,tag=Dialogue72] run tp @e[x=420,y=63,z=-380,dy=3,nbt=!{cobblemon:npc_chatting}] -789 93 -242
 execute at @a[x=349,y=63,z=-461,dx=239,dy=10,dz=194,tag=Dialogue72] run tp @e[x=560,y=63,z=-352,dy=3,nbt=!{cobblemon:npc_chatting}] -783 93 -242
 
-#Dialogue67 - Goldenrod Silver Pre-battle
-scoreboard players set @a[x=481,y=47,z=-305,distance=..7,scores={TalkTime=0},tag=!Dialogue67] DialogueTrigger 67
-
-#Dialogue68 - Goldenrod Silver post-battle
-scoreboard players set @a[x=481,y=47,z=-305,distance=..20,tag=!Dialogue68,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 68
-
-execute at @a[x=481,y=47,z=-305,distance=..25,tag=!Dialogue68,scores={TalkTime=0,StarterPick=1}] run tp @e[x=-766,y=84,z=-242,dy=10,scores={StarterPick=1}] 481 47 -305
-execute at @a[x=481,y=47,z=-305,distance=..25,tag=!Dialogue68,scores={TalkTime=0,StarterPick=2}] run tp @e[x=-766,y=84,z=-242,dy=10,scores={StarterPick=2}] 481 47 -305
-execute at @a[x=481,y=47,z=-305,distance=..25,tag=!Dialogue68,scores={TalkTime=0,StarterPick=3}] run tp @e[x=-766,y=84,z=-242,dy=10,scores={StarterPick=3}] 481 47 -305
-
-#Dialogue69 - Goldenrod Radio Director underground
-scoreboard players set @a[x=426,y=37,z=-304,distance=..5,tag=!Dialogue69] DialogueTrigger 69
-
-execute at @p[x=426,y=37,z=-304,distance=..25,tag=!Dialogue72] run tp @e[x=-779,y=92,z=-242,dy=3,nbt=!{cobblemon:npc_chatting}] 426 38 -304
-execute at @p[x=426,y=37,z=-304,distance=..25,tag=Dialogue72] run tp @e[x=426,y=37,z=-304,dy=3,nbt=!{cobblemon:npc_chatting}] -779 93 -242
-
-#Dialogue70 - Radio Tower Ariana Post-battle
-scoreboard players set @a[x=496,y=48,z=-248,dx=11,dy=5,dz=13,scores={TalkTime=0},tag=!Dialogue70,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 70
-
-#Dialogue71 - Radio Tower Archer pre-battle
-scoreboard players set @a[x=496,y=54,z=-248,dx=19,dy=5,dz=13,scores={TalkTime=0},tag=!Dialogue71] DialogueTrigger 71
-
-#Dialogue72 - Radio Tower Archer post-battle
-scoreboard players set @a[x=496,y=54,z=-248,dx=19,dy=5,dz=13,scores={TalkTime=0},tag=!Dialogue72,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 72
-
-#Dialogue75 - Post-takeover gift
-scoreboard players set @a[x=517,y=42,z=-267,distance=..5,scores={TalkTime=0},tag=Dialogue72,tag=!Dialogue75] DialogueTrigger 75
-
 #---------------------
-#Dialogue73 - Mahogany Gym pre-battle
-scoreboard players set @a[x=-791,y=64,z=715,distance=..20,scores={TalkTime=0},tag=!Dialogue73] DialogueTrigger 73
-
-#Dialogue74 - Mahogany Gym post-battle
-scoreboard players set @a[x=-817,y=0,z=635,dx=58,dy=240,dz=101,scores={TalkTime=0},tag=!Dialogue74,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 74
-
-#Dialogue77 - Blackthorn City Clair pre-battle
-scoreboard players set @a[x=-856,y=64,z=720,distance=..10,tag=!Dialogue77,scores={TalkTime=0}] DialogueTrigger 77
-
-#Dialogue78 - Blackthorn City Clair post-battle
-scoreboard players set @a[x=-883,y=0,z=637,dx=58,dy=240,dz=98,tag=!Dialogue78,scores={TalkTime=0},nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 78
-
-#Dialogue79 - Dragon's Den getting 8th badge
-scoreboard players set @a[x=-744,y=69,z=507,dx=162,dy=70,dz=147,tag=!Dialogue79,nbt={Inventory:[{id:"pixelmon:dragon_fang"}]}] DialogueTrigger 79
-
-#Dialogue80 - Blackthorn City Elm calling about Master Ball
-scoreboard players set @a[x=-654,y=63,z=325,distance=..20,tag=!Dialogue81,tag=!Dialogue80,tag=Clair,scores={TalkTime=0}] DialogueTrigger 80
-
-#Dialogue81 - New Bark Town Elm giving master ball
-scoreboard players set @a[x=-693,y=63,z=-490,dx=20,dy=5,dz=20,tag=Clair,tag=!Dialogue81,scores={TalkTime=0}] DialogueTrigger 81
-
-#Dialogue82 - Violet City Elm calling about Togepi Egg
-scoreboard players set @a[x=88,y=64,z=-67,distance=..20,scores={TalkTime=0},tag=Falkner,tag=!Dialogue13,tag=!Dialogue82] DialogueTrigger 82
-
-#Dialogue83 - Route 27 first steps into Kanto
-scoreboard players set @a[x=-878,y=63,z=-533,dx=14,dy=5,dz=7,scores={TalkTime=0},tag=!Dialogue83] DialogueTrigger 83
-
-#Dialogue84 - Victory Road Silver opening dialogue
-scoreboard players set @a[x=-1449,y=51,z=528,distance=..7,scores={TalkTime=0},tag=!Dialogue84] DialogueTrigger 84
-
-#Dialogue85 - Victory Road Silver defeat
-scoreboard players set @a[x=-1449,y=51,z=528,distance=..25,scores={TalkTime=0},tag=!Dialogue85,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 85
-
-execute at @a[x=-1449,y=51,z=528,distance=..25,tag=!Dialogue85,scores={StarterPick=1}] run tp @e[x=-768,y=84,z=-242,dy=10,scores={StarterPick=1}] -1449 51 528
-execute at @a[x=-1449,y=51,z=528,distance=..25,tag=!Dialogue85,scores={StarterPick=2}] run tp @e[x=-768,y=84,z=-242,dy=10,scores={StarterPick=2}] -1449 51 528
-execute at @a[x=-1449,y=51,z=528,distance=..25,tag=!Dialogue85,scores={StarterPick=3}] run tp @e[x=-768,y=84,z=-242,dy=10,scores={StarterPick=3}] -1449 51 528
-
-#---------------------
-#Dialogue86 - Elite Four Will opening
-scoreboard players set @a[x=-1288,y=63,z=428,distance=..20,scores={TalkTime=0},tag=!Dialogue86] DialogueTrigger 86
-scoreboard players set @a[x=-1341,y=63,z=428,distance=..20,scores={TalkTime=0},tag=!Dialogue86] DialogueTrigger 86
-
-#Dialogue87 - Elite Four Will loss
-scoreboard players set @a[x=-1288,y=63,z=428,distance=..20,scores={TalkTime=0},tag=!Dialogue87,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 87
-scoreboard players set @a[x=-1341,y=63,z=428,distance=..20,scores={TalkTime=0},tag=!Dialogue87,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 87
-
-
-#Dialogue88 - Elite Four Koga opening
-scoreboard players set @a[x=-1288,y=66,z=495,distance=..20,scores={TalkTime=0},tag=!Dialogue88] DialogueTrigger 88
-scoreboard players set @a[x=-1341,y=66,z=495,distance=..20,scores={TalkTime=0},tag=!Dialogue88] DialogueTrigger 88
-
-#Dialogue89 - Elite Four Koga loss
-scoreboard players set @a[x=-1313,y=0,z=447,dx=50,dy=240,dz=75,scores={TalkTime=0},tag=!Dialogue89,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 89
-scoreboard players set @a[x=-1366,y=0,z=447,dx=50,dy=240,dz=75,scores={TalkTime=0},tag=!Dialogue89,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 89
-
-
-#Dialogue90 - Elite Four Bruno opening
-scoreboard players set @a[x=-1288,y=66,z=580,distance=..20,scores={TalkTime=0},tag=!Dialogue90] DialogueTrigger 90
-scoreboard players set @a[x=-1341,y=66,z=580,distance=..20,scores={TalkTime=0},tag=!Dialogue90] DialogueTrigger 90
-
-#Dialogue91 - Elite Four Bruno loss
-scoreboard players set @a[x=-1313,y=0,z=523,dx=50,dy=240,dz=76,scores={TalkTime=0},tag=!Dialogue91,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 91
-scoreboard players set @a[x=-1366,y=0,z=523,dx=50,dy=240,dz=76,scores={TalkTime=0},tag=!Dialogue91,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 91
-
-
-
-#Dialogue92 - Elite Four Karen opening
-scoreboard players set @a[x=-1288,y=69,z=656,distance=..20,scores={TalkTime=0},tag=!Dialogue92] DialogueTrigger 92
-scoreboard players set @a[x=-1341,y=69,z=656,distance=..20,scores={TalkTime=0},tag=!Dialogue92] DialogueTrigger 92
-
-#Dialogue93 - Elite Four Karen loss
-scoreboard players set @a[x=-1313,y=0,z=600,dx=50,dy=240,dz=75,scores={TalkTime=0},tag=!Dialogue93,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 93
-scoreboard players set @a[x=-1366,y=0,z=600,dx=50,dy=240,dz=75,scores={TalkTime=0},tag=!Dialogue93,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 93
-
-
-#Dialogue94 - Elite Four Lance opening
-scoreboard players set @a[x=-1288,y=77,z=748,distance=..10,scores={TalkTime=0},tag=!Dialogue94] DialogueTrigger 94
-scoreboard players set @a[x=-1341,y=77,z=748,distance=..10,scores={TalkTime=0},tag=!Dialogue94] DialogueTrigger 94
-
-
-#Dialogue95 - Elite Four Lance loss
-scoreboard players set @a[x=-1313,y=0,z=676,dx=50,dy=240,dz=74,scores={TalkTime=0},tag=!Dialogue95,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 95
-scoreboard players set @a[x=-1366,y=0,z=676,dx=50,dy=240,dz=74,scores={TalkTime=0},tag=!Dialogue95,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 95
-
-
-#Dialogue96 - Hall of Fame Lance Opening
-scoreboard players set @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=34,tag=!Dialogue96,scores={TalkTime=0}] DialogueTrigger 96
-
-
-
-
-#---------------------
-#Dialogue100 - New Bark Town Elm calling for SS Ticket
-scoreboard players set @a[x=-723,y=68,z=-492,distance=..20,scores={TalkTime=0,IP=1..},tag=!Dialogue100] DialogueTrigger 100
-
-#Dialogue101 - Elm's Lab SS Ticket
-scoreboard players set @a[x=-693,y=63,z=-490,dx=20,dy=5,dz=20,scores={TalkTime=0,IP=1..,DialogueTrigger=0},tag=Dialogue81,tag=!Dialogue101] DialogueTrigger 101
-
 #Dialogue102 - Mr. Pokemon giving orbs
 scoreboard players set @a[x=-255,y=63,z=-198,dx=20,dy=5,dz=8,scores={TalkTime=0,IP=1..,DialogueTrigger=0},tag=!Dialogue102] DialogueTrigger 102
 
@@ -859,68 +548,6 @@ scoreboard players set @a[x=-1015,y=64,z=681,dx=22,dy=5,dz=9,scores={TalkTime=0}
 #Dialogue114 - Cerulean City Misty pre-battle
 scoreboard players set @a[x=-1026,y=0,z=636,dx=44,dy=240,dz=65,scores={TalkTime=0},tag=!Dialogue115,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 115
 
-#Dialogue116 - Surge pre-battle
-scoreboard players set @a[x=-1051,y=63,z=705,distance=..20,scores={TalkTime=0},tag=!Dialogue116] DialogueTrigger 116
-
-#Dialogue117 - Surge post-battle
-scoreboard players set @a[x=-1072,y=0,z=636,dx=44,dy=240,dz=80,scores={TalkTime=0},tag=!Dialogue117,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 117
-
-#Dialogue118 - Erika pre-battle
-scoreboard players set @a[x=-1098,y=63,z=698,distance=..10,scores={TalkTime=0},tag=!Dialogue118] DialogueTrigger 118
-
-#Dialogue119 - Erika post-battle
-scoreboard players set @a[x=-1121,y=0,z=636,dx=46,dy=240,dz=80,scores={TalkTime=0},tag=!Dialogue119,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 119
-
-#Dialogue120 - Janine pre-battle
-scoreboard players set @a[x=-1150,y=63,z=672,dx=15,dy=5,dz=6,scores={TalkTime=0},tag=!Dialogue120] DialogueTrigger 120
-
-#Dialogue121 - Janine post-battle
-scoreboard players set @a[x=-1172,y=0,z=636,dx=50,dy=240,dz=80,scores={TalkTime=0},tag=!Dialogue121,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 121
-
-#Dialogue122 - Sabrina pre-battle
-scoreboard players set @a[x=-978,y=64,z=758,dx=19,dy=5,dz=15,scores={TalkTime=0},tag=!Dialogue122] DialogueTrigger 122
-
-#Dialogue123 - Sabrina post-battle
-scoreboard players set @a[x=-1006,y=0,z=732,dx=75,dy=240,dz=68,scores={TalkTime=0},tag=!Dialogue123,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 123
-
-#Dialogue124 - Blaine pre-battle
-scoreboard players set @a[x=-1042,y=63,z=771,dx=20,dy=5,dz=18,scores={TalkTime=0},tag=!Dialogue124] DialogueTrigger 124
-
-#Dialogue125 - Blaine post-battle
-scoreboard players set @a[x=-1094,y=0,z=729,dx=79,dy=240,dz=67,scores={TalkTime=0},tag=!Dialogue125,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 125
-
-#Dialogue126 - Blue pre-battle
-scoreboard players set @a[x=-1131,y=64,z=796,distance=..20,scores={TalkTime=0},tag=!Dialogue126] DialogueTrigger 126
-
-#Dialogue127 - Blue post-battle
-scoreboard players set @a[x=-1160,y=0,z=730,dx=55,dy=240,dz=85,scores={TalkTime=0},tag=!Dialogue127,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 127
-
-#Dialogue128 - Mt. Silver Red
-scoreboard players set @a[x=-944,y=182,z=285,distance=..20,scores={TalkTime=0},tag=!Dialogue128] DialogueTrigger 128
-
-#Dialogue129 - Red post-battle
-scoreboard players set @a[x=-944,y=182,z=285,distance=..20,scores={TalkTime=0},tag=!Diaogue129,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 129
-
-#Dialogue130 - Mt. Moon Silver final battle
-scoreboard players set @a[x=-2200,y=64,z=800,distance=..7,scores={TalkTime=0},tag=!Dialogue130] DialogueTrigger 130
-
-#Dialogue131 - Mt. Moon Silver final battle post
-scoreboard players set @a[x=-2200,y=64,z=800,distance=..25,scores={TalkTime=0},tag=!Dialogue131,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 131
-
-execute at @a[x=-2200,y=64,z=800,distance=..25,scores={TalkTime=0,StarterPick=1},tag=!Dialogue131] run tp @e[x=-770,y=84,z=-242,dy=10,scores={StarterPick=1}] -2200 64 800
-execute at @a[x=-2200,y=64,z=800,distance=..25,scores={TalkTime=0,StarterPick=2},tag=!Dialogue131] run tp @e[x=-770,y=84,z=-242,dy=10,scores={StarterPick=2}] -2200 64 800
-execute at @a[x=-2200,y=64,z=800,distance=..25,scores={TalkTime=0,StarterPick=3},tag=!Dialogue131] run tp @e[x=-770,y=84,z=-242,dy=10,scores={StarterPick=3}] -2200 64 800
-
-#Dialogue131 - Saffron City Copycat first talk
-scoreboard players set @a[x=-2725,y=69,z=368,dx=10,dy=5,dz=9,scores={TalkTime=0},tag=Dialogue221,tag=!Dialogue133] DialogueTrigger 133
-
-#Dialogue134 - Vermilion City Poke Fan
-scoreboard players set @a[x=-2696,y=64,z=-37,distance=..5,scores={TalkTime=0},tag=Dialogue133,tag=!Dialogue134] DialogueTrigger 134
-execute at @a[x=-2697,y=65,z=-39,distance=..20,scores={TalkTime=0},tag=!Dialogue133] run data merge entity @e[x=-2697,y=65,z=-39,distance=..2,nbt=!{cobblemon:statue},limit=1] {ndex:35}
-
-#Dialogue135 - Returning Copycat Doll
-scoreboard players set @a[x=-2725,y=69,z=368,dx=10,dy=5,dz=9,scores={TalkTime=0},tag=Dialogue134,tag=!Dialogue135,nbt={Inventory:[{id:"minecraft:music_disc_13"}]}] DialogueTrigger 135
-execute at @p[x=-2721,y=68,z=374,distance=..20,scores={TalkTime=0},tag=!Dialogue135] run tp @e[x=-2721,y=70,z=374,distance=..1,nbt=!{cobblemon:statue}] -736 75 -242
 
 #Dialogue136 - Vermilion Steven Introduction
 scoreboard players set @a[x=-2710,y=64,z=-55,distance=..7,scores={TalkTime=0},tag=Dialogue134,tag=!Dialogue136] DialogueTrigger 136
@@ -964,9 +591,6 @@ scoreboard players set @a[x=-1726,y=63,z=-319,dx=23,dy=5,dz=25,scores={TalkTime=
 
 #Dialogue154 - Oak's Lab mega ring
 scoreboard players set @a[x=-1726,y=63,z=-319,dx=23,dy=5,dz=25,tag=!Dialogue154,scores={KantoStarters=1..,TalkTime=0}] DialogueTrigger 154
-
-#Dialogue155 - Sudowoodo cleared rock smash
-scoreboard players set @a[x=247,y=63,z=-20,distance=..7,tag=Dialogue30,tag=!Dialogue155] DialogueTrigger 155
 
 #---------------------
 
