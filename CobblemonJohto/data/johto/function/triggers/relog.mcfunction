@@ -1,5 +1,3 @@
-#Relogs to fix some issues with Cobblemon and player commands
-execute as @s at @s unless entity @a[distance=2..] run reload
 
 #removes BattleStart score that mainly defines music
 scoreboard players set @s BattleStart 0

@@ -1,6 +1,11 @@
 #Runs cobblemon replacement blocks
 function johto:world/cobblemonblocks
 
+#Auto reloads the server if function fails to load (should thus fix itself by reloading)
+tag @e[x=-792,y=65,z=-284,dy=3,type=armor_stand] remove ReloadCheck
+function johto:triggers/autoreload
+execute if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=!ReloadCheck] run reload
+
 #Aligns and gets rid of nametag
 execute as @e[type=cobblemon:npc,nbt={PersistenceRequired:0b}] run data merge entity @s {Rotation:[180f,0.0f],PersistenceRequired:1b,HideNPCNameTag:1b}
 
