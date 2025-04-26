@@ -24,6 +24,31 @@ execute at @a[x=83,y=63,z=-222,dx=11,dy=10,dz=5,tag=!Falkner] run tp @a[x=83,y=6
 tellraw @a[x=243,y=54,z=-715,dx=2,dy=5,dz=2,tag=!Dialogue14] ["",{"text":"<Team Rocket Grunt> Get out of here, kid! ","color":"white"}]
 execute at @a[x=243,y=54,z=-715,dx=2,dy=5,dz=2,tag=!Dialogue14] run tp @a[x=243,y=54,z=-715,dx=2,dy=5,dz=2,tag=!Dialogue14] ~3 ~ ~
 
+
+#Rocket HQ Admin Gate without passwords
+execute as @a[x=-101,y=33,z=185,distance=..10,tag=RocketPW1,tag=RocketPW2] run fill -98 34 187 -105 37 187 air
+execute unless entity @a[x=-101,y=33,z=185,distance=..10,tag=RocketPW1,tag=RocketPW2] run fill -98 34 187 -105 37 187 iron_bars[west=true,east=true]
+
+#Rocket HQ Electrode Room Gate
+execute if entity @a[x=-124,y=45,z=169,dx=12,dy=5,dz=11,tag=Dialogue63] run fill -122 45 175 -114 48 175 minecraft:air
+execute unless entity @a[x=-124,y=45,z=169,dx=12,dy=5,dz=11,tag=Dialogue63] run fill -122 45 175 -114 48 175 minecraft:iron_bars
+
+#RocketHQ tps player out of generator room if don't have Dialogue63 tag
+execute as @a[x=-122,y=44,z=176,dx=10,dy=5,dz=5,tag=!Dialogue62] at @s run tp @s ~ ~ ~-5
+
+
+#Mahogany Town Story Checks
+tellraw @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,scores={Cooldown=0},tag=!Jasmine] {"text":"<...> Hiya, kid! I see you're new in Mahogany Town. Since you're new, you should try a yummy RageCandyBar! Right now, it can be yours for just $300! Want one?"}
+tellraw @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,scores={Cooldown=0},tag=!Morty] {"text":"<...> Hiya, kid! I see you're new in Mahogany Town. Since you're new, you should try a yummy RageCandyBar! Right now, it can be yours for just $300! Want one?"}
+tellraw @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,scores={Cooldown=0},tag=!Pryce] {"text":"<...> Hiya, kid! I see you're new in Mahogany Town. Since you're new, you should try a yummy RageCandyBar! Right now, it can be yours for just $300! Want one?"}
+scoreboard players set @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Morty] Cooldown 25
+scoreboard players set @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Pryce] Cooldown 25
+scoreboard players set @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Jasmine] Cooldown 25
+execute at @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Jasmine] run tp @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Jasmine] ~10 ~ ~
+execute at @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Pryce] run tp @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Pryce] ~10 ~ ~
+execute at @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Morty] run tp @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Morty] ~10 ~ ~
+
+
 #Johto/Kanto/IP Connector Johto Gate Block
 tellraw @a[x=-1225,y=63,z=52,dx=15,dy=5,dz=3,tag=!Dialogue222,scores={TalkTime=0}] {"text":"<Officer Jenny> This way leads to Mt. Silver. You'll see scary-strong Pokémon out there. You're not ready for it."}
 tellraw @a[x=-1225,y=63,z=52,dx=15,dy=5,dz=3,tag=!Dialogue222,scores={TalkTime=0},tag=AllGyms] {"text":"<Officer Jenny> This way leads to Mt. Silver. You'll see scary-strong Pokémon out there. See Prof. Oak if you think you are tough enough!."}

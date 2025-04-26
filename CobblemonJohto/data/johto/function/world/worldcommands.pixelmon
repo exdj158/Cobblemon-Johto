@@ -431,23 +431,6 @@ scoreboard players set @a[x=-159,y=63,z=590,distance=..5,tag=Dialogue49,tag=!Dia
 execute as @a[x=-159,y=64,z=590,distance=..50,tag=Dialogue49,tag=!Dialogue51] run tp @e[x=-807,y=92,z=-242,dy=3,nbt=!{cobblemon:npc_chatting}] -159 64 590
 
 #---------------------
-#Dialogue53
-scoreboard players set @a[x=-164,y=63,z=196,dx=19,dy=6,dz=20,tag=Dialogue52,tag=!Dialogue53] DialogueTrigger 53
-execute at @a[x=-155,y=64,z=208,distance=..30,tag=Dialogue52,scores={TalkTime=0},tag=!Dialogue53] run setblock -156 64 200 pixelmon:poke_display[facing=east]{PokeDisplayPokemon:{ndex:149,Growth:6b},PokeDisplayTextureMode:0} replace
-execute at @a[x=-155,y=64,z=208,distance=..30,tag=Dialogue52,scores={TalkTime=0},tag=!Dialogue53] run tp @e[x=-805,y=92,z=-242,dy=3,nbt=!{cobblemon:npc_chatting}] -155 64 202
-
-#Mahogany Town Rocket HQ Occupied by Rockets
-execute at @p[x=-155,y=64,z=208,distance=..30,tag=!Dialogue53,scores={TalkTime=0}] run fill -164 63 216 -160 63 213 minecraft:oak_planks
-execute at @p[x=-155,y=64,z=208,distance=..30,tag=!Dialogue53,scores={TalkTime=0}] run tp @e[x=-152,y=63,z=212,dy=3,nbt=!{cobblemon:npc_shopkeeper},limit=1] -152 72 212
-execute at @p[x=-155,y=64,z=208,distance=..30,tag=!Dialogue53,scores={TalkTime=0}] run tp @e[x=-157,y=63,z=193,dy=3,nbt=!{cobblemon:npc_chatting}] -159 72 196
-execute at @p[x=-155,y=64,z=208,distance=..30,tag=!Dialogue53,scores={TalkTime=0}] run tp @e[x=-157,y=71,z=196,dy=3,nbt=!{cobblemon:npc_shopkeeper},limit=1] -156 64 206
-execute at @p[x=-155,y=64,z=208,distance=..30,tag=!Dialogue53,scores={TalkTime=0}] run tp @e[x=-155,y=71,z=196,dy=3,nbt=!{cobblemon:npc_chatting}] -149 64 200
-
-#Cleared of Rockets
-execute at @p[x=-155,y=64,z=208,distance=..30,tag=Dialogue64,scores={TalkTime=0}] run tp @e[x=-152,y=71,z=212,dy=3,nbt=!{cobblemon:npc_shopkeeper},limit=1] -152 64 212
-execute at @p[x=-155,y=64,z=208,distance=..30,tag=Dialogue64,scores={TalkTime=0}] run tp @e[x=-159,y=71,z=196,dy=3,nbt=!{cobblemon:npc_chatting}] -157 64 193
-execute at @p[x=-155,y=64,z=208,distance=..30,tag=Dialogue64,scores={TalkTime=0}] run tp @e[x=-156,y=63,z=206,dy=3,nbt=!{cobblemon:npc_shopkeeper},limit=1] -157 72 196
-execute at @p[x=-155,y=64,z=208,distance=..30,tag=Dialogue64,scores={TalkTime=0}] run tp @e[x=-149,y=63,z=200,dy=3,nbt=!{cobblemon:npc_chatting}] -155 72 196
 
 #Dialogue54 - Rocket HQ Lance healing player
 scoreboard players set @a[x=-83,y=45,z=169,distance=..5,tag=!Dialogue54] DialogueTrigger 54
@@ -1026,27 +1009,8 @@ execute as @a[x=878,y=64,z=72,distance=..3,scores={CooldownWalk=1000..}] run sco
 
 
 #-------------------------------------------------------------------------------------------------------------------------
-#Spawnpoints at Pokemon Centers
-spawnpoint @a[x=-1704,y=64,z=-899,distance=..3] -1704 64 -899
-spawnpoint @a[x=-2405,y=64,z=-608,distance=..3] -2405 64 -608
-spawnpoint @a[x=-3253,y=65,z=357,distance=..3] -3253 65 357
-spawnpoint @a[x=-256,y=64,z=-489,distance=..4] -256 64 -489
-spawnpoint @a[x=1186,y=65,z=-468,distance=..3] 1186 65 -468
-spawnpoint @a[x=791,y=65,z=-40,distance=..3] 791 64 -40
-spawnpoint @a[x=-2744,y=64,z=728,distance=..3] -2744 64 728
-spawnpoint @a[x=-1701,y=64,z=7,distance=..3] -1701 64 7
-spawnpoint @a[x=-1660,y=64,z=602,distance=..3] -1660 64 602
-spawnpoint @a[x=-2460,y=64,z=375,distance=..3] -2460 64 375
-spawnpoint @a[x=-2714,y=64,z=8,distance=..3] -2714 64 8
-spawnpoint @a[x=-2704,y=64,z=279,distance=..3] 2704 64 279
-spawnpoint @a[x=-999,y=64,z=64,distance=..4] -999 64 64
-
-#-------------------------------------------------------------------------------------------------------------------------
 #Road Blocks
 
-
-#RocketHQ tps player out of generator room if don't have Dialogue63 tag
-execute at @a[x=-122,y=44,z=176,dx=10,dy=5,dz=5,scores={TalkTime=0},tag=!Dialogue63] run tp @a[x=-122,y=44,z=176,dx=10,dy=5,dz=5,scores={TalkTime=0},tag=!Dialogue63] ~ ~ ~-5
 
 #Tin Tower
 tellraw @a[x=369,y=58,z=287,dx=6,dy=10,dz=15,tag=!Morty] ["",{"text":"<Monk> Tin Tower is off limits to anyone without Ecruteak Gym's Badge.","color":"white"}]
@@ -1068,18 +1032,6 @@ tellraw @a[x=-914,y=63,z=-503,dx=5,dy=3,dz=4,tag=!Clair] ["",{"text":"You need m
 execute at @a[x=-914,y=63,z=-503,dx=5,dy=3,dz=4,tag=!Clair] run tp @a[x=-914,y=63,z=-503,dx=5,dy=3,dz=4,tag=!Clair] ~ 64 ~-10
 
 
-#Mahogany Town Story Checks
-tellraw @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,scores={Cooldown=0},tag=!Jasmine] {"text":"<...> Hiya, kid! I see you're new in Mahogany Town. Since you're new, you should try a yummy RageCandyBar! Right now, it can be yours for just $300! Want one?"}
-tellraw @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,scores={Cooldown=0},tag=!Morty] {"text":"<...> Hiya, kid! I see you're new in Mahogany Town. Since you're new, you should try a yummy RageCandyBar! Right now, it can be yours for just $300! Want one?"}
-tellraw @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,scores={Cooldown=0},tag=!Pryce] {"text":"<...> Hiya, kid! I see you're new in Mahogany Town. Since you're new, you should try a yummy RageCandyBar! Right now, it can be yours for just $300! Want one?"}
-scoreboard players set @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Morty] Cooldown 25
-scoreboard players set @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Pryce] Cooldown 25
-scoreboard players set @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Jasmine] Cooldown 25
-execute at @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Jasmine] run tp @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Jasmine] ~10 ~ ~
-execute at @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Pryce] run tp @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Pryce] ~10 ~ ~
-execute at @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Morty] run tp @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Morty] ~10 ~ ~
-
-
 #Cianwood & Route 47 Gate
 tellraw @a[x=1306,y=64,z=-369,distance=..7,tag=!Dialogue42] ["",{"text":"Route Gate closed until Olivine Lighthouse reopens.","color":"white","italic":true}]
 execute at @a[x=1306,y=64,z=-369,distance=..7,tag=!Dialogue42] run tp @a[x=1306,y=64,z=-369,distance=..7,tag=!Dialogue42] ~-7 ~ ~
@@ -1088,10 +1040,6 @@ execute at @a[x=1306,y=64,z=-369,distance=..7,tag=!Dialogue42] run tp @a[x=1306,
 #SS Aqua Olivine, a ticket is needed
 execute if entity @a[x=744,y=73,z=-193,distance=..15,tag=!Dialogue101,scores={Cooldown=0}] run tellraw @a[x=744,y=73,z=-193,distance=..15,tag=!Dialogue101,scores={Cooldown=0}] {"text":"You need an S.S. Ticket to ride on the S.S. Aqua!","italic":true,"color":"gray"}
 execute if entity @a[x=744,y=73,z=-193,distance=..15,tag=!Dialogue101,scores={Cooldown=0}] run scoreboard players set @a[x=744,y=73,z=-193,distance=..15,tag=!Dialogue101,scores={Cooldown=0}] Cooldown 20
-
-#RocketHQ Reopens stairs if player needs it
-execute at @a[x=-164,y=63,z=213,distance=..15,tag=Dialogue53] run fill -164 63 213 -161 63 216 air
-execute at @a[x=-164,y=63,z=213,distance=..15,tag=Dialogue53] run fill -160 63 213 -160 63 216 minecraft:stone_brick_stairs[facing=east]
 
 
 #Battle Tower blocked until player has beaten ELite Four
@@ -1107,22 +1055,6 @@ execute as @a[x=-2900,y=57,z=-75,dx=11,dy=20,dz=30,tag=!Dialogue142,scores={Cool
 execute as @a[x=-2912,y=57,z=-75,dx=13,dy=20,dz=30,tag=!Dialogue142,scores={Cooldown=0}] run scoreboard players add @s Cooldown 40
 execute at @a[x=-2900,y=57,z=-75,dx=11,dy=20,dz=30,tag=!Dialogue142] run tp @a[x=-2900,y=57,z=-75,dx=11,dy=20,dz=30,tag=!Dialogue142] ~10 ~ ~
 execute at @a[x=-2912,y=57,z=-75,dx=13,dy=20,dz=30,tag=!Dialogue142] run tp @a[x=-2912,y=57,z=-75,dx=13,dy=20,dz=30,tag=!Dialogue142] ~-10 ~ ~
-
-
-
-
-
-#Rocket HQ Admin Room Gate
-#TEST
-execute if block -105 37 187 minecraft:air if entity @a[x=-107,y=33,z=181,distance=..25,scores={TalkTime=0}] run fill -105 37 187 -98 34 187 minecraft:iron_bars
-
-execute if block -105 37 187 minecraft:iron_bars if entity @a[x=-107,y=33,z=181,dx=11,dy=5,dz=12,tag=Dialogue56,tag=Dialogue57,scores={TalkTime=0}] run fill -105 37 187 -98 34 187 minecraft:air
-
-
-#Rocket HQ Generator Room
-execute if entity @a[x=-124,y=45,z=169,dx=12,dy=5,dz=11,tag=Dialogue63,scores={TalkTime=0}] run fill -122 45 175 -114 48 175 minecraft:air
-execute unless entity @a[x=-124,y=45,z=169,dx=12,dy=5,dz=11,tag=Dialogue63,scores={TalkTime=0}] run fill -122 45 175 -114 48 175 minecraft:iron_bars
-execute if entity @a[x=-124,y=45,z=169,dx=12,dy=5,dz=11,scores={TalkTime=1..,DialogueTrigger=63}] run fill -122 45 175 -114 48 175 minecraft:air
 
 
 

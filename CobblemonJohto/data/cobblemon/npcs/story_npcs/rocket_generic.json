@@ -1,6 +1,6 @@
 {  
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:oldlady",
+    "resourceIdentifier": "cobblemon:rocketgrunt",
     "presets": [],
     "variation": {
         "dirt": [
@@ -12,9 +12,9 @@
     },
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:mahogany_grandma_shop_interaction"
+        "dialogue": "cobblemon:rocket_generic"
     },
-        "name": "     ",
+        "name": "Rocket Grunt",
         "party": {
         "type": "simple",
         "pokemon": [

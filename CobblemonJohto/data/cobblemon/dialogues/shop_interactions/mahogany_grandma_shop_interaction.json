@@ -15,7 +15,7 @@
             "face": {
                 "type": "artificial",
                 "modelType": "npc",
-                "identifier": "cobblemon:lady",
+                "identifier": "cobblemon:oldlady",
                 "isLeftSide": true
             }
         }

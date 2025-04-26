@@ -1,6 +1,6 @@
 {  
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:rocketgrunt",
+    "resourceIdentifier": "cobblemon:archer",
     "presets": ["cobblemon:trainer_basics"],
     "interaction": {
         "type": "dialogue",
