@@ -13,17 +13,16 @@
 #------------------------------------------------------------------------------------------------
 
 #Tags rocks within the player's grasp as Broken to clear a path quickly
-execute at @s run tag @e[distance=..5,type=minecraft:interaction] add Break
+execute at @s run tag @e[distance=..5,type=minecraft:interaction,tag=RockSmash] add Break
 
 #Sets the armor stand model to broken
-execute at @s as @e[distance=..15,tag=Break] at @s positioned ~ ~-2 ~ as @e[dy=4,type=armor_stand] run data merge entity @s {ArmorItems:[{},{},{},{id:iron_hoe,tag:{Damage:3,HideFlags:6,Unbreakable:1},Count:1}],DisabledSlots:4144959}
-execute as @e[distance=..15,tag=Break] at @s run particle minecraft:block terracotta ~ ~0.5 ~ 1 2 1 1 500
-execute at @s as @e[distance=..15,tag=Break] at @s positioned ~ ~-2 ~ run tag @e[dy=4,type=armor_stand] add Regenerate
+execute at @s as @e[distance=..15,tag=Break] at @s positioned ~ ~-2 ~ as @e[dy=4,type=armor_stand] run data merge entity @s {Invisible:true,Invulnerable:true,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"deepslate_copper_ore",Count:1}],Tags:["RockSmash"]}
+execute as @e[distance=..15,tag=Break] at @s run particle block{block_state:{Name:terracotta}} ~ ~0.5 ~ 1 2 1 1 500
 
 execute at @s as @e[distance=..15,tag=Break] at @s positioned ~ ~-2 ~ run fill ~ ~ ~ ~ ~5 ~ air replace barrier
 
 #Breaks Rock Smash Rock surrounding player
-execute as @s at @s run kill @e[distance=..5,type=minecraft:interaction,tag=Break]
+execute as @s at @s run kill @e[distance=..5,type=minecraft:interaction,tag=RockSmash]
 tellraw @s {"text":"You used Rock Smash!","italic":true,"color":"gray"}
 playsound minecraft:item.shield.block ambient @s ~ ~ ~ 10 1 1
 
@@ -89,7 +88,7 @@ give @s[scores={Temp=1,rng=24}] cobblemon:dusk_stone
 give @s[scores={Temp=1,rng=25..26}] cobblemon:helix_fossil
 give @s[scores={Temp=1,rng=27}] cobblemon:max_ether
 give @s[scores={Temp=1,rng=28}] cobblemon:max_revive
-give @s[scores={Temp=1,rng=29}] cobblemon:old_amber
+give @s[scores={Temp=1,rng=29}] cobblemon:old_amber_fossil
 give @s[scores={Temp=1,rng=30}] cobblemon:dawn_stone
 give @s[scores={Temp=1,rng=31}] cobblemon:ice_stone
 
@@ -100,12 +99,13 @@ give @s[scores={Temp=2,rng=23}] cobblemon:claw_fossil
 give @s[scores={Temp=2,rng=24}] cobblemon:dawn_stone
 give @s[scores={Temp=2,rng=25}] cobblemon:max_ether
 give @s[scores={Temp=2,rng=26}] cobblemon:ice_stone
-give @s[scores={Temp=2,rng=27..28}] cobblemon:rare_bone
+scoreboard players add @s[scores={Temp=2,rng=27..28}] Money 5000
 give @s[scores={Temp=2,rng=29}] cobblemon:root_fossil
 give @s[scores={Temp=2,rng=30}] cobblemon:oval_stone
 give @s[scores={Temp=2,rng=31}] cobblemon:hard_stone
 
 playsound minecraft:entity.experience_orb.pickup ambient @s[scores={rng=21..31}] ~ ~ ~ 1 1 1
+tellraw @s[scores={rng=21..31}] {"text":"An item was in the rubble!","italic":true,"color":"gray"}
 
 
 #--------------------------------------
@@ -117,6 +117,9 @@ playsound minecraft:entity.experience_orb.pickup ambient @s[scores={rng=21..31}]
 execute as @s[x=-2884,y=0,z=-200,dx=273,dy=240,dz=239,scores={rng=10..17}] at @s run pokespawn diglett level=30
 execute as @s[x=-2884,y=0,z=-200,dx=273,dy=240,dz=239,scores={rng=18..20}] at @s run pokespawn shuckle level=30
 
+tellraw @s[x=-2884,y=0,z=-200,dx=273,dy=240,dz=239,scores={rng=10..17}] {"text":"A Diglett was in the rubble!","italic":true,"color":"gray"}
+tellraw @s[x=-2884,y=0,z=-200,dx=273,dy=240,dz=239,scores={rng=18..20}] {"text":"A Shuckle was in the rubble!","italic":true,"color":"gray"}
+
 #--------------------------------------
 #Dark Cave
 #72% Dunsparce
@@ -127,15 +130,25 @@ execute as @s[x=-307,y=0,z=-94,dx=94,dy=240,dz=223,scores={rng=18..20}] at @s ru
 execute as @s[x=-439,y=0,z=-190,dx=131,dy=240,dz=319,scores={rng=10..17}] at @s run pokespawn dunsparce level=11
 execute as @s[x=-439,y=0,z=-190,dx=131,dy=240,dz=319,scores={rng=18..20}] at @s run pokespawn geodude level=11
 
+tellraw @s[x=-307,y=0,z=-94,dx=94,dy=240,dz=223,scores={rng=10..17}] {"text":"A Dunsparce was in the rubble!","italic":true,"color":"gray"}
+tellraw @s[x=-307,y=0,z=-94,dx=94,dy=240,dz=223,scores={rng=18..20}] {"text":"A Geodude was in the rubble!","italic":true,"color":"gray"}
+
+tellraw @s[x=-439,y=0,z=-190,dx=131,dy=240,dz=319,scores={rng=10..17}] {"text":"A Dunsparce was in the rubble!","italic":true,"color":"gray"}
+tellraw @s[x=-439,y=0,z=-190,dx=131,dy=240,dz=319,scores={rng=18..20}] {"text":"A Geodude was in the rubble!","italic":true,"color":"gray"}
+
 #--------------------------------------
 #Ruins of Alph
 #Geodude
 execute as @s[x=160,y=0,z=-295,dx=121,dy=240,dz=205,scores={rng=10..20}] at @s run pokespawn geodude level=10
 
+tellraw @s[x=160,y=0,z=-295,dx=121,dy=240,dz=205,scores={rng=10..20}] {"text":"A Geodude was in the rubble!","italic":true,"color":"gray"}
+
 #--------------------------------------
 #Rock Tunnel
 #Geodude
 execute as @s[x=-3420,y=0,z=516,dx=257,dy=59,dz=197,scores={rng=10..20}] at @s run pokespawn geodude level=15
+
+tellraw @s[x=-3420,y=0,z=516,dx=257,dy=59,dz=197,scores={rng=10..20}] {"text":"A Geodude was in the rubble!","italic":true,"color":"gray"}
 
 #--------------------------------------
 #Victory Road
@@ -144,12 +157,18 @@ execute as @s[x=-3420,y=0,z=516,dx=257,dy=59,dz=197,scores={rng=10..20}] at @s r
 execute as @s[x=-1531,y=0,z=372,dx=204,dy=61,dz=173,scores={rng=10..17}] at @s run pokespawn geodude level=30
 execute as @s[x=-1531,y=0,z=372,dx=204,dy=61,dz=173,scores={rng=18..20}] at @s run pokespawn graveler level=32
 
+tellraw @s[x=-1531,y=0,z=372,dx=204,dy=61,dz=173,scores={rng=10..17}] {"text":"A Geodude was in the rubble!","italic":true,"color":"gray"}
+tellraw @s[x=-1531,y=0,z=372,dx=204,dy=61,dz=173,scores={rng=18..20}] {"text":"A Graveler was in the rubble!","italic":true,"color":"gray"}
+
 #--------------------------------------
 #Cianwood
 #72% Krabby
 #28% Shuckle
 execute as @s[x=-1531,y=0,z=372,dx=204,dy=61,dz=173,scores={rng=10..17}] at @s run pokespawn krabby level=20
 execute as @s[x=-1531,y=0,z=372,dx=204,dy=61,dz=173,scores={rng=18..20}] at @s run pokespawn shuckle level=25
+
+tellraw @s[x=-1531,y=0,z=372,dx=204,dy=61,dz=173,scores={rng=10..17}] {"text":"A Krabby was in the rubble!","italic":true,"color":"gray"}
+tellraw @s[x=-1531,y=0,z=372,dx=204,dy=61,dz=173,scores={rng=18..20}] {"text":"A Shuckle was in the rubble!","italic":true,"color":"gray"}
 
 #--------------------------------------
 #Cliff Cave & Route 47
@@ -158,6 +177,9 @@ execute as @s[x=-1531,y=0,z=372,dx=204,dy=61,dz=173,scores={rng=18..20}] at @s r
 execute as @s[x=1321,y=0,z=-487,dx=389,dy=256,dz=150,scores={rng=10..17}] at @s run pokespawn krabby level=25
 execute as @s[x=1321,y=0,z=-487,dx=389,dy=256,dz=150,scores={rng=18..20}] at @s run pokespawn kingler level=30
 
+tellraw @s[x=1321,y=0,z=-487,dx=389,dy=256,dz=150,scores={rng=10..17}] {"text":"A Krabby was in the rubble!","italic":true,"color":"gray"}
+tellraw @s[x=1321,y=0,z=-487,dx=389,dy=256,dz=150,scores={rng=18..20}] {"text":"A Kingler was in the rubble!","italic":true,"color":"gray"}
+
 #--------------------------------------
 #Route 19
 #72% Krabby
@@ -165,8 +187,8 @@ execute as @s[x=1321,y=0,z=-487,dx=389,dy=256,dz=150,scores={rng=18..20}] at @s 
 execute as @s[x=-2479,y=0,z=-831,dx=225,dy=240,dz=192,scores={rng=10..17}] at @s run pokespawn krabby level=25
 execute as @s[x=-2479,y=0,z=-831,dx=225,dy=240,dz=192,scores={rng=18..20}] at @s run pokespawn kingler level=30
 
-
-
+tellraw @s[x=-2479,y=0,z=-831,dx=225,dy=240,dz=192,scores={rng=10..17}] {"text":"A Krabby was in the rubble!","italic":true,"color":"gray"}
+tellraw @s[x=-2479,y=0,z=-831,dx=225,dy=240,dz=192,scores={rng=18..20}] {"text":"A Kingler was in the rubble!","italic":true,"color":"gray"}
 
 
 
