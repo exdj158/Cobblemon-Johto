@@ -1,0 +1,34 @@
+{  
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:scientistm",
+    "presets": ["cobblemon:trainer_basics"],
+    "interaction": {
+        "type": "dialogue",
+        "dialogue": "cobblemon:scientistjed_interaction"
+    },
+        "name": "Jed",
+        "party": {
+        "type": "simple",
+        "pokemon": [
+            "Magnemite level=20",
+            "Magnemite level=20",
+            "Magnemite level=20"
+        ]
+    },
+    "config": [
+        {
+            "variableName": "can_rechallenge",
+            "displayName": "Rechallenging",
+            "description": "This NPC can be battled multiple times.",
+            "type": "BOOLEAN",
+            "defaultValue": true
+        },
+        {
+            "variableName": "on_player_wins",
+            "displayName": "npc.variable.on_player_wins.name",
+            "description": "npc.variable.on_player_wins.desc",
+            "type": "TEXT",
+            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue scientistjed_end @s');"
+          }
+    ]
+}

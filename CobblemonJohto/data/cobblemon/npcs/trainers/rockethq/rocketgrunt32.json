@@ -1,0 +1,32 @@
+{  
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:rocketgrunt",
+    "presets": ["cobblemon:trainer_basics"],
+    "interaction": {
+        "type": "dialogue",
+        "dialogue": "cobblemon:rocketgrunt32_interaction"
+    },
+        "name": "Rocket Grunt",
+        "party": {
+        "type": "simple",
+        "pokemon": [
+            "Raticate level=19"
+        ]
+    },
+    "config": [
+        {
+            "variableName": "can_rechallenge",
+            "displayName": "Rechallenging",
+            "description": "This NPC can be battled multiple times.",
+            "type": "BOOLEAN",
+            "defaultValue": true
+        },
+        {
+            "variableName": "on_player_wins",
+            "displayName": "npc.variable.on_player_wins.name",
+            "description": "npc.variable.on_player_wins.desc",
+            "type": "TEXT",
+            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue rocketgrunt32_end @s');"
+          }
+    ]
+}
