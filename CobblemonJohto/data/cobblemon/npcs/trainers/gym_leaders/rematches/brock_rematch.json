@@ -1,0 +1,77 @@
+{
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:brock",
+    "presets": ["cobblemon:trainer_basics"],
+    "interaction": {
+        "type": "dialogue",
+        "dialogue": "cobblemon:brock_rematch_interaction"
+    },
+    "config": [
+        {
+            "variableName": "can_rechallenge",
+            "displayName": "Rechallenging",
+            "description": "This NPC can be battled multiple times.",
+            "type": "BOOLEAN",
+            "defaultValue": true
+        },
+        {
+            "variableName": "on_player_wins",
+            "displayName": "npc.variable.on_player_wins.name",
+            "description": "npc.variable.on_player_wins.desc",
+            "type": "TEXT",
+            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue brock_rematch_end @s');"
+          }
+    ],
+    "names": [
+        "Brock"
+    ],
+    "battleConfiguration": {
+        "canChallenge": true
+    },
+    "autoHealParty": true,
+    "skill": 5,
+    "party": {
+        "type": "simple",
+        "pokemon": [
+            "Golem level=55 moves=sandstorm,rockslide,rockpolish,earthquake",
+            "Relicanth level=54 moves=headsmash,aquatail,earthquake,rest",
+            "Omastar level=56 moves=protect,sandstorm,brine,ancientpower",
+            "Kabutops level=55 moves=rockslide,aquajet,endure,gigadrain",
+            "Onix level=61 moves=stealthrock,rockslide,rockpolish,sandstorm",
+            "Rampardos level=57 moves=earthquake,stoneedge,avalanch,rockpolish"
+        ]
+    },
+    "isMovable": false,  
+    "isLeashable": false,
+    "allowProjectileHits": false,
+    "isInvulnerable": true, 
+    "canDespawn": false,
+    "ai": [
+        {
+            "type": "apply_presets",
+            "presets": []
+        },
+        {
+            "type": "add_tasks_to_activity",
+            "activity": "core",
+            "tasksByPriority": {
+                "0": [
+                    "look_at_target",
+                    "stay_afloat"
+                ]
+            }
+        },
+        {
+            "type": "add_tasks_to_activity",
+            "activity": "idle",
+            "tasksByPriority": {
+                "0": [
+                    "look_at_target"
+                ],
+                "1": [
+                    "look_at_entities"
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:blaine",
+    "presets": ["cobblemon:trainer_basics"],
+    "interaction": {
+        "type": "dialogue",
+        "dialogue": "cobblemon:blaine_rematch_interaction"
+    },
+    "config": [
+        {
+            "variableName": "can_rechallenge",
+            "displayName": "Rechallenging",
+            "description": "This NPC can be battled multiple times.",
+            "type": "BOOLEAN",
+            "defaultValue": true
+        },
+        {
+            "variableName": "on_player_wins",
+            "displayName": "npc.variable.on_player_wins.name",
+            "description": "npc.variable.on_player_wins.desc",
+            "type": "TEXT",
+            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue blaine_rematch_end @s');"
+          }
+    ],
+    "names": [
+        "Blaine"
+    ],
+    "battleConfiguration": {
+        "canChallenge": true
+    },
+    "autoHealParty": true,
+    "skill": 5,
+    "party": {
+        "type": "simple",
+        "pokemon": [
+            "Torkoal level=54 moves=yawn,sunnyday,bodyslam,overheat",
+            "Camerupt level=57 moves=eruption,earthquake,solarbeam,sunnyday",
+            "Rapidash level=60 moves=flareblitz,megahorn,quickattack,overheat",
+            "Magcargo level=58 moves=curse,gyroball,overheat,stoneedge",
+            "Houndoom level=54 moves=darkpulse,flamethrower,shadowball,suckerpunch",
+            "Magmortar level=62 moves=flamethrower,thunderbolt,lowkick,confuseray"
+        ]
+    }
+}
