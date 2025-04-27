@@ -15,8 +15,7 @@ execute as @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=UnownSpawning] run se
 execute if entity @e[x=-793,y=65,z=-284,dy=3,tag=RepeatedLoot] as @p run function johto:data/pokeloot
 
 
-#All Week Siblings achievement
-advancement grant @a[tag=Dialogue187,tag=Dialogue188,tag=Dialogue189,tag=Dialogue190,tag=Dialogue191,tag=Dialogue192,tag=Dialogue193] only johto:weeksiblings
+
 
 
 #Runs Swarm Spawns
@@ -85,53 +84,6 @@ execute as @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=!Skip] run tp @e[x=-1
 
 execute as @a[x=-178,y=0,z=152,dx=121,dy=63,dz=73] run tag @e[x=-792,y=65,z=-284,dy=3,type=armor_stand] remove Skip
 
-
-
-#Return TPs the weekday siblings if present
-
-#Monica
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=2..7}] run execute as @e[x=913,y=63,z=-54,dy=3,nbt=!{cobblemon:npc_chatting}] run particle cloud ~ ~ ~ 1 1 1 1 100
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=2..7}] run tp @e[x=913,y=63,z=-54,dy=3,nbt=!{cobblemon:npc_chatting}] -815 65 -228
-
-#Tuscany
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=1}] run execute as @e[x=-482,y=63,z=-535,dy=3,nbt=!{cobblemon:npc_chatting}] run particle cloud ~ ~ ~ 1 1 1 1 100
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=3..7}] run execute as @e[x=-482,y=63,z=-535,dy=3,nbt=!{cobblemon:npc_chatting}] run particle cloud ~ ~ ~ 1 1 1 1 100
-
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=1}] run tp @e[x=-482,y=63,z=-535,dy=3,nbt=!{cobblemon:npc_chatting}] -815 65 -226
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=3..7}] run tp @e[x=-482,y=63,z=-535,dy=3,nbt=!{cobblemon:npc_chatting}] -815 65 -226
-
-#Wesley
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=1..2}] run execute as @e[x=-56,y=63,z=722,dy=3,nbt=!{cobblemon:npc_chatting}] run particle cloud ~ ~ ~ 1 1 1 1 100
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=4..7}] run execute as @e[x=-56,y=63,z=722,dy=3,nbt=!{cobblemon:npc_chatting}] run particle cloud ~ ~ ~ 1 1 1 1 100
-
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=1..2}] run tp @e[x=-56,y=63,z=722,dy=3,nbt=!{cobblemon:npc_chatting}] -815 65 -224
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=4..7}] run tp @e[x=-56,y=63,z=722,dy=3,nbt=!{cobblemon:npc_chatting}] -815 65 -224
-
-#Arthur
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=1..3}] run execute as @e[x=236,y=63,z=-6,dy=3,nbt=!{cobblemon:npc_chatting}] run particle cloud ~ ~ ~ 1 1 1 1 100
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=5..7}] run execute as @e[x=236,y=63,z=-6,dy=3,nbt=!{cobblemon:npc_chatting}] run particle cloud ~ ~ ~ 1 1 1 1 100
-
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=1..3}] run tp @e[x=236,y=63,z=-6,dy=3,nbt=!{cobblemon:npc_chatting}] -815 65 -222
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=5..7}] run tp @e[x=236,y=63,z=-6,dy=3,nbt=!{cobblemon:npc_chatting}] -815 65 -222
-
-#Frieda
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=1..4}] run execute as @e[x=127,y=63,z=-545,dy=3,nbt=!{cobblemon:npc_chatting}] run particle cloud ~ ~ ~ 1 1 1 1 100
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=6..7}] run execute as @e[x=127,y=63,z=-545,dy=3,nbt=!{cobblemon:npc_chatting}] run particle cloud ~ ~ ~ 1 1 1 1 100
-
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=1..4}] run tp @e[x=127,y=63,z=-545,dy=3,nbt=!{cobblemon:npc_chatting}] -815 65 -220
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=6..7}] run tp @e[x=127,y=63,z=-545,dy=3,nbt=!{cobblemon:npc_chatting}] -815 65 -220
-
-#Santos
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=1..5}] run execute as @e[x=-663,y=63,z=225,dy=3,nbt=!{cobblemon:npc_chatting}] run particle cloud ~ ~ ~ 1 1 1 1 100
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=7}] run execute as @e[x=-663,y=63,z=225,dy=3,nbt=!{cobblemon:npc_chatting}] run particle cloud ~ ~ ~ 1 1 1 1 100
-
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=1..5}] run tp @e[x=-663,y=63,z=225,dy=3,nbt=!{cobblemon:npc_chatting}] -815 65 -218
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=7}] run tp @e[x=-663,y=63,z=225,dy=3,nbt=!{cobblemon:npc_chatting}] -815 65 -218
-
-#Sunny
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=1..6}] run execute as @e[x=335,y=64,z=113,dy=3,nbt=!{cobblemon:npc_chatting}] run particle cloud ~ ~ ~ 1 1 1 1 100
-
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=1..6}] run tp @e[x=335,y=64,z=113,dy=3,nbt=!{cobblemon:npc_chatting}] -815 65 -216
 
 
 

@@ -20,25 +20,27 @@ execute as @s[x=-2696,y=64,z=-37,distance=..6,tag=Dialogue133,tag=!Dialogue134] 
 execute as @s[x=-2696,y=64,z=-37,distance=..6,tag=Dialogue133,tag=Dialogue134] run opendialogue vermilion_clefairyguy_post @s
 
 
+#Weekday Siblings
+execute as @s[x=913,y=64,z=-54,distance=..6,tag=!Dialogue187] run opendialogue monica_first @s
+execute as @s[x=913,y=64,z=-54,distance=..6,tag=Dialogue187] run opendialogue monica_first_end @s
 
+execute as @s[x=-482,y=64,z=-535,distance=..6,tag=!Dialogue188] run opendialogue tuscany_first @s
+execute as @s[x=-482,y=64,z=-535,distance=..6,tag=Dialogue188] run opendialogue tuscany_first_end @s
 
+execute as @s[x=-56,y=64,z=722,distance=..6,tag=!Dialogue189] run opendialogue wesley_first @s
+execute as @s[x=-56,y=64,z=722,distance=..6,tag=Dialogue189] run opendialogue wesley_first_end @s
 
+execute as @s[x=236,y=64,z=-6,distance=..6,tag=!Dialogue190] run opendialogue arthur_first @s
+execute as @s[x=236,y=64,z=-6,distance=..6,tag=Dialogue190] run opendialogue arthur_first_end @s
 
+execute as @s[x=127,y=64,z=-545,distance=..6,tag=!Dialogue191] run opendialogue frieda_first @s
+execute as @s[x=127,y=64,z=-545,distance=..6,tag=Dialogue191] run opendialogue frieda_first_end @s
 
+execute as @s[x=-663,y=64,z=225,distance=..6,tag=!Dialogue192] run opendialogue santos_first @s
+execute as @s[x=-663,y=64,z=225,distance=..6,tag=Dialogue192] run opendialogue santos_first_end @s
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+execute as @s[x=335,y=64,z=113,distance=..6,tag=!Dialogue193] run opendialogue sunny_first @s
+execute as @s[x=335,y=64,z=113,distance=..6,tag=Dialogue193] run opendialogue sunny_first_end @s
 
 
 
