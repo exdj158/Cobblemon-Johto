@@ -66,6 +66,39 @@ advancement grant @a[tag=Dialogue187,tag=Dialogue188,tag=Dialogue189,tag=Dialogu
 
 
 
+#Night Only Trainers
+
+#tps in Trainers
+
+#Route 34 Policeman
+execute at @a[x=477,y=64,z=-536,distance=..100] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=13000..}] unless entity @e[x=477,y=64,z=-536,dy=3,type=cobblemon:npc] run particle cloud 477 64 -536 1 1 1 1 100
+execute at @a[x=477,y=64,z=-536,distance=..100] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=13000..}] unless entity @e[x=477,y=64,z=-536,dy=3,type=cobblemon:npc] run npcspawnat 477 64 -536 policemankeith 1
+
+#Route 35 Policeman
+execute at @a[x=504,y=64,z=-100,distance=..100] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=13000..}] unless entity @e[x=504,y=64,z=-100,dy=3,type=cobblemon:npc] run particle cloud 504 64 -100 1 1 1 1 100
+execute at @a[x=504,y=64,z=-100,distance=..100] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=13000..}] unless entity @e[x=504,y=64,z=-100,dy=3,type=cobblemon:npc] run npcspawnat 504 64 -100 policemandirk 1
+
+#Route 39 Poke Fan
+execute at @a[x=787,y=64,z=157,distance=..100] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=13000..}] unless entity @e[x=787,y=64,z=157,dy=3,type=cobblemon:npc] run particle cloud 787 64 157 1 1 1 1 100
+execute at @a[x=787,y=64,z=157,distance=..100] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=13000..}] unless entity @e[x=787,y=64,z=157,dy=3,type=cobblemon:npc] run npcspawnat 787 64 157 pokefanjamie 1
+
+
+
+#tps trainers out
+
+#Route 34 Policeman
+execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=0..12999}] if entity @e[x=477,y=64,z=-536,dy=3,type=cobblemon:npc] run particle cloud 477 64 -536 1 1 1 1 100
+execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=0..12999}] if entity @e[x=477,y=64,z=-536,dy=3,type=cobblemon:npc] run tp @e[x=477,y=64,z=-536,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+
+
+#Route 35 Policeman
+execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=0..12999}] if entity @e[x=504,y=64,z=-100,dy=3,type=cobblemon:npc] run particle cloud 504 64 -100 1 1 1 1 100
+execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=0..12999}] if entity @e[x=504,y=64,z=-100,dy=3,type=cobblemon:npc] run tp @e[x=504,y=64,z=-100,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+
+
+#Route 39 Poke Fan
+execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=0..12999}] if entity @e[x=787,y=64,z=157,dy=3,type=cobblemon:npc] run particle cloud 787 64 157 1 1 1 1 100
+execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=0..12999}] if entity @e[x=787,y=64,z=157,dy=3,type=cobblemon:npc] run tp @e[x=787,y=64,z=157,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 
 
 
