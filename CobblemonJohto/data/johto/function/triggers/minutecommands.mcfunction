@@ -61,7 +61,7 @@ execute unless entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={Weekda
 execute unless entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=7}] run kill @e[x=335,y=64,z=113,distance=..3,type=interaction]
 
 #All Week Siblings achievement
-advancement grant @a[tag=Dialogue187,tag=Dialogue188,tag=Dialogue189,tag=Dialogue190,tag=Dialogue191,tag=Dialogue192,tag=Dialogue193] only johto:weeksiblings
+advancement grant @a[tag=Dialogue187,tag=Dialogue188,tag=Dialogue189,tag=Dialogue190,tag=Dialogue191,tag=Dialogue192,tag=Dialogue193] only johto:sidequests/weeksiblings
 
 
 

@@ -34,7 +34,7 @@
                             "q.run_command('execute as ' + q.player.username + ' run stopsound @s record');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound badge ambient @s ~ ~ ~ 1 1 1');",
                             "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s click 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run advancement grant @s only johto:badge8');",
+                            "q.run_command('execute as ' + q.player.username + ' run advancement grant @s only johto:badges/badge8');",
                             "q.run_command('execute as ' + q.player.username + ' run tag @s add Clair');",
                             "q.dialogue.set_page('page2');"
                     ]

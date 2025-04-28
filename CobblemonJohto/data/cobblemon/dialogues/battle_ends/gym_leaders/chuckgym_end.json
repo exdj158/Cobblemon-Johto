@@ -45,14 +45,14 @@
                         {
                             "text": "Close",
                             "value": "close",
-                            "action": [              
+                            "action": [
+                                "q.run_command('execute as ' + q.player.username + ' run advancement grant @s only johto:badges/badge5');",
                                 "q.dialogue.close();"]
                         }
                     ]
                 }
             }
     ],
-    "escapeAction": [              
-      "q.dialogue.close();"
+    "escapeAction": [
       ]
 }

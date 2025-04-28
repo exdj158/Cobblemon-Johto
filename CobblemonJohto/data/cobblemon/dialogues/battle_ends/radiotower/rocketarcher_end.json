@@ -96,6 +96,7 @@
                         "value": "next",
                         "action": [
                             "q.dialogue.set_page('page5');",
+                            "q.run_command('execute as ' + q.player.username + ' run advancement grant @s only johto:story/rocket4');",
                             "q.run_command('execute as ' + q.player.username + ' run effect give @s minecraft:blindness 3 1 true');",
                             "q.run_command('execute as ' + q.player.username + ' at @s run tp @s ~ ~ ~-26');",
                             "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s click 1');"

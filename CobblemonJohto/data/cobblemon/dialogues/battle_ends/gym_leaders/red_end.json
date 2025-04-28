@@ -29,14 +29,14 @@
                         {
                             "text": "Close",
                             "value": "close",
-                            "action": [              
+                            "action": [
+                                "q.run_command('execute as ' + q.player.username + ' run advancement grant @s only johto:story/red');",
                                 "q.dialogue.close();"]
                         }
                     ]
             }
         }
     ],
-    "escapeAction": [              
-      "q.dialogue.close();"
+    "escapeAction": [
       ]
 }

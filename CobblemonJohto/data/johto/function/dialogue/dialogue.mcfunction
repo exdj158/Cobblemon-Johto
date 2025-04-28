@@ -25,16 +25,17 @@ execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run particle cloud -169 65
 execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run pokespawnat -169 65 645 gyarados shiny=yes level=30
 execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run playsound gyarados hostile @s ~ ~ ~ 1 1 1
 execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run playsound shiny hostile @s ~ ~ ~ 1 1 1
+execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run advancement grant @s only johto:story/rocket2
 
 
-tag @a[scores={DialogueTrigger=49}] add Dialogue49
+tag @a[scores={DialogueTrigger=49,TalkTime=1..}] add Dialogue49
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Hall of Fame Credits
 #Dialogue98
 #scoreboard players set @p[x=-1300,y=77,z=751,dx=24,dy=10,dz=33] DialogueTrigger 98
 
 execute as @s[scores={DialogueTrigger=98,TalkTime=1}] run scoreboard players set @s IP 1
-execute as @s[scores={DialogueTrigger=98,TalkTime=1}] run advancement grant @s only johto:champion
+execute as @s[scores={DialogueTrigger=98,TalkTime=1}] run advancement grant @s only johto:badges/champion
 execute as @s[scores={DialogueTrigger=98,TalkTime=1}] run function johto:tools/forceclick
 
 tellraw @s[scores={DialogueTrigger=98,TalkTime=5}] {"text":"Congratulations, you have completed the Indigo League!"}
@@ -213,7 +214,7 @@ execute as @s[scores={DialogueTrigger=202,TalkTime=65}] run tp @s 1591 88 -111 1
 execute as @s[scores={DialogueTrigger=202,TalkTime=65}] run spawnpoint @s 1591 88 -111
 
 tellraw @s[scores={DialogueTrigger=202,TalkTime=65}] ["",{"text":"Thank you for visiting! Come again soon!"}]
-execute as @s[scores={DialogueTrigger=202,TalkTime=65}] run advancement grant @s only johto:event2
+execute as @s[scores={DialogueTrigger=202,TalkTime=65}] run advancement grant @s only johto:sidequests/safarizone
 
 tag @s[scores={DialogueTrigger=202,TalkTime=65..}] add Dialogue202
 
@@ -248,7 +249,7 @@ execute as @s[x=530,y=0,z=324,dx=442,dy=63,dz=471,scores={DialogueTrigger=214,Ta
 #Now Boarding messages
 tellraw @s[scores={DialogueTrigger=214,TalkTime=1,SSState=1}] {"text":"Now boarding the S.S. Aqua voyage for Vermilion City!"}
 tellraw @s[scores={DialogueTrigger=214,TalkTime=1,SSState=2}] {"text":"Now boarding the S.S. Aqua voyage for Olivine City!"}
-execute as @s[scores={DialogueTrigger=214,TalkTime=1}] run advancement grant @s only johto:event4
+execute as @s[scores={DialogueTrigger=214,TalkTime=1}] run advancement grant @s only johto:story/ssaqua
 execute as @s[scores={DialogueTrigger=214,TalkTime=1}] run scoreboard players set @s click 1
 
 
