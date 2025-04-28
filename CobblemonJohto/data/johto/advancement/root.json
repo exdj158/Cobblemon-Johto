@@ -3,23 +3,29 @@
     "display": {
         "title": {
             "text": "The Johto Region",
-            "color": "white"
+            "color": "white",
+            "bold": false
         },
         "description": {
-            "text": "Pick a starter!"
+            "text": "Get your Starter in New Bark Town",
+            "color": "white"
         },
         "icon": {
-            "item": "cobblemon:poke_ball"
+            "id": "cobblemon:pokedex_blue"
         },
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
-        "hidden": true,
-        "background": "pixelmon:textures/gui/advancements/backgrounds/ruinswall.png"
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
     },
     "criteria": {
-        "example": {
+
+        "commandonly": {
+
             "trigger": "minecraft:impossible"
+
         }
+
     }
 }
