@@ -10,8 +10,14 @@ execute as @s[tag=!RadioOff,scores={BattleEnd=1}] run scoreboard players set @s 
 
 
 #2 - Gym Leader battle ending (Applies a tag based on which gym the player's in)
-execute as @s[tag=!RadioOff,scores={BattleEnd=2}] run tag @s add GymVictory
-execute as @s[tag=!RadioOff,scores={BattleEnd=2}] run function johto:tools/forceclick
+execute as @s[x=-1222,y=0,z=500,dx=470,dy=240,dz=342,tag=!RadioOff,scores={BattleEnd=2}] run tag @s add GymVictory
+execute as @s[x=-1222,y=0,z=500,dx=470,dy=240,dz=342,tag=!RadioOff,scores={BattleEnd=2}] run function johto:tools/forceclick
+
+execute as @s[x=-2794,y=63,z=410,dx=26,dy=5,dz=15,tag=!RadioOff,scores={BattleEnd=2}] run stopsound @s record
+execute as @s[x=-2794,y=63,z=410,dx=26,dy=5,dz=15,tag=!RadioOff,scores={BattleEnd=2}] run playsound gymvictory record @s ~ ~ ~ 1 1 1
+execute as @s[x=-2794,y=63,z=410,dx=26,dy=5,dz=15,tag=!RadioOff,scores={BattleEnd=2}] run scoreboard players set @s MusicCooldown 110
+
+
 
 
 #3 - Elite Four ending

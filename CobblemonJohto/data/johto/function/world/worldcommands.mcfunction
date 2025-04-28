@@ -24,6 +24,14 @@ execute as @a run function johto:world/roadblocks
 #Removes Cooldown score if present
 scoreboard players remove @a[scores={Cooldown=1..}] Cooldown 1
 
+#Runs gym leader rematches
+#Gym Leader Rematches
+execute as @p[x=-2781,y=64,z=421,distance=..100,tag=AllGyms] unless entity @a[x=-2794,y=63,z=410,dx=26,dy=5,dz=15] run function johto:world/gymrematches/trainers
+
+#tps leaders out if no player nearby can battle them
+execute as @p[x=-2781,y=64,z=421,distance=..100,tag=!AllGyms] unless entity @a[x=-2794,y=63,z=410,dx=26,dy=5,dz=15,scores={BattleStart=1..}] if entity @e[x=-2781,y=63,z=421,dy=3,type=cobblemon:npc] run particle cloud -2781 64 421 1 1 1 0.15 100
+execute as @p[x=-2781,y=64,z=421,distance=..100,tag=!AllGyms] unless entity @a[x=-2794,y=63,z=410,dx=26,dy=5,dz=15,scores={BattleStart=1..}] run tp @e[x=-2781,y=63,z=421,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+
 #---------------------
 #Runs infolist command for non-ops
 scoreboard players enable @a Info

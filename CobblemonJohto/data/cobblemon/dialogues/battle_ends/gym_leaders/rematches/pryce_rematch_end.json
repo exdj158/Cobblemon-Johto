@@ -20,23 +20,7 @@
     {
       "id": "greeting",
       "speaker": "npc",
-      "lines": ["I am impressed by your prowess."],
-            "input": {
-                "type": "option",
-                "vertical": false,
-                "options": [
-                    {
-                        "text": "Next",
-                        "value": "next",
-                        "action": "q.dialogue.set_page('page2');"
-                    }
-                ]
-            }
-        },
-        {
-          "id": "page2",
-          "speaker": "npc",
-          "lines": ["With your strong will, I know you will overcome all life's obstacles. You are worthy of this Badge!"],
+      "lines": ["Mmm... Impressive!"],
                 "input": {
                     "type": "option",
                     "vertical": false,

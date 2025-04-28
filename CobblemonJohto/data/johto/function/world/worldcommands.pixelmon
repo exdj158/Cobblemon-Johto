@@ -20,12 +20,6 @@ execute at @a as @e[distance=..10,type=item,nbt={Item:{id:"pixelmon:tree"}}] run
 
 execute at @a run execute as @e[tag=Despawn,distance=..10] run data merge entity @s {Lifespan:0,Age:0s}
 
-#---------------------
-
-
-#Gym Leader Rematches
-execute as @p[x=-2781,y=64,z=421,distance=..100,tag=AllGyms] run function johto:world/gymrematches/trainers
-execute as @p[x=-2781,y=64,z=421,distance=..100,tag=!AllGyms] run function johto:world/gymrematches/leave
 
 #---------------------
 
