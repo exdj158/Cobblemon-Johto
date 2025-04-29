@@ -75,13 +75,8 @@
                         "action": "q.dialogue.set_page('pickmagmarizer');"
                     },
                     {
-                        "text": "Metal Coat",
-                        "value": "metalcoat",
-                        "action": "q.dialogue.set_page('pickmetalcoat');"
-                    },
-                    {
-                        "text": "Next Page >>",
-                        "value": "nextpage",
+                        "text": "Page 2 >>",
+                        "value": "page2",
                         "action": "q.dialogue.set_page('buy2');"
                     }
                 ]
@@ -98,6 +93,11 @@
                 "vertical": true,
                 "options": [
                     {
+                        "text": "Metal Coat",
+                        "value": "metalcoat",
+                        "action": "q.dialogue.set_page('pickmetalcoat');"
+                    },
+                    {
                         "text": "Protector",
                         "value": "protector",
                         "action": "q.dialogue.set_page('pickprotector');"
@@ -113,6 +113,24 @@
                         "action": "q.dialogue.set_page('pickdragonscale');"
                     },
                     {
+                        "text": "Page 3 >>",
+                        "value": "page3",
+                        "action": "q.dialogue.set_page('buy3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "buy3",
+            "speaker": "npc",
+            "lines": [
+                "Which item would you like to purchase?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
                         "text": "Razor Fang",
                         "value": "razorfang",
                         "action": "q.dialogue.set_page('pickrazorfang');"
@@ -123,6 +141,11 @@
                         "action": "q.dialogue.set_page('pickrazorclaw');"
                     },
                     {
+                        "text": "Link Cable",
+                        "value": "linkcable",
+                        "action": "q.dialogue.set_page('picklinkcable');"
+                    },
+                    {
                         "text": "<< Page 1",
                         "value": "page1",
                         "action": "q.dialogue.set_page('buy1');"
@@ -131,7 +154,34 @@
             }
         },
 
-
+        {
+            "id": "picklinkcable",
+            "speaker": "npc",
+            "lines": [
+                "You'd like to purchase a Link Cable for $3000?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 188');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
         {
             "id": "pickpokeball",
             "speaker": "npc",

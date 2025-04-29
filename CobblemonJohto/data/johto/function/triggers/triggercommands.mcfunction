@@ -1102,8 +1102,16 @@ execute as @a[scores={TriggerCommand=187,Money=2000..}] run give @s cobblemon:pr
 execute as @a[scores={TriggerCommand=187,Money=2000..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
 execute as @a[scores={TriggerCommand=187,Money=2000..}] run scoreboard players remove @s Money 2000
 
+#-----------------------------
 
+#Link Cable
+execute as @a[scores={TriggerCommand=188,Money=..2999}] run tellraw @s {"text":"You don't have enough money for that!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=188,Money=..2999}] run scoreboard players set @s TriggerCommand 0
 
+execute as @a[scores={TriggerCommand=188,Money=3000..}] run tellraw @s {"text":"You put the items in your inventory.","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=188,Money=3000..}] run give @s cobblemon:link_cable 1
+execute as @a[scores={TriggerCommand=188,Money=3000..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=188,Money=3000..}] run scoreboard players remove @s Money 3000
 
 
 
