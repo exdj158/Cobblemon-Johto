@@ -1739,8 +1739,8 @@ execute as @a[scores={TriggerCommand=279,BattlePoints=80..}] run scoreboard play
 #Game Corner Shops
 
 #if player lacks a Coin Case
-execute as @a[scores={TriggerCommand=253..254},tag=!CoinCase] run tellraw @s {"text":"You need a Coin Case to store these coins in!","italic":true,"color":"gray"}
-execute as @a[scores={TriggerCommand=253..254},tag=!CoinCase] run scoreboard players set @s TriggerCommand 0
+execute as @a[scores={TriggerCommand=253..255},tag=!CoinCase] run tellraw @s {"text":"You need a Coin Case to store these coins in!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=253..255},tag=!CoinCase] run scoreboard players set @s TriggerCommand 0
 #execute as @a[scores={TriggerCommand=253..254},tag=CoinCase] run advancement grant @s only kanto:sidequests/gamecorner
 
 #Game Corner Coins

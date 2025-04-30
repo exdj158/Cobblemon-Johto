@@ -53,7 +53,11 @@
 
 #-----------------------------------------------------------------------------------------------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------------------------
-scoreboard players add @s[tag=Coins] TalkTime 1
+tellraw @s[tag=!CoinCase,scores={Cooldown=0}] {"text":"You need Coins to play on the machines!","italic":true,"color":"gray"}
+scoreboard players set @s[tag=!CoinCase,scores={Cooldown=0}] Cooldown 10
+
+scoreboard players add @s[tag=CoinCase,scores={Coins=1..}] TalkTime 1
+tag @s[tag=CoinCase,scores={Coins=1..}] add Coins
 
 #Rolls RNG Score
 
@@ -129,10 +133,7 @@ execute if entity @e[x=485,y=59,z=-370,dy=3,scores={SlotRolled=1}] run execute a
 
 
 
-execute as @s[scores={TalkTime=200,rng=0}] run function johto:triggers/gamecorner/coinbal
-execute as @s[scores={TalkTime=140..,rng=1..6}] run function johto:triggers/gamecorner/coinbal
-execute as @s[scores={TalkTime=140..,rng=23..63}] run function johto:triggers/gamecorner/coinbal
-execute as @s[scores={TalkTime=140..,rng=64..}] run function johto:triggers/gamecorner/coinbal
+function johto:triggers/gamecorner/coinbal
 
 
 #-----------------------------------------------------------------------------------------------------------------------------------------

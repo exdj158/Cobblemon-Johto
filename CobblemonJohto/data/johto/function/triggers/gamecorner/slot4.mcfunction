@@ -1921,7 +1921,7 @@ execute as @s[scores={TalkTime=160,rng=0}] run fill 516 63 -378 516 63 -376 mine
 execute as @s[scores={TalkTime=180,rng=0}] run fill 516 63 -378 516 63 -376 minecraft:redstone_block
 execute as @s[scores={TalkTime=200,rng=0}] run fill 516 63 -378 516 63 -376 minecraft:air
 
-execute as @s[scores={TalkTime=200,rng=0}] run scoreboard players add @s Coins 99
+execute as @s[scores={TalkTime=200,rng=0}] run scoreboard players add @s Coins 700
 execute as @s[scores={TalkTime=200..,rng=0}] run scoreboard players set @s DialogueTrigger 0
 execute as @s[scores={TalkTime=200..,rng=0}] run scoreboard players set @e[x=501,y=59,z=-370,dy=3] rng 0
 execute as @s[scores={TalkTime=200..,rng=0}] run scoreboard players set @e[x=501,y=59,z=-370,dy=3] SlotRolled 0
@@ -1932,7 +1932,7 @@ execute as @s[scores={TalkTime=200..,rng=0}] run scoreboard players set @s TalkT
 
 #Diamond Wins
 execute as @s[scores={TalkTime=140..,rng=1..6}] run summon minecraft:firework_rocket ~ ~ ~
-execute as @s[scores={TalkTime=140..,rng=1..6}] run scoreboard players add @s Coins 19
+execute as @s[scores={TalkTime=140..,rng=1..6}] run scoreboard players add @s Coins 100
 
 execute as @s[scores={TalkTime=140..,rng=1..6}] run scoreboard players set @s DialogueTrigger 0
 execute as @s[scores={TalkTime=140..,rng=1..6}] run scoreboard players set @e[x=501,y=59,z=-370,dy=3] rng 0
@@ -1944,7 +1944,7 @@ execute as @s[scores={TalkTime=140..,rng=1..6}] run scoreboard players set @s Ta
 
 
 #Gold Wins
-execute as @s[scores={TalkTime=140..,rng=7..22}] run scoreboard players add @s Coins 4
+execute as @s[scores={TalkTime=140..,rng=7..22}] run scoreboard players add @s Coins 25
 
 execute as @s[scores={TalkTime=140..,rng=7..22}] run scoreboard players set @s DialogueTrigger 0
 execute as @s[scores={TalkTime=140..,rng=7..22}] run scoreboard players set @e[x=501,y=59,z=-370,dy=3] rng 0
@@ -1956,7 +1956,7 @@ execute as @s[scores={TalkTime=140..,rng=7..22}] run scoreboard players set @s T
 
 
 #Iron Wins
-execute as @s[scores={TalkTime=140..,rng=23..63}] run scoreboard players add @s Coins 1
+execute as @s[scores={TalkTime=140..,rng=23..63}] run scoreboard players add @s Coins 10
 
 execute as @s[scores={TalkTime=140..,rng=23..63}] run scoreboard players set @s DialogueTrigger 0
 execute as @s[scores={TalkTime=140..,rng=23..63}] run scoreboard players set @e[x=501,y=59,z=-370,dy=3] rng 0
