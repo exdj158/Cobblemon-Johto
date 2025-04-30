@@ -1,3 +1,11 @@
+#Executed by a player clicking on an Interaction entity, getting an invisible advancement, and being rewarded this function
+#Rewards are once per player using tags, and mainly location based.
+
+execute as @s[x=513,y=55,z=-395,distance=..4,tag=CoinCase] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
+execute as @s[x=513,y=55,z=-395,distance=..4,tag=!CoinCase] run tellraw @s {"text":"You recieved a Coin Case! You can now get coins in the Game Corner.","italic":true,"color":"gray"}
+execute as @s[x=513,y=55,z=-395,distance=..4,tag=!CoinCase] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=513,y=55,z=-395,distance=..4,tag=!CoinCase] run tag @s add CoinCase
+
 execute as @s[x=-671,y=64,z=-485,distance=..4,tag=!ItemLoot1] run give @s cobblemon:potion
 execute as @s[x=-671,y=64,z=-485,distance=..4,tag=!ItemLoot1] run tellraw @s {"text":"You found a Potion!","italic":true,"color":"gray"}
 execute as @s[x=-671,y=64,z=-485,distance=..4,tag=!ItemLoot1] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
