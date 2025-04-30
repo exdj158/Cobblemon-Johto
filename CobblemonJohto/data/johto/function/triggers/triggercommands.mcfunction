@@ -1192,7 +1192,7 @@ execute as @a[scores={TriggerCommand=194,BattlePoints=1..}] run playsound minecr
 execute as @a[scores={TriggerCommand=194,BattlePoints=1..}] run scoreboard players remove @s BattlePoints 1
 
 
-#Calcium, 1
+#Rare Candy, 48
 execute as @a[scores={TriggerCommand=195,BattlePoints=..47}] run tellraw @s {"text":"You don't have enough points for that!","italic":true,"color":"gray"}
 execute as @a[scores={TriggerCommand=195,BattlePoints=..47}] run scoreboard players set @s TriggerCommand 0
 
@@ -1485,7 +1485,7 @@ execute as @a[scores={TriggerCommand=226,BattlePoints=..1}] run tellraw @s {"tex
 execute as @a[scores={TriggerCommand=226,BattlePoints=..1}] run scoreboard players set @s TriggerCommand 0
 
 execute as @a[scores={TriggerCommand=226,BattlePoints=2..}] run tellraw @s {"text":"You put the items in your inventory.","italic":true,"color":"gray"}
-execute as @a[scores={TriggerCommand=226,BattlePoints=2..}] run give @s cobblemon:qualot_berry 3
+execute as @a[scores={TriggerCommand=226,BattlePoints=2..}] run give @s cobblemon:kelpsy_berry 3
 execute as @a[scores={TriggerCommand=226,BattlePoints=2..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
 execute as @a[scores={TriggerCommand=226,BattlePoints=2..}] run scoreboard players remove @s BattlePoints 2
 
@@ -1575,7 +1575,7 @@ execute as @a[scores={TriggerCommand=236,BattlePoints=..1}] run tellraw @s {"tex
 execute as @a[scores={TriggerCommand=236,BattlePoints=..1}] run scoreboard players set @s TriggerCommand 0
 
 execute as @a[scores={TriggerCommand=236,BattlePoints=2..}] run tellraw @s {"text":"You put the items in your inventory.","italic":true,"color":"gray"}
-execute as @a[scores={TriggerCommand=236,BattlePoints=2..}] run give @s cobblemon:hapan_berry 3
+execute as @a[scores={TriggerCommand=236,BattlePoints=2..}] run give @s cobblemon:haban_berry 3
 execute as @a[scores={TriggerCommand=236,BattlePoints=2..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
 execute as @a[scores={TriggerCommand=236,BattlePoints=2..}] run scoreboard players remove @s BattlePoints 2
 
