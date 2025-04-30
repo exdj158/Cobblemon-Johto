@@ -5,6 +5,13 @@
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+#1 - Battle Tower Trainer Refreshes
+execute as @a[scores={TriggerCommand=1}] run tp @e[x=908,y=100,z=66,dy=3,dz=1,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[scores={TriggerCommand=1}] run particle cloud 908 100 67.0 1 1 1 1 25
+execute as @a[scores={TriggerCommand=1}] run pokeheal @s
+execute as @a[scores={TriggerCommand=1,BattleStreak=0..10}] run npcspawnat 908 100 67.0 battle_tower_group1
+execute as @a[scores={TriggerCommand=1,BattleStreak=11..20}] run npcspawnat 908 100 67.0 battle_tower_group2
+execute as @a[scores={TriggerCommand=1,BattleStreak=21..}] run npcspawnat 908 100 67.0 battle_tower_group3
 
 
 
