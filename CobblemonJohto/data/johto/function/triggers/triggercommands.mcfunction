@@ -170,7 +170,7 @@ execute as @a[scores={TriggerCommand=99}] run scoreboard players set @s TriggerC
 
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#100-200, shopkeeper based triggers
+#100-300, shopkeeper based triggers
 
 #Poke Ball
 execute as @a[scores={TriggerCommand=100,Money=..199}] run tellraw @s {"text":"You don't have enough money for that!","italic":true,"color":"gray"}
@@ -1727,18 +1727,268 @@ execute as @a[scores={TriggerCommand=252,BattlePoints=80..}] run playsound minec
 execute as @a[scores={TriggerCommand=252,BattlePoints=80..}] run scoreboard players remove @s BattlePoints 80
 
 #Earthquake, 80
-execute as @a[scores={TriggerCommand=253,BattlePoints=..79}] run tellraw @s {"text":"You don't have enough points for that!","italic":true,"color":"gray"}
-execute as @a[scores={TriggerCommand=253,BattlePoints=..79}] run scoreboard players set @s TriggerCommand 0
+execute as @a[scores={TriggerCommand=279,BattlePoints=..79}] run tellraw @s {"text":"You don't have enough points for that!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=279,BattlePoints=..79}] run scoreboard players set @s TriggerCommand 0
 
-execute as @a[scores={TriggerCommand=253,BattlePoints=80..}] run tellraw @s {"text":"You put the items in your inventory.","italic":true,"color":"gray"}
-execute as @a[scores={TriggerCommand=253,BattlePoints=80..}] run give @s cobblemon:qualot_berry 3
-execute as @a[scores={TriggerCommand=253,BattlePoints=80..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
-execute as @a[scores={TriggerCommand=253,BattlePoints=80..}] run scoreboard players remove @s BattlePoints 80
+execute as @a[scores={TriggerCommand=279,BattlePoints=80..}] run tellraw @s {"text":"You put the items in your inventory.","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=279,BattlePoints=80..}] run give @s cobblemon:qualot_berry 3
+execute as @a[scores={TriggerCommand=279,BattlePoints=80..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=279,BattlePoints=80..}] run scoreboard players remove @s BattlePoints 80
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Game Corner Shops
+
+#if player lacks a Coin Case
+execute as @a[scores={TriggerCommand=253..254},tag=!CoinCase] run tellraw @s {"text":"You need a Coin Case to store these coins in!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=253..254},tag=!CoinCase] run scoreboard players set @s TriggerCommand 0
+#execute as @a[scores={TriggerCommand=253..254},tag=CoinCase] run advancement grant @s only kanto:sidequests/gamecorner
+
+#Game Corner Coins
+#50 Coins
+execute as @a[scores={TriggerCommand=253,Money=..999}] run tellraw @s {"text":"You don't have enough money for that!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=253,Money=..999}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=253,Money=1000..}] run tellraw @s {"text":"You added the coins to your Coin Case.","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=253,Money=1000..}] run scoreboard players add @s Coins 50
+execute as @a[scores={TriggerCommand=253,Money=1000..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=253,Money=1000..}] run scoreboard players remove @s Money 1000
+
+#250 Coins
+execute as @a[scores={TriggerCommand=254,Money=..4999}] run tellraw @s {"text":"You don't have enough money for that!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=254,Money=..4999}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=254,Money=5000..}] run tellraw @s {"text":"You added the coins to your Coin Case.","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=254,Money=5000..}] run scoreboard players add @s Coins 250
+execute as @a[scores={TriggerCommand=254,Money=5000..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=254,Money=5000..}] run scoreboard players remove @s Money 5000
 
 
+#500 Coins
+execute as @a[scores={TriggerCommand=255,Money=..9999}] run tellraw @s {"text":"You don't have enough money for that!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=255,Money=..9999}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=255,Money=10000..}] run tellraw @s {"text":"You added the coins to your Coin Case.","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=255,Money=10000..}] run scoreboard players add @s Coins 500
+execute as @a[scores={TriggerCommand=255,Money=10000..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=255,Money=10000..}] run scoreboard players remove @s Money 10000
+
+#-----------------------------
+#Game Corner Prizes
+
+#Abra
+execute as @a[scores={TriggerCommand=256,Coins=..99}] run tellraw @s {"text":"You need more Coins for this prize!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=256,Coins=..99}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=256,Coins=100..}] run tellraw @s {"text":"You received an Abra!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=256,Coins=100..}] run pokegive Abra level=20
+execute as @a[scores={TriggerCommand=256,Coins=100..}] run playsound minecraft:egghatch ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=256,Coins=100..}] run scoreboard players remove @s Coins 100
+
+#Ekans
+execute as @a[scores={TriggerCommand=257,Coins=..349}] run tellraw @s {"text":"You need more Coins for this prize!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=257,Coins=..349}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=257,Coins=350..}] run tellraw @s {"text":"You received an Ekans!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=257,Coins=350..}] run pokegive Ekans level=20
+execute as @a[scores={TriggerCommand=257,Coins=350..}] run playsound minecraft:egghatch ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=257,Coins=350..}] run scoreboard players remove @s Coins 350
+
+#Sandshrew 
+execute as @a[scores={TriggerCommand=258,Coins=..349}] run tellraw @s {"text":"You need more Coins for this prize!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=258,Coins=..349}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=258,Coins=350..}] run tellraw @s {"text":"You received a Sandshrew!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=258,Coins=350..}] run pokegive Sandshrew level=20
+execute as @a[scores={TriggerCommand=258,Coins=350..}] run playsound minecraft:egghatch ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=258,Coins=350..}] run scoreboard players remove @s Coins 350
+
+#Dratini 
+execute as @a[scores={TriggerCommand=259,Coins=..1049}] run tellraw @s {"text":"You need more Coins for this prize!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=259,Coins=..1049}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=259,Coins=1050..}] run tellraw @s {"text":"You received a Dratini!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=259,Coins=1050..}] run pokegive Dratini level=20
+execute as @a[scores={TriggerCommand=259,Coins=1050..}] run playsound minecraft:egghatch ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=259,Coins=1050..}] run scoreboard players remove @s Coins 1050
+
+#Mr. Mime 
+execute as @a[scores={TriggerCommand=260,Coins=..1665}] run tellraw @s {"text":"You need more Coins for this prize!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=260,Coins=..1665}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=260,Coins=1666..}] run tellraw @s {"text":"You received a Mr. Mime!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=260,Coins=1666..}] run pokegive MrMime level=5
+execute as @a[scores={TriggerCommand=260,Coins=1666..}] run playsound minecraft:egghatch ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=260,Coins=1666..}] run scoreboard players remove @s Coins 1666
+
+#Eevee
+execute as @a[scores={TriggerCommand=261,Coins=..3332}] run tellraw @s {"text":"You need more Coins for this prize!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=261,Coins=..3332}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=261,Coins=3333..}] run tellraw @s {"text":"You received an Eevee!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=261,Coins=3333..}] run pokegive Eevee level=15
+execute as @a[scores={TriggerCommand=261,Coins=3333..}] run playsound minecraft:egghatch ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=261,Coins=3333..}] run scoreboard players remove @s Coins 3333
+
+#Porygon
+execute as @a[scores={TriggerCommand=262,Coins=..4998}] run tellraw @s {"text":"You need more Coins for this prize!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=262,Coins=..4998}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=262,Coins=4999..}] run tellraw @s {"text":"You received a Porygon!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=262,Coins=4999..}] run pokegive Porygon level=15
+execute as @a[scores={TriggerCommand=262,Coins=4999..}] run playsound minecraft:egghatch ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=262,Coins=4999..}] run scoreboard players remove @s Coins 4999
+
+#Items
+
+#Silk Scarf
+execute as @a[scores={TriggerCommand=263,Coins=..999}] run tellraw @s {"text":"You need more Coins for this prize!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=263,Coins=..999}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=263,Coins=1000..}] run tellraw @s {"text":"You put the item in your inventory.","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=263,Coins=1000..}] run give @s cobblemon:silk_scarf
+execute as @a[scores={TriggerCommand=263,Coins=1000..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=263,Coins=1000..}] run scoreboard players remove @s Coins 1000
+
+#Wide Lens 
+execute as @a[scores={TriggerCommand=264,Coins=..999}] run tellraw @s {"text":"You need more Coins for this prize!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=264,Coins=..999}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=264,Coins=1000..}] run tellraw @s {"text":"You put the item in your inventory.","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=264,Coins=1000..}] run give @s cobblemon:wide_lens
+execute as @a[scores={TriggerCommand=264,Coins=1000..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=264,Coins=1000..}] run scoreboard players remove @s Coins 1000
+
+#Zoom Lens 
+execute as @a[scores={TriggerCommand=265,Coins=..999}] run tellraw @s {"text":"You need more Coins for this prize!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=265,Coins=..999}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=265,Coins=1000..}] run tellraw @s {"text":"You put the item in your inventory.","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=265,Coins=1000..}] run give @s cobblemon:zoom_lens
+execute as @a[scores={TriggerCommand=265,Coins=1000..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=265,Coins=1000..}] run scoreboard players remove @s Coins 1000
+
+#Metronome
+execute as @a[scores={TriggerCommand=266,Coins=..999}] run tellraw @s {"text":"You need more Coins for this prize!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=266,Coins=..999}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=266,Coins=1000..}] run tellraw @s {"text":"You put the item in your inventory.","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=266,Coins=1000..}] run give @s cobblemon:metronome
+execute as @a[scores={TriggerCommand=266,Coins=1000..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=266,Coins=1000..}] run scoreboard players remove @s Coins 1000
 
 
+#TM Placeholders
 
+#Substitute
+execute as @a[scores={TriggerCommand=267,Coins=..999}] run tellraw @s {"text":"You need more Coins for this prize!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=267,Coins=..999}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=267,Coins=1000..}] run tellraw @s {"text":"You put the item in your inventory.","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=267,Coins=1000..}] run give @s cobblemon:metronome
+execute as @a[scores={TriggerCommand=267,Coins=1000..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=267,Coins=1000..}] run scoreboard players remove @s Coins 1000
+
+#Swords Dance
+execute as @a[scores={TriggerCommand=268,Coins=..1999}] run tellraw @s {"text":"You need more Coins for this prize!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=268,Coins=..1999}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=268,Coins=2000..}] run tellraw @s {"text":"You put the item in your inventory.","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=268,Coins=2000..}] run give @s cobblemon:metronome
+execute as @a[scores={TriggerCommand=268,Coins=2000..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=268,Coins=2000..}] run scoreboard players remove @s Coins 2000
+
+
+#Rest
+execute as @a[scores={TriggerCommand=269,Coins=..2999}] run tellraw @s {"text":"You need more Coins for this prize!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=269,Coins=..2999}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=269,Coins=3000..}] run tellraw @s {"text":"You put the item in your inventory.","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=269,Coins=3000..}] run give @s cobblemon:metronome
+execute as @a[scores={TriggerCommand=269,Coins=3000..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=269,Coins=3000..}] run scoreboard players remove @s Coins 3000
+
+#Flamethrower
+execute as @a[scores={TriggerCommand=270,Coins=..4999}] run tellraw @s {"text":"You need more Coins for this prize!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=270,Coins=..4999}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=270,Coins=5000..}] run tellraw @s {"text":"You put the item in your inventory.","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=270,Coins=5000..}] run give @s cobblemon:metronome
+execute as @a[scores={TriggerCommand=270,Coins=5000..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=270,Coins=5000..}] run scoreboard players remove @s Coins 5000
+
+#Ice Beam
+execute as @a[scores={TriggerCommand=271,Coins=..4999}] run tellraw @s {"text":"You need more Coins for this prize!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=271,Coins=..4999}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=271,Coins=5000..}] run tellraw @s {"text":"You put the item in your inventory.","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=271,Coins=5000..}] run give @s cobblemon:metronome
+execute as @a[scores={TriggerCommand=271,Coins=5000..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=271,Coins=5000..}] run scoreboard players remove @s Coins 5000
+
+#Thunderbolt
+execute as @a[scores={TriggerCommand=272,Coins=..4999}] run tellraw @s {"text":"You need more Coins for this prize!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=272,Coins=..4999}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=272,Coins=5000..}] run tellraw @s {"text":"You put the item in your inventory.","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=272,Coins=5000..}] run give @s cobblemon:metronome
+execute as @a[scores={TriggerCommand=272,Coins=5000..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=272,Coins=5000..}] run scoreboard players remove @s Coins 5000
+
+#Endure
+execute as @a[scores={TriggerCommand=273,Coins=..999}] run tellraw @s {"text":"You need more Coins for this prize!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=273,Coins=..999}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=273,Coins=1000..}] run tellraw @s {"text":"You put the item in your inventory.","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=273,Coins=1000..}] run give @s cobblemon:metronome
+execute as @a[scores={TriggerCommand=273,Coins=1000..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=273,Coins=1000..}] run scoreboard players remove @s Coins 1000
+
+#Double Team
+execute as @a[scores={TriggerCommand=274,Coins=..1999}] run tellraw @s {"text":"You need more Coins for this prize!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=274,Coins=..1999}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=274,Coins=2000..}] run tellraw @s {"text":"You put the item in your inventory.","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=274,Coins=2000..}] run give @s cobblemon:metronome
+execute as @a[scores={TriggerCommand=274,Coins=2000..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=274,Coins=2000..}] run scoreboard players remove @s Coins 2000
+
+#Hidden Power
+execute as @a[scores={TriggerCommand=275,Coins=..2499}] run tellraw @s {"text":"You need more Coins for this prize!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=275,Coins=..2499}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=275,Coins=2500..}] run tellraw @s {"text":"You put the item in your inventory.","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=275,Coins=2500..}] run give @s cobblemon:metronome
+execute as @a[scores={TriggerCommand=275,Coins=2500..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=275,Coins=2500..}] run scoreboard players remove @s Coins 2500
+
+#Psychic
+execute as @a[scores={TriggerCommand=276,Coins=..4999}] run tellraw @s {"text":"You need more Coins for this prize!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=276,Coins=..4999}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=276,Coins=5000..}] run tellraw @s {"text":"You put the item in your inventory.","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=276,Coins=5000..}] run give @s cobblemon:metronome
+execute as @a[scores={TriggerCommand=276,Coins=5000..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=276,Coins=5000..}] run scoreboard players remove @s Coins 5000
+
+#Gyro Ball
+execute as @a[scores={TriggerCommand=277,Coins=..4999}] run tellraw @s {"text":"You need more Coins for this prize!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=277,Coins=..4999}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=277,Coins=5000..}] run tellraw @s {"text":"You put the item in your inventory.","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=277,Coins=5000..}] run give @s cobblemon:metronome
+execute as @a[scores={TriggerCommand=277,Coins=5000..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=277,Coins=5000..}] run scoreboard players remove @s Coins 5000
+
+#Giga Impact
+execute as @a[scores={TriggerCommand=278,Coins=..4999}] run tellraw @s {"text":"You need more Coins for this prize!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=278,Coins=..4999}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=278,Coins=7500..}] run tellraw @s {"text":"You put the item in your inventory.","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=278,Coins=7500..}] run give @s cobblemon:metronome
+execute as @a[scores={TriggerCommand=278,Coins=7500..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=278,Coins=7500..}] run scoreboard players remove @s Coins 7500
+
+#279 used
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #If score is left behind, not to be used for longer store of data.
