@@ -22,8 +22,9 @@ gamerule disableRaids true
 gamerule doPokemonSpawning true
 
 #Gives starting items
+give @s written_book[written_book_content={pages:['{"text":"Welcome to Cobblemon Johto!\\n\\nThis map contains the Johto and Kanto regions, and follows the story of Pokemon Gold, Silver, and Crystal, with spawns, events and elements from HeartGold/ SoulSilver."}','{"text":"Throughout the regions, there are 16 gyms to fight and collect the badges of.\\n\\nWhen you have the eight badges from the Johto region, you can challenge the Elite Four and gain access to Kanto afterwards."}','{"text":"During your journey you\'ll encounter story, trainers and even a rival to explore the region with you.\\n\\nAfter collecting all the badges from Kanto, the player gains access to Mt. Silver, with a trainer named Red being the final boss of the map.\\n "}','{"text":"Items, trainers, and events are scattered around the regions to collect and battle, based off the main games.\\n\\nSearch every corner of the map, you never know what you might find!"}','["",{"text":"If you enjoy this map, consider checking out more of my projects like this one based on other regions! Click below for more info!\\n\\n"},{"text":"[Cobblemon Kanto]","color":"gold","clickEvent":{"action":"open_url","value":"https://curseforge.com/minecraft/worlds/cobblemon-kanto"}},{"text":"\\n","color":"gold"},{"text":"[Pixelmon Hoenn]","color":"dark_blue","clickEvent":{"action":"open_url","value":"https://www.curseforge.com/minecraft/worlds/pixelmon-hoenn"}},{"text":"\\n","color":"dark_blue"},{"text":"[Pixelmon Kalos]","color":"dark_purple","clickEvent":{"action":"open_url","value":"https://www.curseforge.com/minecraft/worlds/pixelmon-kalos"}},{"text":"","color":"dark_purple"}]'],title:"Cobblemon Johto",author:Jond,display:{Lore:["Info about the map!"]}}] 1function johto:spawn/radio4
+function johto:spawn/radio1
 function johto:spawn/runningshoes
-function johto:spawn/radio4
 scoreboard players add @s Money 2000
 
 
@@ -41,6 +42,7 @@ tag @s remove SinnohLegend
 tag @s remove EXPNCard
 tag @s remove RadioCard
 tag @s remove GuideTour
+tag @s remove CoinCase
 
 tag @s remove Kimono1
 tag @s remove Kimono2
@@ -1011,7 +1013,106 @@ tag @s remove ItemLoot397
 tag @s remove ItemLoot398
 tag @s remove ItemLoot399
 tag @s remove ItemLoot400
-
+tag @s remove ItemLoot401
+tag @s remove ItemLoot402
+tag @s remove ItemLoot403
+tag @s remove ItemLoot404
+tag @s remove ItemLoot405
+tag @s remove ItemLoot406
+tag @s remove ItemLoot407
+tag @s remove ItemLoot408
+tag @s remove ItemLoot409
+tag @s remove ItemLoot410
+tag @s remove ItemLoot411
+tag @s remove ItemLoot412
+tag @s remove ItemLoot413
+tag @s remove ItemLoot414
+tag @s remove ItemLoot415
+tag @s remove ItemLoot416
+tag @s remove ItemLoot417
+tag @s remove ItemLoot418
+tag @s remove ItemLoot419
+tag @s remove ItemLoot420
+tag @s remove ItemLoot421
+tag @s remove ItemLoot422
+tag @s remove ItemLoot423
+tag @s remove ItemLoot424
+tag @s remove ItemLoot425
+tag @s remove ItemLoot426
+tag @s remove ItemLoot427
+tag @s remove ItemLoot428
+tag @s remove ItemLoot429
+tag @s remove ItemLoot430
+tag @s remove ItemLoot431
+tag @s remove ItemLoot432
+tag @s remove ItemLoot433
+tag @s remove ItemLoot434
+tag @s remove ItemLoot435
+tag @s remove ItemLoot436
+tag @s remove ItemLoot437
+tag @s remove ItemLoot438
+tag @s remove ItemLoot439
+tag @s remove ItemLoot440
+tag @s remove ItemLoot441
+tag @s remove ItemLoot442
+tag @s remove ItemLoot443
+tag @s remove ItemLoot444
+tag @s remove ItemLoot445
+tag @s remove ItemLoot446
+tag @s remove ItemLoot447
+tag @s remove ItemLoot448
+tag @s remove ItemLoot449
+tag @s remove ItemLoot450
+tag @s remove ItemLoot451
+tag @s remove ItemLoot452
+tag @s remove ItemLoot453
+tag @s remove ItemLoot454
+tag @s remove ItemLoot455
+tag @s remove ItemLoot456
+tag @s remove ItemLoot457
+tag @s remove ItemLoot458
+tag @s remove ItemLoot459
+tag @s remove ItemLoot460
+tag @s remove ItemLoot461
+tag @s remove ItemLoot462
+tag @s remove ItemLoot463
+tag @s remove ItemLoot464
+tag @s remove ItemLoot465
+tag @s remove ItemLoot466
+tag @s remove ItemLoot467
+tag @s remove ItemLoot468
+tag @s remove ItemLoot469
+tag @s remove ItemLoot470
+tag @s remove ItemLoot471
+tag @s remove ItemLoot472
+tag @s remove ItemLoot473
+tag @s remove ItemLoot474
+tag @s remove ItemLoot475
+tag @s remove ItemLoot476
+tag @s remove ItemLoot477
+tag @s remove ItemLoot478
+tag @s remove ItemLoot479
+tag @s remove ItemLoot480
+tag @s remove ItemLoot481
+tag @s remove ItemLoot482
+tag @s remove ItemLoot483
+tag @s remove ItemLoot484
+tag @s remove ItemLoot485
+tag @s remove ItemLoot486
+tag @s remove ItemLoot487
+tag @s remove ItemLoot488
+tag @s remove ItemLoot489
+tag @s remove ItemLoot490
+tag @s remove ItemLoot491
+tag @s remove ItemLoot492
+tag @s remove ItemLoot493
+tag @s remove ItemLoot494
+tag @s remove ItemLoot495
+tag @s remove ItemLoot496
+tag @s remove ItemLoot497
+tag @s remove ItemLoot498
+tag @s remove ItemLoot499
+tag @s remove ItemLoot500
 
 
 
