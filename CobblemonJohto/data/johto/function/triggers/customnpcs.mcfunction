@@ -1,10 +1,15 @@
-#Function that manages with specific NPCs say when you click on boxes surroung them.
+#Function that manages what specific NPCs say when you click on boxes surroung them.
 #Used to have the same NPC say different lines depending on the player's own tags.
 
 #Rock Smash guy before and after clearing Sudowoodo
 execute as @s[x=247,y=64,z=-20,distance=..6,tag=!Dialogue30] run opendialogue route36_blackbelt_interaction @s
 execute as @s[x=247,y=64,z=-20,distance=..6,tag=Dialogue30,tag=!RockSmash] run opendialogue route36_blackbelt_interaction2 @s
 execute as @s[x=247,y=64,z=-20,distance=..6,tag=Dialogue30,tag=RockSmash] run opendialogue route36_blackbelt_interaction @s
+
+
+#Radio Tower Quiz Lady
+execute as @s[x=514,y=31,z=-272,distance=..4,tag=!RadioCard] run opendialogue radiotower_quiz_interaction @s
+execute as @s[x=514,y=31,z=-272,distance=..4,tag=RadioCard] run opendialogue radiotower_quiz_completed @s
 
 
 #Copycat

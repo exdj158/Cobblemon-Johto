@@ -36,33 +36,6 @@ execute as @a[scores={TriggerCommand=11}] run scoreboard players set @s TriggerC
 
 
 
-#Radio Tower start Quiz
-execute as @a[scores={TriggerCommand=21}] run scoreboard players set @s DialogueTrigger 179
-
-#Radio Quiz Wrong Answer
-execute as @a[scores={TriggerCommand=15}] run scoreboard players set @s DialogueTrigger 178
-
-#Radio Tower Correct Answers
-execute as @a[scores={TriggerCommand=16}] run scoreboard players set @s DialogueTrigger 180
-execute as @a[scores={TriggerCommand=17}] run scoreboard players set @s DialogueTrigger 181
-execute as @a[scores={TriggerCommand=18}] run scoreboard players set @s DialogueTrigger 182
-execute as @a[scores={TriggerCommand=19}] run scoreboard players set @s DialogueTrigger 183
-execute as @a[scores={TriggerCommand=20}] run scoreboard players set @s DialogueTrigger 184
-execute as @a[scores={TriggerCommand=15..21}] run scoreboard players set @s TriggerCommand 0
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #29 - Steven Hoenn Starters (Treecko)
 execute as @a[scores={TriggerCommand=29}] run pokegive @s[tag=!HoennStarters] Treecko lvl:5
 execute as @a[scores={TriggerCommand=29}] run tellraw @s {"text":"<Steven> You chose correctly! I will give you Treecko!"}
