@@ -71,6 +71,28 @@
                 "minecraft:sunflower_plains"
             ]
         }
+    },
+
+    {
+        "id": "chansey-4",
+        "pokemon": "chansey",
+        "presets": [
+            "natural"
+        ],
+        "type": "pokemon",
+        "context": "grounded",
+        "bucket": "common",
+        "level": "23",
+        "weight": 10000.0,
+        "condition": {
+            "minX": -3277, "maxX": -3229, "minZ": -341, "maxZ": -325,
+            "biomes": [
+                "minecraft:bamboo_jungle"
+            ],
+            "neededNearbyBlocks": [
+                  "minecraft:short_grass"
+              ]
+        }
     }
 
       

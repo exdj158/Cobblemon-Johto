@@ -18,8 +18,6 @@ execute if entity @e[x=-793,y=65,z=-284,dy=3,tag=RepeatedLoot] as @p run functio
 
 
 
-#Runs Swarm Spawns
-function johto:world/swarmspawns
 
 
 ##Returns the Azure Flute to player

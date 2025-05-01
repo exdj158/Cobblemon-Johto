@@ -45,6 +45,26 @@
                 "minLureLevel": 3,
                 "maxLureLevel": 3
             }
+        },
+
+        {
+            "id": "qwilfish-4",
+            "pokemon": "qwilfish",
+            "type": "pokemon",
+            "presets": [
+                "water"
+            ],
+            "context": "submerged",
+            "bucket": "common",
+            "level": "40",
+            "weight": 10000,
+            "condition": {
+                "minX": 107, "maxX": 177, "minZ": -506, "maxZ": -387,
+                "biomes": [
+                    "minecraft:bamboo_jungle"
+                ]
+                
+            }
         }
     ]
 }

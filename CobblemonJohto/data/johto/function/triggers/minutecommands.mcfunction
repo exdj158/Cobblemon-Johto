@@ -8,6 +8,8 @@ function johto:hms/cutregen
 execute as @a[tag=RockSmash] at @s as @e[tag=RockSmash,type=armor_stand,distance=40..150] run function johto:hms/rocksmashregen
 
 
+#Runs Swarm Spawns (changes up biomes on routes as needed)
+function johto:world/swarmspawns
 
 
 #Spawns in the Weekday NPCs if player is nearby

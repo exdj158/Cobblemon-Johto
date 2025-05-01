@@ -34,6 +34,26 @@
                     "minecraft:sunflower_plains"
                 ]
                 }
+            },
+
+            {
+                "id": "marill-3",
+                "pokemon": "marill",
+                "presets": [
+                    "natural"
+                ],
+                "type": "pokemon",
+                "context": "grounded",
+                "bucket": "common",
+                "level": "15",
+                "weight": 10000.0,
+                "condition": {
+                    "minX": -6, "maxX": 197, "minZ": 230, "maxZ": 298,
+                    "biomes": [
+                        "minecraft:bamboo_jungle"
+                    ],
+                    "canSeeSky": false
+                }
             }
     ]
 }
