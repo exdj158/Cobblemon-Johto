@@ -16,6 +16,26 @@
                 "minLureLevel": 3,
                 "maxLureLevel": 3
             }
+        },
+
+        {
+            "id": "clamperl-2",
+            "pokemon": "clamperl",
+            "type": "pokemon",
+            "presets": [
+                "water"
+            ],
+            "context": "surface",
+            "bucket": "common",
+            "level": "35",
+            "weight": 10000,
+            "condition": {
+                "minX": -2478, "maxX": -2309, "minZ": -828, "maxZ": -687,
+                "biomes": [
+                    "minecraft:bamboo_jungle"
+                ]
+                
+            }
         }
     ]
 }
