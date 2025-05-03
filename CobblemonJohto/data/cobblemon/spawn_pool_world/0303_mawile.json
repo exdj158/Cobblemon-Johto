@@ -17,7 +17,7 @@
         "condition": {
             "minX": -2957, "maxX": -2902, "minZ": 748, "maxZ": 773,
             "biomes": [
-                "minecraft:sparse_jungle"
+                "minecraft:plains"
             ],
             "neededNearbyBlocks": [
                   "minecraft:short_grass"

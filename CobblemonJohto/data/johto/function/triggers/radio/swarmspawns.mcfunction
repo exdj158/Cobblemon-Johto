@@ -115,7 +115,7 @@ execute unless entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=32..37},tag=SwarmAc
 execute if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=32..34},tag=SwarmActive] run fillbiome -2957 62 748 -2902 67 773 minecraft:bamboo_jungle
 
 #R9 Mawile
-execute if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=35..37},tag=SwarmActive] run fillbiome -2957 62 748 -2902 67 773 minecraft:sparse_jungle
+execute if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=35..37},tag=SwarmActive] run fillbiome -2957 62 748 -2902 67 773 minecraft:plains
 
 #R3 Gulpin
 execute unless entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=38..40},tag=SwarmActive] unless entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=47..49},tag=SwarmActive] run fillbiome -2202 62 593 -2148 68 636 minecraft:jungle
@@ -123,7 +123,7 @@ execute if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=38..40},tag=SwarmActive
 
 #R3 Baltoy
 execute unless entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=47..49},tag=SwarmActive] unless entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=38..40},tag=SwarmActive] run fillbiome -2202 62 593 -2148 68 636 minecraft:jungle
-execute if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=47..49},tag=SwarmActive] run fillbiome -2202 62 593 -2148 68 636 minecraft:sparse_jungle
+execute if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=47..49},tag=SwarmActive] run fillbiome -2202 62 593 -2148 68 636 minecraft:plains
 
 #R45
 execute unless entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=41..43},tag=SwarmActive] run fillbiome -642 61 -51 -538 68 85 minecraft:jungle
