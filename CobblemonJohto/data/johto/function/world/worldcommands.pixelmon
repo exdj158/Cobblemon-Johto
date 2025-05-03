@@ -895,12 +895,6 @@ execute as @a[x=496,y=48,z=-274,dx=11,dy=5,dz=7,tag=!BuenasPasswordCD] run setbl
 clear @a[x=496,y=48,z=-274,dx=11,dy=5,dz=7,tag=!BuenasPasswordCD,tag=BuenasPasswordTalk] minecraft:paper{display:{Name:"Buena's Password",Lore:["A code given on the Buena's Password","Show. Can be exchanged for a prize","at Goldenrod City's Radio Tower."]}}
 
 
-#Radio Tower Quiz prompt
-execute as @a[x=510,y=30,z=-274,dx=11,dy=4,dz=4,tag=!Dialogue179,scores={TalkTime=0,Cooldown=0}] run tellraw @s {"text":"We have a special Quiz campaign! Answer five questions correctly in a row to win a Radio Card! When you load it into the Radio, you will be able to listen to additional stations.. anytime, anywhere! Would you like to try our Quiz?"}
-execute as @a[x=510,y=30,z=-274,dx=11,dy=4,dz=4,tag=!Dialogue179,scores={TalkTime=0,Cooldown=0}] run scoreboard players enable @s TriggerCommand
-execute as @a[x=510,y=30,z=-274,dx=11,dy=4,dz=4,tag=!Dialogue179,scores={TalkTime=0,Cooldown=0}] run tellraw @s {"text": "", "extra": [{"text":"[Yes]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 21"}}]}
-execute as @a[x=510,y=30,z=-274,dx=11,dy=4,dz=4,tag=!Dialogue179,scores={TalkTime=0,Cooldown=0}] run scoreboard players set @s Cooldown 120
-
 
 #Lucky Number Show
 execute as @a[x=506,y=31,z=-272,distance=..3,tag=!LuckyNumberCD,scores={TalkTime=0,Cooldown=0}] run tellraw @s {"text":"<DJ Reed> Hi, are you here for the Lucky Number Show? Want me to check the ID numbers of your Pokémon?"}
@@ -923,35 +917,6 @@ execute at @e[x=511,y=54,z=-344,dx=15,dy=6,dz=19,type=cobblemon:pokemon] run sco
 execute as @a[x=513,y=54,z=-335,distance=..4,tag=!BeautyCD,scores={TalkTime=0,Cooldown=0}] run scoreboard players enable @s TriggerCommand
 execute as @a[x=513,y=54,z=-335,distance=..4,tag=!BeautyCD,scores={TalkTime=0,Cooldown=0}] run tellraw @s ["",{"text":"<Beauty Salon Clerk> Welcome! Would you like me to give your Pokemon a makeover?\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 40"}},{"text":"]"}]
 execute as @a[x=513,y=54,z=-335,distance=..4,tag=!BeautyCD,scores={TalkTime=0,Cooldown=0}] run scoreboard players set @s Cooldown 120
-
-#---------------------
-#Battle Tower Shopkeepers
-
-#Tms 1
-execute as @a[x=923,y=64,z=55,distance=..3,scores={CooldownWalk=1000..}] run scoreboard players set @s TriggerCommand 148
-execute as @a[x=923,y=64,z=55,distance=..3,scores={CooldownWalk=1000..}] run scoreboard players set @s CooldownWalk 0
-
-#Tms 2
-execute as @a[x=882,y=64,z=55,distance=..3,scores={CooldownWalk=1000..}] run scoreboard players set @s TriggerCommand 158
-execute as @a[x=882,y=64,z=55,distance=..3,scores={CooldownWalk=1000..}] run scoreboard players set @s CooldownWalk 0
-
-#Fighting Items No 2
-execute as @a[x=927,y=64,z=61,distance=..3,scores={CooldownWalk=1000..}] run scoreboard players set @s TriggerCommand 138
-execute as @a[x=927,y=64,z=61,distance=..3,scores={CooldownWalk=1000..}] run scoreboard players set @s CooldownWalk 0
-
-#Fighting Items No 1
-execute as @a[x=927,y=64,z=72,distance=..3,scores={CooldownWalk=1000..}] run scoreboard players set @s TriggerCommand 132
-execute as @a[x=927,y=64,z=72,distance=..3,scores={CooldownWalk=1000..}] run scoreboard players set @s CooldownWalk 0
-
-#Battle Items No 2
-execute as @a[x=878,y=64,z=61,distance=..3,scores={CooldownWalk=1000..}] run scoreboard players set @s TriggerCommand 124
-execute as @a[x=878,y=64,z=61,distance=..3,scores={CooldownWalk=1000..}] run scoreboard players set @s CooldownWalk 0
-
-#Battle Items No 1
-execute as @a[x=878,y=64,z=72,distance=..3,scores={CooldownWalk=1000..}] run scoreboard players set @s TriggerCommand 115
-execute as @a[x=878,y=64,z=72,distance=..3,scores={CooldownWalk=1000..}] run scoreboard players set @s CooldownWalk 0
-
-
 
 #-------------------------------------------------------------------------------------------------------------------------
 #Road Blocks
