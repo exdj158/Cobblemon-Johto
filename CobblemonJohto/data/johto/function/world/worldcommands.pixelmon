@@ -621,9 +621,6 @@ scoreboard players set @a[x=-2749,y=72,z=-159,distance=..15,tag=Dialogue101,scor
 #Dialogue222 - Pallet Town Oak allowing access to Mt. Silver
 scoreboard players set @a[x=-1726,y=63,z=-319,dx=23,dy=5,dz=25,scores={TalkTime=0},tag=Dialogue154,tag=AllGyms,tag=!Dialogue222] DialogueTrigger 222
 
-#Dialogue223 - Lavender Town Radio Director Expn card
-scoreboard players set @a[x=-3312,y=64,z=381,distance=..5,scores={TalkTime=0},tag=Dialogue221,tag=!Dialogue223] DialogueTrigger 223
-
 #Dialogue225 - Radio Tower Buena's Password
 scoreboard players set @a[x=502,y=48,z=-274,dx=6,dy=5,dz=5,tag=BuenasPasswordDaily,scores={TalkTime=0},tag=!Dialogue225] DialogueTrigger 225
 
@@ -817,9 +814,6 @@ execute as @a[x=-2682,y=64,z=278,distance=..20,nbt={Inventory:[{id:"pixelmon:por
 
 #----------------------------------------
 
-#Viridian City Snorlax setup
-execute as @a[x=-2894,y=64,z=-53,distance=..50,scores={TalkTime=0},tag=!Dialogue142] run setblock -2902 64 -59 pixelmon:poke_display[facing=north]{PokeDisplayPokemon:{ndex:2002,Growth:7b}} replace
-
 #Dialogue233
 #Suicune Spawn
 execute as @a[x=-3111,y=64,z=989,distance=..5,scores={TalkTime=0},tag=!Dialogue233] run scoreboard players set @s[tag=Dialogue232] DialogueTrigger 233
@@ -934,16 +928,6 @@ execute if entity @a[x=744,y=73,z=-193,distance=..15,tag=!Dialogue101,scores={Co
 tellraw @a[x=903,y=64,z=-42,dx=2,dy=2,dz=10,scores={IP=0,Cooldown=0}] ["",{"text":"Only Elite Four Champions may enter!","color":"white","italic":true}]
 scoreboard players add @a[x=903,y=64,z=-42,dx=2,dy=2,dz=10,scores={IP=0,Cooldown=0}] Cooldown 30
 execute at @a[x=903,y=64,z=-42,dx=2,dy=2,dz=10,scores={IP=0}] run tp @a[x=903,y=64,z=-42,dx=2,dy=2,dz=10,scores={IP=0}] ~ ~ ~-5
-
-
-#Viridian City Sleeping Snorlax
-tellraw @a[x=-2912,y=57,z=-75,dx=13,dy=20,dz=30,scores={TalkTime=0,Cooldown=0},tag=!Dialogue142] {"text":"A sleeping Snorlax blocks your path. Perhaps music might wake it.","italic":true,"color":"gray"}
-tellraw @a[x=-2900,y=57,z=-75,dx=11,dy=20,dz=30,scores={TalkTime=0,Cooldown=0},tag=!Dialogue142] {"text":"A sleeping Snorlax blocks your path. Perhaps music might wake it.","italic":true,"color":"gray"}
-execute as @a[x=-2900,y=57,z=-75,dx=11,dy=20,dz=30,tag=!Dialogue142,scores={Cooldown=0}] run scoreboard players add @s Cooldown 40
-execute as @a[x=-2912,y=57,z=-75,dx=13,dy=20,dz=30,tag=!Dialogue142,scores={Cooldown=0}] run scoreboard players add @s Cooldown 40
-execute at @a[x=-2900,y=57,z=-75,dx=11,dy=20,dz=30,tag=!Dialogue142] run tp @a[x=-2900,y=57,z=-75,dx=11,dy=20,dz=30,tag=!Dialogue142] ~10 ~ ~
-execute at @a[x=-2912,y=57,z=-75,dx=13,dy=20,dz=30,tag=!Dialogue142] run tp @a[x=-2912,y=57,z=-75,dx=13,dy=20,dz=30,tag=!Dialogue142] ~-10 ~ ~
-
 
 
 

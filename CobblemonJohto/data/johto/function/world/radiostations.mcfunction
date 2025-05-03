@@ -219,7 +219,7 @@ execute as @a[scores={RadioSelect=7},tag=!RadioCard] run title @s actionbar {"te
 #Slot 8 - Poke Flute, with EXPNCard tag
 execute as @s[tag=EXPNCard,scores={RadioSelect=8}] run playsound pokeflute record @s ~ ~ ~ 1 1 1
 execute as @s[tag=EXPNCard,scores={RadioSelect=8}] run scoreboard players set @s MusicCooldown 98
-execute as @s[tag=EXPNCard,scores={RadioSelect=8,TalkTime=0},x=-2893,y=64,z=-53,distance=..35] run scoreboard players set @s[tag=!Dialogue142] DialogueTrigger 142
+execute as @s[tag=EXPNCard,scores={RadioSelect=8,TalkTime=0},x=-2902,y=64,z=-48,distance=..35] run scoreboard players set @s[tag=!Dialogue142] DialogueTrigger 142
 execute as @s[tag=EXPNCard,scores={RadioSelect=8}] run title @s actionbar {"text":"Radio: Poké Flute"}
 
 #Without

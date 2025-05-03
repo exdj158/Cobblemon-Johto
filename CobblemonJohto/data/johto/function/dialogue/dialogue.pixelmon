@@ -473,26 +473,6 @@ tellraw @s[scores={DialogueTrigger=141,TalkTime=32}] {"text":"<Professor Elm> Ha
 
 tag @s[scores={DialogueTrigger=141,TalkTime=32..}] add Dialogue141
 
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Sleeping Snorlax in Kanto blocking the way
-#Trigger within the Poke Flute radio commands
-#execute as @s[x=-2893,y=64,z=-53,distance=..25,score_TalkTime=0,tag=PokeFlute] run scoreboard players set @s[tag=!Dialogue142] DialogueTrigger 142
-
-#tps Snorlax in
-#execute as @s[x=-2894,y=64,z=-53,distance=..50,score_TalkTime=0,tag=!Dialogue142] run /tp @e[x=-761,y=79,z=-244,distance=..2,nbt=!{cobblemon:statue}] -2894 64 -53
-
-tellraw @s[scores={DialogueTrigger=142,TalkTime=10}] {"text":"<Snorlax> ..."}
-tellraw @s[scores={DialogueTrigger=142,TalkTime=30}] {"text":"<Snorlax> ... ... ..."}
-execute as @s[scores={DialogueTrigger=142,TalkTime=43}] run playsound snorlax hostile @s ~ ~ ~ 10 1 1
-tellraw @s[scores={DialogueTrigger=142,TalkTime=43}]  {"text":"Snorlax woke up!"}
-
-#Spawns Snorlax
-execute as @s[scores={DialogueTrigger=142,TalkTime=45}] run data merge entity @e[x=-2902,y=64,z=-59,distance=..5,nbt=!{cobblemon:statue},limit=1] {ndex:1999}
-execute as @s[scores={DialogueTrigger=142,TalkTime=45}] run particle cloud -2894 66 -53 1 1 1 1 100
-#execute as @s[scores={DialogueTrigger=142,TalkTime=45}] run pokebattle @s Snorlax,lvl:50,gr:7
-execute as @s[scores={DialogueTrigger=142,TalkTime=45}] run pokebattle @s Snorlax
-
-tag @s[scores={DialogueTrigger=142,TalkTime=45..}] add Dialogue142
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Mr. Pokémon after encounter with Kyogre or Groudon, depends on orb
@@ -1720,20 +1700,6 @@ tellraw @s[scores={DialogueTrigger=222,TalkTime=58}] ["",{"text":"<Professor Oak
 tellraw @s[scores={DialogueTrigger=222,TalkTime=67}] {"text":"<Professor Oak> Go to the Pokémon League Reception Gate. You can reach Mt. Silver from there."}
 
 tag @s[scores={DialogueTrigger=222,TalkTime=67..}] add Dialogue222
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Lavendar Town Radio Director after Power Plant
-#execute as @s[x=-3312,y=64,z=381,distance=..5,tag=Dialogue221] run scoreboard players set @s[tag=!Dialogue223] DialogueTrigger 223
-
-tellraw @s[scores={DialogueTrigger=223,TalkTime=1}] ["",{"text":"<Radio Director> Ah! So you're the "},{"selector":"@s"},{"text":" who solved the Power Plant's problem?"}]
-tellraw @s[scores={DialogueTrigger=223,TalkTime=11}] {"text":"<Radio Director> Thanks to you, I never lost my job."}
-tellraw @s[scores={DialogueTrigger=223,TalkTime=18}] {"text":"<Radio Director> I tell you, you're a real lifesaver! Please take this as my thanks."}
-tellraw @s[scores={DialogueTrigger=223,TalkTime=27}] ["",{"text":"The Director loaded the EXPN Card on ","italic":true,"color":"gray"},{"selector":"@s","italic":true,"color":"gray"},{"text":"'s Radio!","italic":true,"color":"gray"}]
-execute as @s[scores={DialogueTrigger=223,TalkTime=27}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 10 1 1
-execute as @s[scores={DialogueTrigger=223,TalkTime=27}] run tag @s add EXPNCard
-tellraw @s[scores={DialogueTrigger=223,TalkTime=36}] {"text":"<Radio Director> With that thing, you can tune in to even more radio programs here in Kanto. Gahahahaha!"}
-
-tag @s[scores={DialogueTrigger=223,TalkTime=36..}] add Dialogue223
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Team Rocket's Announcement when Radio Tower is occupied, overwrites existing radio shows

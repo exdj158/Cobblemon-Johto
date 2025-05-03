@@ -54,8 +54,10 @@ execute as @s[x=-3117,y=48,z=589,distance=..6,tag=Dialogue220,tag=!Dialogue221] 
 execute as @s[x=-3117,y=48,z=589,distance=..6,tag=Dialogue221] run opendialogue powerplant_manager_end @s
 
 
-
-
+#Lavender Town EXPN Card gift after working on the power plant
+execute as @s[x=-3312,y=64,z=381,distance=..6,tag=!Dialogue221,tag=!EXPNCard] run opendialogue lavender_gentleman_interaction @s
+execute as @s[x=-3312,y=64,z=381,distance=..6,tag=Dialogue221,tag=!EXPNCard] run opendialogue lavender_gentleman_expncard @s
+execute as @s[x=-3312,y=64,z=381,distance=..6,tag=Dialogue221,tag=EXPNCard] run opendialogue lavender_gentleman_end @s
 
 
 

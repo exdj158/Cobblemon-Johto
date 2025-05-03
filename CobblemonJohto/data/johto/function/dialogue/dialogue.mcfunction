@@ -62,6 +62,26 @@ execute as @s[scores={DialogueTrigger=105,TalkTime=1}] run playsound lapras ambi
 
 tag @s[scores={DialogueTrigger=105,TalkTime=1..}] add Dialogue105
 
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Sleeping Snorlax in Kanto blocking the way
+#Trigger within the Poke Flute radio commands
+#execute as @s[x=-2893,y=64,z=-53,distance=..25,score_TalkTime=0,tag=PokeFlute] run scoreboard players set @s[tag=!Dialogue142] DialogueTrigger 142
+
+tellraw @s[scores={DialogueTrigger=142,TalkTime=10}] {"text":"<Snorlax> ..."}
+tellraw @s[scores={DialogueTrigger=142,TalkTime=30}] {"text":"<Snorlax> ... ... ..."}
+execute as @s[scores={DialogueTrigger=142,TalkTime=45}] run playsound snorlax hostile @s ~ ~ ~ 10 1 1
+tellraw @s[scores={DialogueTrigger=142,TalkTime=45}]  {"text":"Snorlax woke up!"}
+
+#Wakes up Snorlax
+execute as @s[scores={DialogueTrigger=142,TalkTime=43..44}] run data merge entity @e[x=-2901,y=64,z=-48,distance=..5,type=cobblemon:pokemon,limit=1,name=Snorlax] {NoAI:0b}
+execute as @s[scores={DialogueTrigger=142,TalkTime=43..44}] run data remove entity @e[x=-2901,y=64,z=-48,distance=..5,type=cobblemon:pokemon,limit=1,name=Snorlax] Pokemon.Status
+
+execute as @s[scores={DialogueTrigger=142,TalkTime=45}] run fill -2899 67 -46 -2899 64 -50 air
+execute as @s[scores={DialogueTrigger=142,TalkTime=45}] run fill -2904 67 -46 -2904 64 -50 air
+execute as @s[scores={DialogueTrigger=142,TalkTime=45}] run fill -2903 64 -50 -2900 67 -50 air
+
+tag @s[scores={DialogueTrigger=142,TalkTime=45..}] add Dialogue142
+
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Hoenn Sounds
