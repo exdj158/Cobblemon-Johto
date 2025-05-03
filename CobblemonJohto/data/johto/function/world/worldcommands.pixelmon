@@ -460,23 +460,6 @@ scoreboard players set @a[x=354,y=63,z=-704,dx=19,dy=5,dz=8,scores={TalkTime=0},
 #Dialogue109 - Ilex Forest Shrine Info
 scoreboard players set @a[x=617,y=65,z=-696,distance=..10,scores={TalkTime=0},tag=Dialogue108,tag=!Dialogue109] DialogueTrigger 109
 
-#Dialogue110 - Pewter City Brock pre-battle
-scoreboard players set @a[x=-955,y=64,z=687,distance=..20,scores={TalkTime=0},tag=!Dialogue111] DialogueTrigger 111
-
-#Dialogue111 - Pewter City Brock post-battle
-scoreboard players set @a[x=-979,y=0,z=636,dx=47,dy=240,dz=66,scores={TalkTime=0},tag=!Dialogue112,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 112
-
-#Dialogue113 - Route 25 Misty on a date
-scoreboard players set @a[x=-3060,y=64,z=956,distance=..5,tag=Dialogue221,tag=!Dialogue113,scores={TalkTime=0}] DialogueTrigger 113
-execute at @a[x=-3060,y=64,z=956,distance=..50,tag=!Dialogue113,tag=Dialogue221] run tp @e[x=-815,y=84,z=-240,dy=3,nbt=!{cobblemon:npc_chatting}] -3060 64 956
-
-#Dialogue114 - Cerulean City Misty pre-battle
-scoreboard players set @a[x=-1015,y=64,z=681,dx=22,dy=5,dz=9,scores={TalkTime=0},tag=!Dialogue114] DialogueTrigger 114
-
-#Dialogue114 - Cerulean City Misty pre-battle
-scoreboard players set @a[x=-1026,y=0,z=636,dx=44,dy=240,dz=65,scores={TalkTime=0},tag=!Dialogue115,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 115
-
-
 #Dialogue136 - Vermilion Steven Introduction
 scoreboard players set @a[x=-2710,y=64,z=-55,distance=..7,scores={TalkTime=0},tag=Dialogue134,tag=!Dialogue136] DialogueTrigger 136
 execute at @a[x=-2710,y=64,z=-55,distance=..40,scores={TalkTime=0},tag=Dialogue134,tag=!Dialogue136] run tp @e[x=-734,y=90,z=-242,dy=2,nbt=!{cobblemon:npc_chatting}] -2710 64 -55

@@ -355,6 +355,8 @@ execute as @s[x=-2749,y=72,z=-159,distance=..15,tag=Dialogue101,scores={TalkTime
 #Friday Lapras Spawn
 execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=5}] run scoreboard players set @a[x=120,y=13,z=-852,distance=..15,tag=!Dialogue105] DialogueTrigger 105
 
+#Player finding Misty after turning on the power plant
+execute as @s[x=-3060,y=64,z=956,distance=..50,tag=!Dialogue113,tag=Dialogue221] unless entity @e[x=-3060,y=64,z=956,dy=3,type=cobblemon:npc] run npcspawnat -3060 64 956 route25_misty 1
 
 #Oak Kanto Starters
 execute as @s[x=-1715,y=64,z=-307,distance=..5,tag=!Dialogue153] run opendialogue professoroak_dialogue153 @s

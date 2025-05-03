@@ -60,7 +60,9 @@ execute as @s[x=-3312,y=64,z=381,distance=..6,tag=Dialogue221,tag=!EXPNCard] run
 execute as @s[x=-3312,y=64,z=381,distance=..6,tag=Dialogue221,tag=EXPNCard] run opendialogue lavender_gentleman_end @s
 
 
-
+#Misty's date changing dialogues
+execute as @s[x=-3063,y=64,z=956,distance=..6,tag=!Dialogue221] run opendialogue route25_youngcouplem_before @s
+execute as @s[x=-3063,y=64,z=956,distance=..6,tag=Dialogue221] run opendialogue route25_youngcouplem_end @s
 
 
 
