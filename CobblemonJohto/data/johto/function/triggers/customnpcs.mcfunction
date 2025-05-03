@@ -65,6 +65,10 @@ execute as @s[x=-3063,y=64,z=956,distance=..6,tag=!Dialogue221] run opendialogue
 execute as @s[x=-3063,y=64,z=956,distance=..6,tag=Dialogue221] run opendialogue route25_youngcouplem_end @s
 
 
+#Goldenrod Beauty Salon
+execute as @s[x=513,y=55,z=-335,distance=..6,tag=!BeautyCD] run opendialogue underground_salon_interaction @s
+execute as @s[x=513,y=55,z=-335,distance=..6,tag=BeautyCD] run opendialogue underground_salon_end @s
+
 
 
 advancement revoke @s only johto:click/npcs
