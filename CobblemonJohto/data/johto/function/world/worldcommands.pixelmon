@@ -27,9 +27,6 @@ execute at @a run execute as @e[tag=Despawn,distance=..10] run data merge entity
 #Hall of Fame Function
 execute as @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=34,tag=Dialogue97,scores={TalkTime=0}] run function johto:world/halloffame/halloffame
 
-#Removes Cooldown score if present
-scoreboard players remove @a[scores={Cooldown=1..}] Cooldown 1
-
 #Adds Sprint cooldown to Walk-based Cooldown score.
 scoreboard players operation @a CooldownWalk += @a[scores={CooldownSprint=1..}] CooldownSprint
 scoreboard players set @a[scores={CooldownSprint=1..}] CooldownSprint 0
@@ -205,11 +202,7 @@ execute as @a[x=478,y=64,z=65,distance=..3,scores={BugContest=1..,Cooldown=0},ta
 execute as @a[x=478,y=64,z=65,distance=..3,scores={BugContest=1..,Cooldown=0},tag=Dialogue198,tag=!Dialouge199] run tellraw @s ["",{"text":"[","color":"green"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 33"}},{"text":"]","color":"green"}]
 execute as @a[x=478,y=64,z=65,distance=..3,scores={BugContest=1..,Cooldown=0},tag=Dialogue198,tag=!Dialouge199] run scoreboard players set @s Cooldown 120
 
-#---------------------
 
-#---------------------
-#Runs Goldenrod Underground puzzle function of player is in the underground
-execute if entity @a[x=476,y=46,z=-345,dx=52,dy=7,dz=51,limit=1] run function johto:triggers/undergroundpuzzle/puzzle
 
 
 

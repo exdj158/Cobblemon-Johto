@@ -24,6 +24,10 @@ execute as @a run function johto:world/roadblocks
 #Removes Cooldown score if present
 scoreboard players remove @a[scores={Cooldown=1..}] Cooldown 1
 
+#Runs Goldenrod Underground puzzle function of player is in the underground
+execute if entity @a[x=476,y=46,z=-345,dx=52,dy=7,dz=51,limit=1] run function johto:triggers/undergroundpuzzle/puzzle
+execute if block 477 48 -307 minecraft:stone_button[powered=true] run function johto:triggers/undergroundpuzzle/reset
+
 #Runs gym leader rematches
 #Gym Leader Rematches
 execute as @p[x=-2781,y=64,z=421,distance=..100,tag=AllGyms] unless entity @a[x=-2794,y=63,z=410,dx=26,dy=5,dz=15] run function johto:world/gymrematches/trainers
