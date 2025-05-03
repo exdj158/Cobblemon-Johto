@@ -9,7 +9,7 @@ execute as @a[tag=RockSmash] at @s as @e[tag=RockSmash,type=armor_stand,distance
 
 
 #Runs Swarm Spawns (changes up biomes on routes as needed)
-function johto:world/swarmspawns
+function johto:triggers/radio/swarmspawns
 
 
 #Spawns in the Weekday NPCs if player is nearby
