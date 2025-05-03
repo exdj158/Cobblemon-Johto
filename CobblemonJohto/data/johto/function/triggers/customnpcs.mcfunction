@@ -48,6 +48,10 @@ execute as @s[x=335,y=64,z=113,distance=..6,tag=!Dialogue193] run opendialogue s
 execute as @s[x=335,y=64,z=113,distance=..6,tag=Dialogue193] run opendialogue sunny_first_end @s
 
 
+#Power Plant Manager
+execute as @s[x=-3117,y=48,z=589,distance=..6,tag=!Dialogue221] run opendialogue powerplant_manager_dialogue215 @s
+execute as @s[x=-3117,y=48,z=589,distance=..6,tag=Dialogue220,tag=!Dialogue221] run opendialogue powerplant_manager_dialogue221 @s
+execute as @s[x=-3117,y=48,z=589,distance=..6,tag=Dialogue221] run opendialogue powerplant_manager_end @s
 
 
 

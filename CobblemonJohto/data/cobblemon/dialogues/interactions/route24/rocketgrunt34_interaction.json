@@ -97,7 +97,25 @@
             "id": "page5",
             "speaker": "npc",
             "lines": [
-                "But! If win you do versus me, a man I be and mine secret to you tell. You understand? Battle begin we do!"
+                "But! If win you do versus me, a man I be and mine secret to you tell."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page6');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "npc",
+            "lines": [
+                "You understand? Battle begin we do!"
             ],
             "input": {
                 "type": "option",

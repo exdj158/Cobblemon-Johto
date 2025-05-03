@@ -6,7 +6,7 @@
         "type": "dialogue",
         "dialogue": "cobblemon:rocketgrunt34_interaction"
     },
-        "name": "Hank",
+        "name": "Rocket Grunt",
         "party": {
         "type": "simple",
         "pokemon": [

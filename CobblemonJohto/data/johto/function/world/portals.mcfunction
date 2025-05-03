@@ -341,20 +341,15 @@ tp @a[x=-959,y=65,z=641,dx=9,dy=6] -1651 64 646
 #Cerulean City
 
 #Cleared Gym
-#tag @a[x=-2788,y=64,z=722,dx=4,dy=3,tag=!Dialogue113] remove GymVictory
-#tellraw @a[x=-2788,y=64,z=722,dx=4,dy=3,tag=!Dialogue113] {"text":"A sign reads: \"Since Misty's out, we'll be away too.\" - Gym Trainers","italic":true}
-#tp @a[x=-2788,y=64,z=722,dx=4,dy=3,tag=!Dialogue113] -1185 65 738
+tag @a[x=-2788,y=64,z=722,dx=4,dy=3,tag=!Dialogue113] remove GymVictory
+tellraw @a[x=-2788,y=64,z=722,dx=4,dy=3,tag=!Dialogue113] {"text":"A sign reads: \"Since Misty's out, we'll be away too.\" - Gym Trainers","italic":true}
+tp @a[x=-2788,y=64,z=722,dx=4,dy=3,tag=!Dialogue113] -1185 65 738
 
 #Real Gym
-#playsound door ambient @a[x=-2788,y=64,z=722,dx=4,dy=3,tag=Dialogue113] ~ ~ ~ 100 1 1
-#tag @a[x=-2788,y=64,z=722,dx=4,dy=3,tag=Dialogue113] remove GymVictory
-#tp @a[x=-2788,y=64,z=722,dx=4,dy=3,tag=Dialogue113] -1004 65 642
+playsound door ambient @a[x=-2788,y=64,z=722,dx=4,dy=3,tag=Dialogue113] ~ ~ ~ 100 1 1
+tag @a[x=-2788,y=64,z=722,dx=4,dy=3,tag=Dialogue113] remove GymVictory
+tp @a[x=-2788,y=64,z=722,dx=4,dy=3,tag=Dialogue113] -1004 65 642
 
-
-#Real Gym
-playsound door ambient @a[x=-2788,y=64,z=722,dx=4,dy=3] ~ ~ ~ 100 1 1
-tag @a[x=-2788,y=64,z=722,dx=4,dy=3] remove GymVictory
-tp @a[x=-2788,y=64,z=722,dx=4,dy=3] -1004 65 642
 
 #Exit
 playsound door ambient @a[x=-1008,y=65,z=641,dx=9,dy=6] ~ ~ ~ 100 1 1

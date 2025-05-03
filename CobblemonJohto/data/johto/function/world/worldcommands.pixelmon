@@ -617,28 +617,6 @@ scoreboard players set @a[x=744,y=73,z=-193,distance=..15,tag=Dialogue101,scores
 tag @a[x=-2749,y=72,z=-159,distance=..15,tag=Dialogue101,scores={TalkTime=0}] remove Dialogue214
 scoreboard players set @a[x=-2749,y=72,z=-159,distance=..15,tag=Dialogue101,scores={TalkTime=0}] DialogueTrigger 214
 
-#Dialogue215 - Power Plant Manager first Talk
-scoreboard players set @a[x=-3117,y=48,z=589,distance=..5,tag=!Dialogue215,scores={TalkTime=0}] DialogueTrigger 215
-
-#Dialogue216 - Power Plant Policeman after Manager
-scoreboard players set @a[x=-3111,y=44,z=565,distance=..7,tag=Dialogue215,tag=!Dialogue216,scores={TalkTime=0}] DialogueTrigger 216
-
-#Dialogue217 - Cerulean Gym Rocket Grunt
-scoreboard players set @a[x=-1185,y=65,z=743,distance=..10,scores={TalkTime=0},tag=Dialogue216,tag=!Dialogue217] DialogueTrigger 217
-
-#Dialogue218 - Route 24 Rocket Grunt pre-battle
-scoreboard players set @a[x=-2748,y=66,z=870,distance=..7,scores={TalkTime=0},tag=Dialogue217,tag=!Dialogue218] DialogueTrigger 218
-execute as @a[x=-2748,y=66,z=870,distance=..20,tag=Dialogue217,scores={TalkTime=0},tag=!Dialogue219] run tp @e[x=-815,y=74,z=-233,dy=3,nbt=!{cobblemon:npc_trainer}] -2743 66 870
-
-#Dialogue219 - Route 24 Rocket Grunt post-battle
-scoreboard players set @a[x=-2748,y=66,z=870,distance=..20,scores={TalkTime=0},tag=!Dialogue219,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 219
-
-#Dialogue220 - Cerulean Gym underwater part
-execute if entity @a[x=-1180,y=59,z=773,distance=..30,scores={TalkTime=0},tag=Dialogue219] at @e[x=-1180,y=59,z=773,dy=3,type=armor_stand] run scoreboard players set @a[distance=..5,tag=!Dialogue220] DialogueTrigger 220
-execute if entity @a[x=-1180,y=59,z=773,distance=..30,scores={TalkTime=0},tag=Dialogue219] at @e[x=-1180,y=59,z=773,dy=3,type=armor_stand] run particle minecraft:firework ~ ~ ~ 1 2 1 0.1 2 normal @a[tag=!Dialogue220]
-
-#Dialogue221 - Power Plant returning part
-scoreboard players set @a[x=-3117,y=48,z=589,distance=..5,tag=Dialogue220,tag=!Dialogue221,scores={TalkTime=0},nbt={Inventory:[{id:"minecraft:music_disc_mall"}]}] DialogueTrigger 221
 
 #Dialogue222 - Pallet Town Oak allowing access to Mt. Silver
 scoreboard players set @a[x=-1726,y=63,z=-319,dx=23,dy=5,dz=25,scores={TalkTime=0},tag=Dialogue154,tag=AllGyms,tag=!Dialogue222] DialogueTrigger 222

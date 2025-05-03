@@ -375,6 +375,19 @@ execute as @p[x=549,y=64,z=-409,distance=..20,tag=!Dialogue204,tag=!Dialogue205]
 execute as @a[x=549,y=64,z=-409,distance=..20,tag=Dialogue204,tag=!Dialogue205] unless entity @e[x=549,y=64,z=-409,dy=3,type=cobblemon:npc] run npcspawnat 549 64 -409 bill_dialogue205 1
 
 
+#Power Plant Policeman
+#Dialogue216 - Power Plant Policeman after Manager
+execute as @s[x=-3111,y=44,z=565,distance=..7,tag=Dialogue215,tag=!Dialogue216] run opendialogue powerplant_policeman_dialogue216 @s
+
+#Cerlean Gym, spawns in rocket grunt
+execute as @s[x=-1185,y=65,z=743,distance=..10,tag=Dialogue216,tag=!Dialogue217] unless entity @e[x=-1185,y=65,z=743,dy=3,type=cobblemon:npc] run particle cloud -1185 65 743 1 1 1 1 50
+execute as @s[x=-1185,y=65,z=743,distance=..10,tag=Dialogue216,tag=!Dialogue217] unless entity @e[x=-1185,y=65,z=743,dy=3,type=cobblemon:npc] run npcspawnat -1185 65 743 ceruleangym_rocket 1
+
+#Nugget Bridge, spawns in Rocket Trainer
+execute as @s[x=-2748,y=66,z=870,distance=..20,tag=Dialogue217,tag=!Dialogue219] unless entity @e[x=-2743,y=66,z=870,dy=3,type=cobblemon:npc] run npcspawnat -2743 66 870 rocketgrunt34 1
+
+#Cerulean Gym machine part
+execute as @s[x=-1180,y=59,z=773,distance=..7,tag=Dialogue219,tag=!Dialogue220] run opendialogue ceruleangym_machinepart @s
 
 
 
