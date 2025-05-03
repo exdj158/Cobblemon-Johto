@@ -671,39 +671,6 @@ tellraw @s[scores={DialogueTrigger=154,TalkTime=93}] {"text":"You can now find w
 tag @s[scores={DialogueTrigger=154,TalkTime=93..}] add Dialogue154
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Hoenn Sounds
-#DialogueTrigger 156
-
-#Pokémon are Listening
-execute as @s[scores={DialogueTrigger=156,TalkTime=25}] run function johto:triggers/hoennsounds
-
-#Rolls for a Pokemon and spawns on player
-execute as @s[scores={DialogueTrigger=156,TalkTime=43}] run function johto:triggers/hoennsounds
-
-
-#Disables Dialogue if player stops listening to the music
-execute as @s[scores={DialogueTrigger=156,TalkTime=1..45,MusicCooldown=0}] run tag @s add EndDialogue
-
-
-tag @s[scores={DialogueTrigger=156,TalkTime=46..}] add Dialogue156
-
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Sinnoh Sounds
-#DialogueTrigger 156
-
-#Pokémon are Listening
-execute as @s[scores={DialogueTrigger=157,TalkTime=19}] run function johto:triggers/sinnohsounds
-
-#Rolls for a Pokemon and spawns on player
-execute as @s[scores={DialogueTrigger=157,TalkTime=36}] run function johto:triggers/sinnohsounds
-
-#Disables Dialogue if player stops listening to the music
-execute as @s[scores={DialogueTrigger=157,TalkTime=1..45,MusicCooldown=0}] run tag @s add EndDialogue
-
-tag @s[scores={DialogueTrigger=157,TalkTime=38..}] add Dialogue157
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Articuno Spawn
 #scoreboard players set @a[x=-2065,y=17,z=-847,dx=23,dy=3,dz=15,score_Articuno=0,score_ArticunoCD=0,score_TalkTime=0,tag=!Dialogue158] DialogueTrigger 158
 
