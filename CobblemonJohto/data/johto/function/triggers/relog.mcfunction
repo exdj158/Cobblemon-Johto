@@ -3,7 +3,7 @@
 scoreboard players set @s BattleStart 0
 
 #Resets Radio if player logs out while listening to music
-scoreboard players set @s click 1
+scoreboard players set @s MusicCooldown 0
 
 #If player crashes/quits in the middle of a pop-up dialogue
 tag @s remove InDialogue
