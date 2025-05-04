@@ -1,21 +1,24 @@
 {   
-
-    "names": ["Mewtwo"],
-    "speakers": {
-        "npc": {
-            "name": {
-                "type": "expression",
-                "expression": "q.npc.name"
-            },
-            "face": "q.npc.face();"
-        }
-    },
+    "initializationAction": [              
+    "q.run_command('playsound minecraft:mewtwo ambient ' + q.player.username + ' ~ ~ ~ 1 1 1');"
+        ],
+        "speakers": {
+            "pokemon": {
+              "name": "Mewtwo",
+              "face": {
+                "type": "artificial",
+                "modelType": "pokemon",
+                "identifier": "cobblemon:mewtwo",
+                "isLeftSide": false
+              }
+            }
+          },
     "pages": [
         {
             "id": "greeting",
-            "speaker": "npc",
+            "speaker": "pokemon",
             "lines": [
-                "Mew?"
+                "BLAH-NEH-NUHNEENERNEET"
             ],
             "input": {
                 "type": "option",
@@ -24,9 +27,9 @@
                     {
                         "text": "§c⚔ Battle ⚔§r",
                         "value": "battle",
-                        "action": [ 
-                                    "q.run_command('execute as ' + q.player.username + ' run pokespawn mewtwo level=75');",
-                                    "v.battle = q.npc.start_battle(q.player);"
+                        "action": [
+                                    "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 3');",
+                                    "q.dialogue.close();"
                             ]
                     },
                     {

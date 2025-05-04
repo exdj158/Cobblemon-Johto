@@ -76,6 +76,17 @@ execute as @s[x=513,y=55,z=-335,distance=..6,tag=BeautyCD] run opendialogue unde
 
 
 
+#Legendary Pokemon
+#Mewtwo
+execute as @s[x=-2555,y=55,z=855,distance=..6] run opendialogue mewtwo_interaction @s
+
+
+
+
+
+
+
+
 advancement revoke @s only johto:click/npcs
 
 #
