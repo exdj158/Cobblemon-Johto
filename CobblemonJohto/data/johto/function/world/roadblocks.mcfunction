@@ -131,6 +131,69 @@ tellraw @a[x=488,y=60,z=-630,dx=21,dy=3,dz=117,tag=!Dialogue33] {"text":"This ar
 execute at @a[x=488,y=60,z=-630,dx=21,dy=3,dz=117,tag=!Dialogue33] run tp @a[x=488,y=60,z=-630,dx=21,dy=3,dz=117,tag=!Dialogue33] ~-10 64 ~
 
 
+#Whirlpools
+#Whirl Islands
+#Northeast whirlpool
+execute if entity @a[x=912,y=61,z=-364,distance=..25,tag=!Whirlpool] if block 912 64 -367 air run fill 909 57 -364 915 47 -364 barrier[waterlogged=true] replace water
+execute if entity @a[x=912,y=61,z=-364,distance=..25,tag=!Whirlpool] if block 912 64 -367 air run clone -714 66 -333 -720 72 -327 909 58 -367
+
+execute if entity @a[x=912,y=61,z=-364,distance=..15,tag=Whirlpool] run fill 909 48 -360 915 64 -367 minecraft:air replace minecraft:barrier
+execute if entity @a[x=912,y=61,z=-364,distance=..15,tag=Whirlpool] run fill 909 48 -360 915 63 -367 minecraft:water
+execute if entity @a[x=912,y=61,z=-364,distance=..15,tag=Whirlpool] run fill 909 57 -364 915 47 -364 water replace barrier
+
+#Northwest
+execute if entity @a[x=1024,y=61,z=-282,distance=..25,tag=!Whirlpool] if block 1024 64 -285 air run fill 1021 45 -282 1028 58 -282 barrier[waterlogged=true] replace water
+execute if entity @a[x=1024,y=61,z=-282,distance=..25,tag=!Whirlpool] if block 1024 64 -285 air run clone -714 66 -333 -720 72 -327 1021 58 -285
+
+execute if entity @a[x=1024,y=61,z=-282,distance=..15,tag=Whirlpool] run fill 1027 53 -286 1021 64 -279 minecraft:air replace minecraft:barrier
+execute if entity @a[x=1024,y=61,z=-282,distance=..15,tag=Whirlpool] run fill 1027 53 -286 1021 63 -279 minecraft:water
+execute if entity @a[x=1024,y=61,z=-282,distance=..15,tag=Whirlpool] run fill 1021 45 -282 1028 58 -282 water replace barrier
+
+#Southwest
+
+execute if entity @a[x=1114,y=61,z=-396,distance=..25,tag=!Whirlpool] if block 1114 64 -394 air run fill 1117 50 -397 1110 58 -397 barrier[waterlogged=true] replace water
+execute if entity @a[x=1114,y=61,z=-396,distance=..25,tag=!Whirlpool] if block 1114 64 -394 air run clone -714 66 -333 -720 72 -327 1111 58 -400
+
+execute if entity @a[x=1114,y=61,z=-396,distance=..15,tag=Whirlpool] run fill 1111 56 -394 1117 64 -400 minecraft:air replace minecraft:barrier
+execute if entity @a[x=1114,y=61,z=-396,distance=..15,tag=Whirlpool] run fill 1111 56 -394 1117 63 -400 minecraft:water
+execute if entity @a[x=1114,y=61,z=-396,distance=..15,tag=Whirlpool] run fill 1117 50 -397 1110 58 -397 water replace barrier
+
+#Southeast
+execute if entity @a[x=991,y=61,z=-500,distance=..25,tag=!Whirlpool] if block 991 64 -499 air run fill 994 47 -496 987 58 -496 barrier[waterlogged=true] replace water
+execute if entity @a[x=991,y=61,z=-500,distance=..25,tag=!Whirlpool] if block 991 64 -499 air run clone -714 66 -333 -720 72 -327 988 58 -499
+
+execute if entity @a[x=991,y=61,z=-500,distance=..15,tag=Whirlpool] run fill 988 58 -493 994 64 -499 minecraft:air replace minecraft:barrier
+execute if entity @a[x=991,y=61,z=-500,distance=..15,tag=Whirlpool] run fill 988 58 -493 994 63 -499 minecraft:water
+execute if entity @a[x=991,y=61,z=-500,distance=..15,tag=Whirlpool] run fill 994 47 -496 987 58 -496 water replace barrier
+
+
+
+
+
+#Tin Tower
+tellraw @a[x=369,y=58,z=287,dx=6,dy=10,dz=15,tag=!Morty] ["",{"text":"<Monk> Tin Tower is off limits to anyone without Ecruteak Gym's Badge.","color":"white"}]
+execute at @a[x=369,y=58,z=287,dx=6,dy=10,dz=15,tag=!Morty] run tp @a[x=369,y=58,z=287,dx=6,dy=10,dz=15,tag=!Morty] ~0 64 ~-10
+
+
+#Fuchsia City South Entrance blocked until beating Blaine
+tellraw @a[x=-2423,y=64,z=-660,dx=50,dy=20,dz=20,tag=!Blaine,scores={Cooldown=0}] ["",{"text":"<"},{"text":"Policeman","color":"aqua"},{"text":"> The beach to Route 19 is closed indefinitely due to a volcano's eruption off the coast. I wonder if the people of Cinnabar are safe..."}]
+scoreboard players set @a[x=-2423,y=64,z=-660,dx=50,dy=20,dz=20,tag=!Blaine] Cooldown 10
+execute at @a[x=-2423,y=64,z=-660,dx=50,dy=20,dz=20,tag=!Blaine] run tp @a[x=-2423,y=64,z=-660,dx=50,dy=20,dz=20,tag=!Blaine] ~ ~ ~10
+
+#Dark Cave Open after Pryce
+tellraw @a[x=-290,y=59,z=-68,dx=20,dy=4,dz=55,tag=!Dialogue33] {"text":"This area requires Surf to access!","italic":true,"color":"gray"}
+execute at @a[x=-290,y=59,z=-68,dx=20,dy=4,dz=55,tag=!Dialogue33] run tp @a[x=-290,y=59,z=-68,dx=20,dy=4,dz=55,tag=!Dialogue33] -266 64 -26
+
+
+#Tohjo Falls
+tellraw @a[x=-914,y=63,z=-503,dx=5,dy=3,dz=4,tag=!Clair] ["",{"text":"You need more badges!","color":"white","italic":true}]
+execute at @a[x=-914,y=63,z=-503,dx=5,dy=3,dz=4,tag=!Clair] run tp @a[x=-914,y=63,z=-503,dx=5,dy=3,dz=4,tag=!Clair] ~ 64 ~-10
+
+
+#SS Aqua Olivine, a ticket is needed
+execute if entity @a[x=744,y=73,z=-193,distance=..15,tag=!Dialogue101,scores={Cooldown=0}] run tellraw @a[x=744,y=73,z=-193,distance=..15,tag=!Dialogue101,scores={Cooldown=0}] {"text":"You need an S.S. Ticket to ride on the S.S. Aqua!","italic":true,"color":"gray"}
+execute if entity @a[x=744,y=73,z=-193,distance=..15,tag=!Dialogue101,scores={Cooldown=0}] run scoreboard players set @a[x=744,y=73,z=-193,distance=..15,tag=!Dialogue101,scores={Cooldown=0}] Cooldown 20
+
 
 
 

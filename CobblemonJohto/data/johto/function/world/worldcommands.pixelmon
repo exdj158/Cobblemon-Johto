@@ -368,55 +368,6 @@ scoreboard players set @a[x=-255,y=63,z=-198,dx=20,dy=5,dz=8,scores={DialogueTri
 scoreboard players set @a[x=-159,y=63,z=590,distance=..5,tag=Dialogue49,tag=!Dialogue51] DialogueTrigger 51
 execute as @a[x=-159,y=64,z=590,distance=..50,tag=Dialogue49,tag=!Dialogue51] run tp @e[x=-807,y=92,z=-242,dy=3,nbt=!{cobblemon:npc_chatting}] -159 64 590
 
-#---------------------
-
-#Dialogue54 - Rocket HQ Lance healing player
-scoreboard players set @a[x=-83,y=45,z=169,distance=..5,tag=!Dialogue54] DialogueTrigger 54
-execute at @a[x=-83,y=45,z=169,distance=..20,tag=!Dialogue54,scores={TalkTime=0}] run tp @e[x=-803,y=92,z=-242,dy=3,nbt=!{cobblemon:npc_chatting}] -83 45 169
-
-#Dialogue55 - Lance passwords talk
-scoreboard players set @a[x=-149,y=34,z=165,distance=..5,tag=!Dialogue55] DialogueTrigger 55
-execute at @a[x=-149,y=34,z=165,distance=..25,tag=!Dialogue55,scores={TalkTime=0}] run tp @e[x=-801,y=92,z=-242,dy=3,nbt=!{cobblemon:npc_chatting}] -149 34 165
-
-#Dialogue56 - Password 1
-scoreboard players set @a[x=-145,y=33,z=193,distance=..25,scores={TalkTime=0},tag=!Dialogue56,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 56
-
-#Dialogue57 - Password 2
-scoreboard players set @a[x=-80,y=33,z=170,distance=..25,scores={TalkTime=0},tag=!Dialogue57,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 57
-
-#Dialogue58 - Password 3 (Murkrow)
-scoreboard players set @a[x=-91,y=34,z=217,distance=..5,scores={TalkTime=0},tag=Dialogue61,tag=!Dialogue58] DialogueTrigger 58
-
-#Dialogue59 - Silver in HQ
-scoreboard players set @a[x=-82,y=34,z=182,distance=..5,tag=!Dialogue59] DialogueTrigger 59
-execute at @a[x=-82,y=34,z=182,distance=..20,tag=!Dialogue59,scores={TalkTime=0}] run tp @e[x=-772,y=88,z=-242,dy=3,nbt=!{cobblemon:npc_chatting}] -82 34 182
-
-#Dialogue60 - Executive pre-battle
-scoreboard players set @a[x=-117,y=33,z=189,dx=31,dy=5,dz=31,scores={TalkTime=0},tag=!Dialogue60] DialogueTrigger 60
-
-#Dialogue61 - Executive post-battle
-scoreboard players set @a[x=-117,y=33,z=189,dx=31,dy=5,dz=31,scores={TalkTime=0},tag=!Dialogue61,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 61
-execute at @a[x=-99,y=34,z=205,distance=..20,scores={TalkTime=0},tag=!Dialogue61] run tp @e[x=-799,y=92,z=-242,dy=3,nbt=!{cobblemon:npc_trainer}] -99 34 205
-
-#Dialogue62 - Ariana pre-battle
-scoreboard players set @a[x=-141,y=44,z=157,dx=16,dy=5,dz=15,tag=Dialogue58,tag=!Dialogue62] DialogueTrigger 62
-
-execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue58,tag=!Dialogue63] run tp @e[x=-797,y=92,z=-242,dy=3,nbt=!{cobblemon:npc_chatting}] -128 45 159
-execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue58,tag=!Dialogue63] run tp @e[x=-795,y=92,z=-242,dy=3,nbt=!{cobblemon:npc_chatting}] -128 45 171
-execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue58,tag=!Dialogue63] run tp @e[x=-793,y=92,z=-242,dy=3,nbt=!{cobblemon:npc_trainer}] -134 45 170
-execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue58,tag=!Dialogue63] run setblock -128 45 168 pixelmon:poke_display[facing=north]{PokeDisplayPokemon:{ndex:24,Growth:3b}} replace
-execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue58,tag=!Dialogue63] run setblock -128 45 164 pixelmon:poke_display[facing=south]{PokeDisplayPokemon:{ndex:149,Growth:3b}} replace
-
-
-#Prior to battle-ready
-execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue53,tag=!Dialogue61] run setblock -128 45 168 minecraft:air
-execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue53,tag=!Dialogue61] run setblock -128 45 164 minecraft:air
-
-#Dialogue63 - Ariana post-battle
-scoreboard players set @a[x=-141,y=44,z=157,dx=16,dy=5,dz=15,scores={TalkTime=0},tag=!Dialogue63,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 63
-
-#Dialogue64 - After defeating all Electrode in the room (no Pokemon found)
-execute unless entity @e[x=-149,y=44,z=177,dx=63,dy=5,dz=35,type=cobblemon:pokemon] as @a[x=-149,y=44,z=177,dx=63,dy=5,dz=35,scores={TalkTime=0},tag=Dialogue63] run scoreboard players set @s[tag=!Dialogue64] DialogueTrigger 64
 
 #Dialogue76 - Route 43 gate gift
 scoreboard players set @a[x=-183,y=64,z=352,distance=..5,tag=Dialogue64,tag=!Dialogue76,scores={TalkTime=0}] DialogueTrigger 76
@@ -547,24 +498,6 @@ tellraw @a[x=-1099,y=0,z=-252,dx=102,dy=100,dz=189,tag=Dialogue176,scores={Villa
 tellraw @a[x=-1099,y=0,z=-252,dx=102,dy=100,dz=189,tag=Dialogue176,scores={VillagerClick=1..}] {"text":"[Yes]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 26"}}
 scoreboard players set @a[x=-1099,y=0,z=-252,dx=102,dy=100,dz=189,scores={VillagerClick=1..}] VillagerClick 0
 
-
-#---------------------
-#Dialogues 187-193 Week Siblings
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=1}] run execute at @a[x=913,y=63,z=-54,distance=..50] run tp @e[x=-815,y=64,z=-228,dy=3,nbt=!{cobblemon:npc_chatting}] 913 64 -54
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=2}] run execute at @a[x=-482,y=63,z=-535,distance=..50] run tp @e[x=-815,y=64,z=-226,dy=3,nbt=!{cobblemon:npc_chatting}] -482 64 -535
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=3}] run execute at @a[x=-56,y=63,z=722,distance=..50] run tp @e[x=-815,y=64,z=-224,dy=3,nbt=!{cobblemon:npc_chatting}] -56 64 722
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=4}] run execute at @a[x=236,y=64,z=-6,distance=..50] run tp @e[x=-815,y=64,z=-222,dy=3,nbt=!{cobblemon:npc_chatting}] 236 64 -6
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=5}] run execute at @a[x=127,y=63,z=-545,distance=..50] run tp @e[x=-815,y=64,z=-220,dy=3,nbt=!{cobblemon:npc_chatting}] 127 64 -545
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=6}] run execute at @a[x=-663,y=63,z=225,distance=..50] run tp @e[x=-815,y=64,z=-218,dy=3,nbt=!{cobblemon:npc_chatting}] -663 64 225
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=7}] run execute at @a[x=335,y=64,z=113,distance=..50] run tp @e[x=-815,y=64,z=-216,dy=3,nbt=!{cobblemon:npc_chatting}] 335 64 113
-
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=1}] run scoreboard players set @a[x=913,y=63,z=-54,distance=..5,scores={TalkTime=0},tag=!Dialogue187] DialogueTrigger 187
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=2}] run scoreboard players set @a[x=-482,y=63,z=-535,distance=..5,scores={TalkTime=0},tag=!Dialogue188] DialogueTrigger 188
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=3}] run scoreboard players set @a[x=-56,y=63,z=722,distance=..5,scores={TalkTime=0},tag=!Dialogue189] DialogueTrigger 189
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=4}] run scoreboard players set @a[x=236,y=64,z=-6,distance=..5,scores={TalkTime=0},tag=!Dialogue190] DialogueTrigger 190
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=5}] run scoreboard players set @a[x=127,y=63,z=-545,distance=..5,scores={TalkTime=0},tag=!Dialogue191] DialogueTrigger 191
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=6}] run scoreboard players set @a[x=-663,y=63,z=225,distance=..5,scores={TalkTime=0},tag=!Dialogue192] DialogueTrigger 192
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=7}] run scoreboard players set @a[x=335,y=64,z=113,distance=..5,scores={TalkTime=0},tag=!Dialogue193] DialogueTrigger 193
 
 #---------------------
 #Dialogue194 - Route 25 after 6 trainer wins
@@ -870,35 +803,6 @@ execute as @a[x=513,y=54,z=-335,distance=..4,tag=!BeautyCD,scores={TalkTime=0,Co
 #Road Blocks
 
 
-#Tin Tower
-tellraw @a[x=369,y=58,z=287,dx=6,dy=10,dz=15,tag=!Morty] ["",{"text":"<Monk> Tin Tower is off limits to anyone without Ecruteak Gym's Badge.","color":"white"}]
-execute at @a[x=369,y=58,z=287,dx=6,dy=10,dz=15,tag=!Morty] run tp @a[x=369,y=58,z=287,dx=6,dy=10,dz=15,tag=!Morty] ~0 64 ~-10
-
-
-#Fuchsia City South Entrance blocked until beating Blaine
-tellraw @a[x=-2423,y=64,z=-660,dx=50,dy=20,dz=20,tag=!Blaine,scores={TalkTime=0,Cooldown=0}] ["",{"text":"<"},{"text":"Policeman","color":"aqua"},{"text":"> The beach to Route 19 is closed indefinitely due to a volcano's eruption off the coast. I wonder if the people of Cinnabar are safe..."}]
-scoreboard players set @a[x=-2423,y=64,z=-660,dx=50,dy=20,dz=20,tag=!Blaine] Cooldown 10
-execute at @a[x=-2423,y=64,z=-660,dx=50,dy=20,dz=20,tag=!Blaine] run tp @a[x=-2423,y=64,z=-660,dx=50,dy=20,dz=20,tag=!Blaine] ~ ~ ~10
-
-#Dark Cave opne after Pryce
-tellraw @a[x=-290,y=59,z=-68,dx=20,dy=4,dz=55,tag=!Dialogue33] {"text":"This area requires Surf to access!","italic":true,"color":"gray"}
-execute at @a[x=-290,y=59,z=-68,dx=20,dy=4,dz=55,tag=!Dialogue33] run tp @a[x=-290,y=59,z=-68,dx=20,dy=4,dz=55,tag=!Dialogue33] -266 64 -26
-
-
-#Tohjo Falls
-tellraw @a[x=-914,y=63,z=-503,dx=5,dy=3,dz=4,tag=!Clair] ["",{"text":"You need more badges!","color":"white","italic":true}]
-execute at @a[x=-914,y=63,z=-503,dx=5,dy=3,dz=4,tag=!Clair] run tp @a[x=-914,y=63,z=-503,dx=5,dy=3,dz=4,tag=!Clair] ~ 64 ~-10
-
-
-#Cianwood & Route 47 Gate
-tellraw @a[x=1306,y=64,z=-369,distance=..7,tag=!Dialogue42] ["",{"text":"Route Gate closed until Olivine Lighthouse reopens.","color":"white","italic":true}]
-execute at @a[x=1306,y=64,z=-369,distance=..7,tag=!Dialogue42] run tp @a[x=1306,y=64,z=-369,distance=..7,tag=!Dialogue42] ~-7 ~ ~
-
-
-#SS Aqua Olivine, a ticket is needed
-execute if entity @a[x=744,y=73,z=-193,distance=..15,tag=!Dialogue101,scores={Cooldown=0}] run tellraw @a[x=744,y=73,z=-193,distance=..15,tag=!Dialogue101,scores={Cooldown=0}] {"text":"You need an S.S. Ticket to ride on the S.S. Aqua!","italic":true,"color":"gray"}
-execute if entity @a[x=744,y=73,z=-193,distance=..15,tag=!Dialogue101,scores={Cooldown=0}] run scoreboard players set @a[x=744,y=73,z=-193,distance=..15,tag=!Dialogue101,scores={Cooldown=0}] Cooldown 20
-
 
 #Battle Tower blocked until player has beaten ELite Four
 tellraw @a[x=903,y=64,z=-42,dx=2,dy=2,dz=10,scores={IP=0,Cooldown=0}] ["",{"text":"Only Elite Four Champions may enter!","color":"white","italic":true}]
@@ -907,31 +811,6 @@ execute at @a[x=903,y=64,z=-42,dx=2,dy=2,dz=10,scores={IP=0}] run tp @a[x=903,y=
 
 
 
-#Whirlpools
-#Whirl Islands
-#Northeast whirlpool
-execute if entity @a[x=912,y=61,z=-364,distance=..25,tag=!Dialogue64] run clone -714 66 -333 -720 72 -327 909 58 -367
-
-execute if entity @a[x=912,y=61,z=-364,distance=..15,tag=Dialogue64] run fill 909 48 -360 915 64 -367 minecraft:air replace minecraft:barrier
-execute if entity @a[x=912,y=61,z=-364,distance=..15,tag=Dialogue64] run fill 909 48 -360 915 63 -367 minecraft:water
-
-#Northwest
-execute if entity @a[x=1024,y=61,z=-282,distance=..25,tag=!Dialogue64] run clone -714 66 -333 -720 72 -327 1021 58 -285
-
-execute if entity @a[x=1024,y=61,z=-282,distance=..15,tag=Dialogue64] run fill 1027 53 -286 1021 64 -279 minecraft:air replace minecraft:barrier
-execute if entity @a[x=1024,y=61,z=-282,distance=..15,tag=Dialogue64] run fill 1027 53 -286 1021 63 -279 minecraft:water
-
-#Southwest
-execute if entity @a[x=1114,y=61,z=-396,distance=..25,tag=!Dialogue64] run clone -714 66 -333 -720 72 -327 1111 58 -400
-
-execute if entity @a[x=1114,y=61,z=-396,distance=..15,tag=Dialogue64] run fill 1111 56 -394 1117 64 -400 minecraft:air replace minecraft:barrier
-execute if entity @a[x=1114,y=61,z=-396,distance=..15,tag=Dialogue64] run fill 1111 56 -394 1117 63 -400 minecraft:water
-
-#Southeast
-execute if entity @a[x=991,y=61,z=-500,distance=..25,tag=!Dialogue64] run clone -714 66 -333 -720 72 -327 988 58 -499
-
-execute if entity @a[x=991,y=61,z=-500,distance=..15,tag=Dialogue64] run fill 988 58 -493 994 64 -499 minecraft:air replace minecraft:barrier
-execute if entity @a[x=991,y=61,z=-500,distance=..15,tag=Dialogue64] run fill 988 58 -493 994 63 -499 minecraft:water
 
 
 #-------------------------------------------------------------------------------------------------------------------------

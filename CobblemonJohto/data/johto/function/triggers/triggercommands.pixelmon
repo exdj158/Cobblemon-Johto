@@ -83,21 +83,6 @@ scoreboard players set @a[scores={TriggerCommand=27}] TriggerCommand 0
 
 
 
-#39 - Lance Lake of Rage will you help me?
-execute as @a[scores={TriggerCommand=39}] run scoreboard players set @s DialogueTrigger 52
-scoreboard players set @a[scores={TriggerCommand=39}] TriggerCommand 0
-
-
-
-#40 - Beauty Salon would you like a makeover? [Yes]
-execute as @a[scores={TriggerCommand=40}] run tellraw @s {"text":"<Beauty Salon Clerk> Send out a Pokemon for me to pamper!"}
-execute as @a[scores={TriggerCommand=40}] run data merge entity @e[x=-801,y=64,z=-284,dy=3,type=armor_stand,limit=1] {CustomName:'{"text":"Beauty Salon Clerk"}'}
-execute as @a[scores={TriggerCommand=40}] run execute as @e[x=-801,y=64,z=-284,dy=3,type=armor_stand] run givemoney @a[scores={TriggerCommand=40}] -500
-execute as @a[scores={TriggerCommand=40}] run data merge entity @e[x=-801,y=64,z=-284,dy=3,type=armor_stand,limit=1] {CustomName:'{"text":"Pixelmon Johto"}'}
-execute as @a[scores={TriggerCommand=40}] run tag @s add BeautySalon
-execute as @a[scores={TriggerCommand=40}] run tag @s remove Dialogue186
-scoreboard players set @a[scores={TriggerCommand=40}] TriggerCommand 0
-
 
 #41 - Celebi Time Travel event start
 execute as @a[scores={TriggerCommand=41}] run scoreboard players set @s DialogueTrigger 162
