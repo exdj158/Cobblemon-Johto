@@ -311,8 +311,6 @@ execute as @a[x=623,y=64,z=-714,distance=..5,tag=!Bugsy,scores={Cooldown=0}] run
 #Dialogue21 - Ilex Forest Farfetch'd Lost
 scoreboard players set @a[x=623,y=64,z=-714,distance=0..5,tag=!Dialogue21,tag=Bugsy,scores={Farfetchd=0}] DialogueTrigger 21
 
-#Runs Farfetch'd chasing function
-execute as @a[limit=1,x=513,y=60,z=-793,dx=187,dy=10,dz=228] run function johto:world/farfetchd
 
 #---------------------
 

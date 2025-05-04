@@ -7,6 +7,11 @@ execute as @s[x=247,y=64,z=-20,distance=..6,tag=Dialogue30,tag=!RockSmash] run o
 execute as @s[x=247,y=64,z=-20,distance=..6,tag=Dialogue30,tag=RockSmash] run opendialogue route36_blackbelt_interaction @s
 
 
+#Ilex Forest Cut HM
+execute as @s[x=623,y=64,z=-714,distance=..4,tag=!Bugsy] run opendialogue ilexforest_schoolkid_beforebadge @s
+execute as @s[x=623,y=64,z=-714,distance=..4,tag=Bugsy,scores={Farfetchd=0}] run opendialogue ilexforest_schoolkid_afterbadge @s
+execute as @s[x=623,y=64,z=-714,distance=..4,tag=Bugsy,scores={Farfetchd=1}] run opendialogue ilexforest_schoolkid_cuthm @s
+
 #Radio Tower Quiz Lady
 execute as @s[x=514,y=31,z=-272,distance=..4,tag=!RadioCard] run opendialogue radiotower_quiz_interaction @s
 execute as @s[x=514,y=31,z=-272,distance=..4,tag=RadioCard] run opendialogue radiotower_quiz_completed @s

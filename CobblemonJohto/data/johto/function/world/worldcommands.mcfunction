@@ -36,6 +36,9 @@ execute as @p[x=-2781,y=64,z=421,distance=..100,tag=AllGyms] unless entity @a[x=
 execute as @p[x=-2781,y=64,z=421,distance=..100,tag=!AllGyms] unless entity @a[x=-2794,y=63,z=410,dx=26,dy=5,dz=15,scores={BattleStart=1..}] if entity @e[x=-2781,y=63,z=421,dy=3,type=cobblemon:npc] run particle cloud -2781 64 421 1 1 1 0.15 100
 execute as @p[x=-2781,y=64,z=421,distance=..100,tag=!AllGyms] unless entity @a[x=-2794,y=63,z=410,dx=26,dy=5,dz=15,scores={BattleStart=1..}] run tp @e[x=-2781,y=63,z=421,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 
+#Runs Farfetch'd chasing function
+execute as @a[limit=1,x=513,y=60,z=-793,dx=187,dy=10,dz=228] run function johto:world/farfetchd
+
 #---------------------
 #Runs infolist command for non-ops
 scoreboard players enable @a Info

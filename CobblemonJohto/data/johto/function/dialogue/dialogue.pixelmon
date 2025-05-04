@@ -1,42 +1,4 @@
 
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Ilex Forest HM Merchant before Farfetch'd is found
-#Resets if player leaves the forst without finding Farfetch'd
-#execute as @s[x=623,y=64,z=-714,distance=..5,tag=Bugsy,score_Farfetchd=0] run scoreboard players set @s[tag=!Dialogue21] DialogueTrigger 21
-
-tellraw @s[scores={DialogueTrigger=21,TalkTime=1}] {"text":"<Charcoal Apprentice> The Farfetch'd that Cuts trees for charcoal took off on me."}
-tellraw @s[scores={DialogueTrigger=21,TalkTime=9}] {"text":"<Charcoal Apprentice> I can't go looking for it here in the Ilex Forest."}
-tellraw @s[scores={DialogueTrigger=21,TalkTime=17}] {"text":"<Charcoal Apprentice> It's too big, dark and scary for me..."}
-
-tag @s[scores={DialogueTrigger=21,TalkTime=17..}] add Dialogue21
-
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#https://youtu.be/HQEaaIuyKAM?t=6325
-#Ilex Forest HM Merchant after finding Farfetch'd
-
-#tp Charcoal master in
-execute as @s[scores={DialogueTrigger=22,TalkTime=1}] run particle cloud 625 64 -714 1 1 1 1 100
-execute as @s[scores={DialogueTrigger=22,TalkTime=1}] run tp @e[x=-815,y=74,z=-240,dy=3,nbt=!{cobblemon:npc_chatting}] 625 64 -714
-
-tellraw @s[scores={DialogueTrigger=22,TalkTime=1}] {"text":"<Charcoal Apprentice> Wow! Thanks a whole bunch!"}
-tellraw @s[scores={DialogueTrigger=22,TalkTime=8}] {"text":"<Charcoal Apprentice> My boss's Pokémon won't obey me because I don't have a Badge."}
-tellraw @s[scores={DialogueTrigger=22,TalkTime=16}] ["",{"text":"<"},{"text":"Charcoal Master","color":"gray"},{"text":"> Ah! My Farfetch'd! You found it for us, kid?"}]
-tellraw @s[scores={DialogueTrigger=22,TalkTime=22}] ["",{"text":"<"},{"text":"Charcoal Master","color":"gray"},{"text":"> Without it, we wouldn't be able to Cut trees for charcoal."}]
-tellraw @s[scores={DialogueTrigger=22,TalkTime=30}] ["",{"text":"<"},{"text":"Charcoal Master","color":"gray"},{"text":"> Thanks, kid! Now, how can I thank you..."}]
-tellraw @s[scores={DialogueTrigger=22,TalkTime=37}] ["",{"text":"<"},{"text":"Charcoal Master","color":"gray"},{"text":"> I know! Here, take this."}]
-execute as @s[scores={DialogueTrigger=22,TalkTime=40}] run give @s minecraft:diamond_axe{display:{Name:"HM01: Cut",Lore:["Enables to user to cut down small","trees that may block their paths."]},Unbreakable:1,HideFlags:32,CanDestroy:["pixelmon:tree"]}
-execute as @s[scores={DialogueTrigger=22,TalkTime=40}] run give @s pixelmon:hm1
-execute as @s[scores={DialogueTrigger=22,TalkTime=40}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
-tellraw @s[scores={DialogueTrigger=22,TalkTime=47}] ["",{"text":"<"},{"text":"Charcoal Master","color":"gray"},{"text":"> That's the Cut HM. You can use that to clear small trees."}]
-tellraw @s[scores={DialogueTrigger=22,TalkTime=55}] ["",{"text":"<"},{"text":"Charcoal Master","color":"gray"},{"text":"> Thanks again for your help!"}]
-
-#master tps away
-execute as @s[scores={DialogueTrigger=22,TalkTime=60}] run particle cloud 625 64 -714 1 1 1 1 100
-execute as @s[scores={DialogueTrigger=22,TalkTime=60}] run tp @e[x=625,y=63,z=-714,dy=3,nbt=!{cobblemon:npc_chatting}] -815 75 -240
-execute as @s[scores={DialogueTrigger=22,TalkTime=60}] run scoreboard players set @s Farfetchd 2
-
-tag @s[scores={DialogueTrigger=22,TalkTime=60..}] add Dialogue22
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Bike Shop Clerk giving player a bicycle
