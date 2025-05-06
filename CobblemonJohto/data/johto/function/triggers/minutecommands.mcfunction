@@ -107,6 +107,21 @@ execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=0.
 
 
 
+#Static Legendary Commands
+#Mewtwo
+execute as @a[x=-2555,y=55,z=855,distance=..50,scores={Mewtwo=0}] unless entity @e[x=-2555,y=55,z=855,distance=..5,type=cobblemon:pokemon,name=Mewtwo] run pokespawnat -2555 55 855 mewtwo no_ai=yes level=70
+execute as @e[x=-2555,y=55,z=855,distance=..5,tag=!InitialSetup,type=cobblemon:pokemon,name=Mewtwo] at @s run tp @s ~ ~ ~ -180 ~
+execute as @e[x=-2555,y=55,z=855,distance=..5,tag=!InitialSetup,type=cobblemon:pokemon,name=Mewtwo] run data modify entity @s PersistenceRequired set value 1
+execute as @e[x=-2555,y=55,z=855,distance=..5,tag=!InitialSetup,type=cobblemon:pokemon,name=Mewtwo] run data modify entity @s Invulnerable set value 1b
+execute as @e[x=-2555,y=55,z=855,distance=..5,tag=!InitialSetup,type=cobblemon:pokemon,name=Mewtwo] run tag @s add InitialSetup
+
+#Moltres
+execute as @a[x=-964,y=100,z=305,distance=..75,scores={Moltres=0}] unless entity @e[x=-964,y=100,z=305,distance=..5,type=cobblemon:pokemon,name=Moltres] run pokespawnat -965 100 304 moltres no_ai=yes level=50
+execute as @e[x=-964,y=100,z=305,distance=..5,tag=!InitialSetup,type=cobblemon:pokemon,name=Moltres] at @s run tp @s ~ ~ ~ -180 ~
+execute as @e[x=-964,y=100,z=305,distance=..5,tag=!InitialSetup,type=cobblemon:pokemon,name=Moltres] run data modify entity @s PersistenceRequired set value 1
+execute as @e[x=-964,y=100,z=305,distance=..5,tag=!InitialSetup,type=cobblemon:pokemon,name=Moltres] run data modify entity @s Invulnerable set value 1b
+execute as @e[x=-964,y=100,z=305,distance=..5,tag=!InitialSetup,type=cobblemon:pokemon,name=Moltres] run tag @s add InitialSetup
+
 
 
 

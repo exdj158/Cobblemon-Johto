@@ -9,25 +9,25 @@ scoreboard players set @s[scores={MusicState=0},nbt={Inventory:[{tag:{display:{N
 
 
 #Tags Legendary Pokemon
-execute at @s[type=player] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={ndex:384,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={ndex:380,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={ndex:243,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={ndex:484,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={ndex:151,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={ndex:146,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={ndex:150,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={ndex:245,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={ndex:250,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={ndex:249,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={ndex:144,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={ndex:145,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={ndex:382,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={ndex:283,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={ndex:281,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={ndex:244,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={ndex:483,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={ndex:487,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!ArceusBattle,nbt={ndex:493,OwnerUUID:""}] add ArceusBattle
+execute at @s run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Articuno] add Legendary
+execute at @s run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Zapdos] add Legendary
+execute at @s run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Moltres] add Legendary
+execute at @s run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Mew] add Legendary
+execute at @s run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Mewtwo] add Legendary
+execute at @s run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Entei] add Legendary
+execute at @s run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Raikou] add Legendary
+execute at @s run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Suicune] add Legendary
+execute at @s run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name="Ho-oh"] add Legendary
+execute at @s run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Lugia] add Legendary
+execute at @s run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Latios] add Legendary
+execute at @s run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Latias] add Legendary
+execute at @s run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Kyogre] add Legendary
+execute at @s run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Groudon] add Legendary
+execute at @s run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Rayquaza] add Legendary
+execute at @s run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Dialga] add Legendary
+execute at @s run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Palkia] add Legendary
+execute at @s run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Giratina] add Legendary
+execute at @s run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Arceus] add Legendary
 
 
 

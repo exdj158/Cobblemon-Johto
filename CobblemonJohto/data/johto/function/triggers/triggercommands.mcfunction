@@ -26,6 +26,50 @@ execute as @a[scores={TriggerCommand=2,BattleStreak=21..}] run npcspawnat 908 10
 execute as @a[scores={TriggerCommand=2}] run tp @s 894 100 67.0 -90 ~
 
 
+##3 - Legendary Pokemon Teleport outs
+#execute as @a[scores={TriggerCommand=3}] at @s run tp @e[distance=..10,tag=InitialSetup] 10000000 -50000 -10000000
+#execute as @a[scores={TriggerCommand=3}] at @s run kill @e[distance=..10,tag=NPCs,type=interaction]
+#
+##Mewtwo
+#execute as @a[x=-2659,y=0,z=828,dx=124,dy=240,dz=68,scores={TriggerCommand=3}] run particle cloud -2555 55 855 1 1 1 1 100
+#execute as @a[x=-2659,y=0,z=828,dx=124,dy=240,dz=68,scores={TriggerCommand=3}] run pokespawnat -2555 55 855 mewtwo level=70
+#execute as @a[x=-2659,y=0,z=828,dx=124,dy=240,dz=68,scores={TriggerCommand=3}] run scoreboard players set @s Mewtwo 1
+#
+#execute as @a[scores={TriggerCommand=3}] run scoreboard players set @s TriggerCommand 0
+#
+#
+##4 - Tags a player when they encounter a legendary Pokemon
+#
+##Runs scan for legends close to you
+#execute at @a[scores={TriggerCommand=4}] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Articuno] add Legendary
+#execute at @a[scores={TriggerCommand=4}] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Zapdos] add Legendary
+#execute at @a[scores={TriggerCommand=4}] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Mew] add Legendary
+#execute at @a[scores={TriggerCommand=4}] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Mewtwo] add Legendary
+#execute at @a[scores={TriggerCommand=4}] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Entei] add Legendary
+#execute at @a[scores={TriggerCommand=4}] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Raikou] add Legendary
+#execute at @a[scores={TriggerCommand=4}] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Suicune] add Legendary
+#execute at @a[scores={TriggerCommand=4}] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name="Ho-oh"] add Legendary
+#execute at @a[scores={TriggerCommand=4}] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Lugia] add Legendary
+#execute at @a[scores={TriggerCommand=4}] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Latios] add Legendary
+#execute at @a[scores={TriggerCommand=4}] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Latias] add Legendary
+#execute at @a[scores={TriggerCommand=4}] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Kyogre] add Legendary
+#execute at @a[scores={TriggerCommand=4}] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Groudon] add Legendary
+#execute at @a[scores={TriggerCommand=4}] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Rayquaza] add Legendary
+#execute at @a[scores={TriggerCommand=4}] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Dialga] add Legendary
+#execute at @a[scores={TriggerCommand=4}] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Palkia] add Legendary
+#execute at @a[scores={TriggerCommand=4}] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Giratina] add Legendary
+#execute at @a[scores={TriggerCommand=4}] run tag @e[distance=..15,type=cobblemon:pokemon,tag=!Legendary,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Arceus] add Legendary
+#
+##Mewtwo
+#execute as @a[x=-2659,y=0,z=828,dx=124,dy=240,dz=68,scores={TriggerCommand=4}] at @s if entity @e[distance=..15,type=cobblemon:pokemon,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Mewtwo] run data merge entity @e[distance=..10,tag=InitialSetup,limit=1,name=Mewtwo] {NoAI:0b}
+#execute as @a[x=-2659,y=0,z=828,dx=124,dy=240,dz=68,scores={TriggerCommand=4}] at @s if entity @e[distance=..15,type=cobblemon:pokemon,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Mewtwo] run scoreboard players set @s Mewtwo 1
+#
+##Moltres
+#execute as @a[x=-965,y=100,z=303,distance=..50,scores={TriggerCommand=4}] at @s if entity @e[distance=..15,type=cobblemon:pokemon,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Moltres] run data merge entity @e[distance=..10,tag=InitialSetup,limit=1,name=Moltres] {NoAI:0b}
+#execute as @a[x=-965,y=100,z=303,distance=..50,scores={TriggerCommand=4}] at @s if entity @e[distance=..15,type=cobblemon:pokemon,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Moltres] run scoreboard players set @s Moltres 1
+
+
+
 #22 - Safari Zone Begin Session
 #If Safari Zone is currently active:
 execute as @a[scores={TriggerCommand=22}] run execute as @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=SafariActive] run tellraw @a[scores={TriggerCommand=22}] {"text":"<Safari Clerk> Sorry, our Safari Zone is currently active. Please try again later!"}

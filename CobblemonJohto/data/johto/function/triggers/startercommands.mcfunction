@@ -138,6 +138,15 @@ scoreboard players set @s FlyViolet 0
 scoreboard players set @s FlyViridian 0
 
 
+#Legendary Pokemon Encounters
+scoreboard players set @s Mewtwo 0
+scoreboard players set @s Articuno 0
+scoreboard players set @s Moltres 0
+scoreboard players set @s Zapdos 0
+scoreboard players set @s Hooh 0
+scoreboard players set @s Lugia 0
+scoreboard players set @s Mew 0
+
 
 #Mom Items
 tag @s remove MomItem1
