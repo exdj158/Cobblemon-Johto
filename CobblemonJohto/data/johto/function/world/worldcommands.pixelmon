@@ -40,28 +40,6 @@ scoreboard players remove @a[scores={TownDisplay=1..}] TownDisplay 1
 
 #---------------------
 
-#Battle Tower Win events
-tag @a[x=875,y=99,z=50,dx=55,dy=20,dz=27,tag=Dialogue206,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] remove Dialogue206
-scoreboard players set @a[x=875,y=99,z=50,dx=55,dy=20,dz=27,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 206
-
-#Detects button forefit
-execute if block 889 101 77 stone_button[powered=true] if entity @e[x=875,y=99,z=50,dx=55,dy=20,dz=27] run scoreboard players set @a[x=875,y=99,z=50,dx=55,dy=20,dz=27] TriggerCommand 8
-
-#Battle Tower Desk Prompts
-#Desk 1
-execute as @a[x=907,y=64,z=72,dx=4,dy=2,dz=3,scores={Cooldown=0}] run scoreboard players enable @s TriggerCommand
-execute as @a[x=907,y=64,z=72,dx=4,dy=2,dz=3,scores={Cooldown=0}] run function johto:world/battletower/pointbal
-execute as @a[x=907,y=64,z=72,dx=4,dy=2,dz=3,scores={Cooldown=0}] run tellraw @a[x=907,y=64,z=72,dx=4,dy=2,dz=3] ["",{"text":"<Clerk> Welcome to the Battle Tower! Would you like to begin your battle challenge?\n"},{"text":"[","color":"green"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 9"}},{"text":"]","color":"green"}]
-execute as @a[x=907,y=64,z=72,dx=4,dy=2,dz=3,scores={Cooldown=0}] run scoreboard players set @s Cooldown 60
-
-#Desk 2
-execute as @a[x=894,y=64,z=72,dx=4,dy=2,dz=3,scores={Cooldown=0}] run scoreboard players enable @s TriggerCommand
-execute as @a[x=894,y=64,z=72,dx=4,dy=2,dz=3,scores={Cooldown=0}] run function johto:world/battletower/pointbal
-execute as @a[x=894,y=64,z=72,dx=4,dy=2,dz=3,scores={Cooldown=0}] run tellraw @s ["",{"text":"<Clerk> Welcome to the Battle Tower! Would you like to begin your battle challenge?\n"},{"text":"[","color":"green"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 9"}},{"text":"]","color":"green"}]
-execute as @a[x=894,y=64,z=72,dx=4,dy=2,dz=3,scores={Cooldown=0}] run scoreboard players set @s Cooldown 60
-
-#---------------------
-
 #Lake of Rage Fisherman Karp function
 #Removes Cooldown tag when player walks in front of the house
 tag @a[x=-188,y=63,z=554,dx=14,dy=6,dz=11,tag=FishermanTalk] remove FishermanTalk
@@ -204,8 +182,6 @@ execute as @a[x=478,y=64,z=65,distance=..3,scores={BugContest=1..,Cooldown=0},ta
 
 
 
-
-
 #-------------------------------------------------------------------------------------------------------------------------
 
 
@@ -222,22 +198,12 @@ effect give @a[tag=RepelEffect] pixelmon:repel 10 1 true
 #-------------------------------------------------------------------------------------------------------------------------
 
 
-#Cut
-playsound cut ambient @a[scores={Cut=1..}] ~ ~ ~ 1 0.9 1
-scoreboard players set @a[scores={Cut=1..}] Cut 0
-
-
 #Bicycle
 tag @a[tag=Bicycle] remove Bicycle
 
 #Adds Bicycle tag if player is on a bike
 execute at @e[type=pixelmon:bike] run tag @a[distance=0..1,tag=!Bicycle] add Bicycle
 
-
-
-#Odd Egg item converts to Pixelmon dialogue
-tag @a[scores={TalkTime=0},nbt={Inventory:[{id:"minecraft:egg"}]},tag=Dialogue200] remove Dialogue200
-scoreboard players set @a[scores={TalkTime=0},nbt={Inventory:[{id:"minecraft:egg"}]},tag=!Dialogue200] DialogueTrigger 200
 
 #Radio tip
 tellraw @a[tag=!RadioTip,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}}] ["",{"text":"Tip: If you want to hear music within the map as you play, download the optional Music Pack!\n[","italic":true,"color":"gray"},{"text":"Click Here","italic":true,"color":"aqua","clickEvent":{"action":"open_url","value":"http://johto.jond.tv/"}},{"text":"] to download.\n[","italic":true,"color":"gray"},{"text":"Learn More","italic":true,"color":"yellow","clickEvent":{"action":"open_url","value":"https://minecraft.fandom.com/wiki/Tutorials/Loading_a_resource_pack"}},{"text":"] about how to enable a Resource Pack.","italic":true,"color":"gray"}]
@@ -286,30 +252,6 @@ execute if entity @a[x=-178,y=0,z=152,dx=121,dy=63,dz=73] run function johto:wor
 #Runs secondary World-based dialogues
 execute as @e[x=-801,y=64,z=-287,dy=3,scores={DialogueTrigger=1..}] run function johto:dialogue/worlddialogues
 
-
-
-#---------------------
-
-#Dialogue15 - Slowpoke Well Kurt spawning in Rockets
-scoreboard players set @a[x=244,y=39,z=-708,distance=0..7,tag=Dialogue14,tag=!Dialogue15] DialogueTrigger 15
-
-#tps Kurt in
-execute at @a[x=244,y=56,z=-714,distance=0..20,tag=!Dialogue15] run tp @e[x=-728,y=90,z=-242,dy=3,nbt=!{cobblemon:npc_chatting}] 244 39 -708
-
-#Exterior Guard in
-execute at @p[x=244,y=56,z=-714,distance=0..25,tag=!Dialogue14] run tp @e[x=-750,y=90,z=-242,dy=3,nbt=!{cobblemon:npc_chatting}] 247 54 -714
-
-#Exterior Guard out
-execute at @p[x=244,y=56,z=-714,distance=0..25,tag=Dialogue14] run tp @e[x=247,y=53,z=-714,dy=3,nbt=!{cobblemon:npc_chatting}] -750 91 -242
-
-#---------------------
-
-#Dialogue21 Pre-Bugsy
-execute as @a[x=623,y=64,z=-714,distance=..5,tag=!Bugsy,scores={Cooldown=0}] run tellraw @s {"text":"<Charcoal Apprentice> My Farfetch'd ran off! I could really use the help of an experienced trainer..."}
-execute as @a[x=623,y=64,z=-714,distance=..5,tag=!Bugsy,scores={Cooldown=0}] run scoreboard players set @s Cooldown 60
-
-#Dialogue21 - Ilex Forest Farfetch'd Lost
-scoreboard players set @a[x=623,y=64,z=-714,distance=0..5,tag=!Dialogue21,tag=Bugsy,scores={Farfetchd=0}] DialogueTrigger 21
 
 
 #---------------------
@@ -796,19 +738,5 @@ execute at @e[x=511,y=54,z=-344,dx=15,dy=6,dz=19,type=cobblemon:pokemon] run sco
 execute as @a[x=513,y=54,z=-335,distance=..4,tag=!BeautyCD,scores={TalkTime=0,Cooldown=0}] run scoreboard players enable @s TriggerCommand
 execute as @a[x=513,y=54,z=-335,distance=..4,tag=!BeautyCD,scores={TalkTime=0,Cooldown=0}] run tellraw @s ["",{"text":"<Beauty Salon Clerk> Welcome! Would you like me to give your Pokemon a makeover?\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 40"}},{"text":"]"}]
 execute as @a[x=513,y=54,z=-335,distance=..4,tag=!BeautyCD,scores={TalkTime=0,Cooldown=0}] run scoreboard players set @s Cooldown 120
-
-#-------------------------------------------------------------------------------------------------------------------------
-#Road Blocks
-
-
-
-#Battle Tower blocked until player has beaten ELite Four
-tellraw @a[x=903,y=64,z=-42,dx=2,dy=2,dz=10,scores={IP=0,Cooldown=0}] ["",{"text":"Only Elite Four Champions may enter!","color":"white","italic":true}]
-scoreboard players add @a[x=903,y=64,z=-42,dx=2,dy=2,dz=10,scores={IP=0,Cooldown=0}] Cooldown 30
-execute at @a[x=903,y=64,z=-42,dx=2,dy=2,dz=10,scores={IP=0}] run tp @a[x=903,y=64,z=-42,dx=2,dy=2,dz=10,scores={IP=0}] ~ ~ ~-5
-
-
-
-
 
 #-------------------------------------------------------------------------------------------------------------------------

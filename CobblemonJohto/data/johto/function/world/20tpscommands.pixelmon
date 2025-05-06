@@ -1,15 +1,9 @@
 
 #--------------------------------------------------------------------------------------------------GENERAL WORLD-----------------------------------------------------------------------------------------------------------------------------------
 
-#Runs the Portals when a player steps on a warp plate block
-execute at @a run execute if block ~ ~ ~ pixelmon:warp_plate run function johto:world/portals
 
 #Runs the Mega Stone particles function during the evenings
 execute if entity @e[x=-799,y=64,z=-284,dy=3,scores={DayTime=12000..18000}] at @e[tag=MegaStone,type=armor_stand] as @a[scores={MegaStones=1..},distance=..30] run function johto:triggers/megastonesactive
-
-
-#Olivine Lighthouse Resistance when falling
-execute at @a[x=694,y=63,z=-46,dx=2,dy=57,dz=13] run execute if block ~ ~-2 ~ air run effect give @a[x=694,y=63,z=-46,dx=2,dy=57,dz=13] minecraft:resistance 3 5 true
 
 
 #Runs bike adventure mode data updating
@@ -28,15 +22,6 @@ execute at @a[x=331,y=63,z=-23,dx=4,dy=5,dz=9,tag=!Dialogue29] run tp @a[x=331,y
 
 #Runs the Guide Gent Tour function motion
 execute if entity @e[x=-792,y=65,z=-284,dy=3,tag=GuideGentMove] run function johto:triggers/guidegenttour
-
-
-
-#Lance Mahogany Town movement
-execute if entity @a[scores={DialogueTrigger=53,TalkTime=22..32}] as @e[x=-157,y=63,z=201,dx=2,dy=2,dz=2,nbt=!{cobblemon:npc_chatting}] at @s run tp @s ~-0.25 ~ ~
-execute if entity @a[scores={DialogueTrigger=53,TalkTime=22..32}] as @e[x=-159,y=63,z=201,dx=1,dy=2,dz=12,nbt=!{cobblemon:npc_chatting}] at @s run tp @s ~ ~ ~0.25
-execute if entity @a[scores={DialogueTrigger=53,TalkTime=22..32}] as @e[x=-158,y=64,z=215,distance=..2,nbt=!{cobblemon:npc_chatting}] at @s run tp @s -158 64 215
-
-
 
 
 

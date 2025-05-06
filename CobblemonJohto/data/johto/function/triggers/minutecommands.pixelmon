@@ -116,11 +116,6 @@ execute as @a[scores={DialogueTrigger=0,TalkTime=1..}] run scoreboard players se
 
 
 
-
-#Reclones in starter balls
-clone -690 62 -487 -686 62 -487 -689 65 -479
-
-
 #Changes data of Unown spawners if active
 execute if entity @e[x=-867,y=69,z=-212,dy=3,type=armor_stand,tag=UnownSpawning] run data merge block 184 36 -100 {maxSpawns: 8s,bossRatio: 0.0f,levelMax: 5s,specs: [{pokemon: {SpecificationData: "Unown"}, rarity: 1}], gmaxRatio: 0.0f, shinyRatio: 4096.0f, spawnRadius: 8s,levelMin: 5s}
 execute if entity @e[x=-867,y=69,z=-212,dy=3,type=armor_stand,tag=UnownSpawning] run data merge block 210 36 -99 {maxSpawns: 8s,bossRatio: 0.0f,levelMax: 5s,specs: [{pokemon: {SpecificationData: "Unown"}, rarity: 1}], gmaxRatio: 0.0f, shinyRatio: 4096.0f, spawnRadius: 8s,levelMin: 5s}
