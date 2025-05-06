@@ -2034,6 +2034,40 @@ execute as @a[scores={TriggerCommand=278,Coins=7500..}] run scoreboard players r
 
 #279 used
 
+#280 - Purcahses an Odd Egg
+execute as @a[scores={TriggerCommand=280,Money=..1499}] run tellraw @s {"text":"You don't have enough for this!","italic":true,"color":"gray"}
+
+#Rolls a Random Number for player
+execute as @a[scores={TriggerCommand=280,Money=1500..}] run scoreboard players set @e[x=-867,y=69,z=-207,dy=4,dz=2] rng 0
+execute as @a[scores={TriggerCommand=280,Money=1500..}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 1
+execute as @a[scores={TriggerCommand=280,Money=1500..}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 2
+execute as @a[scores={TriggerCommand=280,Money=1500..}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 4
+execute as @a[scores={TriggerCommand=280,Money=1500..}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 8
+execute as @a[scores={TriggerCommand=280,Money=1500..}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 16
+execute as @a[scores={TriggerCommand=280,Money=1500..}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 32
+execute as @a[scores={TriggerCommand=280,Money=1500..}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 64
+
+execute as @a[scores={TriggerCommand=280,Money=1500..}] run scoreboard players operation @s rng = @e[x=-867,y=69,z=-205,dy=3,type=armor_stand] rng
+
+execute as @a[scores={TriggerCommand=280,Money=1500..,rng=0..9}] run pokegive elekid level=5 shiny=yes
+execute as @a[scores={TriggerCommand=280,Money=1500..,rng=10..18}] run pokegive elekid level=5 shiny=no
+execute as @a[scores={TriggerCommand=280,Money=1500..,rng=19..27}] run pokegive smoochum level=5 shiny=yes
+execute as @a[scores={TriggerCommand=280,Money=1500..,rng=28..36}] run pokegive smoochum level=5 shiny=no
+execute as @a[scores={TriggerCommand=280,Money=1500..,rng=37..45}] run pokegive igglybuff level=5 shiny=yes
+execute as @a[scores={TriggerCommand=280,Money=1500..,rng=46..54}] run pokegive igglybuff level=5 shiny=no
+execute as @a[scores={TriggerCommand=280,Money=1500..,rng=55..63}] run pokegive cleffa level=5 shiny=yes
+execute as @a[scores={TriggerCommand=280,Money=1500..,rng=64..72}] run pokegive cleffa level=5 shiny=no
+execute as @a[scores={TriggerCommand=280,Money=1500..,rng=73..81}] run pokegive tyrogue level=5 shiny=yes
+execute as @a[scores={TriggerCommand=280,Money=1500..,rng=82..90}] run pokegive tyrogue level=5 shiny=no
+execute as @a[scores={TriggerCommand=280,Money=1500..,rng=91..99}] run pokegive magby level=5 shiny=yes
+execute as @a[scores={TriggerCommand=280,Money=1500..,rng=100..108}] run pokegive magby level=5 shiny=no
+execute as @a[scores={TriggerCommand=280,Money=1500..,rng=109..117}] run pokegive @s pichu level=5 shiny=yes
+execute as @a[scores={TriggerCommand=280,Money=1500..,rng=118..127}] run pokegive @s pichu level=5 shiny=no
+
+execute as @a[scores={TriggerCommand=280,Money=1500..}] run playsound minecraft:egghatch ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=280,Money=1500..}] run scoreboard players remove @s Money 1500
+
+
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #If score is left behind, not to be used for longer store of data.
 scoreboard players set @s TriggerCommand 0
