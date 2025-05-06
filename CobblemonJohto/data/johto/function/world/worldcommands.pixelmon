@@ -232,11 +232,6 @@ execute if block -944 183 285 pixelmon:timespace_altar{FlutePlayed:1b} run score
 execute if block -944 183 285 pixelmon:timespace_altar{FlutePlayed:1b} run scoreboard players set @a[x=-945,y=179,z=271,distance=..30,scores={Cooldown=0}] Cooldown 30
 
 
-#Bellsprout Tower swaying pillar in middle
-execute if entity @a[x=57,y=70,z=18,distance=..50] run setblock -819 65 -265 minecraft:air
-execute unless entity @a[x=57,y=70,z=18,distance=..50] run setblock -819 65 -265 minecraft:redstone_block
-
-
 
 #Runs Team Rocket HQ specific commands
 execute if entity @a[x=-178,y=0,z=152,dx=121,dy=63,dz=73] run function johto:world/rockethq

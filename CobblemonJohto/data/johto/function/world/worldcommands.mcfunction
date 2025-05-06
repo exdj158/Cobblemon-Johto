@@ -282,6 +282,11 @@ execute as @a[scores={DialogueTrigger=1..500}] run function johto:dialogue/dialo
 #-------------------------------------------------------------------------------------------------------------------------
 #Misc World Events 
 
+#Bellsprout Tower swaying pillar in middle
+execute if entity @a[x=44,y=63,z=4,dx=31,dy=90,dz=31] run setblock -819 65 -265 minecraft:air
+execute unless entity @a[x=44,y=63,z=4,dx=31,dy=90,dz=31] run setblock -819 65 -265 minecraft:redstone_block
+
+
 #Runs Game Corner slot machines if buttons pressed
 execute if block 516 66 -377 stone_button[powered=true] if entity @e[x=507,y=59,z=-370,dy=3,scores={rng=0}] run execute as @p[x=518,y=64,z=-377,distance=..2] run function johto:triggers/gamecorner
 execute if block 516 66 -381 stone_button[powered=true] if entity @e[x=505,y=59,z=-370,dy=3,scores={rng=0}] run execute as @p[x=518,y=64,z=-381,distance=..2] run function johto:triggers/gamecorner
