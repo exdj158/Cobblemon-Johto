@@ -370,16 +370,11 @@ execute as @s[x=-2200,y=64,z=800,distance=..25,tag=!Dialogue131,scores={StarterP
 
 #Vermilion Sleeping Snorlax
 #Keeps the sleeping Snorlax posed and blocked
-execute positioned -2901.0 64 -48 run data merge entity @e[distance=..5,type=cobblemon:pokemon,limit=1,name=Snorlax,nbt={PersistenceRequired:0b}] {PersistenceRequired:1b}
-
-#Teleports player back from the cave if they come in from the other side
-execute as @a[x=-2903,y=63,z=-49,dx=3,dy=4,dz=4] at @s if block -2899 64 -50 barrier run tp @s ~ ~ ~-5
-
-#Sets up barriers if a player is nearby
 execute as @a[x=-2901,y=64,z=-48,distance=..30,tag=!Dialogue142] unless entity @e[x=-2901,y=64,z=-48,distance=..5,type=cobblemon:pokemon] run pokespawnat -2901.0 64 -48 snorlax no_ai=true level=50 status=sleep held_item=cobblemon:leftovers
-execute as @a[x=-2901,y=64,z=-48,distance=..30,tag=!Dialogue142] run fill -2899 67 -46 -2899 64 -50 barrier
-execute as @a[x=-2901,y=64,z=-48,distance=..30,tag=!Dialogue142] run fill -2904 67 -46 -2904 64 -50 barrier
-execute as @a[x=-2901,y=64,z=-48,distance=..30,tag=!Dialogue142] run fill -2903 64 -50 -2900 67 -50 barrier
+execute positioned -2901.0 64 -48 as @e[distance=..5,type=cobblemon:pokemon,name=Snorlax,nbt={PersistenceRequired:0b}] run data merge entity @s {Pokemon:{PokemonData:["uncatchable"]}}
+execute positioned -2901.0 64 -48 as @e[distance=..5,type=cobblemon:pokemon,name=Snorlax,nbt={PersistenceRequired:0b}] run data modify entity @s Unbattleable set value 1b
+execute positioned -2901.0 64 -48 as @e[distance=..5,type=cobblemon:pokemon,name=Snorlax,nbt={PersistenceRequired:0b}] run data modify entity @s Invulnerable set value 1b
+execute positioned -2901.0 64 -48 as @e[distance=..5,type=cobblemon:pokemon,name=Snorlax,nbt={PersistenceRequired:0b}] run data modify entity @s PersistenceRequired set value 1
 
 
 #Dialogue 204 NPC spawn, Bill in Ecruteak

@@ -701,6 +701,10 @@ tp @a[x=-2110,y=51,z=-879,dx=3,dy=3] -2108 64 -914
 
 #Diglett Cave Vermilion City
 
+#Snorlax blocking the path
+execute as @a[x=-2903,y=64,z=-45,dx=3,dy=3,tag=!Dialogue142] run tellraw @s {"text":"A sleeping Snorlax is blocking your path.","italic":true,"color":"gray"}
+execute as @a[x=-2903,y=64,z=-45,dx=3,dy=3,tag=!Dialogue142] at @s run tp @s ~ ~ ~-7
+
 playsound door ambient @a[x=-2903,y=64,z=-45,dx=3,dy=3] ~ ~ ~ 100 1 1
 scoreboard players set @a[x=-2903,y=64,z=-45,dx=3,dy=3] EscapeRope 23
 tp @a[x=-2903,y=64,z=-45,dx=3,dy=3] -3050 59 87
