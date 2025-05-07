@@ -65,9 +65,8 @@
             "level": "5-6",
             "weight": 50,
             "condition": {
-                "canSeeSky": false,
                 "timeRange": "dawn,dusk",
-                "minX": 538, "maxX": 688, "minZ": -778, "maxZ": -584
+                "minX": 538, "maxX": 688, "maxY": 67, "minZ": -778, "maxZ": -584
             }
         },
         {
@@ -79,9 +78,8 @@
             "level": "5-6",
             "weight": 60,
             "condition": {
-                "canSeeSky": false,
                 "timeRange": "day",
-                "minX": 538, "maxX": 688, "minZ": -778, "maxZ": -584
+                "minX": 538, "maxX": 688, "maxY": 67, "minZ": -778, "maxZ": -584
             }
         },
 
