@@ -1,5 +1,10 @@
 #Commands that run once a minute, very low priority but also can happen whenever.
 
+#Deletes duplicate Pokemon if player relogs near Pokemon blocking the path
+execute at @e[nbt={NoAI:1b},type=cobblemon:pokemon] unless entity @e[type=cobblemon:pokemon,tag=keeper] run tag @e[distance=..0.01,limit=1] add keeper
+execute at @e[tag=keeper] run kill @e[nbt={NoAI:1b},type=cobblemon:pokemon,distance=..0.01,tag=!keeper]
+tag @e[tag=keeper] remove keeper
+
 
 #Regenerates Cut Trees
 function johto:hms/cutregen
