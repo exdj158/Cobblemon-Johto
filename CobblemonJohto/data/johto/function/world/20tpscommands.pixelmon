@@ -10,16 +10,6 @@ execute if entity @e[x=-799,y=64,z=-284,dy=3,scores={DayTime=12000..18000}] at @
 execute at @a as @e[distance=..5,type=minecraft:item,tag=!AdventureBike,nbt={Item:{id:"pixelmon:mach_bike"}}] run function johto:data/adventurebikes
 
 
-
-#Sudowoodo Blocks
-tellraw @a[x=327,y=63,z=-19,dx=10,dy=5,dz=5,tag=!Dialogue29] {"text":"It's a weird tree. Perhaps water may cause it to move.","italic":true,"color":"gray"}
-execute at @a[x=327,y=63,z=-19,dx=10,dy=5,dz=5,tag=!Dialogue29] run tp @a[x=327,y=63,z=-19,dx=10,dy=5,dz=5,tag=!Dialogue29] ~-10 ~ ~
-
-tellraw @a[x=331,y=63,z=-23,dx=4,dy=5,dz=9,tag=!Dialogue29] {"text":"It's a weird tree. Perhaps water may cause it to move.","italic":true,"color":"gray"}
-execute at @a[x=331,y=63,z=-23,dx=4,dy=5,dz=9,tag=!Dialogue29] run tp @a[x=331,y=63,z=-23,dx=4,dy=5,dz=9,tag=!Dialogue29] ~ ~ ~-10
-
-
-
 #Runs the Guide Gent Tour function motion
 execute if entity @e[x=-792,y=65,z=-284,dy=3,tag=GuideGentMove] run function johto:triggers/guidegenttour
 

@@ -69,6 +69,13 @@ execute as @a[scores={TriggerCommand=2}] run tp @s 894 100 67.0 -90 ~
 #execute as @a[x=-965,y=100,z=303,distance=..50,scores={TriggerCommand=4}] at @s if entity @e[distance=..15,type=cobblemon:pokemon,nbt={Pokemon:{PokemonOriginalTrainerType:"NONE"}},name=Moltres] run scoreboard players set @s Moltres 1
 
 
+#10 - Makes Sudowoodo battleable and catchable
+execute as @a[scores={TriggerCommand=10}] run data merge entity @e[x=332,y=64,z=-17,distance=..5,type=cobblemon:pokemon,limit=1,name=Sudowoodo] {Pokemon:{PokemonData:["catchable"]}}
+execute as @a[scores={TriggerCommand=10}] run data merge entity @e[x=332,y=64,z=-17,distance=..5,type=cobblemon:pokemon,limit=1,name=Sudowoodo] {NoAI:0b}
+execute as @a[scores={TriggerCommand=10}] run data modify entity @e[x=332,y=64,z=-17,distance=..5,type=cobblemon:pokemon,limit=1,name=Sudowoodo] Unbattleable set value 0b
+execute as @a[scores={TriggerCommand=10}] run advancement grant @s only johto:story/weirdtree
+execute as @a[scores={TriggerCommand=10}] run playsound cobblemon:pokemon.sudowoodo.cry ambient @s ~ ~ ~ 1 1 1
+
 
 #22 - Safari Zone Begin Session
 #If Safari Zone is currently active:

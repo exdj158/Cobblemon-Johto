@@ -43,35 +43,6 @@ tag @s[scores={DialogueTrigger=25,TalkTime=18..}] add Dialogue25
 
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Sudowoodo Spawn
-#execute as @s[x=332,y=64,z=-16,distance=..10,tag=Dialogue29] run scoreboard players set @s[tag=!Dialogue30] DialogueTrigger 30
-
-tellraw @s[scores={DialogueTrigger=30,TalkTime=1}] {"text":"It's a weird tree.","italic":true,"color":"gray"}
-tellraw @s[scores={DialogueTrigger=30,TalkTime=7}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" used the Squirtbottle.","italic":true,"color":"gray"}]
-tellraw @s[scores={DialogueTrigger=30,TalkTime=15}] {"text":"The weird tree doesn't like the Squirtbottle!","italic":true,"color":"gray"}
-tellraw @s[scores={DialogueTrigger=30,TalkTime=23}] {"text":"The weird tree attacked!","italic":true,"color":"gray"}
-execute as @s[scores={DialogueTrigger=30,TalkTime=25}] run particle cloud 333 64 -17 1 1 1 1 100
-execute as @s[scores={DialogueTrigger=30,TalkTime=25}] run setblock 333 64 -17 minecraft:air
-#execute as @s[scores={DialogueTrigger=30,TalkTime=25}] run pokebattle @s Sudowoodo,lvl:20,gr:7
-execute as @s[scores={DialogueTrigger=30,TalkTime=25}] run pokebattle @s Sudowoodo
-execute as @s[scores={DialogueTrigger=30,TalkTime=25}] run scoreboard players set @s Sw 1
-execute as @s[scores={DialogueTrigger=30,TalkTime=25}] run advancement grant @s only johto:weirdtree
-execute as @s[scores={DialogueTrigger=30,TalkTime=25}] run playsound pixelmon:pixelmon.mob.sudowoodo hostile @s ~ ~ ~ 100 1 1
-
-tag @s[scores={DialogueTrigger=30,TalkTime=25..}] add Dialogue30
-
-#Road Blocks
-#North
-#tellraw @s[x=331,y=63,z=-23,dx=4,dy=5,dz=9,tag=!Dialogue29] {"text":"It's a weird tree. Perhaps water may cause it to move.","italic":true,"color":"gray"}
-#tp @s[x=331,y=63,z=-23,dx=4,dy=5,dz=9,tag=!Dialogue29] ~ ~ ~-10
-
-#West
-#tellraw @s[x=327,y=63,z=-19,dx=10,dy=5,dz=5,tag=!Dialogue29] {"text":"It's a weird tree. Perhaps water may cause it to move.","italic":true,"color":"gray"}
-#tp @s[x=327,y=63,z=-19,dx=10,dy=5,dz=5,tag=!Dialogue29] ~-10 ~ ~
-
-
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Legendary Dog statues
 #scoreboard players set @a[x=444,y=58,z=328,distance=..5,tag=!Dialogue36] DialogueTrigger 36
 
