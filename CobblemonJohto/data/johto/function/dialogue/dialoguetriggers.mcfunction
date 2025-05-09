@@ -256,18 +256,6 @@ execute as @s[x=-141,y=44,z=157,dx=16,dy=5,dz=15,tag=Dialogue58,tag=!Dialogue61]
 #62, post-battle dialogue
 
 #Lance getting into the generator room
-#Sets up NoAI Electrode
-execute as @s[x=-118,y=45,z=175,distance=..11,tag=Dialogue61,tag=!Dialogue63] unless entity @e[x=-92,y=46,z=187,distance=..2,type=cobblemon:pokemon] run pokespawnat -92 46 187 electrode no_ai=yes level=23 
-execute as @s[x=-118,y=45,z=175,distance=..11,tag=Dialogue61,tag=!Dialogue63] unless entity @e[x=-92,y=46,z=195,distance=..2,type=cobblemon:pokemon] run pokespawnat -92 46 195 electrode no_ai=yes level=23 
-execute as @s[x=-118,y=45,z=175,distance=..11,tag=Dialogue61,tag=!Dialogue63] unless entity @e[x=-92,y=46,z=203,distance=..2,type=cobblemon:pokemon] run pokespawnat -92 46 203 electrode no_ai=yes level=23 
-execute as @e[x=-94,y=45,z=185,dx=4,dy=5,dz=20,type=cobblemon:pokemon,x_rotation=-45..45] at @s run tp @s ~ ~ ~ 180 ~
-
-#Lance's side visual only
-execute as @s[x=-118,y=45,z=175,distance=..11,tag=Dialogue61,tag=!Dialogue63] unless entity @e[x=-143,y=46,z=187,distance=..2,type=cobblemon:pokemon] run pokespawnat -143 46 187 electrode no_ai=yes level=23 
-execute as @s[x=-118,y=45,z=175,distance=..11,tag=Dialogue61,tag=!Dialogue63] unless entity @e[x=-143,y=46,z=195,distance=..2,type=cobblemon:pokemon] run pokespawnat -143 46 195 electrode no_ai=yes level=23 
-execute as @s[x=-118,y=45,z=175,distance=..11,tag=Dialogue61,tag=!Dialogue63] unless entity @e[x=-143,y=46,z=203,distance=..2,type=cobblemon:pokemon] run pokespawnat -143 46 203 electrode no_ai=yes level=23 
-execute as @e[x=-145,y=45,z=185,dx=4,dy=5,dz=20,type=cobblemon:pokemon,x_rotation=-45..45] at @s run tp @s ~ ~ ~ 180 ~
-
 #Lights up machine dependent on entity present 
 execute if entity @e[x=-93,y=46,z=187,distance=..2,type=cobblemon:pokemon] run fill -144 44 186 -124 43 192 minecraft:redstone_block replace minecraft:lapis_block
 execute if entity @e[x=-93,y=46,z=187,distance=..2,type=cobblemon:pokemon] run fill -111 43 193 -94 44 186 minecraft:redstone_block replace minecraft:lapis_block

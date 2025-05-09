@@ -76,6 +76,19 @@ execute as @a[scores={TriggerCommand=10}] run data modify entity @e[x=332,y=64,z
 execute as @a[scores={TriggerCommand=10}] run advancement grant @s only johto:story/weirdtree
 execute as @a[scores={TriggerCommand=10}] run playsound cobblemon:pokemon.sudowoodo.cry ambient @s ~ ~ ~ 1 1 1
 
+#11 - Sets up Electrode in Rocket HQ
+execute as @a[scores={TriggerCommand=11}] unless entity @e[x=-92,y=46,z=187,distance=..2,type=cobblemon:pokemon] run pokespawnat -92 46 187 electrode no_ai=yes level=23
+execute as @a[scores={TriggerCommand=11}] unless entity @e[x=-92,y=46,z=195,distance=..2,type=cobblemon:pokemon] run pokespawnat -92 46 195 electrode no_ai=yes level=23
+execute as @a[scores={TriggerCommand=11}] unless entity @e[x=-92,y=46,z=203,distance=..2,type=cobblemon:pokemon] run pokespawnat -92 46 203 electrode no_ai=yes level=23
+execute as @a[scores={TriggerCommand=11}] as @e[x=-94,y=45,z=185,dx=4,dy=5,dz=20,type=cobblemon:pokemon] at @s run tp @s ~ ~ ~ 180 ~
+execute as @a[scores={TriggerCommand=11}] as @e[x=-94,y=45,z=185,dx=4,dy=5,dz=20,type=cobblemon:pokemon] run data modify entity @s PersistenceRequired set value 1
+
+execute as @a[scores={TriggerCommand=11}] unless entity @e[x=-143,y=46,z=187,distance=..2,type=cobblemon:pokemon] run pokespawnat -143 46 187 electrode no_ai=yes level=23
+execute as @a[scores={TriggerCommand=11}] unless entity @e[x=-143,y=46,z=195,distance=..2,type=cobblemon:pokemon] run pokespawnat -143 46 195 electrode no_ai=yes level=23
+execute as @a[scores={TriggerCommand=11}] unless entity @e[x=-143,y=46,z=203,distance=..2,type=cobblemon:pokemon] run pokespawnat -143 46 203 electrode no_ai=yes level=23
+execute as @a[scores={TriggerCommand=11}] as @e[x=-145,y=45,z=185,dx=4,dy=5,dz=20,type=cobblemon:pokemon] at @s run tp @s ~ ~ ~ 180 ~
+execute as @a[scores={TriggerCommand=11}] as @e[x=-145,y=45,z=185,dx=4,dy=5,dz=20,type=cobblemon:pokemon] run data modify entity @s PersistenceRequired set value 1
+
 
 #22 - Safari Zone Begin Session
 #If Safari Zone is currently active:

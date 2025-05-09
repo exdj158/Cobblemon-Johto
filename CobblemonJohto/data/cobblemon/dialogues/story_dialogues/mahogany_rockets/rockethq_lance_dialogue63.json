@@ -1,6 +1,7 @@
 {
     "initializationAction": [
-        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');",
+        "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 11');"
     ],
     "escapeAction": [],
     "speakers": {
