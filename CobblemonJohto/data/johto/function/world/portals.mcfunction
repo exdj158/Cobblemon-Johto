@@ -219,16 +219,12 @@ tp @a[x=-795,y=65,z=529,dx=9,dy=5] 88 64 -64
 
 #--------------------------------------------------
 #Azalea Town
-#tellraw @a[x=355,y=64,z=-762,dx=4,dy=4,tag=!Dialogue16,scores={TalkTime=0}] {"text":"Bugsy is away right now! Kurt should be watching the town.","italic":true}
-#tp @a[x=355,y=64,z=-762,dx=4,dy=4,scores={Kurt=0..},tag=!Dialogue16] ~ ~ ~-5
+tellraw @a[x=355,y=64,z=-762,dx=4,dy=4,tag=!Dialogue16] {"text":"Bugsy is away right now! Kurt should be watching the town.","italic":true}
+tp @a[x=355,y=64,z=-762,dx=4,dy=4,tag=!Dialogue16] ~ ~ ~-5
 
-#playsound door ambient @a[x=355,y=64,z=-762,dx=4,dy=4,tag=Dialogue16,scores={TalkTime=0}] ~ ~ ~ 100 1 1
-#tag @a[x=355,y=64,z=-762,dx=4,dy=4,tag=Dialogue16,scores={TalkTime=0}] remove GymVictory
-#tp @a[x=355,y=64,z=-762,dx=4,dy=4,tag=Dialogue16,scores={TalkTime=0}] -855 65 530
-
-playsound door ambient @a[x=355,y=64,z=-762,dx=4,dy=4] ~ ~ ~ 100 1 1
-tag @a[x=355,y=64,z=-762,dx=4,dy=4] remove GymVictory
-tp @a[x=355,y=64,z=-762,dx=4,dy=4] -855 65 530
+playsound door ambient @a[x=355,y=64,z=-762,dx=4,dy=4,tag=Dialogue16] ~ ~ ~ 100 1 1
+tag @a[x=355,y=64,z=-762,dx=4,dy=4,tag=Dialogue16] remove GymVictory
+tp @a[x=355,y=64,z=-762,dx=4,dy=4,tag=Dialogue16] -855 65 530
 
 playsound door ambient @a[x=-859,y=65,z=529,dx=9,dy=5] ~ ~ ~ 100 1 1
 tp @a[x=-859,y=65,z=529,dx=9,dy=5] 357 64 -763
