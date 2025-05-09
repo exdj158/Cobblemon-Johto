@@ -20,7 +20,7 @@
             "face": {
                 "type": "artificial",
                 "modelType": "npc",
-                "identifier": "cobblemon:rocketgrunt",
+                "identifier": "cobblemon:proton",
                 "isLeftSide": false
             }
         }
