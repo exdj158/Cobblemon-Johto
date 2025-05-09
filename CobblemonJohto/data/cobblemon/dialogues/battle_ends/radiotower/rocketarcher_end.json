@@ -12,7 +12,7 @@
             "face": {
                 "type": "artificial",
                 "modelType": "npc",
-                "identifier": "cobblemon:rocketgrunt",
+                "identifier": "cobblemon:archer",
                 "isLeftSide": true
             }
         },

@@ -1,5 +1,8 @@
 #execute as @a[limit=1,x=513,y=60,z=-793,dx=187,dy=10,dz=228] run function johto:world/farfetchd
 
+#Turns Farfetch'd invisible if player hasn't beaten Bugsy
+execute as @s[tag=!Bugsy] run effect give @e[x=513,y=60,z=-793,dx=187,dy=10,dz=228,type=cobblemon:pokemon,name="Farfetch'd"] minecraft:invisibility 5 1 true
+
 #Summons uncatchable, noAI Farfetch'd if missing
 execute as @a[x=622,y=63,z=-714,distance=..50,scores={Farfetchd=0},tag=Bugsy] unless entity @e[x=513,y=60,z=-793,dx=187,dy=10,dz=228,type=cobblemon:pokemon,name="Farfetch'd"] run pokespawnat 593.5 64 -717.5 farfetchd no_ai=yes uncatchable=yes level=10
 execute as @e[x=593,y=64,z=-717,distance=..5,tag=!InitialSetup,type=cobblemon:pokemon,name="Farfetch'd"] at @s run tp @s ~ ~ ~ -180 ~

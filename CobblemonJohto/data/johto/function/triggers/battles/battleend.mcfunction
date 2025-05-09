@@ -35,7 +35,8 @@ execute as @s[tag=!RadioOff,scores={BattleEnd=4}] run scoreboard players set @s 
 #advancement grant @s[tag=Clair,tag=Pryce,tag=Jasmine,tag=Chuck,tag=Morty,tag=Whitney,tag=Bugsy,tag=Falkner,tag=Brock,tag=Misty,tag=Surge,tag=Erika,tag=Janine,tag=Sabrina,tag=Blaine,tag=Blue,tag=!AllGyms] only johto:event11
 tag @s[tag=Clair,tag=Pryce,tag=Jasmine,tag=Chuck,tag=Morty,tag=Whitney,tag=Bugsy,tag=Falkner,tag=Brock,tag=Misty,tag=Surge,tag=Erika,tag=Janine,tag=Sabrina,tag=Blaine,tag=Blue,tag=!AllGyms] add AllGyms
 
-
+#AllGyms Advancement
+advancement grant @a[tag=AllGyms] only johto:badges/allbadges
 
 
 scoreboard players set @s BattleEnd 0

@@ -106,7 +106,7 @@ execute as @s[x=-279,y=64,z=-509,distance=0..10,tag=!Dialogue7,scores={StarterPi
 execute as @s[x=-279,y=64,z=-509,distance=0..10,tag=!Dialogue7,scores={StarterPick=3}] unless entity @e[x=-300,y=64,z=-509,dy=3,type=cobblemon:npc] run npcspawnat -300 64 -509 cherrygrove_silver3 1
 
 #Dialogue 8 - Elm's Lab stolen Pokemon
-execute as @s[x=-681,y=64,z=-493,distance=..10,tag=!Dialogue8] unless entity @e[x=-682,y=64,z=-481,dy=3,type=cobblemon:npc] run npcspawnat -682 64 -481 newbark_policeman 1
+execute as @s[x=-681,y=64,z=-493,distance=..10,tag=Dialogue5,tag=!Dialogue8] unless entity @e[x=-682,y=64,z=-481,dy=3,type=cobblemon:npc] run npcspawnat -682 64 -481 newbark_policeman 1
 execute as @s[x=-683,y=63,z=-478,distance=..10,tag=Dialogue5,tag=!Dialogue8] run opendialogue elmslab_dialogue8 @s
 
 #Dialogue 9 - Sprout Tower Silver
@@ -257,15 +257,15 @@ execute as @s[x=-141,y=44,z=157,dx=16,dy=5,dz=15,tag=Dialogue58,tag=!Dialogue61]
 
 #Lance getting into the generator room
 #Sets up NoAI Electrode
-execute as @s[x=-124,y=45,z=169,dx=12,dy=5,dz=11,tag=Dialogue62,tag=!Dialogue63] unless entity @e[x=-92,y=46,z=187,distance=..2,type=cobblemon:pokemon] run pokespawnat -92 46 187 electrode no_ai=yes level=23 
-execute as @s[x=-124,y=45,z=169,dx=12,dy=5,dz=11,tag=Dialogue62,tag=!Dialogue63] unless entity @e[x=-92,y=46,z=195,distance=..2,type=cobblemon:pokemon] run pokespawnat -92 46 195 electrode no_ai=yes level=23 
-execute as @s[x=-124,y=45,z=169,dx=12,dy=5,dz=11,tag=Dialogue62,tag=!Dialogue63] unless entity @e[x=-92,y=46,z=203,distance=..2,type=cobblemon:pokemon] run pokespawnat -92 46 203 electrode no_ai=yes level=23 
+execute as @s[x=-118,y=45,z=175,distance=..11,tag=Dialogue61,tag=!Dialogue63] unless entity @e[x=-92,y=46,z=187,distance=..2,type=cobblemon:pokemon] run pokespawnat -92 46 187 electrode no_ai=yes level=23 
+execute as @s[x=-118,y=45,z=175,distance=..11,tag=Dialogue61,tag=!Dialogue63] unless entity @e[x=-92,y=46,z=195,distance=..2,type=cobblemon:pokemon] run pokespawnat -92 46 195 electrode no_ai=yes level=23 
+execute as @s[x=-118,y=45,z=175,distance=..11,tag=Dialogue61,tag=!Dialogue63] unless entity @e[x=-92,y=46,z=203,distance=..2,type=cobblemon:pokemon] run pokespawnat -92 46 203 electrode no_ai=yes level=23 
 execute as @e[x=-94,y=45,z=185,dx=4,dy=5,dz=20,type=cobblemon:pokemon,x_rotation=-45..45] at @s run tp @s ~ ~ ~ 180 ~
 
 #Lance's side visual only
-execute as @s[x=-124,y=45,z=169,dx=12,dy=5,dz=11,tag=Dialogue62,tag=!Dialogue63] unless entity @e[x=-143,y=46,z=187,distance=..2,type=cobblemon:pokemon] run pokespawnat -143 46 187 electrode no_ai=yes level=23 
-execute as @s[x=-124,y=45,z=169,dx=12,dy=5,dz=11,tag=Dialogue62,tag=!Dialogue63] unless entity @e[x=-143,y=46,z=195,distance=..2,type=cobblemon:pokemon] run pokespawnat -143 46 195 electrode no_ai=yes level=23 
-execute as @s[x=-124,y=45,z=169,dx=12,dy=5,dz=11,tag=Dialogue62,tag=!Dialogue63] unless entity @e[x=-143,y=46,z=203,distance=..2,type=cobblemon:pokemon] run pokespawnat -143 46 203 electrode no_ai=yes level=23 
+execute as @s[x=-118,y=45,z=175,distance=..11,tag=Dialogue61,tag=!Dialogue63] unless entity @e[x=-143,y=46,z=187,distance=..2,type=cobblemon:pokemon] run pokespawnat -143 46 187 electrode no_ai=yes level=23 
+execute as @s[x=-118,y=45,z=175,distance=..11,tag=Dialogue61,tag=!Dialogue63] unless entity @e[x=-143,y=46,z=195,distance=..2,type=cobblemon:pokemon] run pokespawnat -143 46 195 electrode no_ai=yes level=23 
+execute as @s[x=-118,y=45,z=175,distance=..11,tag=Dialogue61,tag=!Dialogue63] unless entity @e[x=-143,y=46,z=203,distance=..2,type=cobblemon:pokemon] run pokespawnat -143 46 203 electrode no_ai=yes level=23 
 execute as @e[x=-145,y=45,z=185,dx=4,dy=5,dz=20,type=cobblemon:pokemon,x_rotation=-45..45] at @s run tp @s ~ ~ ~ 180 ~
 
 #Lights up machine dependent on entity present 
@@ -343,7 +343,7 @@ execute as @s[x=88,y=64,z=-67,distance=..20,tag=!Dialogue82,tag=Falkner] run ope
 execute as @s[x=-723,y=68,z=-492,distance=..20,scores={IP=1..},tag=!Dialogue100] run opendialogue elm_ssticket_call @s
 
 #Elm granting Master Ball
-execute as @s[x=-683,y=63,z=-478,distance=..10,tag=Clair,tag=!Dialogue81] run opendialogue professorelm_dialogue81 @s
+execute as @s[x=-683,y=63,z=-478,distance=..10,tag=Clair,tag=Dialogue8,tag=!Dialogue81] run opendialogue professorelm_dialogue81 @s
 
 #Silver Victory Road
 execute as @s[x=-1449,y=51,z=528,distance=..25,tag=!Dialogue85,scores={StarterPick=1..}] unless entity @e[x=-1449,y=51,z=528,dy=3,type=cobblemon:npc] run particle cloud -1449 51 528 1 1 1 1 100
@@ -368,9 +368,6 @@ execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTra
 
 #Player finding Misty after turning on the power plant
 execute as @s[x=-3060,y=64,z=956,distance=..50,tag=!Dialogue113,tag=Dialogue221] unless entity @e[x=-3060,y=64,z=956,dy=3,type=cobblemon:npc] run npcspawnat -3060 64 956 route25_misty 1
-
-#Oak Kanto Starters
-execute as @s[x=-1715,y=64,z=-307,distance=..5,tag=!Dialogue153] run opendialogue professoroak_dialogue153 @s
 
 #Mt. Moon Silver
 execute as @s[x=-2200,y=64,z=800,distance=..25,tag=!Dialogue131,scores={StarterPick=1..}] unless entity @e[x=-2200,y=64,z=800,dy=3,type=cobblemon:npc] run particle cloud -2200 64 800 1 1 1 1 100

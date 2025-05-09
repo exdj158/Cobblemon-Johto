@@ -30,7 +30,7 @@
             }
         },
         {
-            "id": "greeting",
+            "id": "page2",
             "speaker": "npc",
             "lines": [
                 "Each of your hotbar slots is a unique frequency, try out the radio in different slots for different stations!"

@@ -45,7 +45,7 @@ tellraw @s[scores={DialogueTrigger=98,TalkTime=28}] {"text":"Builders: Jond, Mys
 tellraw @s[scores={DialogueTrigger=98,TalkTime=38}] {"text":"Modeler: PixelmonChampion. Playtester: H3roDude"}
 tellraw @s[scores={DialogueTrigger=98,TalkTime=48}] {"text":"Map is based off of: Pokémon Crystal, Heartgold, Soulsilver."}
 tellraw @s[scores={DialogueTrigger=98,TalkTime=58}] {"text":"Check out my other projects if you enjoyed!"}
-tellraw @s[scores={DialogueTrigger=98,TalkTime=58}] ["",{"text":"["},{"text":"Pixelmon Hoenn","color":"aqua","clickEvent":{"action":"open_url","value":"https://www.curseforge.com/minecraft/worlds/pixelmon-hoenn"}},{"text":"] ["},{"text":"Pixelmon Kalos","color":"yellow","clickEvent":{"action":"open_url","value":"https://www.curseforge.com/minecraft/worlds/pixelmon-kalos"}},{"text":"] ["},{"text":"Pixelmon Johto","color":"red","clickEvent":{"action":"open_url","value":"https://www.curseforge.com/minecraft/worlds/pixelmon-johto"}},{"text":"]"}]
+tellraw @s[scores={DialogueTrigger=98,TalkTime=58}] ["",{"text":"["},{"text":"Pixelmon Hoenn","color":"aqua","clickEvent":{"action":"open_url","value":"https://www.curseforge.com/minecraft/worlds/pixelmon-hoenn"}},{"text":"] ["},{"text":"Pixelmon Kalos","color":"yellow","clickEvent":{"action":"open_url","value":"https://www.curseforge.com/minecraft/worlds/pixelmon-kalos"}},{"text":"] ["},{"text":"Cobblemon Kanto","color":"red","clickEvent":{"action":"open_url","value":"https://www.curseforge.com/minecraft/worlds/cobblemon-kanto"}},{"text":"]"}]
 
 
 #runs legendary reset function
@@ -306,7 +306,7 @@ execute as @s[x=530,y=0,z=324,dx=442,dy=63,dz=471,scores={DialogueTrigger=214,Ta
 tellraw @s[scores={DialogueTrigger=214,TalkTime=1,SSState=1}] {"text":"Now boarding the S.S. Aqua voyage for Vermilion City!"}
 tellraw @s[scores={DialogueTrigger=214,TalkTime=1,SSState=2}] {"text":"Now boarding the S.S. Aqua voyage for Olivine City!"}
 execute as @s[scores={DialogueTrigger=214,TalkTime=1}] run advancement grant @s only johto:story/ssaqua
-execute as @s[scores={DialogueTrigger=214,TalkTime=1}] run scoreboard players set @s click 1
+execute as @s[scores={DialogueTrigger=214,TalkTime=1}] run function johto:tools/forceclick
 
 
 

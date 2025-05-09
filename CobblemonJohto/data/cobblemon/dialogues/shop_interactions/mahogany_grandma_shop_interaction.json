@@ -88,7 +88,7 @@
                         "action": "q.dialogue.set_page('pickhyperpotion');"
                     },
                     {
-                        "text": "antidote",
+                        "text": "Antidote",
                         "value": "antidote",
                         "action": "q.dialogue.set_page('pickantidote');"
                     },

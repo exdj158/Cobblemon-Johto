@@ -1617,22 +1617,6 @@ execute as @s[scores={DialogueTrigger=213,TalkTime=26}] run scoreboard players s
 tag @s[scores={DialogueTrigger=213,TalkTime=26..}] add Dialogue213
 
 
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Professor Oak giving access to Mt. Silver after you obtain all the badges
-#Dialogue222
-#execute as @s[x=-1726,y=63,z=-319,dx=23,dy=5,dz=25,tag=Dialogue154] run execute @s[tag=AllGyms] run scoreboard players set @s[tag=!Dialogue222] DialogueTrigger 222
-
-tellraw @s[scores={DialogueTrigger=222,TalkTime=1}] {"text":"<Professor Oak> Those Badges are... Wow!"}
-tellraw @s[scores={DialogueTrigger=222,TalkTime=8}] {"text":"<Professor Oak> You have not only become the Johto Champion, but you've collected all the Kanto Badges!"}
-tellraw @s[scores={DialogueTrigger=222,TalkTime=18}] {"text":"<Professor Oak> Well done! Hmm... No wonder I sensed something in you when we met."}
-tellraw @s[scores={DialogueTrigger=222,TalkTime=27}] ["",{"text":"<Professor Oak> Tell you what, "},{"selector":"@s"},{"text":"."}]
-tellraw @s[scores={DialogueTrigger=222,TalkTime=34}] {"text":"<Professor Oak> I'll make arrangements so that you can go to Mt. Silver."}
-tellraw @s[scores={DialogueTrigger=222,TalkTime=42}] {"text":"<Professor Oak> Mt. Silver is a big mountain that is home to many wild Pokémon."}
-tellraw @s[scores={DialogueTrigger=222,TalkTime=50}] {"text":"<Professor Oak> It's too dangerous for your average Trainer, so it's off limits."}
-tellraw @s[scores={DialogueTrigger=222,TalkTime=58}] ["",{"text":"<Professor Oak> But we can make an exception in your case, "},{"selector":"@s"},{"text":"."}]
-tellraw @s[scores={DialogueTrigger=222,TalkTime=67}] {"text":"<Professor Oak> Go to the Pokémon League Reception Gate. You can reach Mt. Silver from there."}
-
-tag @s[scores={DialogueTrigger=222,TalkTime=67..}] add Dialogue222
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Team Rocket's Announcement when Radio Tower is occupied, overwrites existing radio shows

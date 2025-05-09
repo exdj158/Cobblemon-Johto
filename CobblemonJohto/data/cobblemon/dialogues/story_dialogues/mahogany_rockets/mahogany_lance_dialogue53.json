@@ -103,7 +103,7 @@
             "lines": [
                 {
                     "type": "expression",
-                    "expression": "'' + q.player.username + ', we should split up to check this place. I'll go first.';"
+                    "expression": "'' + q.player.username + ', we should split up to check this place. I will go first.';"
                 }
             ],
             "input": {

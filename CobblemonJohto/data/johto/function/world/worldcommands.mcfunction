@@ -199,7 +199,7 @@ spawnpoint @a[x=-999,y=64,z=62,distance=..5] -999 64 62
 
 scoreboard players set @a[x=-1258,y=64,z=15,distance=..5,scores={FlyVictory=0}] FlyVictory 1
 
-scoreboard players set @a[x=-1292,y=84,z=322,distance=..5,scores={FlyVictory=0}] FlyIndigo 1
+scoreboard players set @a[x=-1292,y=84,z=322,distance=..5,scores={FlyIndigo=0}] FlyIndigo 1
 scoreboard players set @a[x=-1292,y=84,z=322,distance=..5] Whiteout 12
 spawnpoint @a[x=-1292,y=84,z=322,distance=..5] -1292 84 322
 

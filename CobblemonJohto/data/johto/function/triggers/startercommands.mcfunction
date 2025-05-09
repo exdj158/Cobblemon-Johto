@@ -9,6 +9,7 @@ gamerule doFireTick false
 gamerule fallDamage false
 gamerule commandBlockOutput false
 gamerule naturalRegeneration true
+gamerule drowningDamage false
 scoreboard objectives setdisplay sidebar
 scoreboard objectives setdisplay list
 scoreboard objectives setdisplay below_name
@@ -76,11 +77,14 @@ tag @s remove Blue
 #Sets default scores for players
 team join default @s
 
+scoreboard players set @s StarterPick 0
 scoreboard players set @s DialogueTrigger 0
 scoreboard players set @s TalkTime 0
 scoreboard players set @s KantoStarters 0
 scoreboard players set @s TallGrass 0
 scoreboard players set @s Air 0
+scoreboard players set @s IP 0
+scoreboard players set @s Farfetchd 0
 
 
 #World Events
@@ -107,7 +111,9 @@ scoreboard players set @s SSState 0
 scoreboard players set @s TownDisplay 0
 scoreboard players set @s click 0
 
-
+tag @s remove WaterHave
+tag @s remove FireHave
+tag @s remove GrassHave
 
 
 #Fly Map

@@ -31,6 +31,7 @@
                             "value": "close",
                             "action": [
                                 "q.run_command('execute as ' + q.player.username + ' run advancement grant @s only johto:story/red');",
+                                "q.run_command('execute as ' + q.player.username + ' run title @s title {\"text\":\"The End.\"}');",
                                 "q.dialogue.close();"]
                         }
                     ]

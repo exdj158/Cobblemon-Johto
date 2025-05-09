@@ -5,6 +5,7 @@
     "names": [
         "Professor Oak"
     ],
+    "escapeAction": [],
     "speakers": {
         "npc": {
             "name": "Professor Oak",

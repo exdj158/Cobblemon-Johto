@@ -1,6 +1,7 @@
 {
     "initializationAction": [
-        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');",
+        "q.run_command('advancement grant ' + q.player.username + ' only johto:root');"
     ],
     "escapeAction": [              
         ],
@@ -103,7 +104,6 @@
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:potion 5');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
                             "q.run_command('tag ' + q.player.username + ' add Dialogue4');",
-                            "q.run_command('execute as ' + q.player.username + ' run advancement grant @s only johto:root');",
                             "q.run_command('tag ' + q.player.username + ' remove InDialogue');",
                             "q.dialogue.close();"
                         ]
