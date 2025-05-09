@@ -81,7 +81,11 @@ execute as @s[x=513,y=55,z=-335,distance=..6,tag=BeautyCD] run opendialogue unde
 execute as @s[x=-2555,y=55,z=855,distance=..6] run opendialogue mewtwo_interaction @s
 
 
-
+#Professor Oak
+execute as @s[x=-1715,y=64,z=-307,distance=..6,tag=!Dialogue153] run opendialogue professoroak_dialogue153 @s
+execute as @s[x=-1715,y=64,z=-307,distance=..6,tag=Dialogue153,tag=!AllGyms] run opendialogue pallet_oak_interaction @s
+execute as @s[x=-1715,y=64,z=-307,distance=..6,tag=AllGyms,tag=!Dialogue222] run opendialogue professoroak_dialogue222 @s
+execute as @s[x=-1715,y=64,z=-307,distance=..6,tag=Dialogue222] run opendialogue pallet_oak_interaction @s
 
 
 
